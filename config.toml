@@ -7,10 +7,6 @@ googleAnalytics="UA-51749284-1"
 themesDir="themes"
 theme="stroodle"
 
-[taxonomies]
-	project = "projects"
-	technology = "technologies"
-
 staticDir = ["static"]
 
 [params]
