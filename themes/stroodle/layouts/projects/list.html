@@ -8,15 +8,19 @@
 
 	{{ partial "header" . }}
 
-	{{ range .Pages }}
+	<main>
 
-		<section>
+		<h1>Projects:</h1>
 
-			<h4><a href="{{ .URL }}">{{ .Title }}</a></h4>
+		<ul>
+			{{ range .Pages }}
+			<li>
+				<h4><a href="{{ .URL }}">{{ .Title }}</a></h4>
+			</li>
+			{{ end }}
+		</ul>
 
-		</section>
-
-	{{ end }}
+	</main>
 
 	{{ partial "footer" . }}
 
