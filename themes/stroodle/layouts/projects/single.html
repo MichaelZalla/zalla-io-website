@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	{{ partial "meta" . }}
+	<title>{{ .Title }} - Projects - {{ $.Site.Title }}</title>
+</head>
+<body>
+
+	{{ partial "header" . }}
+
+	<a href="/projects/">Back to Projects</a>
+
+	<header>
+
+		<h2>{{ .Title }}</h2>
+
+		<p class="intro">{{ .Params.subtitle }}</p>
+
+		{{ with .Resources.GetMatch "images/hero*" }}
+		<img class="" src="{{ .Permalink }}" alt="{{ .Params.alt }}" style="max-width:100%;">
+		{{ end }}
+
+	</header>
+
+	<aside>
+
+		<h4>Technologies</h4>
+
+		<ul class="technology-items">
+			{{ range .Params.technologies }}
+			<li class="technology-item"><span>{{ . }}</span></li>
+			{{ end }}
+		</ul>
+
+	</aside>
+
+	<main>
+
+		<p>{{ .Content }}</p>
+
+		{{ range .Resources.Match "images/screenshot*" }}
+			<img class="" src="{{ .RelPermalink }}" alt="{{ .Title }}" style="max-width:100%;">
+		{{ end }}
+
+		{{ range .Resources.Match "images/development*" }}
+			<img class="" src="{{ .RelPermalink }}" alt="{{ .Title }}" style="max-width:100%;">
+		{{ end }}
+
+	</main>
+
+	{{ partial "footer" . }}
+
+</body>
+</html>
