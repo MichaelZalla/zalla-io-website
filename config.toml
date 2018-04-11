@@ -1,0 +1,19 @@
+baseURL = "http://zalla.io/"
+languageCode = "en-us"
+title = "zalla.io"
+
+googleAnalytics="UA-51749284-1"
+
+themesDir="themes"
+theme="stroodle"
+
+[taxonomies]
+	project = "projects"
+	technology = "technologies"
+
+staticDir = ["static"]
+
+[params]
+	author = "Michael Zalla"
+	email = "michael@zalla.io"
+	copyright = "Copyright © 2018 Michael Zalla"
