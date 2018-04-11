@@ -5,6 +5,8 @@
   "main": "package.json",
   "scripts": {
     "postinstall": "cp ./node_modules/normalize-css/normalize.css ./static/css/vendor/normalize-css/",
+    "sass": "sass --sourcemap=inline --style=compressed ./themes/stroodle/src/scss/main.scss ./themes/stroodle/dist/css/main.bundle.css && cp ./themes/stroodle/dist/css/main.bundle.css* ./static/css",
+    "build": "npm run sass && hugo",
     "serve:draft": "hugo server -D",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

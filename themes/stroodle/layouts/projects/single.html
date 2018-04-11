@@ -15,11 +15,11 @@
 		<p class="intro">{{ .Params.byline }}</p>
 
 		{{ with .Resources.GetMatch "hero-image" }}
-		<img class="" src="{{ .Permalink }}" alt="{{ .Title }}" style="max-width:100%;">
+		<img class="" src="{{ .Permalink }}" alt="{{ .Title }}">
 		{{ end }}
 
 		{{ with .Resources.GetMatch "hero-background" }}
-		<img class="" src="{{ .Permalink }}" alt="{{ .Title }}" style="max-width:100%;">
+		<img class="" src="{{ .Permalink }}" alt="{{ .Title }}">
 		{{ end }}
 
 	</header>
