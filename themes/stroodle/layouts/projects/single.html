@@ -13,8 +13,12 @@
 		<h2>{{ .Title }}</h2>
 		<p class="intro">{{ .Params.subtitle }}</p>
 
-		{{ with .Resources.GetMatch "images/hero*" }}
-		<img class="" src="{{ .Permalink }}" alt="{{ .Params.alt }}" style="max-width:100%;">
+		{{ with .Resources.GetMatch "hero-image" }}
+		<img class="" src="{{ .Permalink }}" alt="{{ .Title }}" style="max-width:100%;">
+		{{ end }}
+
+		{{ with .Resources.GetMatch "hero-background" }}
+		<img class="" src="{{ .Permalink }}" alt="{{ .Title }}" style="max-width:100%;">
 		{{ end }}
 
 	</header>

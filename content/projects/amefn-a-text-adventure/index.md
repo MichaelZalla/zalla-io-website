@@ -7,8 +7,13 @@ technologies: [
 	"Eclipse",
 	"PyDev",
 ]
-thumbnailImageUrl: "/images/{{ .Name }}/thumbnail.png"
-backgroundImageUrl: "/images/{{ .Name }}/hero.jpg"
+resources:
+- src: "*/hero.jpg"
+  title: "Hero image"
+  name: hero-image
+- src: "*/hero-background.jpg"
+  title: "Hero background image"
+  name: hero-background
 draft: true
 ---
 
