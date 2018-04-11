@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	{{ partial "meta" . }}
+	<title>Projects - {{ $.Site.Title }}</title>
+</head>
+<body>
+
+	{{ partial "header" . }}
+
+	{{ range .Pages }}
+
+		<section>
+
+			<h4><a href="{{ .URL }}">{{ .Title }}</a></h4>
+
+		</section>
+
+	{{ end }}
+
+	{{ partial "footer" . }}
+
+</body>
+</html>
