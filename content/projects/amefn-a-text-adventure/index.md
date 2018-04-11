@@ -1,6 +1,6 @@
 ---
 title: "AMEFN: A Text Adventure"
-subtitle: "An Old-School Twist On Learning Python…"
+byline: "An Old-School Twist On Learning Python…"
 year: "2013"
 season: "Spring"
 technologies: [
@@ -15,7 +15,7 @@ resources:
 - src: "*/hero-background.jpg"
   title: "Hero background image"
   name: hero-background
-draft: true
+draft: false
 ---
 
 The following is a text adveture I wrote as the final project in my first formal couse in computer science. In A Marginally Eventful Friday Night, you assume the role of Nick, a fifth grade kid who comes home to find a surprising birthday gift from his absclsent parents. Taking design cues from old-school text adventures, the game allows players to progress through the story by typing in commands to explore new areas, add items to their inventory, and solve the game as a stateful puzzle.

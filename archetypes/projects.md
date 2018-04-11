@@ -1,6 +1,6 @@
 ---
 title: "{{ replace .Name "-" " " | title }}"
-subtitle: ""
+byline: ""
 year: ""
 season: ""
 technologies: []
