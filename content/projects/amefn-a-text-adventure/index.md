@@ -1,7 +1,8 @@
 ---
 title: "AMEFN: A Text Adventure"
 subtitle: "An Old-School Twist On Learning Python…"
-period: "Spring 2013"
+year: "2013"
+season: "Spring"
 technologies: [
 	"Python",
 	"Eclipse",
