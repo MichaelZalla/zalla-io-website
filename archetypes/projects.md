@@ -1,7 +1,8 @@
 ---
 title: "{{ replace .Name "-" " " | title }}"
 subtitle: ""
-period: ""
+year: ""
+season: ""
 technologies: []
 draft: true
 ---
