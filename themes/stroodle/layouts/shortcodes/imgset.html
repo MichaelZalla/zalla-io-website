@@ -1,0 +1,7 @@
+{{ $images := $.Page.Resources.Match (.Get 0) }}
+{{ range $images }}
+<figure>
+    <img src="{{ .RelPermalink }}" alt="{{ .Title }}" style="max-width: 100%;" />
+    <figcaption>{{ .Title }}</figcaption>
+</figure>
+{{ end }}

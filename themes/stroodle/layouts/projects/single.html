@@ -35,17 +35,7 @@
 	</aside>
 
 	<main>
-
-		<p>{{ .Content }}</p>
-
-		{{ range .Resources.Match "images/screenshot*" }}
-			<img class="" src="{{ .RelPermalink }}" alt="{{ .Title }}" style="max-width:100%;">
-		{{ end }}
-
-		{{ range .Resources.Match "images/development*" }}
-			<img class="" src="{{ .RelPermalink }}" alt="{{ .Title }}" style="max-width:100%;">
-		{{ end }}
-
+		{{ .Content }}
 	</main>
 
 	{{ partial "footer" . }}
