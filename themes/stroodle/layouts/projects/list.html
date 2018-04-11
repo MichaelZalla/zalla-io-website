@@ -13,7 +13,7 @@
 		<h1>Projects:</h1>
 
 		<ul>
-			{{ range .Pages }}
+			{{ range sort .Pages "Params.year" "desc" }}
 			<li>
 				<h4><a href="{{ .URL }}">{{ .Title }}</a></h4>
 			</li>
