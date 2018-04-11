@@ -1,0 +1,24 @@
+{
+  "name": "zalla-io-website",
+  "version": "0.1.0",
+  "description": "Source repository for my personal website - zalla.io.",
+  "main": "package.json",
+  "scripts": {
+    "postinstall": "cp ./node_modules/normalize-css/normalize.css ./static/css/vendor/normalize-css/",
+    "serve:draft": "hugo server -D",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MichaelZalla/zalla-io-website.git"
+  },
+  "author": "Apple Inc. (https://developer.apple.com/)",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/MichaelZalla/zalla-io-website/issues"
+  },
+  "homepage": "https://github.com/MichaelZalla/zalla-io-website#readme",
+  "devDependencies": {
+    "normalize-css": "^2.3.1"
+  }
+}
