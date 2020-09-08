@@ -1,7 +1,7 @@
 {
   "name": "zalla-io-website",
-  "version": "0.1.0",
-  "description": "Source repository for my personal website - zalla.io.",
+  "version": "1.0.0",
+  "description": "The personal website of Michael Zalla.",
   "main": "package.json",
   "scripts": {
     "postinstall": "brew install hugo && cp ./node_modules/normalize-css/normalize.css ./static/css/vendor/normalize-css/",
