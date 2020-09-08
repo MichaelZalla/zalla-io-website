@@ -1,0 +1,27 @@
+<header id="header" class="fixed hidden" ng-controller="HeaderViewController">
+	<div class="container">
+		<div class="content">
+
+			<!-- Branding -->
+			<div class="left"><a href="#" id="logo"></a></div>
+
+			<!-- Responsive navigation menu -->
+			<div class="right" ng-click="toggleNavigation()">
+				<section class="ss-header-navigation fullscreen">
+					<div class="container">
+						<div class="content">
+							<ul>
+								<li data-scroll-nav="1" class="about"><span class="label">about</span></li>
+								<li data-scroll-nav="2" class="print"><span class="label">print</span></li>
+								<li data-scroll-nav="3" class="motion"><span class="label">motion</span></li>
+								<li data-scroll-nav="4" class="interaction"><span class="label">interaction</span></li>
+								<li class="filter-menu-toggle" ng-click="toggleFilterMenu()"><span class="label">filters</span></li>
+							</ul>
+						</div>
+					</div>
+				</section>
+			</div>
+
+		</div>
+	</div>
+</header>

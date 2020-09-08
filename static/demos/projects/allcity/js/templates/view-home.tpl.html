@@ -1,0 +1,120 @@
+<div ng-include src="'./js/templates/header.tpl.html'" include-replace></div>
+
+<section id="hero" class="fullscreen light" data-scroll-index="0">
+	<video class="wallpaper-video center" poster="./media/home-wallpaper.png" autoplay loop
+		data-0="opacity: 1; top: 0px;" data-800="opacity: 0; top: 400px;">
+		<source src="./media/home-wallpaper.mp4" type="video/mp4">
+	</video>
+	<div class="container">
+		<div class="content">
+			<div class="row">
+
+				<searchbar on-submit="redirectToSearch(qs)"></searchbar>
+
+				<div class="hairline"></div>
+
+				<span class="copy" style="font-size:1.5rem;">Public street art is becoming a defining feature of Cincinnati's urban landscape, offering a more colorful and thought-provoking experience for residents and visitors.</span>
+
+				<div class="arrow-down light" data-scroll-goto="1"></div>
+
+			</div>
+		</div>
+	</div>
+</section>
+
+<section id="overview" class="fullscreen" data-scroll-index="1">
+	<div class="container">
+		<div class="content">
+			<div class="row">
+
+				<span class="heading">Make street art<br>more reachable</span>
+
+				<span class="copy">
+					AllCity is a digital curated platform designed to make<br>
+					our art more reachable and more informative for every<br>
+					-one. Enhance your experience with public art through<br>
+					the AllCity desktop gallery and mobile app!
+				</span>
+
+				<ul class="devices" data-400="left: 1100px;" data-800="left: 754px;">
+					<li class="device desktop">
+						<ul class="device-screens">
+							<li class="device-screen" background="'./images/screens/landing-screens-desktop-1.png'"></li>
+						</ul>
+					</li>
+				</ul>
+
+				<div class="arrow-down" data-scroll-goto="2"></div>
+
+			</div>
+		</div>
+	</div>
+</section>
+
+<section id="mobile" class="fullscreen" data-scroll-index="2">
+	<div class="container">
+		<div class="content">
+			<div class="row">
+
+				<ul class="devices">
+					<li class="device mobile" data-1196="margin-top: 150px;" data-1396="margin-top: 0px;">
+						<ul class="device-screens">
+							<li class="device-screen" background="'./images/screens/landing-screens-mobile-1.png'"></li>
+						</ul>
+					</li>
+					<li class="device mobile" data-1296="margin-top: 150px;" data-1496="margin-top: 0px;">
+						<ul class="device-screens">
+							<li class="device-screen" background="'./images/screens/landing-screens-mobile-2.png'"></li>
+						</ul>
+					</li>
+					<li class="device mobile" data-1396="margin-top: 150px;" data-1596="margin-top: 0px;">
+						<ul class="device-screens">
+							<li class="device-screen" background="'./images/screens/landing-screens-mobile-3.png'"></li>
+						</ul>
+					</li>
+				</ul>
+
+				<div class="column medium-7"><!-- spacer column --></div>
+
+				<div class="column medium-5">
+					<span class="heading">Take to<br>the streets</span>
+					<span class="copy">
+						The AllCity mobile app is your interactive pocket guide to<br>
+						street art in the Greater Cincinnati area. Find new art, one<br>
+						block at a time, with walking directions to every work&mdash;<br>
+						no matter where you start!
+					</span>
+					<div class="arrow-down" data-scroll-goto="3"></div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+</section>
+
+<section id="grid" data-scroll-index="3">
+
+	<ul class="grid-items">
+
+		<li class="grid-item work disabled" ng-click="redirectToExhibit('energy-and-grace')" background="'./images/works/energy-and-grace/thumbnail.png'" transition="false"></li>
+		<li class="grid-item work" ng-click="redirectToExhibit('get-up')" background="'./images/works/get-up/thumbnail.png'" transition="false"></li>
+		<li class="grid-item work disabled" ng-click="redirectToExhibit('willkommen-to-clifton-heights')" background="'./images/works/willkommen-to-clifton-heights/thumbnail.png'" transition="false"></li>
+		<li class="grid-item work disabled" ng-click="redirectToExhibit('xyz-axis')" background="'./images/works/xyz-axis/thumbnail.png'" transition="false"></li>
+		<li class="grid-item work" ng-click="redirectToExhibit('ice-cream-daydream')" background="'./images/works/ice-cream-daydream/thumbnail.png'" transition="false"></li>
+		<li class="grid-item work disabled" ng-click="redirectToExhibit('martha')" background="'./images/works/martha/thumbnail.png'" transition="false"></li>
+		<li class="grid-item work" ng-click="redirectToExhibit('mike-perry-clay-street')" background="'./images/works/mike-perry-clay-street/thumbnail.png'" transition="false"></li>
+		<li class="grid-item work" ng-click="redirectToExhibit('ode-to-a-tagger')" background="'./images/works/ode-to-a-tagger/thumbnail.png'" transition="false"></li>
+		<li class="grid-item work disabled" ng-click="redirectToExhibit('hands-that-built-our-city')" background="'./images/works/hands-that-built-our-city/thumbnail.png'" transition="false"></li>
+		<li class="grid-item work" ng-click="redirectToExhibit('global-warning')" background="'./images/works/global-warning/thumbnail.png'" transition="false"></li>
+		<li class="grid-item work disabled" ng-click="redirectToExhibit('revival')" background="'./images/works/revival/thumbnail.png'" transition="false"></li>
+		<li class="grid-item work" ng-click="redirectToExhibit('the-golden-muse')" background="'./images/works/the-golden-muse/thumbnail.png'" transition="false"></li>
+		<li class="grid-item work disabled" ng-click="redirectToExhibit('untitled-scribe')" background="'./images/works/untitled-scribe/thumbnail.png'" transition="false"></li>
+		<li class="grid-item work" ng-click="redirectToExhibit('the-singing-mural')" background="'./images/works/the-singing-mural/thumbnail.png'" transition="false"></li>
+		<li class="grid-item work disabled" ng-click="redirectToExhibit('homecoming-bluebirds')" background="'./images/works/homecoming-bluebirds/thumbnail.png'" transition="false"></li>
+		<li class="grid-item work" ng-click="redirectToExhibit('untitled-unframed')" background="'./images/works/untitled-unframed/thumbnail.png'" transition="false"></li>
+		<li class="grid-item work disabled" ng-click="redirectToExhibit('willkommen-to-clifton-heights')" background="'./images/works/willkommen-to-clifton-heights/thumbnail.png'" transition="false"></li>
+		<li class="grid-item work disabled" ng-click="redirectToExhibit('energy-and-grace')" background="'./images/works/energy-and-grace/thumbnail.png'" transition="false"></li>
+
+	</ul>
+
+</section>

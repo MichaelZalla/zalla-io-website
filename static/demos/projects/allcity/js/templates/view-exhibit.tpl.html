@@ -1,0 +1,74 @@
+<div ng-include src="'./js/templates/header.tpl.html'" include-replace></div>
+
+<section id="hero" class="fullscreen">
+	<div class="container">
+		<div class="content">
+			<ul class="wallpapers">
+				<li class="wallpaper" data-scroll-index="0" background="'./images/works/'+work.key+'/wallpaper-1.jpg'"></li>
+				<li class="wallpaper" data-scroll-index="1" background="'./images/works/'+work.key+'/wallpaper-2.jpg'"></li>
+				<li class="wallpaper" data-scroll-index="2" background="'./images/works/'+work.key+'/wallpaper-3.jpg'"></li>
+			</ul>
+			<!--
+			<div class="map-wrapper" map-view work="work" map-width="180" map-height="180" map-zoom="15" map-link="1">
+				<div class="pin"></div>
+			</div>
+			-->
+			<div class="info-wrapper fixed">
+				<div class="content">
+					<div class="row align-bottom">
+						<div class="column medium-4">
+							<span class="heading">{{ work.title }}</span>
+							<span class="label street-address" ng-click="redirectToGoogleMaps()">{{ work.location }}</span>
+						</div>
+						<div class="column medium-8">
+							<!-- <span class="copy">{{ work.subject_description }}</span> -->
+							<span class="copy">{{ work.origin_description }}</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section id="info">
+	<div class="container">
+		<div class="content">
+
+			<!-- artist bio -->
+			<div class="about-the-artist row" background="'./images/works/'+work.key+'/artist.png'">
+				<div class="column medium-4"></div>
+				<div class="column medium-8">
+					<div class="info-wrapper">
+						<span class="subheading" id="about-the-artist">about the artist</span>
+						<span>{{ work.artist_biography }}</span>
+					</div>
+				</div>
+			</div>
+
+			<!-- associations / how to find -->
+			<div class="row">
+				<div class="associations column medium-6" background="'./images/works/'+work.key+'/associations.png'">
+					<div class="info-wrapper">
+						<span class="subheading" id="associations">associations</span>
+						<span>{{ work.associations }}</span>
+					</div>
+				</div>
+				<div class="how-to-find-me column medium-6" map-view work="work" map-width="600" map-height="475" map-zoom="16">
+					<ul class="samples">
+						<li><img ng-src="./images/works/{{ work.key }}/closeup-1.png"></li>
+						<li><img ng-src="./images/works/{{ work.key }}/closeup-2.png"></li>
+						<li><img ng-src="./images/works/{{ work.key }}/closeup-3.png"></li>
+					</ul>
+					<div class="info-wrapper">
+						<span class="subheading light" id="how-to-find-me">how to find me&hellip;</span>
+						<span class="light">{{ work.location_description }}</span>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+</section>
+
+<div ng-include src="'./js/templates/footer.tpl.html'" include-replace></div>

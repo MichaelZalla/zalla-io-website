@@ -1,0 +1,111 @@
+<section class="filter-bar hidden">
+	<div class="container">
+		<div class="content">
+			
+			<!-- Branding -->
+			<div class="left"><a href="#" class="logo"></a></div>
+			
+			<!-- Menu toggle -->
+			<div class="right">
+				<button class="filter-menu-toggle label" ng-click="toggleFilterMenu()">filters</button>
+			</div>
+
+		</div>
+	</div>
+</section>
+
+<section class="filter-menu">
+	<div class="container">
+		<div class="content">
+			
+			<!-- Heading & close -->
+			<div class="top">
+				<span class="heading">filters</span>
+				<div class="close" ng-click="toggleFilterMenu()"></div>
+			</div>
+
+			<div class="main">
+
+				<div class="content-wrapper" ng-class="{ 'visible': getSelectedFilters().length == 0 }">
+					
+					<ul class="filter-groups">
+						
+						<!-- Print filters -->
+						<li class="filter-group print">
+							<span class="focus">print</span>
+							<ul class="filters">
+								<li class="filter" ng-repeat="filter in getFiltersByFocus('print')"
+									ng-class="{ 'selected': isSelected(filter), 'focus-filter': filter.type == 'focus_tracks' }"
+									ng-click="onClickFilterItem(filter)">{{filter.value}}</li>
+							</ul>
+						</li>
+
+						<!-- Motion filters -->
+						<li class="filter-group motion">
+							<span class="focus">motion</span>
+							<ul class="filters">
+								<li class="filter" ng-repeat="filter in getFiltersByFocus('motion')"
+									ng-class="{ 'selected': isSelected(filter), 'focus-filter': filter.type == 'focus_tracks' }"
+									ng-click="onClickFilterItem(filter)">{{filter.value}}</li>
+							</ul>
+						</li>
+
+						<!-- Interaction filters -->
+						<li class="filter-group interaction">
+							<span class="focus">interaction</span>
+							<ul class="filters">
+								<li class="filter"
+									ng-repeat="filter in getFiltersByFocus('interaction')"
+									ng-class="{ 'selected': isSelected(filter), 'focus-filter': filter.type == 'focus_tracks' }"
+									ng-click="onClickFilterItem(filter)">
+									{{filter.value}}
+								</li>
+							</ul>
+						</li>
+
+					</ul>
+
+				</div>
+
+				<div class="content-wrapper" ng-class="{ 'visible': getSelectedFilters().length > 0 }">
+					
+					<!-- Selected filter(s) -->
+					<ul class="selected-filters">
+						<li class="selected-filter" ng-repeat="filter in getSelectedFilters()"
+							ng-class="{
+								'print': filter.focus == 'print',
+								'motion': filter.focus == 'motion',
+								'interaction': filter.focus == 'interaction'}">
+							<span class="value">
+								{{filter.value}}
+								<div class="close" ng-click="removeFilter(filter)"></div>
+							</span>
+						</li>
+					</ul>
+					
+					<!-- Filtered results -->
+					<ul class="projects" ng-show="getSelectedFilters().length > 0">
+						<li class="project" ng-repeat="project in projects" ng-click="redirectToProject(project)">
+							
+							<!-- Ritle -->
+							<span class="project-title">{{ project.title }}</span>
+							
+							<!-- Students -->
+							<ul class="project-students">
+								<li ng-repeat="student in project.students">
+									<span class="label">
+										{{ student.first_name }} {{ student.last_name }}
+									</span>
+								</li>
+							</ul>
+							
+						</li>
+					</ul>
+
+				</div>
+				
+			</div>
+
+		</div>
+	</div>
+</section>

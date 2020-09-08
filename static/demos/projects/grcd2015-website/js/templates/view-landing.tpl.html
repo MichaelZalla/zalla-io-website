@@ -1,0 +1,113 @@
+<header id="header" class="fixed hidden" ng-controller="HeaderViewController">
+	<div class="container">
+		<div class="content">
+
+			<!-- Branding -->
+			<div class="left"><a href="#/" id="logo"></a></div>
+
+			<!-- Responsive navigation menu -->
+			<div class="right" ng-click="toggleNavigation()">
+				<section class="ss-header-navigation fullscreen">
+					<div class="container">
+						<div class="content">
+							<ul>
+								<li class="about" data-scroll-nav="1"><span class="label">about</span></li>
+								<li class="print" data-scroll-nav="2"><span class="label">print</span></li>
+								<li class="motion" data-scroll-nav="3"><span class="label">motion</span></li>
+								<li class="interaction" data-scroll-nav="4"><span class="label">interaction</span></li>
+								<li class="filter-menu-toggle" ng-click="toggleFilterMenu()"><span class="label">filters</span></li>
+							</ul>
+						</div>
+					</div>
+				</section>
+			</div>
+
+		</div>
+	</div>
+</header>
+
+<filter-menu></filter-menu><!-- on-change-filter-selection="applyFilters(selection, done)" -->
+
+<section id="branding" data-scroll-index="0">
+	<div class="letter-grid" background="'images/branding/letter-grid-flat.svg'"></div>
+	<a data-scroll-goto="1"><button class="arrow-down"><!-- mobile only --></button></a>
+	<div class="container">
+		<div class="content">
+			<div class="row">
+				<div class="column small-12 medium-4">
+					<img class="logo" src="images/branding/letter-grid-title_2x.png" alt="Seek. Make. Find. GRCD 2015.">
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section id="info" ng-class="{ 'inverted': currentProject != null }" data-scroll-index="1">
+	<div class="container">
+		<div class="content">
+			<div class="row ">
+				<div class="column small-12 medium-12 large-4">
+					<span style="margin-top:0;">University of Cincinnati</span>
+					<span class="label large" style="margin-bottom:-2px;max-width:280px;">graphic communication design exhibition</span>
+					<span>Part of the <a href="http://daap.uc.edu/daapworks.html" target="_blank">DAAPworks showcase</a>.</span>
+				</div>
+				<div class="column small-12 medium-6 large-4">
+					<div><h1 class="highlight">when</h1></div>
+					<ul class="schedule">
+						<li><span class="date-time">April 28 (5pm&ndash;9pm)</span></li>
+						<li><span class="date-time">April 29&ndash;May 1 (9am&ndash;9pm)</span></li>
+						<li><span class="date-time">May 2 (10am&ndash;1pm)</span></li>
+					</ul>
+					<span class="notice">free admission &amp; refreshments</span>
+				</div>
+				<div class="column small-12 medium-6 large-4">
+					<div><h1 class="highlight">where</h1></div>
+					<a class="address" href="https://www.google.com/maps/place/DAAP+-+University+of+Cincinnati/@39.1329636,-84.5159585,17z/data=!4m6!1m3!3m2!1s0x8841b38acb65ec25:0x4249b42781c0c5fc!2sUniversity+of+Cincinnati!3m1!1s0x0000000000000000:0x3c92ee335c0058ba" target="_blank" style="margin-top:-4px;">
+						<span>DAAP Aronoff Building<br>2624 Clifton Avenue<br>Cincinnati, OH 45219</span>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section id="promo" data-scroll-index="1">
+	<div class="container">
+		<div class="content">
+			<motion-promo></motion-promo>
+		</div>
+	</div>
+</section>
+
+<section id="previews"
+	ng-class="{
+		'inverted': currentProject != null,
+		'filtered': currentProjectCount != TOTAL_PROJECT_COUNT }">
+	<div class="container">
+		<div class="content">
+			<div class="row">
+				
+				<project-gallery id="print" focus="print" projects="projects.print"
+					mouseenter="onProjectHover(project)"
+					mouseleave="onProjectHover(project)"
+					data-scroll-index="2">
+				</project-gallery>
+
+				<project-gallery id="motion" focus="motion" projects="projects.motion"
+					mouseenter="onProjectHover(project)"
+					mouseleave="onProjectHover(project)"
+					data-scroll-index="3">
+				</project-gallery>
+				
+				<project-gallery id="interaction" focus="interaction" projects="projects.interaction"
+					mouseenter="onProjectHover(project)"
+					mouseleave="onProjectHover(project)"
+					data-scroll-index="4">
+				</project-gallery>
+
+			</div>
+		</div>
+	</div>
+</section>
+
+<sliding-preview preview="currentProject"></sliding-preview>

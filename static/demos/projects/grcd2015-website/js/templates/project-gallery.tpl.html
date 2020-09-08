@@ -1,0 +1,29 @@
+
+<span class="focus heading">{{ focus }}</span>
+
+<ul class="preview-cards">
+	<li class="preview-card"
+		ng-repeat="project in projects"
+		ng-class="{ 'active': (project == currentProject) }">
+
+		<div class="content-wrapper"
+			ng-mouseenter="setCurrentProject(project)"
+			ng-mouseleave="setCurrentProject(null)"
+			ng-click="redirectToProject(project)">
+			
+			<!-- title -->
+			<span class="project-title">{{ project.title }}</span>
+						
+			<!-- students -->
+			<ul class="project-students">
+				<li ng-repeat="student in project.students">
+					<span class="label">
+						{{ student.first_name }} {{ student.last_name }}
+					</span>
+				</li>
+			</ul>
+
+		</div>
+
+	</li>
+</ul>

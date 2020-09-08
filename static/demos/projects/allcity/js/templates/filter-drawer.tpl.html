@@ -1,0 +1,15 @@
+<!-- close button -->
+<span class="label close">close</span>
+
+<!-- filter name -->
+<span class="heading">{{filter.key}}</span>
+
+<!-- preview slideshow -->
+<ul class="selected-previews" ng-class="{ 'visible': filterHasThumbnails() }">
+	<li class="preview active" background="item.thumbnail"
+		ng-repeat="item in filter.selected"
+		ng-class="{ 'active': $index == activePreviewIndex }"></li>
+</ul>
+
+<!-- select filter options -->
+<filter-options options="filter.options" selected="filter.selected"></filter-options>

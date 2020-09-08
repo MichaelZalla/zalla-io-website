@@ -1,0 +1,62 @@
+[
+	{
+		"key": "camp washington",
+		"value": "Camp Washington",
+		"thumbnail": "./images/districts/camp-washington.png"
+	},
+	{
+		"key": "clifton heights",
+		"value": "Clifton Heights",
+		"thumbnail": "./images/districts/clifton-heights.png"
+	},
+	{
+		"key": "corryville",
+		"value": "Corryville",
+		"thumbnail": "./images/districts/corryville.png"
+	},
+	{
+		"key": "downtown",
+		"value": "Downtown",
+		"thumbnail": "./images/districts/downtown.png"
+	},
+	{
+		"key": "findlay market",
+		"value": "Findlay Market",
+		"thumbnail": "./images/districts/findlay-market.png"
+	},
+	{
+		"key": "northside",
+		"value": "Northside",
+		"thumbnail": "./images/districts/northside.png"
+	},
+	{
+		"key": "north avondale",
+		"value": "North Avondale",
+		"thumbnail": "./images/districts/north-avondale.png"
+	},
+	{
+		"key": "mount adams",
+		"value": "Mount Adams",
+		"thumbnail": "./images/districts/mount-adams.png"
+	},
+	{
+		"key": "mount auburn",
+		"value": "Mount Auburn",
+		"thumbnail": "./images/districts/mount-auburn.png"
+	},
+	{
+		"key": "over-the-rhine",
+		"value": "Over-the-Rhine",
+		"thumbnail": "./images/districts/over-the-rhine.png"
+	},
+	{
+		"key": "queensgate",
+		"value": "Queensgate",
+		"thumbnail": "./images/districts/queensgate.png"
+	},
+	{
+		"key": "washington park",
+		"value": "Washington Park",
+		"thumbnail": "./images/districts/washington-park.png"
+	}
+]

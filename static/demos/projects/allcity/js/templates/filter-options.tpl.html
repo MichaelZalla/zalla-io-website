@@ -1,0 +1,6 @@
+<ul>
+	<li ng-repeat="option in options" ng-class="{ 'selected': (selected.indexOf(option) > -1) }" ng-click="toggleOption(option)">
+		<span>{{ option.value }}</span>
+	</li>
+	<li class="clear" ng-click="clear()"><span>(Clear)</span></li>
+</ul>

@@ -1,0 +1,898 @@
+{
+    "1980": {
+        "192": {
+            "POPULATION_GROWTH_RATE": "0.82", 
+            "BIRTHS_BY_YOUNG_MOTHERS": "542000",
+            "AVG_LIFE_EXPECTANCY": "73.10", 
+            "FEMALE_TERTIARY_ENROLLMENT": "59151",
+            "FEMALE_POPULATION": "4858070"
+        }, 
+        "800": {
+            "POPULATION_GROWTH_RATE": "2.95", 
+            "BIRTHS_BY_YOUNG_MOTHERS": "1352000",
+            "AVG_LIFE_EXPECTANCY": "49.33", 
+            "FEMALE_TERTIARY_ENROLLMENT": "1501", 
+            "FEMALE_POPULATION": "6306400"
+        }, 
+        "418": {
+            "POPULATION_GROWTH_RATE": "1.30", 
+            "BIRTHS_BY_YOUNG_MOTHERS": "276000",
+            "AVG_LIFE_EXPECTANCY": "48.39", 
+            "FEMALE_TERTIARY_ENROLLMENT": "441", 
+            "FEMALE_POPULATION": "1636060"
+        }, 
+        "554": {
+            "POPULATION_GROWTH_RATE": "0.41", 
+            "BIRTHS_BY_YOUNG_MOTHERS": "122000",
+            "AVG_LIFE_EXPECTANCY": "72.57", 
+            "FEMALE_TERTIARY_ENROLLMENT": "33492", 
+            "FEMALE_POPULATION": "1582180"
+        }, 
+        "356": {
+            "POPULATION_GROWTH_RATE": "2.33", 
+            "BIRTHS_BY_YOUNG_MOTHERS": "57167000",
+            "AVG_LIFE_EXPECTANCY": "54.15", 
+            "FEMALE_TERTIARY_ENROLLMENT": "933405", 
+            "FEMALE_POPULATION": "336128800"
+        }, 
+        "578": {
+            "POPULATION_GROWTH_RATE": "0.38", 
+            "BIRTHS_BY_YOUNG_MOTHERS": "103000",
+            "AVG_LIFE_EXPECTANCY": "75.19", 
+            "FEMALE_TERTIARY_ENROLLMENT": "33780", 
+            "FEMALE_POPULATION": "2059489"
+        }, 
+        "231": {
+            "POPULATION_GROWTH_RATE": "1.58", 
+            "BIRTHS_BY_YOUNG_MOTHERS": "3057000",
+            "AVG_LIFE_EXPECTANCY": "44.26", 
+            "FEMALE_TERTIARY_ENROLLMENT": "2498", 
+            "FEMALE_POPULATION": "17699090"
+        }, 
+        "840": {
+            "POPULATION_GROWTH_RATE": "0.95", 
+            "BIRTHS_BY_YOUNG_MOTHERS": "8494000",
+            "AVG_LIFE_EXPECTANCY": "73.16", 
+            "FEMALE_TERTIARY_ENROLLMENT": "5887022", 
+            "FEMALE_POPULATION": "118348210"
+        }, 
+        "682": {
+            "POPULATION_GROWTH_RATE": "5.77", 
+            "BIRTHS_BY_YOUNG_MOTHERS": "724000",
+            "AVG_LIFE_EXPECTANCY": "60.80", 
+            "FEMALE_TERTIARY_ENROLLMENT": "21003", 
+            "FEMALE_POPULATION": "4569410"
+        }, 
+        "450": {
+            "POPULATION_GROWTH_RATE": "2.87", 
+            "BIRTHS_BY_YOUNG_MOTHERS": "893000",
+            "AVG_LIFE_EXPECTANCY": "48.08", 
+            "FEMALE_TERTIARY_ENROLLMENT": "5350", 
+            "FEMALE_POPULATION": "4360780"
+        }, 
+        "400": {
+            "POPULATION_GROWTH_RATE": "2.78", 
+            "BIRTHS_BY_YOUNG_MOTHERS": "156000",
+            "AVG_LIFE_EXPECTANCY": "64.97", 
+            "FEMALE_TERTIARY_ENROLLMENT": "18194", 
+            "FEMALE_POPULATION": "1088200"
+        }, 
+        "392": {
+            "POPULATION_GROWTH_RATE": "0.90", 
+            "BIRTHS_BY_YOUNG_MOTHERS": "2012000",
+            "AVG_LIFE_EXPECTANCY": "75.31", 
+            "FEMALE_TERTIARY_ENROLLMENT": "791264", 
+            "FEMALE_POPULATION": "58932210"
+        }, 
+        "788": {
+            "POPULATION_GROWTH_RATE": "2.52", 
+            "BIRTHS_BY_YOUNG_MOTHERS": "364000",
+            "AVG_LIFE_EXPECTANCY": "59.36", 
+            "FEMALE_TERTIARY_ENROLLMENT": "7155", 
+            "FEMALE_POPULATION": "3129040"
+        }, 
+        "854": {
+            "POPULATION_GROWTH_RATE": "2.06", 
+            "BIRTHS_BY_YOUNG_MOTHERS": "696000",
+            "AVG_LIFE_EXPECTANCY": "43.39", 
+            "FEMALE_TERTIARY_ENROLLMENT": "274", 
+            "FEMALE_POPULATION": "3477730"
+        }, 
+        "504": {
+            "POPULATION_GROWTH_RATE": "2.26", 
+            "BIRTHS_BY_YOUNG_MOTHERS": "1677000",
+            "AVG_LIFE_EXPECTANCY": "55.76", 
+            "FEMALE_TERTIARY_ENROLLMENT": "13889", 
+            "FEMALE_POPULATION": "9952060"
+        }, 
+        "372": {
+            "POPULATION_GROWTH_RATE": "1.42", 
+            "BIRTHS_BY_YOUNG_MOTHERS": "97000",
+            "AVG_LIFE_EXPECTANCY": "71.93", 
+            "FEMALE_TERTIARY_ENROLLMENT": "24085", 
+            "FEMALE_POPULATION": "1701330"
+        }, 
+        "410": {
+            "POPULATION_GROWTH_RATE": "1.52", 
+            "BIRTHS_BY_YOUNG_MOTHERS": "1505000",
+            "AVG_LIFE_EXPECTANCY": "64.95", 
+            "FEMALE_TERTIARY_ENROLLMENT": "93168", 
+            "FEMALE_POPULATION": "18701170"
+        }, 
+        "170": {
+            "POPULATION_GROWTH_RATE": "2.31", 
+            "BIRTHS_BY_YOUNG_MOTHERS": "1956000",
+            "AVG_LIFE_EXPECTANCY": "63.98", 
+            "FEMALE_TERTIARY_ENROLLMENT": "110743", 
+            "FEMALE_POPULATION": "13526770"
+        }
+    },    
+    "1985": {
+        "192": {
+            "POPULATION_GROWTH_RATE": "0.53", 
+            "BIRTHS_BY_YOUNG_MOTHERS": "535000",
+            "AVG_LIFE_EXPECTANCY": "74.24", 
+            "FEMALE_TERTIARY_ENROLLMENT": "113956", 
+            "FEMALE_POPULATION": "5007060"
+        }, 
+        "800": {
+            "POPULATION_GROWTH_RATE": "3.11", 
+            "BIRTHS_BY_YOUNG_MOTHERS": "1576000",
+            "AVG_LIFE_EXPECTANCY": "49.42", 
+            "FEMALE_TERTIARY_ENROLLMENT": "3098", 
+            "FEMALE_POPULATION": "7365570"
+        }, 
+        "418": {
+            "POPULATION_GROWTH_RATE": "2.47", 
+            "BIRTHS_BY_YOUNG_MOTHERS": "314000",
+            "AVG_LIFE_EXPECTANCY": "49.87", 
+            "FEMALE_TERTIARY_ENROLLMENT": "1780", 
+            "FEMALE_POPULATION": "1844530"
+        }, 
+        "554": {
+            "POPULATION_GROWTH_RATE": "0.76", 
+            "BIRTHS_BY_YOUNG_MOTHERS": "101000",
+            "AVG_LIFE_EXPECTANCY": "73.70", 
+            "FEMALE_TERTIARY_ENROLLMENT": "48383", 
+            "FEMALE_POPULATION": "1649120"
+        }, 
+        "356": {
+            "POPULATION_GROWTH_RATE": "2.24", 
+            "BIRTHS_BY_YOUNG_MOTHERS": "63091000",
+            "AVG_LIFE_EXPECTANCY": "56.26", 
+            "FEMALE_TERTIARY_ENROLLMENT": "1430661", 
+            "FEMALE_POPULATION": "376189390"
+        }, 
+        "578": {
+            "POPULATION_GROWTH_RATE": "0.32", 
+            "BIRTHS_BY_YOUNG_MOTHERS": "86000",
+            "AVG_LIFE_EXPECTANCY": "75.91", 
+            "FEMALE_TERTIARY_ENROLLMENT": "43200", 
+            "FEMALE_POPULATION": "2097640"
+        }, 
+        "231": {
+            "POPULATION_GROWTH_RATE": "2.92", 
+            "BIRTHS_BY_YOUNG_MOTHERS": "3456000",
+            "AVG_LIFE_EXPECTANCY": "43.52", 
+            "FEMALE_TERTIARY_ENROLLMENT": "1761", 
+            "FEMALE_POPULATION": "20478000"
+        }, 
+        "840": {
+            "POPULATION_GROWTH_RATE": "0.99", 
+            "BIRTHS_BY_YOUNG_MOTHERS": "8429000",
+            "AVG_LIFE_EXPECTANCY": "74.33", 
+            "FEMALE_TERTIARY_ENROLLMENT": "6378366", 
+            "FEMALE_POPULATION": "124225350"
+        }, 
+        "682": {
+            "POPULATION_GROWTH_RATE": "5.98", 
+            "BIRTHS_BY_YOUNG_MOTHERS": "931000",
+            "AVG_LIFE_EXPECTANCY": "64.91", 
+            "FEMALE_TERTIARY_ENROLLMENT": "46254", 
+            "FEMALE_POPULATION": "5992800"
+        }, 
+        "450": {
+            "POPULATION_GROWTH_RATE": "2.64", 
+            "BIRTHS_BY_YOUNG_MOTHERS": "906000",
+            "AVG_LIFE_EXPECTANCY": "49.66", 
+            "FEMALE_TERTIARY_ENROLLMENT": "14329", 
+            "FEMALE_POPULATION": "4987700"
+        }, 
+        "400": {
+            "POPULATION_GROWTH_RATE": "3.98", 
+            "BIRTHS_BY_YOUNG_MOTHERS": "182000",
+            "AVG_LIFE_EXPECTANCY": "67.25", 
+            "FEMALE_TERTIARY_ENROLLMENT": "24162", 
+            "FEMALE_POPULATION": "1316390"
+        }, 
+        "392": {
+            "POPULATION_GROWTH_RATE": "0.69", 
+            "BIRTHS_BY_YOUNG_MOTHERS": "1493000",
+            "AVG_LIFE_EXPECTANCY": "76.95", 
+            "FEMALE_TERTIARY_ENROLLMENT": "865094", 
+            "FEMALE_POPULATION": "61044420"
+        }, 
+        "788": {
+            "POPULATION_GROWTH_RATE": "2.61", 
+            "BIRTHS_BY_YOUNG_MOTHERS": "370000",
+            "AVG_LIFE_EXPECTANCY": "64.25", 
+            "FEMALE_TERTIARY_ENROLLMENT": "14967", 
+            "FEMALE_POPULATION": "3572790"
+        }, 
+        "854": {
+            "POPULATION_GROWTH_RATE": "2.49", 
+            "BIRTHS_BY_YOUNG_MOTHERS": "770000",
+            "AVG_LIFE_EXPECTANCY": "48.39", 
+            "FEMALE_TERTIARY_ENROLLMENT": "882", 
+            "FEMALE_POPULATION": "3952260"
+        }, 
+        "504": {
+            "POPULATION_GROWTH_RATE": "2.36", 
+            "BIRTHS_BY_YOUNG_MOTHERS": "1629000",
+            "AVG_LIFE_EXPECTANCY": "59.60", 
+            "FEMALE_TERTIARY_ENROLLMENT": "64522", 
+            "FEMALE_POPULATION": "11169910"
+        }, 
+        "372": {
+            "POPULATION_GROWTH_RATE": "0.67", 
+            "BIRTHS_BY_YOUNG_MOTHERS": "85000",
+            "AVG_LIFE_EXPECTANCY": "73.09", 
+            "FEMALE_TERTIARY_ENROLLMENT": "26427", 
+            "FEMALE_POPULATION": "1766890"
+        }, 
+        "410": {
+            "POPULATION_GROWTH_RATE": "1.57", 
+            "BIRTHS_BY_YOUNG_MOTHERS": "1566000",
+            "AVG_LIFE_EXPECTANCY": "67.40", 
+            "FEMALE_TERTIARY_ENROLLMENT": "448529", 
+            "FEMALE_POPULATION": "20254040"
+        }, 
+        "170": {
+            "POPULATION_GROWTH_RATE": "2.21", 
+            "BIRTHS_BY_YOUNG_MOTHERS": "2042000",
+            "AVG_LIFE_EXPECTANCY": "66.85", 
+            "FEMALE_TERTIARY_ENROLLMENT": "180909", 
+            "FEMALE_POPULATION": "15128260"
+        }
+    }, 
+    "1990": {
+        "192": {
+            "POPULATION_GROWTH_RATE": "0.97", 
+            "BIRTHS_BY_YOUNG_MOTHERS": "578000",
+            "AVG_LIFE_EXPECTANCY": "74.64", 
+            "FEMALE_TERTIARY_ENROLLMENT": "139455", 
+            "FEMALE_POPULATION": "5259420"
+        }, 
+        "800": {
+            "POPULATION_GROWTH_RATE": "3.58", 
+            "BIRTHS_BY_YOUNG_MOTHERS": "1894000",
+            "AVG_LIFE_EXPECTANCY": "48.68", 
+            "FEMALE_TERTIARY_ENROLLMENT": "4055", 
+            "FEMALE_POPULATION": "8808230"
+        }, 
+        "418": {
+            "POPULATION_GROWTH_RATE": "2.87", 
+            "BIRTHS_BY_YOUNG_MOTHERS": "363000",
+            "AVG_LIFE_EXPECTANCY": "52.35", 
+            "FEMALE_TERTIARY_ENROLLMENT": "1531", 
+            "FEMALE_POPULATION": "2121400"
+        }, 
+        "554": {
+            "POPULATION_GROWTH_RATE": "0.78", 
+            "BIRTHS_BY_YOUNG_MOTHERS": "94000",
+            "AVG_LIFE_EXPECTANCY": "74.33", 
+            "FEMALE_TERTIARY_ENROLLMENT": "78639", 
+            "FEMALE_POPULATION": "1724830"
+        }, 
+        "356": {
+            "POPULATION_GROWTH_RATE": "2.11", 
+            "BIRTHS_BY_YOUNG_MOTHERS": "69327000",
+            "AVG_LIFE_EXPECTANCY": "57.83", 
+            "FEMALE_TERTIARY_ENROLLMENT": "1551345", 
+            "FEMALE_POPULATION": "418299690"
+        }, 
+        "578": {
+            "POPULATION_GROWTH_RATE": "0.44", 
+            "BIRTHS_BY_YOUNG_MOTHERS": "89000",
+            "AVG_LIFE_EXPECTANCY": "75.97", 
+            "FEMALE_TERTIARY_ENROLLMENT": "57004", 
+            "FEMALE_POPULATION": "2144640"
+        }, 
+        "231": {
+            "POPULATION_GROWTH_RATE": "3.28", 
+            "BIRTHS_BY_YOUNG_MOTHERS": "4034000",
+            "AVG_LIFE_EXPECTANCY": "46.06", 
+            "FEMALE_TERTIARY_ENROLLMENT": "5029", 
+            "FEMALE_POPULATION": "24081280"
+        }, 
+        "840": {
+            "POPULATION_GROWTH_RATE": "1.02", 
+            "BIRTHS_BY_YOUNG_MOTHERS": "8011000",
+            "AVG_LIFE_EXPECTANCY": "74.87", 
+            "FEMALE_TERTIARY_ENROLLMENT": "6834000", 
+            "FEMALE_POPULATION": "130460740"
+        }, 
+        "682": {
+            "POPULATION_GROWTH_RATE": "3.99", 
+            "BIRTHS_BY_YOUNG_MOTHERS": "964000",
+            "AVG_LIFE_EXPECTANCY": "67.87", 
+            "FEMALE_TERTIARY_ENROLLMENT": "64732", 
+            "FEMALE_POPULATION": "7133290"
+        }, 
+        "450": {
+            "POPULATION_GROWTH_RATE": "2.91", 
+            "BIRTHS_BY_YOUNG_MOTHERS": "1095000",
+            "AVG_LIFE_EXPECTANCY": "49.91", 
+            "FEMALE_TERTIARY_ENROLLMENT": "15878", 
+            "FEMALE_POPULATION": "5781200"
+        }, 
+        "400": {
+            "POPULATION_GROWTH_RATE": "3.76", 
+            "BIRTHS_BY_YOUNG_MOTHERS": "203000",
+            "AVG_LIFE_EXPECTANCY": "69.15", 
+            "FEMALE_TERTIARY_ENROLLMENT": "40773", 
+            "FEMALE_POPULATION": "1594070"
+        }, 
+        "392": {
+            "POPULATION_GROWTH_RATE": "0.37", 
+            "BIRTHS_BY_YOUNG_MOTHERS": "1231000",
+            "AVG_LIFE_EXPECTANCY": "78.51", 
+            "FEMALE_TERTIARY_ENROLLMENT": "1173841", 
+            "FEMALE_POPULATION": "62305860"
+        }, 
+        "788": {
+            "POPULATION_GROWTH_RATE": "2.47", 
+            "BIRTHS_BY_YOUNG_MOTHERS": "338000",
+            "AVG_LIFE_EXPECTANCY": "67.14", 
+            "FEMALE_TERTIARY_ENROLLMENT": "23989", 
+            "FEMALE_POPULATION": "4038220"
+        }, 
+        "854": {
+            "POPULATION_GROWTH_RATE": "2.62", 
+            "BIRTHS_BY_YOUNG_MOTHERS": "843000",
+            "AVG_LIFE_EXPECTANCY": "49.48", 
+            "FEMALE_TERTIARY_ENROLLMENT": "1304", 
+            "FEMALE_POPULATION": "4505340"
+        }, 
+        "504": {
+            "POPULATION_GROWTH_RATE": "2.04", 
+            "BIRTHS_BY_YOUNG_MOTHERS": "1350000",
+            "AVG_LIFE_EXPECTANCY": "63.22", 
+            "FEMALE_TERTIARY_ENROLLMENT": "71850", 
+            "FEMALE_POPULATION": "12362800"
+        }, 
+        "372": {
+            "POPULATION_GROWTH_RATE": "-0.02", 
+            "BIRTHS_BY_YOUNG_MOTHERS": "61000",
+            "AVG_LIFE_EXPECTANCY": "74.11", 
+            "FEMALE_TERTIARY_ENROLLMENT": "47568", 
+            "FEMALE_POPULATION": "1774190"
+        }, 
+        "410": {
+            "POPULATION_GROWTH_RATE": "1.18", 
+            "BIRTHS_BY_YOUNG_MOTHERS": "1079000",
+            "AVG_LIFE_EXPECTANCY": "70.42", 
+            "FEMALE_TERTIARY_ENROLLMENT": "576611", 
+            "FEMALE_POPULATION": "21449200"
+        }, 
+        "170": {
+            "POPULATION_GROWTH_RATE": "2.04", 
+            "BIRTHS_BY_YOUNG_MOTHERS": "2103000",
+            "AVG_LIFE_EXPECTANCY": "67.99", 
+            "FEMALE_TERTIARY_ENROLLMENT": "261237", 
+            "FEMALE_POPULATION": "16783800"
+        }
+    }, 
+    "1995": {
+        "192": {
+            "POPULATION_GROWTH_RATE": "0.61", 
+            "BIRTHS_BY_YOUNG_MOTHERS": "441000",
+            "AVG_LIFE_EXPECTANCY": "74.79", 
+            "FEMALE_TERTIARY_ENROLLMENT": "67134", 
+            "FEMALE_POPULATION": "5428680"
+        }, 
+        "800": {
+            "POPULATION_GROWTH_RATE": "3.36", 
+            "BIRTHS_BY_YOUNG_MOTHERS": "2356000",
+            "AVG_LIFE_EXPECTANCY": "46.48", 
+            "FEMALE_TERTIARY_ENROLLMENT": "9860", 
+            "FEMALE_POPULATION": "10409300"
+        }, 
+        "418": {
+            "POPULATION_GROWTH_RATE": "2.75", 
+            "BIRTHS_BY_YOUNG_MOTHERS": "398000",
+            "AVG_LIFE_EXPECTANCY": "56.17", 
+            "FEMALE_TERTIARY_ENROLLMENT": "1790", 
+            "FEMALE_POPULATION": "2441990"
+        }, 
+        "554": {
+            "POPULATION_GROWTH_RATE": "1.57", 
+            "BIRTHS_BY_YOUNG_MOTHERS": "86000",
+            "AVG_LIFE_EXPECTANCY": "76.28", 
+            "FEMALE_TERTIARY_ENROLLMENT": "90895", 
+            "FEMALE_POPULATION": "1863340"
+        }, 
+        "356": {
+            "POPULATION_GROWTH_RATE": "1.91", 
+            "BIRTHS_BY_YOUNG_MOTHERS": "71863000",
+            "AVG_LIFE_EXPECTANCY": "59.25", 
+            "FEMALE_TERTIARY_ENROLLMENT": "2053083", 
+            "FEMALE_POPULATION": "460267930"
+        }, 
+        "578": {
+            "POPULATION_GROWTH_RATE": "0.56", 
+            "BIRTHS_BY_YOUNG_MOTHERS": "80000",
+            "AVG_LIFE_EXPECTANCY": "77.09", 
+            "FEMALE_TERTIARY_ENROLLMENT": "95030", 
+            "FEMALE_POPULATION": "2204840"
+        }, 
+        "231": {
+            "POPULATION_GROWTH_RATE": "3.43", 
+            "BIRTHS_BY_YOUNG_MOTHERS": "4760000",
+            "AVG_LIFE_EXPECTANCY": "47.92", 
+            "FEMALE_TERTIARY_ENROLLMENT": "8524", 
+            "FEMALE_POPULATION": "28578220"
+        }, 
+        "840": {
+            "POPULATION_GROWTH_RATE": "1.04", 
+            "BIRTHS_BY_YOUNG_MOTHERS": "7935000",
+            "AVG_LIFE_EXPECTANCY": "75.64", 
+            "FEMALE_TERTIARY_ENROLLMENT": "7962765", 
+            "FEMALE_POPULATION": "136928550"
+        }, 
+        "682": {
+            "POPULATION_GROWTH_RATE": "2.72", 
+            "BIRTHS_BY_YOUNG_MOTHERS": "864000",
+            "AVG_LIFE_EXPECTANCY": "69.86", 
+            "FEMALE_TERTIARY_ENROLLMENT": "110331", 
+            "FEMALE_POPULATION": "8190680"
+        }, 
+        "450": {
+            "POPULATION_GROWTH_RATE": "3.06", 
+            "BIRTHS_BY_YOUNG_MOTHERS": "1260000",
+            "AVG_LIFE_EXPECTANCY": "52.66", 
+            "FEMALE_TERTIARY_ENROLLMENT": "12004", 
+            "FEMALE_POPULATION": "6748330"
+        }, 
+        "400": {
+            "POPULATION_GROWTH_RATE": "5.04", 
+            "BIRTHS_BY_YOUNG_MOTHERS": "243000",
+            "AVG_LIFE_EXPECTANCY": "70.43", 
+            "FEMALE_TERTIARY_ENROLLMENT": "45697", 
+            "FEMALE_POPULATION": "2050570"
+        }, 
+        "392": {
+            "POPULATION_GROWTH_RATE": "0.36", 
+            "BIRTHS_BY_YOUNG_MOTHERS": "1072000",
+            "AVG_LIFE_EXPECTANCY": "79.45", 
+            "FEMALE_TERTIARY_ENROLLMENT": "1725199", 
+            "FEMALE_POPULATION": "63472990"
+        }, 
+        "788": {
+            "POPULATION_GROWTH_RATE": "1.98", 
+            "BIRTHS_BY_YOUNG_MOTHERS": "268000",
+            "AVG_LIFE_EXPECTANCY": "70.28", 
+            "FEMALE_TERTIARY_ENROLLMENT": "54278", 
+            "FEMALE_POPULATION": "4458810"
+        }, 
+        "854": {
+            "POPULATION_GROWTH_RATE": "2.71", 
+            "BIRTHS_BY_YOUNG_MOTHERS": "950000",
+            "AVG_LIFE_EXPECTANCY": "49.33", 
+            "FEMALE_TERTIARY_ENROLLMENT": "2022", 
+            "FEMALE_POPULATION": "5147240"
+        }, 
+        "504": {
+            "POPULATION_GROWTH_RATE": "1.68", 
+            "BIRTHS_BY_YOUNG_MOTHERS": "1210000",
+            "AVG_LIFE_EXPECTANCY": "66.00", 
+            "FEMALE_TERTIARY_ENROLLMENT": "121042", 
+            "FEMALE_POPULATION": "13464930"
+        }, 
+        "372": {
+            "POPULATION_GROWTH_RATE": "0.45", 
+            "BIRTHS_BY_YOUNG_MOTHERS": "50000",
+            "AVG_LIFE_EXPECTANCY": "75.30", 
+            "FEMALE_TERTIARY_ENROLLMENT": "69482", 
+            "FEMALE_POPULATION": "1818210"
+        }, 
+        "410": {
+            "POPULATION_GROWTH_RATE": "0.77", 
+            "BIRTHS_BY_YOUNG_MOTHERS": "835000",
+            "AVG_LIFE_EXPECTANCY": "72.88", 
+            "FEMALE_TERTIARY_ENROLLMENT": "674800", 
+            "FEMALE_POPULATION": "22292140"
+        }, 
+        "170": {
+            "POPULATION_GROWTH_RATE": "1.87", 
+            "BIRTHS_BY_YOUNG_MOTHERS": "2189000",
+            "AVG_LIFE_EXPECTANCY": "68.66", 
+            "FEMALE_TERTIARY_ENROLLMENT": "406645", 
+            "FEMALE_POPULATION": "18495410"
+        }
+    }, 
+    "2000": {
+        "192": {
+            "POPULATION_GROWTH_RATE": "0.37", 
+            "BIRTHS_BY_YOUNG_MOTHERS": "354000",
+            "AVG_LIFE_EXPECTANCY": "76.17", 
+            "FEMALE_TERTIARY_ENROLLMENT": "104036", 
+            "FEMALE_POPULATION": "5542950"
+        }, 
+        "800": {
+            "POPULATION_GROWTH_RATE": "3.15", 
+            "BIRTHS_BY_YOUNG_MOTHERS": "2775000",
+            "AVG_LIFE_EXPECTANCY": "46.45", 
+            "FEMALE_TERTIARY_ENROLLMENT": "14005", 
+            "FEMALE_POPULATION": "12155520"
+        }, 
+        "418": {
+            "POPULATION_GROWTH_RATE": "2.02", 
+            "BIRTHS_BY_YOUNG_MOTHERS": "376000",
+            "AVG_LIFE_EXPECTANCY": "59.99", 
+            "FEMALE_TERTIARY_ENROLLMENT": "3880", 
+            "FEMALE_POPULATION": "2701640"
+        }, 
+        "554": {
+            "POPULATION_GROWTH_RATE": "0.97", 
+            "BIRTHS_BY_YOUNG_MOTHERS": "72000",
+            "AVG_LIFE_EXPECTANCY": "77.43", 
+            "FEMALE_TERTIARY_ENROLLMENT": "98733", 
+            "FEMALE_POPULATION": "1964020"
+        }, 
+        "356": {
+            "POPULATION_GROWTH_RATE": "1.73", 
+            "BIRTHS_BY_YOUNG_MOTHERS": "72119000",
+            "AVG_LIFE_EXPECTANCY": "61.15", 
+            "FEMALE_TERTIARY_ENROLLMENT": "3552026", 
+            "FEMALE_POPULATION": "502065160"
+        }, 
+        "578": {
+            "POPULATION_GROWTH_RATE": "0.60", 
+            "BIRTHS_BY_YOUNG_MOTHERS": "61000",
+            "AVG_LIFE_EXPECTANCY": "78.22", 
+            "FEMALE_TERTIARY_ENROLLMENT": "107609", 
+            "FEMALE_POPULATION": "2267950"
+        }, 
+        "231": {
+            "POPULATION_GROWTH_RATE": "2.93", 
+            "BIRTHS_BY_YOUNG_MOTHERS": "5643000",
+            "AVG_LIFE_EXPECTANCY": "50.81", 
+            "FEMALE_TERTIARY_ENROLLMENT": "8702", 
+            "FEMALE_POPULATION": "33058760"
+        }, 
+        "840": {
+            "POPULATION_GROWTH_RATE": "1.20", 
+            "BIRTHS_BY_YOUNG_MOTHERS": "7472000",
+            "AVG_LIFE_EXPECTANCY": "76.42", 
+            "FEMALE_TERTIARY_ENROLLMENT": "7362121", 
+            "FEMALE_POPULATION": "144922520"
+        }, 
+        "682": {
+            "POPULATION_GROWTH_RATE": "1.63", 
+            "BIRTHS_BY_YOUNG_MOTHERS": "760000",
+            "AVG_LIFE_EXPECTANCY": "71.58", 
+            "FEMALE_TERTIARY_ENROLLMENT": "202210", 
+            "FEMALE_POPULATION": "9310810"
+        }, 
+        "450": {
+            "POPULATION_GROWTH_RATE": "3.15", 
+            "BIRTHS_BY_YOUNG_MOTHERS": "1461000",
+            "AVG_LIFE_EXPECTANCY": "56.68", 
+            "FEMALE_TERTIARY_ENROLLMENT": "14482", 
+            "FEMALE_POPULATION": "7905480"
+        }, 
+        "400": {
+            "POPULATION_GROWTH_RATE": "1.97", 
+            "BIRTHS_BY_YOUNG_MOTHERS": "256000",
+            "AVG_LIFE_EXPECTANCY": "71.28", 
+            "FEMALE_TERTIARY_ENROLLMENT": "79582", 
+            "FEMALE_POPULATION": "2284230"
+        }, 
+        "392": {
+            "POPULATION_GROWTH_RATE": "0.20", 
+            "BIRTHS_BY_YOUNG_MOTHERS": "963000",
+            "AVG_LIFE_EXPECTANCY": "80.47", 
+            "FEMALE_TERTIARY_ENROLLMENT": "1789881", 
+            "FEMALE_POPULATION": "64224240"
+        }, 
+        "788": {
+            "POPULATION_GROWTH_RATE": "1.23", 
+            "BIRTHS_BY_YOUNG_MOTHERS": "186000",
+            "AVG_LIFE_EXPECTANCY": "72.40", 
+            "FEMALE_TERTIARY_ENROLLMENT": "76071", 
+            "FEMALE_POPULATION": "4759320"
+        }, 
+        "854": {
+            "POPULATION_GROWTH_RATE": "2.80", 
+            "BIRTHS_BY_YOUNG_MOTHERS": "1103000",
+            "AVG_LIFE_EXPECTANCY": "49.86", 
+            "FEMALE_TERTIARY_ENROLLMENT": "2251", 
+            "FEMALE_POPULATION": "5906290"
+        }, 
+        "504": {
+            "POPULATION_GROWTH_RATE": "1.35", 
+            "BIRTHS_BY_YOUNG_MOTHERS": "1118000",
+            "AVG_LIFE_EXPECTANCY": "67.66", 
+            "FEMALE_TERTIARY_ENROLLMENT": "135641", 
+            "FEMALE_POPULATION": "14455490"
+        }, 
+        "372": {
+            "POPULATION_GROWTH_RATE": "1.04", 
+            "BIRTHS_BY_YOUNG_MOTHERS": "53000",
+            "AVG_LIFE_EXPECTANCY": "75.94", 
+            "FEMALE_TERTIARY_ENROLLMENT": "80900", 
+            "FEMALE_POPULATION": "1913410"
+        }, 
+        "410": {
+            "POPULATION_GROWTH_RATE": "0.58", 
+            "BIRTHS_BY_YOUNG_MOTHERS": "518000",
+            "AVG_LIFE_EXPECTANCY": "74.93", 
+            "FEMALE_TERTIARY_ENROLLMENT": "998297", 
+            "FEMALE_POPULATION": "22913190"
+        }, 
+        "170": {
+            "POPULATION_GROWTH_RATE": "1.74", 
+            "BIRTHS_BY_YOUNG_MOTHERS": "2227000",
+            "AVG_LIFE_EXPECTANCY": "70.31", 
+            "FEMALE_TERTIARY_ENROLLMENT": "509251", 
+            "FEMALE_POPULATION": "20213830"
+        }
+    }, 
+    "2005": {
+        "192": {
+            "POPULATION_GROWTH_RATE": "0.27", 
+            "BIRTHS_BY_YOUNG_MOTHERS": "277000",
+            "AVG_LIFE_EXPECTANCY": "77.16", 
+            "FEMALE_TERTIARY_ENROLLMENT": "549670", 
+            "FEMALE_POPULATION": "5614150"
+        }, 
+        "800": {
+            "POPULATION_GROWTH_RATE": "3.37", 
+            "BIRTHS_BY_YOUNG_MOTHERS": "3205000",
+            "AVG_LIFE_EXPECTANCY": "50.53", 
+            "FEMALE_TERTIARY_ENROLLMENT": "33154", 
+            "FEMALE_POPULATION": "14349500"
+        }, 
+        "418": {
+            "POPULATION_GROWTH_RATE": "1.44", 
+            "BIRTHS_BY_YOUNG_MOTHERS": "354000",
+            "AVG_LIFE_EXPECTANCY": "63.20", 
+            "FEMALE_TERTIARY_ENROLLMENT": "12815", 
+            "FEMALE_POPULATION": "2924990"
+        }, 
+        "554": {
+            "POPULATION_GROWTH_RATE": "1.38", 
+            "BIRTHS_BY_YOUNG_MOTHERS": "66000",
+            "AVG_LIFE_EXPECTANCY": "79.00", 
+            "FEMALE_TERTIARY_ENROLLMENT": "140941", 
+            "FEMALE_POPULATION": "2108820"
+        }, 
+        "356": {
+            "POPULATION_GROWTH_RATE": "1.57", 
+            "BIRTHS_BY_YOUNG_MOTHERS": "71812000",
+            "AVG_LIFE_EXPECTANCY": "63.09", 
+            "FEMALE_TERTIARY_ENROLLMENT": "5129372", 
+            "FEMALE_POPULATION": "543395600"
+        }, 
+        "578": {
+            "POPULATION_GROWTH_RATE": "0.58", 
+            "BIRTHS_BY_YOUNG_MOTHERS": "49000",
+            "AVG_LIFE_EXPECTANCY": "79.22", 
+            "FEMALE_TERTIARY_ENROLLMENT": "129672", 
+            "FEMALE_POPULATION": "2331610"
+        }, 
+        "231": {
+            "POPULATION_GROWTH_RATE": "2.86", 
+            "BIRTHS_BY_YOUNG_MOTHERS": "6055000",
+            "AVG_LIFE_EXPECTANCY": "54.03", 
+            "FEMALE_TERTIARY_ENROLLMENT": "46577", 
+            "FEMALE_POPULATION": "38094550"
+        }, 
+        "840": {
+            "POPULATION_GROWTH_RATE": "0.93", 
+            "BIRTHS_BY_YOUNG_MOTHERS": "7374000",
+            "AVG_LIFE_EXPECTANCY": "77.15", 
+            "FEMALE_TERTIARY_ENROLLMENT": "9409595", 
+            "FEMALE_POPULATION": "151649160"
+        }, 
+        "682": {
+            "POPULATION_GROWTH_RATE": "4.07", 
+            "BIRTHS_BY_YOUNG_MOTHERS": "610000",
+            "AVG_LIFE_EXPECTANCY": "73.13", 
+            "FEMALE_TERTIARY_ENROLLMENT": "305988", 
+            "FEMALE_POPULATION": "10928290"
+        }, 
+        "450": {
+            "POPULATION_GROWTH_RATE": "3.00", 
+            "BIRTHS_BY_YOUNG_MOTHERS": "1576000",
+            "AVG_LIFE_EXPECTANCY": "60.02", 
+            "FEMALE_TERTIARY_ENROLLMENT": "27386", 
+            "FEMALE_POPULATION": "9183330"
+        }, 
+        "400": {
+            "POPULATION_GROWTH_RATE": "1.89", 
+            "BIRTHS_BY_YOUNG_MOTHERS": "246000",
+            "AVG_LIFE_EXPECTANCY": "72.17", 
+            "FEMALE_TERTIARY_ENROLLMENT": "118809", 
+            "FEMALE_POPULATION": "2550050"
+        }, 
+        "392": {
+            "POPULATION_GROWTH_RATE": "0.20", 
+            "BIRTHS_BY_YOUNG_MOTHERS": "839000",
+            "AVG_LIFE_EXPECTANCY": "81.83", 
+            "FEMALE_TERTIARY_ENROLLMENT": "1839049", 
+            "FEMALE_POPULATION": "65023230"
+        }, 
+        "788": {
+            "POPULATION_GROWTH_RATE": "1.02", 
+            "BIRTHS_BY_YOUNG_MOTHERS": "162000",
+            "AVG_LIFE_EXPECTANCY": "73.72", 
+            "FEMALE_TERTIARY_ENROLLMENT": "192574", 
+            "FEMALE_POPULATION": "5036020"
+        }, 
+        "854": {
+            "POPULATION_GROWTH_RATE": "2.90", 
+            "BIRTHS_BY_YOUNG_MOTHERS": "1258000",
+            "AVG_LIFE_EXPECTANCY": "51.61", 
+            "FEMALE_TERTIARY_ENROLLMENT": "10340", 
+            "FEMALE_POPULATION": "6799930"
+        }, 
+        "504": {
+            "POPULATION_GROWTH_RATE": "0.96", 
+            "BIRTHS_BY_YOUNG_MOTHERS": "988000",
+            "AVG_LIFE_EXPECTANCY": "68.67", 
+            "FEMALE_TERTIARY_ENROLLMENT": "175593", 
+            "FEMALE_POPULATION": "15258250"
+        }, 
+        "372": {
+            "POPULATION_GROWTH_RATE": "1.78", 
+            "BIRTHS_BY_YOUNG_MOTHERS": "56000",
+            "AVG_LIFE_EXPECTANCY": "77.62", 
+            "FEMALE_TERTIARY_ENROLLMENT": "101155", 
+            "FEMALE_POPULATION": "2082650"
+        }, 
+        "410": {
+            "POPULATION_GROWTH_RATE": "0.45", 
+            "BIRTHS_BY_YOUNG_MOTHERS": "261000",
+            "AVG_LIFE_EXPECTANCY": "77.37", 
+            "FEMALE_TERTIARY_ENROLLMENT": "1190178", 
+            "FEMALE_POPULATION": "23571930"
+        }, 
+        "170": {
+            "POPULATION_GROWTH_RATE": "1.58", 
+            "BIRTHS_BY_YOUNG_MOTHERS": "2314000",
+            "AVG_LIFE_EXPECTANCY": "71.68", 
+            "FEMALE_TERTIARY_ENROLLMENT": "706910", 
+            "FEMALE_POPULATION": "21907900"
+        }
+    }, 
+    "2010": {
+        "192": {
+            "POPULATION_GROWTH_RATE": "-0.02", 
+            "BIRTHS_BY_YOUNG_MOTHERS": "266000",
+            "AVG_LIFE_EXPECTANCY": "78.27", 
+            "FEMALE_TERTIARY_ENROLLMENT": "404591", 
+            "FEMALE_POPULATION": "5609600"
+        }, 
+        "800": {
+            "POPULATION_GROWTH_RATE": "3.36", 
+            "BIRTHS_BY_YOUNG_MOTHERS": "3608000",
+            "AVG_LIFE_EXPECTANCY": "55.17", 
+            "FEMALE_TERTIARY_ENROLLMENT": "47752", 
+            "FEMALE_POPULATION": "16951640"
+        }, 
+        "418": {
+            "POPULATION_GROWTH_RATE": "1.99", 
+            "BIRTHS_BY_YOUNG_MOTHERS": "433000",
+            "AVG_LIFE_EXPECTANCY": "65.77", 
+            "FEMALE_TERTIARY_ENROLLMENT": "38661", 
+            "FEMALE_POPULATION": "3218520"
+        }, 
+        "554": {
+            "POPULATION_GROWTH_RATE": "1.10", 
+            "BIRTHS_BY_YOUNG_MOTHERS": "80000",
+            "AVG_LIFE_EXPECTANCY": "80.23", 
+            "FEMALE_TERTIARY_ENROLLMENT": "154636", 
+            "FEMALE_POPULATION": "2223280"
+        }, 
+        "356": {
+            "POPULATION_GROWTH_RATE": "1.35", 
+            "BIRTHS_BY_YOUNG_MOTHERS": "67748000",
+            "AVG_LIFE_EXPECTANCY": "64.92", 
+            "FEMALE_TERTIARY_ENROLLMENT": "8296140", 
+            "FEMALE_POPULATION": "581880870"
+        }, 
+        "578": {
+            "POPULATION_GROWTH_RATE": "1.12", 
+            "BIRTHS_BY_YOUNG_MOTHERS": "51000",
+            "AVG_LIFE_EXPECTANCY": "80.60", 
+            "FEMALE_TERTIARY_ENROLLMENT": "136646", 
+            "FEMALE_POPULATION": "2446820"
+        }, 
+        "231": {
+            "POPULATION_GROWTH_RATE": "2.68", 
+            "BIRTHS_BY_YOUNG_MOTHERS": "6088000",
+            "AVG_LIFE_EXPECTANCY": "59.26", 
+            "FEMALE_TERTIARY_ENROLLMENT": "191121", 
+            "FEMALE_POPULATION": "43529680"
+        }, 
+        "840": {
+            "POPULATION_GROWTH_RATE": "0.92", 
+            "BIRTHS_BY_YOUNG_MOTHERS": "7431000",
+            "AVG_LIFE_EXPECTANCY": "78.12", 
+            "FEMALE_TERTIARY_ENROLLMENT": "10432214", 
+            "FEMALE_POPULATION": "158717490"
+        }, 
+        "682": {
+            "POPULATION_GROWTH_RATE": "1.98", 
+            "BIRTHS_BY_YOUNG_MOTHERS": "457000",
+            "AVG_LIFE_EXPECTANCY": "74.28", 
+            "FEMALE_TERTIARY_ENROLLMENT": "473725", 
+            "FEMALE_POPULATION": "11865990"
+        }, 
+        "450": {
+            "POPULATION_GROWTH_RATE": "2.84", 
+            "BIRTHS_BY_YOUNG_MOTHERS": "1714000",
+            "AVG_LIFE_EXPECTANCY": "62.23", 
+            "FEMALE_TERTIARY_ENROLLMENT": "41243", 
+            "FEMALE_POPULATION": "10579700"
+        }, 
+        "400": {
+            "POPULATION_GROWTH_RATE": "4.17", 
+            "BIRTHS_BY_YOUNG_MOTHERS": "256000",
+            "AVG_LIFE_EXPECTANCY": "72.99", 
+            "FEMALE_TERTIARY_ENROLLMENT": "130801", 
+            "FEMALE_POPULATION": "3155400"
+        }, 
+        "392": {
+            "POPULATION_GROWTH_RATE": "0.06", 
+            "BIRTHS_BY_YOUNG_MOTHERS": "723000",
+            "AVG_LIFE_EXPECTANCY": "82.67", 
+            "FEMALE_TERTIARY_ENROLLMENT": "1762413", 
+            "FEMALE_POPULATION": "65317760"
+        }, 
+        "788": {
+            "POPULATION_GROWTH_RATE": "1.12", 
+            "BIRTHS_BY_YOUNG_MOTHERS": "149000",
+            "AVG_LIFE_EXPECTANCY": "74.56", 
+            "FEMALE_TERTIARY_ENROLLMENT": "220613", 
+            "FEMALE_POPULATION": "5350300"
+        }, 
+        "854": {
+            "POPULATION_GROWTH_RATE": "2.93", 
+            "BIRTHS_BY_YOUNG_MOTHERS": "1386000",
+            "AVG_LIFE_EXPECTANCY": "53.97", 
+            "FEMALE_TERTIARY_ENROLLMENT": "13641", 
+            "FEMALE_POPULATION": "7834510"
+        }, 
+        "504": {
+            "POPULATION_GROWTH_RATE": "0.98", 
+            "BIRTHS_BY_YOUNG_MOTHERS": "957000",
+            "AVG_LIFE_EXPECTANCY": "69.66", 
+            "FEMALE_TERTIARY_ENROLLMENT": "189637", 
+            "FEMALE_POPULATION": "16087630"
+        }, 
+        "372": {
+            "POPULATION_GROWTH_RATE": "1.44", 
+            "BIRTHS_BY_YOUNG_MOTHERS": "53000",
+            "AVG_LIFE_EXPECTANCY": "79.57", 
+            "FEMALE_TERTIARY_ENROLLMENT": "96795", 
+            "FEMALE_POPULATION": "2251360"
+        }, 
+        "410": {
+            "POPULATION_GROWTH_RATE": "0.59", 
+            "BIRTHS_BY_YOUNG_MOTHERS": "168000",
+            "AVG_LIFE_EXPECTANCY": "79.97", 
+            "FEMALE_TERTIARY_ENROLLMENT": "1232105", 
+            "FEMALE_POPULATION": "24346240"
+        }, 
+        "170": {
+            "POPULATION_GROWTH_RATE": "1.46", 
+            "BIRTHS_BY_YOUNG_MOTHERS": "2210000",
+            "AVG_LIFE_EXPECTANCY": "72.89", 
+            "FEMALE_TERTIARY_ENROLLMENT": "729684", 
+            "FEMALE_POPULATION": "23591480"
+        }
+    }
+}

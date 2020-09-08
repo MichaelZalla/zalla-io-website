@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html  lang="en-US">
+<head>
+	<!-- Page Metadata -->
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<link rel="shortcut icon" href="">
+	<title>The Great Equalizer - Data Visualization</title>
+	<meta name="author" content="Michael Zalla">
+	<meta name="description" content="">
+	<!-- Stylesheets -->
+	<link rel="stylesheet" type="text/css" href="styles/global.css">
+	<!-- Libraries & Dependencies -->
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+
+	<script src="js/lib/Slideshow.js"></script>
+	<script src="js/lib/RevealingMenu.js"></script>
+	<script src="js/lib/Timeline.js"></script>
+	<script src="js/lib/ScatterPlot.js"></script>
+	<!-- Scripts -->
+	<script src="js/utils.js"></script>
+	<script src="js/load_data.js"></script>
+	<script src="js/slide_navigation.js"></script>
+	<script src="js/revealing_menus.js"></script>
+
+	<script>
+		//Ignore Chrome 'feature' remembering previous scroll position
+		document.location = "#";
+		$(document).ready(function() {
+			//Auto-scroll the user past the top content to the slide
+			setTimeout(function() {
+				var baseline_height = 12;
+				$('body').animate({
+					'scrollTop': (baseline_height * 12) + 'px'
+				}, 500);
+			}, 550);
+		});
+	</script>
+
+</head>
+<body>
+
+	<!-- Fullpage background -->
+	<div class="bg-full-page"></div>
+
+	<!-- Aqua green page rule -->
+	<div class="top-rule"></div>
+	
+	<!-- Fixed navigation buttons -->
+	<div class="circle-grey-4 navigation-left" id="nav_trigger_prev">
+		<img src="svg/arrow-white-1.svg" type="image/svg+xml">
+	</div>
+	<div class="circle-grey-4 navigation-right" id="nav_trigger_next">
+		<img src="svg/arrow-white-1.svg" type="image/svg+xml">
+	</div>
+	
+	<!-- Top Content -->
+	<div class="top">
+		<div class="left">
+			<span class="label-medium aqua-green-2">michael zalla</span>
+		</div>
+		<div class="right">
+			<span class="quote grey-2">We believe that education is the <em>great equalizer</em>, and that if people are provided with skills and knowledge, they can improve their lives ...</span>
+			<span class="attribution">tim cook</span>
+		</div>
+	</div><!--.top-->	
+
+	<!-- Project Content -->
+	<div class="slides-wrapper">
+		
+		<!-- Project Overview -->
+		
+		<div class="slide" id="overview">
+			<div class="slide-content">
+				<span class="heading">ed&sdot;u&sdot;ca&sdot;tion:</span>
+				<span class="title">great equalizer</span>
+				<span class="horizontal-rule"></span>
+				<span class="intro">Today, there are nearly 150 countries* that are still considered to be <em>underdeveloped</em> or <em>developing</em>, in which citizens experience a lower quality of life as a direct result of fewer economic and educational opportunities. Indicators for categorizing such countries include agriculture, technology, education, and healthcare.</span>
+				<div class="column">
+					<p><span class="copy-normal">In developing (or third world) countries, the prevalence of (a) high birth rates, (b) low age averages for childbearing, and (c) shorter lifespans can be associated with low living standards, low educational levels and low social status for women.</span></p>
+					<p><span class="copy-normal">The following interactive visualization harnesses existing data describing global trends in population growth, lifespan, education, and literacy, in the hopes of drawing visible and meaningful correlations between these development factors. Specifically, they are focused on exploring </span>
+					   <span class="copy-italics">to what degree increased educational opportunities for women correlate with later childbearing, fewer children, and increased life expectancies for family members.</span></p>
+					<p><span class="copy-normal">The visualizations display data collected from a mix of what the United Nations considers most developed, developing, and least developed countries. Data was publically provided by the United Nations Department of Economic and Social Affairs (<a href="http://www.un.org/en/development/desa/population/">esa.un.org</a>), as well as by the UNESCO Institute for Statistics (<a href="http://www.uis.unesco.org/Pages/default.aspx">uis.unesco.org</a>) Data Centre.</span></p>
+					<span class="footnote">According to the International Monetary Fund’s 2012 World Economic Outlook Report</span>
+				</div>
+			</div>
+		</div>
+		
+		<!-- Visualizations -->
+		<div class="slide" id="visualizations">
+			<div class="slide-content">
+				
+				<span class="heading">Exploring global trends &amp; female education</span>
+				<span class="horizontal-rule"></span>
+
+				<div class="left">
+					
+					<!-- Visualization selector -->
+					<div class="visualizations-selector-wrapper">
+						<div class="revealing-menu visualizations-selector-menu">
+							<div class="rev-menu-item">
+								<span id="vs_menu_trigger_growth_rate" class="rev-menu-trigger label-large">population growth rate</span>
+								<div class="rev-menu-content">
+									<span class="copy-normal grey-2">Net change in a country's population relative to its population from the previous year. A high population growth rate can indicate serious socioeconomic obstacles such as insufficient sexual education and access to effective contraceptives.</span></div>
+							</div>
+							<div class="rev-menu-item">
+								<span id="vs_menu_trigger_young_mothers_percentage" class="rev-menu-trigger label-large">percentage of early births</span>
+								<div class="rev-menu-content">
+									<span class="copy-normal grey-2">Percentage of women who first give birth between the ages of 15 and 24. As a nation's level of education and female employment rises, so will the average maternal age at first birth.</span></div>
+							</div>
+							<div class="rev-menu-item">
+								<span id="vs_menu_trigger_life_expectancy" class="rev-menu-trigger label-large">average life expectancy</span>
+								<div class="rev-menu-content">
+									<span class="copy-normal grey-2">Exepected average lifetime of a citizen born in that year. Countries that suffer from famine, war, or poor health exhibit lower expectancies.</span></div>
+							</div>
+						</div>
+					</div>
+					
+					<!-- SVG canvas -->
+					<div class="canvas-container">
+						<div class="year-info">
+							<span id="year-info-value">1980</span>
+						</div>
+						<div class="node-info">
+							<!-- Country (node) info updated here -->
+							<span class="node-info-name">null</span>
+							<span class="node-info-values">
+								<span id="node-info-value-x">null</span>
+								<span id="node-info-value-y">null</span>
+							</span>
+						</div>
+						<!-- SVG canvas is appended here -->
+					</div>
+					
+					<!-- Horizontal axis label -->
+					<div class="horizontal-axis-wrapper">
+						<span class="axis-medium">Percentage of Females Enrolled in Tertiary Education Programs</span>
+					</div>
+					
+					<!-- Vertical axis label -->
+					<div class="vertical-axis-wrapper">
+						<span class="axis-medium">null</span>
+					</div>
+					
+					<!-- Interactive timeline -->
+					<div class="timeline-wrapper">
+						<div class="timeline-arrow prev circle-grey-4">
+							<img src="svg/arrow-white-1.svg" type="image/svg+xml">
+						</div>
+						<div class="timeline-arrow next circle-grey-4">
+							<img src="svg/arrow-white-1.svg" type="image/svg+xml">
+						</div>
+						<div class="timeline">
+							<ul class="timeline-year-list">
+								<!-- Timeline years are appended here -->
+							</ul>
+						</div>
+					</div>
+
+				</div>
+
+				<div class="right">
+					<!-- Country selection -->
+					<span class="label-large">Country Selection</span>
+					<div class="country-selection-wrapper">
+						<ul class="country-selection-list">
+							<!-- Country toggles are appended here -->
+						</ul>
+					</div>
+					<div class="country-current-hover">
+						<span class="label-medium">&nbsp;</span>
+					</div>
+					<!-- Provided selections -->
+					<div class="provided-selections-wrapper">
+						<div class="revealing-menu provided-selections-menu">
+							<div class="rev-menu-item">
+								<span class="rev-menu-trigger label-medium" id="ps_menu_trigger_all">all</span>
+							</div>
+							<div class="rev-menu-item">
+								<span id="ps_menu_trigger_developed" class="rev-menu-trigger label-medium">developed</span>
+							</div>
+							<div class="rev-menu-item">
+								<span id="ps_menu_trigger_developing" class="rev-menu-trigger label-medium">developing</span>
+							</div>
+							<div class="rev-menu-item">
+								<span id="ps_menu_trigger_underdeveloped" class="rev-menu-trigger label-medium">underdeveloped</span>
+							</div>
+						</div>
+					</div>
+				</div>				
+
+				<div class="clearfix" style="padding-bottom: 12px;"></div>
+
+				<div class="left">
+
+				</div>
+
+			</div>
+		</div>
+
+	</div>
+
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html ng-app="tagApp">
+<head>
+	<!-- Page Metadata -->
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<meta name="author" content="Michael Zalla">
+	<meta name="description" content="All for One, One for All – The Tag Network">
+	<!-- Stylesheets -->
+	<link rel="stylesheet" type="text/css" href="./common/styles/compiled/styles.css">
+	<!-- Libraries & Dependencies -->
+	<script src="./common/scripts/vendor/moment.min.js"></script>
+	<script src="./common/scripts/vendor/jquery-1.10.2.min.js"></script>
+	<script src="./common/scripts/vendor/angular-1.2.3/angular.min.js"></script>
+	<script src="./common/scripts/vendor/angular-1.2.3/angular-route.min.js"></script>
+	<script src="./common/scripts/vendor/angular-1.2.3/angular-sanitize.min.js"></script>
+	<!-- Scripts -->
+	<script src="./app.js"></script>
+	<!--<script src="./common/scripts/masthead-parallax.js"></script>-->
+</head>
+<body>
+	
+	<div class="main" ng-controller="AppCtrl">
+			
+		<!-- Site Header -->
+		
+		<header class="header" ng-controller="HeaderCtrl">
+			<div class="header-logo left">
+				<a href="./#home"><img src="./common/images/global/tag-logo.svg" type="image/svg+xml" class="svg-logo"></a>
+			</div>
+			<ul class="header-navigation right" ng-switch="state.activeSession">
+				<li class="navigation-item login" ng-switch-when="false">
+					<div class="login-wrapper">
+						<span class="label small">Email</span>
+							<input id="login-email-field" class="text-field" type="email" autocomplete>
+						<span class="label small">Password</span>
+							<input id="login-password-field" class="text-field" type="password" autocomplete>
+						<button id="login-submit" ng-click="login()"><span class="label small">log in</span></button>
+					</div>
+				</li>
+				<li class="navigation-item search" ng-switch-when="true">
+					<div class="searchbar-wrapper">
+						<div class="search-icon">
+							<img src="./common/images/global/search-icon.svg" type="image/svg+xml">
+						</div>
+						<input class="text-field" type="text" placeholder="Search for players & teams ...">
+					</div>
+					<button id="search-submit" ng-click=""><span class="label small">search</span></button>
+				</li>
+			</ul>
+		</header>
+		
+		<!-- User Session Drawer -->
+		<div ng-switch="state.activeSession">
+			<section class="session-drawer" ng-switch-when="true" animate-bands>
+				<div class="user-info left">
+					<div class="user-info-avatar">
+						<a ng-href="./#/players/{{user.id}}"><img ng-src="./common/images/players/{{user.id}}/player-avatar.png"></a>
+					</div>
+					<div class="user-info-name">
+						<a ng-href="./#/teams/{{teams[user.primary_team].id}}"><span>{{teams[user.primary_team].name}}</span></a>
+						<a ng-href="./#/players/{{user.id}}"><span>{{user.name}}</span></a>
+					</div>
+				</div>
+				<ul class="user-navigation right">
+					<li class="navigation-item"><a href="./#players/{{user.id}}"><span>profile</span></a></li>
+					<li class="navigation-item"><a href="./#teams"><span>teams</span></a></li>
+					<li class="navigation-item"><a href="./#schedule"><span>schedule</span></a></li>
+					<li class="navigation-item"><span>settings</span></li>
+					<li class="navigation-item" ng-click="logout()"><!--<a href="./#">--><span>log out</span><!--</a>--></li>
+				</ul>
+			</section>
+		</div>
+		
+		<div class="view-content" ng-view></div>
+
+		<!-- Site Footer -->
+		<footer class="footer" id="contact">
+			<div class="footer-copyright left">
+				<a href="./#"><span class="label small">the tag network – copyright 2013</span></a>
+			</div>
+			<ul class="footer-navigation right">
+				<li class="navigation-item"><a href="./#"><span class="label small">about</span></a></li>
+				<li class="navigation-item"><a href="./#"><span class="label small">terms</span></a></li>
+				<li class="navigation-item"><a href="./#"><span class="label small">privacy</span></a></li>
+				<li class="navigation-item"><a href="./#"><span class="label small">help</span></a></li>
+			</ul>
+		</footer>
+
+	</div>
+
+</body>
+</html>
+

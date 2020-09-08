@@ -1,0 +1,52 @@
+<!-- Team Masthead -->
+<section class="team-masthead masthead">
+	<div class="team-emblem"><img ng-src="./{{team.avatar}}"></div>
+	<div class="team-info">
+		<span class="info-name">{{team.name}}</span>
+		<div class="team-bounty">
+			<div class="bounty"><span>{{team.bounty}}</span></div>
+		</div>
+	</div>
+</section>
+
+<!-- Team Roster -->
+<section class="team-roster" resize-to-match-history>
+	<!-- Section Title -->
+	<div class="section-titlebar"><span class="section-title left">team roster</span></div>
+	<!-- Team Member List -->
+	<ul class="team-member-list">
+		<li class="team-member" ng-repeat="player_id in team.roster">
+			<a href="./#/players/{{filter(players, player_id).id}}">
+				<img class="team-member-avatar" ng-src="./common/images/players/{{player_id}}/player-avatar.png">
+				<span class="team-member-name">{{filter(players, player_id).name}}</span>
+			</a>
+		</li>
+	</ul>
+</section>
+
+<!-- Team Match History -->
+<section class="team-match-history match-history" resize-to-match-history>
+	<!-- Section Title -->
+	<div class="section-titlebar"><span class="section-title left">recent match history</span></div>
+	<!-- Match History List -->
+	<ul class="vertical-list match-history-list">
+		<li class="match" ng-class="getMatchResult(match)" ng-repeat="match in getMatchesByTeam() | orderBy:getMatchDate:true | limitTo: 20">
+			<div class="left">
+				<div class="timeline">
+					<span class="label small">{{getMatchDate(match).getMonth()+1}}/{{getMatchDate(match).getDate()}}</span>
+				</div>
+				<div class="versus">
+					<a ng-href="./#/teams/{{getTeamOrderByPlayer(match)[0].id}}">
+						<img ng-src="./{{getTeamOrderByPlayer(match)[0].avatar}}">
+					</a>
+					<span class="label small">{{getMatchResult(match).substr(0,1)}}</span>
+					<a ng-href="./#/teams/{{getTeamOrderByPlayer(match)[1].id}}">
+						<img ng-src="./{{getTeamOrderByPlayer(match)[1].avatar}}">
+					</a>
+				</div>
+				<span class="message">{{getMatchSummary(match)}}</span>
+			</div>
+			<div class="right"><span class="bounty-adjustment">{{match.bounty}}</span></div>
+		</li>
+	</ul>
+</section>

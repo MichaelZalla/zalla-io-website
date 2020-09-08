@@ -1,0 +1,35 @@
+[
+	{
+		"id": 0,
+		"name": "Mythic",
+		"bounty": 430,
+		"avatar": "./common/images/teams/mythic/team-avatar.png",
+		"masthead": "./common/images/teams/mythic/team-masthead.png",
+		"roster": [0,3,4,7]
+	},
+	{
+		"id": 1,
+		"name": "Natus Vincere",
+		"bounty": 580,
+		"avatar": "./common/images/teams/natus-vincere/team-avatar.png",
+		"masthead": "./common/images/teams/natus-vincere/team-masthead.png",
+		"roster": [0,1,4,5]
+	},
+	{
+		"id": 2,
+		"name": "Ninjas In Pajamas",
+		"bounty": 1020,
+		"avatar": "./common/images/teams/ninjas-in-pajamas/team-avatar.png",
+		"masthead": "./common/images/teams/ninjas-in-pajamas/team-masthead.png",
+		"roster": [1,2,5,6]
+	},
+	{
+		"id": 3,
+		"name": "SoloMid",
+		"bounty": 860,
+		"avatar": "./common/images/teams/solomid/team-avatar.png",
+		"masthead": "./common/images/teams/solomid/team-masthead.png",
+		"roster": [2,3,6,7]
+	}
+]
+

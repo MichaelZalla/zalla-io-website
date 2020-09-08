@@ -1,0 +1,20 @@
+
+<!-- Each card may contain multiple, transitionable views -->
+<ul class="result-card-views" background="'./images/works/' + result.key + '/thumbnail.png'">
+	<li class="result-card-view info" ng-class="{ active: (currentView == 'info') }" ng-click="redirectToExhibit(result)">
+
+		<span class="result-title heading">{{ result.title }}</span>
+
+		<span class="result-district bottom label">{{ result.district }}</span>
+
+	</li>
+	<li class="result-card-view map" work="result" map-view map-width="392" map-height="392" map-zoom="18" map-link="1" ng-class="{ active: (currentView == 'map') }">
+		<span class="bottom">
+			<span class="result-location label highlight">{{ result.location.split(',')[0] }}</span>
+		</span>
+	</li>
+</ul>
+
+<!-- Double pins for position-opacity transition -->
+<img class="result-card-view-toggle light" ng-class="{ visible: (currentView == 'info') }" src="./images/icons/pin-light.svg" ng-click="toggleView()">
+<img class="result-card-view-toggle dark" ng-class="{ visible: (currentView == 'map') }" src="./images/icons/pin-dark.svg" ng-click="toggleView()">

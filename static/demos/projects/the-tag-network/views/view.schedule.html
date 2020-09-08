@@ -1,0 +1,123 @@
+<!-- Team Filters -->
+<section class="team-filters">
+	<!-- Section Title -->
+	<div class="section-titlebar"><span class="section-title left">team filters</span></div>
+	<!-- Team Filter List -->
+	<ul class="vertical-list team-filters-list">
+		<li class="team-filter" ng-repeat="team_id in user.teams"
+			ng-click="toggleVisibility(team_id)"
+			ng-class="{ 'primary': team_id == user.primary_team,
+					    'active': teamIsVisible(team_id) }">
+			<div class="team-label">
+				<img ng-src="./{{filter(teams, team_id).avatar}}">
+				<span class="team-name">{{filter(teams, team_id).name}}</span>
+			</div>
+			<div class="team-roster">
+				<ul>
+					<li ng-repeat="player_id in filter(teams, team_id).roster">
+						<a href="./#/players/{{player_id}}" class="team-member">
+							<img ng-src="./common/images/players/{{player_id}}/player-avatar.png">
+						</a>
+					</li>
+				</ul>
+			</div>
+		</li>
+	</ul>
+	<!-- Filter Count -->
+	<div class="team-filters-count">
+		<span>{{visibleTeams.length}} of {{user.teams.length}}</span>
+	</div>
+</section>
+
+<!-- Match Schedule -->
+<section class="match-schedule">
+	<!-- Section Title -->
+	<div class="section-titlebar">
+		<span class="section-title left">match schedule</span>
+	</div>
+	<!-- Match Calendar -->
+	<div class="match-calendar">
+		<div class="calendar-wrapper">
+			<!-- Calendar Day List -->
+			<ul class="calendar-day-list">
+				<li class="calendar-day" ng-repeat="weekday in week">
+					<div class="weekday-label">
+						<span class="label small">{{getLabelByWeekday(weekday)}}</span>
+					</div>
+					<ul class="weekday-match-list">
+						<li class="weekday-match" ng-repeat="match in filterMatchesByTime(getMatchesByDate(weekday))"
+						    ng-click="select(match)" ng-class="{ 'active': match.id == selected_match.id,
+						    									 'visible': matchIsVisible(match),
+						    									 'past': match.hasOwnProperty('winner') }">
+							<div class="timestamp"><span class="time">{{  getHours(getMatchDate(match)) + ":" + getMinutes(getMatchDate(match)) }}</span></div>
+							<div class="opponents">
+								<img class="team-avatar" ng-src="./{{filter(teams, match.offered_by).avatar}}">
+								<span clrass="label small">vs</span>
+								<img class="team-avatar" ng-src="./{{filter(teams, match.offered_to).avatar}}">
+							</div>
+						</li>
+					</ul>
+					<div class="no-matches" ng-show="getMatchesByDate(weekday).length == 0">
+						<span>No matches scheduled.</span>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<div class="selected-date-status-bar" ng-show="visibleTeams.length > 0 && selected_match != null">
+			<span class="selected-date label large">{{getMatchDateLabel(selected_match)}}</span>
+			<span class="match-count label large">{{getMatchesByDate(selected_match.time.split('T')[0]).length}}</span>
+		</div>
+	</div>
+	<div class="match-details" ng-show="visibleTeams.length > 0 && selected_match != null" ng-style="{ 'background-image': selected_match_background }">
+		<div class="left">
+			<span class="label small team-label">team roster</span>
+			<ul class="team-roster">
+				<li class="team-member" ng-repeat="player_id in filter(teams, selected_match.offered_by).roster">
+					<a ng-href="./#/players/{{player_id}}">
+						<img class="avatar" ng-src="./common/images/players/{{player_id}}/player-avatar.png">
+						<span>{{filter(players, player_id).name}}</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div class="right">
+			<span class="label small team-label">team roster</span>
+			<ul class="team-roster">
+				<li class="team-member" ng-repeat="player_id in filter(teams, selected_match.offered_to).roster">
+					<a ng-href="./#/players/{{player_id}}">
+						<span>{{filter(players, player_id).name}}</span>
+						<img class="avatar" ng-src="./common/images/players/{{player_id}}/player-avatar.png">
+					</a>
+				</li>
+			</ul>			
+		</div>
+		<div class="middle">
+			<div class="versus">
+				<div class="offered-by">
+					<a ng-href="./#/teams/{{selected_match.offered_by}}">
+						<span>{{filter(teams, selected_match.offered_by).name}}</span>
+						<img ng-src="./{{filter(teams, selected_match.offered_by).avatar}}">
+					</a>
+				</div>
+				<div class="bounty"><span>{{selected_match.bounty}}</span></div>
+				<div class="offered-to">
+					<a ng-href="./#/teams/{{match.offered_to}}">
+						<img ng-src="./{{filter(teams, selected_match.offered_to).avatar}}">
+						<span>{{filter(teams, selected_match.offered_to).name}}</span>
+					</a>
+				</div>
+			</div>
+			<div class="match-info">
+				<span class="match-title">{{selected_match.match_title}}</span>
+				<div class="title-wrapper">
+					<img ng-src="./common/images/titles/{{selected_match.title}}.png">
+					<span>{{filter(titles, selected_match.title).name}}</span>
+				</div>
+				<div class="clearfix"></div>
+				<button class="report-results"><span class="label large">report match results</span></button>
+			</div>
+		</div>
+	
+	</div>
+</section>
+

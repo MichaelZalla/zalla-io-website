@@ -1,0 +1,92 @@
+<!-- Player Masthead -->
+<section class="player-masthead masthead">
+	
+	<div class="masthead-top">
+		<div class="player-avatar"><img ng-src="./common/images/players/{{player.id}}/player-avatar.png"></div>
+		<div class="player-info">
+			<a ng-href="./#/teams/{{player.primary_team}}">
+				<span class="info-primary-team">{{filter(teams, player.primary_team).name}}</span>
+			</a>
+			<div class="info-name">
+				<span>{{player.name}}</span>
+				<div class="bounty"><span>{{player.bounty}}</span></div>
+			</div>
+			<span class="info-real-name">{{player.real_name}}</span>
+			<span class="info-location">{{player.location}}</span>
+
+		</div>
+	</div>
+	<div class="masthead-bottom">
+		<div class="player-titles">
+			<span class="label large">looking to play matches in</span>
+			<ul class="titles-list">
+				<li class="title" ng-repeat="title_id in player.titles">
+					<a href="./#"><img ng-src="./common/images/titles/{{filter(titles, title_id).id}}.png"></a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- Player Status -->
+	<section class="player-status" ng-class="getMatchResult(match)" ng-repeat="match in getMatchesByPlayer() | orderBy:getMatchDate:true | limitTo: 1">
+		<div class="left">
+			<div class="bounty-adjustment">{{match.bounty}}</div>
+			<span class="message">{{getMatchSummary(match)}}</span>
+		</div>
+		<div class="right status-timestamp"><span>{{getDateAgeByDays(match.time)}} {{(getDateAgeByDays(match.time) > 1) ? 'days' : 'day'}} ago</span></div>
+	</section>
+</section>
+
+<!-- Player Team Associations -->
+<section class="player-team-associations">
+	<!-- Section Title -->
+	<div class="section-titlebar"><span class="section-title left">team associations</span></div>
+	<!-- Teams List -->
+	<ul class="vertical-list teams-list">
+		<li class="team-item" ng-class="{ 'primary': team_id == player.primary_team}" ng-repeat="team_id in player.teams">
+			<div class="left team-avatar">
+				<a href="./#/teams/{{team_id}}">
+					<img ng-src="./{{teams[team_id].avatar}}">
+					<span class="team-name">{{teams[team_id].name}}</span>
+				</a>
+			</div>
+			<div class="right team-roster">
+				<span class="label small">team roster</span>
+				<ul class="team-members-list">
+					<li ng-repeat="player_id in filter(teams, team_id).roster" class="team-member">
+						<a href="./#/players/{{player_id}}">
+							<img ng-src="./common/images/players/{{player_id}}/player-avatar.png">
+						</a>
+					</li>
+				</ul>
+			</div>
+		</li>
+	</ul>
+</section>
+
+<!-- Player Match History -->
+<section class="player-match-history match-history">
+	<!-- Section Title -->
+	<div class="section-titlebar"><span class="section-title left">recent match history</span></div>
+	<!-- Match History List -->
+	<ul class="vertical-list match-history-list">
+		<li class="match" ng-class="getMatchResult(match)" ng-repeat="match in getMatchesByPlayer() | orderBy:getMatchDate:true | limitTo: 20">
+			<div class="left">
+				<div class="timeline">
+					<span class="label small">{{getMatchDate(match).getMonth()+1}}/{{getMatchDate(match).getDate()}}</span>
+				</div>
+				<div class="versus">
+					<a ng-href="./#/teams/{{getTeamOrderByPlayer(match)[0].id}}">
+						<img ng-src="./{{getTeamOrderByPlayer(match)[0].avatar}}">
+					</a>
+					<span class="label small">{{getMatchResult(match).substr(0,1)}}</span>
+					<a ng-href="./#/teams/{{getTeamOrderByPlayer(match)[1].id}}">
+						<img ng-src="./{{getTeamOrderByPlayer(match)[1].avatar}}">
+					</a>
+				</div>
+				<span class="message">{{getMatchSummary(match)}}</span>
+			</div>
+			<div class="right"><span class="bounty-adjustment">{{match.bounty}}</span></div>
+		</li>
+	</ul>
+</section>
+

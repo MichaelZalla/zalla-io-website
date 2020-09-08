@@ -1,0 +1,1340 @@
+/**
+ * @file packaged.scss
+ * @author Michael Zalla
+ * @date 11-25-2013
+ *
+ * Combines all required mixins, common classes, and component styles.
+ */
+/* Modules */
+/* |- */
+/**
+ * @file _config.scss
+ * @author Michael Zalla
+ * @date 11-24-2013
+ *
+ * Sets up environment variables for controlling the layouts of Tag Network pages.
+ */
+/* Component Variables */
+/* |- */
+/**
+ * @file _colors.scss
+ * @author Michael Zalla
+ * @date 11-24-2013
+ *
+ * Contains common color palette information for Tag Network pages.
+ */
+/* |-  Mixins */
+/*     |- */
+/*     |- */
+/*     |- */
+/*     |- */
+/*     |- */
+/* Partials */
+/* |- Global Partials */
+/*    |- */
+/**
+ * @file _reset.scss
+ * @author Michael Zalla
+ * @date 11-24-2013
+ *
+ * Removes common default styles to block and inline elements.
+ */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  vertical-align: top; }
+
+html, body {
+  width: 100%;
+  height: 100%; }
+
+body {
+  position: relative;
+  min-width: 1118px;
+  min-height: 152px;
+  background-color: #eeeeee; }
+
+html, body, div, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, p, blockquote, fieldset, input, article, aside, footer, header, nav, section {
+  margin: 0px 0px;
+  padding: 0px 0px; }
+
+h1, h2, h3, h4, h5, h6, p, span, pre, code {
+  font-weight: normal;
+  font-style: normal;
+  font-size: 1em;
+  color: #000000; }
+
+p {
+  display: block; }
+
+span {
+  display: inline-block; }
+
+a {
+  text-decoration: none; }
+
+article, aside, footer, header, nav, section {
+  display: block; }
+
+ol, ul {
+  list-style-type: none; }
+
+li {
+  display: inline-block; }
+
+input, select, textarea, button {
+  border: none; }
+input:hover, input:focus, select:hover, select:focus, textarea:hover, textarea:focus, button:hover, button:focus {
+  outline: none; }
+
+button {
+  display: inline;
+  border: none;
+  background: none;
+  cursor: pointer; }
+
+.left {
+  float: left; }
+
+.right {
+  float: right; }
+
+/*    |- */
+/**
+ * @file _fonts.scss
+ * @author Michael Zalla
+ * @date 11-24-2013
+ *
+ * Imports fonts used on Tag Network pages.
+ */
+/* Akzidenz-Grotesk */
+@font-face {
+  /* Akzidenz-Grotesk Condensed - Regular */
+  font-family: "Akzidenz-Grotesk Condensed";
+  src: url("../../fonts/akzidenz-grotesk/AkzidenzGrotesk-LightCond.otf");
+  font-style: normal;
+  font-weight: 400; }
+
+@font-face {
+  /* Akzidenz-Grotesk Condensed - Bold */
+  font-family: "Akzidenz-Grotesk Condensed";
+  src: url("../../fonts/akzidenz-grotesk/AkzidenzGrotesk-BoldCond.otf");
+  font-style: bold;
+  font-weight: 700; }
+
+/* Gotham */
+@font-face {
+  /* Gotham - Bold */
+  font-family: "Gotham";
+  src: url("../../fonts/gotham/Gotham-Bold.svg") format("svg"), url("../../fonts/gotham/Gotham-Bold.otf");
+  font-style: bold;
+  font-weight: 700; }
+
+/* Univers LT Std */
+@font-face {
+  /* Univers LT Std - 55 Roman */
+  font-family: "Univers LT Std Regular";
+  src: url("../../fonts/univers-lt-std/UniversLTStd.otf");
+  font-style: normal;
+  font-weight: 400; }
+
+@font-face {
+  /* Univers LT Std - 65 Bold */
+  font-family: "Univers LT Std Regular";
+  src: url("../../fonts/univers-lt-std/UniversLTStd-Bold.otf");
+  font-style: bold;
+  font-weight: 700; }
+
+@font-face {
+  /* Univers LT Std - 55 Oblique */
+  font-family: "Univers LT Std Regular";
+  src: url("../../fonts/univers-lt-std/UniversLTStd-Obl.otf");
+  font-style: italic;
+  font-weight: 400; }
+
+@font-face {
+  /* Univers LT Std - 57 Condensed */
+  font-family: "Univers LT Std Condensed";
+  src: url("../../fonts/univers-lt-std/UniversLTStd-LightCn.otf");
+  font-style: normal;
+  font-weight: 400; }
+
+/*    |- */
+/**
+ * @file _typography.scss
+ * @author Michael Zalla
+ * @date 11-24-2013
+ *
+ * Specifies some common typographic styles for text elements on Tag Network pages.
+ */
+* {
+  -webkit-font-smoothing: subpixel-antialiased;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  backface-visibility: hidden; }
+
+.copy {
+  font-size: 12.5px;
+  font-family: "Univers LT Std Regular", sans-serif;
+  font-style: normal;
+  font-weight: 400; }
+
+.italic {
+  font-style: italic; }
+
+.label {
+  text-transform: uppercase; }
+.label.small {
+  font-size: 10.5px;
+  font-family: "Gotham", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: 0.165em; }
+.label.large {
+  font-size: 12.5px;
+  font-family: "Gotham", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: 0.05em; }
+
+/*    |- Components (Persistent) */
+/*        |- */
+/**
+ * @file _header.scss
+ * @author Michael Zalla
+ * @date 11-24-2013
+ *
+ * Contains styles for the Tag Network's persistent site header and session drawer.
+ */
+.header, .session-drawer {
+  width: 100%;
+  padding-left: 28px;
+  padding-right: 36px; }
+
+.header {
+  height: 40px;
+  background-color: #d03e30; }
+.header .header-logo .svg-logo {
+  margin-top: -9px;
+  margin-left: 2px;
+  width: 56px;
+  height: 56px;
+  position: absolute;
+  z-index: 999; }
+.header .header-navigation li.navigation-item {
+  margin-top: 7px;
+  /* Site login item */
+  /* Site search item */ }
+.header .header-navigation li.navigation-item * {
+  display: inline-block;
+  vertical-align: middle; }
+.header .header-navigation li.navigation-item:not(:last-child) {
+  margin-right: 14px; }
+.header .header-navigation li.navigation-item .label {
+  color: #782020; }
+.header .header-navigation li.navigation-item input.text-field {
+  margin-left: -5px;
+  padding-top: 2px;
+  padding-left: 4px;
+  width: 166px;
+  font-size: 10px;
+  font-family: "Gotham", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal !important;
+  color: #343a3c;
+  height: 20px;
+  background-color: #ffffff; }
+.header .header-navigation li.navigation-item input.text-field::-webkit-input-placeholder, .header .header-navigation li.navigation-item input.text-field:-moz-placeholder, .header .header-navigation li.navigation-item input.text-field::-moz-placeholder {
+  opacity: 0.5; }
+.header .header-navigation li.navigation-item button {
+  display: inline-block;
+  margin: 0px 0px;
+  padding: 4px 7px 4px 7px;
+  border: 2px solid #782020; }
+.header .header-navigation li.navigation-item button > span.label {
+  color: white !important; }
+.header .header-navigation li.navigation-item.login {
+  height: 30px; }
+.header .header-navigation li.navigation-item.login .login-wrapper > .label {
+  margin-top: 2px;
+  margin-right: 8px; }
+.header .header-navigation li.navigation-item.login .login-wrapper input.text-field {
+  width: 130px;
+  margin-right: 12px; }
+.header .header-navigation li.navigation-item.search .searchbar-wrapper {
+  margin-right: 8px;
+  display: inline-block; }
+.header .header-navigation li.navigation-item.search .searchbar-wrapper .search-icon {
+  vertical-align: top;
+  height: 20px;
+  background-color: #ffffff;
+  width: 20px; }
+.header .header-navigation li.navigation-item.search .searchbar-wrapper .search-icon img {
+  margin-top: -1px;
+  width: 22px;
+  height: 22px; }
+
+/*        |- */
+.session-drawer {
+  position: relative;
+  height: 80px;
+  background-color: #782020;
+  border-top: 3px solid #782020;
+  border-bottom: 4px solid #782020;
+  background-size: 10px 10px;
+  background-repeat: repeat;
+  background-image: linear-gradient(-45deg, #8a2424 25%, transparent 25%, transparent 50%, #8a2424 50%, #8a2424 75%, transparent 75%, transparent); }
+.session-drawer .user-info {
+  width: 650px; }
+.session-drawer .user-info .user-info-avatar, .session-drawer .user-info .user-info-name {
+  display: inline-block;
+  position: relative;
+  margin-top: 8px; }
+.session-drawer .user-info .user-info-avatar {
+  width: 60px;
+  height: 60px;
+  margin-right: 8px; }
+.session-drawer .user-info .user-info-avatar img {
+  width: 100%;
+  height: 100%;
+  border: 1.65px solid #962828; }
+.session-drawer .user-info .user-info-name {
+  width: 550px; }
+.session-drawer .user-info .user-info-name a {
+  display: block !important; }
+.session-drawer .user-info .user-info-name a:nth-child(1) span {
+  font-size: 18.5px;
+  font-family: "Akzidenz-Grotesk Condensed", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #ffffff; }
+.session-drawer .user-info .user-info-name a:nth-child(1) span:before, .session-drawer .user-info .user-info-name a:nth-child(1) span:after {
+  font-size: 18.5px;
+  font-family: "Akzidenz-Grotesk Condensed", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  color: #d03e30;
+  display: inline-block; }
+.session-drawer .user-info .user-info-name a:nth-child(1) span:before {
+  content: "[";
+  margin-right: 2px; }
+.session-drawer .user-info .user-info-name a:nth-child(1) span:after {
+  content: "]";
+  margin-left: 2px; }
+.session-drawer .user-info .user-info-name a:nth-child(2) span {
+  margin-top: -2px;
+  font-size: 42px;
+  font-family: "Akzidenz-Grotesk Condensed", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0.025em;
+  text-transform: uppercase;
+  text-shadow: 3px 3px #782020;
+  color: #ffffff; }
+.session-drawer ul.user-navigation {
+  position: absolute;
+  bottom: 0px;
+  right: 36px; }
+.session-drawer ul.user-navigation li.navigation-item {
+  display: inline-block;
+  padding: 8px 10px 4px 10px;
+  cursor: pointer;
+  -webkit-border-top-left-radius: 4px;
+  -moz-border-top-left-radius: 4px;
+  border-top-left-radius: 4px;
+  -webkit-border-top-right-radius: 4px;
+  -moz-border-top-right-radius: 4px;
+  border-top-right-radius: 4px;
+  background-color: #782020;
+  -webkit-transition: background-color 0.25s;
+  -moz-transition: background-color 0.25s;
+  transition: background-color 0.25s; }
+.session-drawer ul.user-navigation li.navigation-item:not(:last-child) {
+  margin-right: 8px; }
+.session-drawer ul.user-navigation li.navigation-item:hover {
+  background-color: #d03e30; }
+.session-drawer ul.user-navigation li.navigation-item span {
+  font-size: 14px;
+  font-family: "Univers LT Std Condensed", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0.105em;
+  text-transform: uppercase;
+  color: #ffffff; }
+
+/*        |- */
+/**
+ * @file _footer.scss
+ * @author Michael Zalla
+ * @date 11-24-2013
+ *
+ * Contains styles for the Tag Network's persistent site footer.
+ */
+.footer {
+  width: 100%;
+  height: 32px;
+  padding-right: 36px;
+  padding-left: 28px;
+  overflow: auto;
+  background-color: #8a2424;
+  border-bottom: 2px #782020;
+  position: fixed;
+  bottom: 0px; }
+.footer .footer-copyright .label.small, .footer .footer-navigation .label.small {
+  margin-top: 11px;
+  color: #ffffff;
+  font-size: 10px; }
+.footer .footer-navigation {
+  cursor: pointer; }
+.footer .footer-navigation li.navigation-item:not(:last-child) {
+  margin-right: 14px; }
+
+/* |- View-Specific Partials */
+/*    |- */
+button {
+  background-color: #d03e30;
+  -webkit-transition: background-color 0.25s;
+  -moz-transition: background-color 0.25s;
+  transition: background-color 0.25s;
+  cursor: pointer; }
+button:hover {
+  background-color: #8a2424; }
+
+.view-content {
+  padding-bottom: 32px;
+  background-color: #eeeeee; }
+
+.section-titlebar {
+  height: 74px;
+  padding: 32px 36px 12px 28px; }
+.section-titlebar span.section-title {
+  font-size: 32px;
+  font-family: "Akzidenz-Grotesk Condensed", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0.035em;
+  text-transform: uppercase;
+  color: #ffffff; }
+
+.masthead {
+  overflow-y: hidden;
+  background-color: #343a3c;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover; }
+
+.bounty {
+  display: inline-block;
+  height: 100px;
+  width: 100px;
+  background-image: url("../../images/global/bounty-badge-blank.svg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  text-align: center; }
+.bounty > span {
+  padding-top: 25px;
+  font-size: 48px;
+  font-family: "Akzidenz-Grotesk Condensed", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0em;
+  text-shadow: 2px 2px #d03e30;
+  color: #ffffff; }
+
+/*    |- */
+.view-content.landing-view {
+  /* Component Imports */
+  /* Custom Component Styles */ }
+.view-content.landing-view .landing-masthead {
+  height: 385px;
+  background-image: url("../../images/landing/landing-masthead-background-2.png");
+  text-align: left; }
+.view-content.landing-view .landing-masthead .masthead-content {
+  margin-top: 96px;
+  margin-left: 38px; }
+.view-content.landing-view .landing-masthead .masthead-content img {
+  width: 650px; }
+.view-content.landing-view .introduction {
+  margin-bottom: 16px;
+  text-align: center; }
+.view-content.landing-view .introduction .signup, .view-content.landing-view .introduction span.intro {
+  display: block; }
+.view-content.landing-view .introduction .signup {
+  margin-top: -18px;
+  margin-bottom: 24px; }
+.view-content.landing-view .introduction .signup button {
+  display: inline-block;
+  margin: 0px 0px;
+  margin-right: -4px;
+  padding: 12px 24px;
+  height: 36px; }
+.view-content.landing-view .introduction .signup button:nth-child(1) {
+  -webkit-box-shadow: 3px 3px 0px 0px #782020;
+  -moz-box-shadow: 3px 3px 0px 0px #782020;
+  box-shadow: 3px 3px 0px 0px #782020; }
+.view-content.landing-view .introduction .signup button:nth-child(2) {
+  -webkit-box-shadow: -3px 3px 0px 0px #782020;
+  -moz-box-shadow: -3px 3px 0px 0px #782020;
+  box-shadow: -3px 3px 0px 0px #782020; }
+.view-content.landing-view .introduction .signup button span.label.large {
+  letter-spacing: 0.125em !important;
+  color: #ffffff; }
+.view-content.landing-view .introduction .no-signup {
+  margin-bottom: 45px; }
+.view-content.landing-view .introduction span.intro {
+  margin: 0px auto;
+  padding: 10px;
+  width: 645px;
+  font-size: 22px;
+  font-family: "Univers LT Std Condensed", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  color: #343a3c; }
+.view-content.landing-view .platform-overview ul.vertical-list.feature-list > li {
+  display: block;
+  overflow: auto; }
+.view-content.landing-view .platform-overview ul.vertical-list.feature-list > li:nth-child(odd) {
+  background-color: #e0e0e6; }
+.view-content.landing-view .platform-overview ul.vertical-list.feature-list > li:nth-child(even) {
+  background-color: #d4d8e0; }
+.view-content.landing-view .platform-overview ul.vertical-list.feature-list > li.feature {
+  padding: 55px 28px 40px 36px;
+  background-repeat: no-repeat; }
+.view-content.landing-view .platform-overview ul.vertical-list.feature-list > li.feature:nth-child(odd) .col-2:nth-child(1) {
+  padding-right: 60px; }
+.view-content.landing-view .platform-overview ul.vertical-list.feature-list > li.feature:nth-child(even) .col-2:nth-child(2) {
+  padding-left: 60px; }
+.view-content.landing-view .platform-overview ul.vertical-list.feature-list > li.feature:not(:first-child):nth-child(even) {
+  background-image: url("../../images/landing/feature-chevron-light.svg");
+  background-position: 50% -8px;
+  background-size: 50px 30px; }
+.view-content.landing-view .platform-overview ul.vertical-list.feature-list > li.feature:not(:first-child):nth-child(odd) {
+  background-image: url("../../images/landing/feature-chevron-dark.svg");
+  background-position: 50% -8px;
+  background-size: 50px 30px; }
+.view-content.landing-view .platform-overview ul.vertical-list.feature-list > li.feature .col-2 {
+  display: inline-block;
+  width: 49%; }
+.view-content.landing-view .platform-overview ul.vertical-list.feature-list > li.feature .col-2:nth-child(odd) {
+  text-align: right; }
+.view-content.landing-view .platform-overview ul.vertical-list.feature-list > li.feature .col-2:nth-child(even) {
+  text-align: left; }
+.view-content.landing-view .platform-overview ul.vertical-list.feature-list > li.feature .col-2 span.feature-heading, .view-content.landing-view .platform-overview ul.vertical-list.feature-list > li.feature .col-2 span.feature-description {
+  display: inline-block;
+  width: 405px; }
+.view-content.landing-view .platform-overview ul.vertical-list.feature-list > li.feature .col-2 span.feature-heading {
+  margin-bottom: 10px;
+  font-size: 42px;
+  font-family: "Akzidenz-Grotesk Condensed", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #343a3c; }
+.view-content.landing-view .platform-overview ul.vertical-list.feature-list > li.feature .col-2 span.feature-description {
+  font-size: 14.5px;
+  font-family: "Univers LT Std Regular", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  color: #383e40; }
+.view-content.landing-view .platform-overview ul.vertical-list.feature-list > li.feature .col-2 img {
+  margin-top: 12px;
+  width: 260px;
+  height: 260px; }
+.view-content.landing-view .platform-overview ul.vertical-list.feature-list > li.feature:first-child {
+  background-color: transparent !important;
+  background-image: linear-gradient(transparent, #e0e0e6); }
+
+/*    |- */
+.view-content.schedule-view {
+  /* Component Imports */
+  /* Custom Component Styles */
+  background-color: #343a3c;
+  min-height: 915px; }
+.view-content.schedule-view .team-filters {
+  float: left;
+  width: 280px;
+  background-color: #343a3c; }
+.view-content.schedule-view .team-filters .section-titlebar {
+  background-color: #343a3c; }
+.view-content.schedule-view .team-filters ul.vertical-list.team-filters-list > li {
+  display: block;
+  overflow: auto; }
+.view-content.schedule-view .team-filters ul.vertical-list.team-filters-list > li:nth-child(odd) {
+  background-color: #383e40; }
+.view-content.schedule-view .team-filters ul.vertical-list.team-filters-list > li:nth-child(even) {
+  background-color: #343a3c; }
+.view-content.schedule-view .team-filters ul.vertical-list.team-filters-list li.team-filter {
+  padding: 12px 0px 12px 28px;
+  height: 78px;
+  -webkit-transition: height 0.4s ease;
+  -moz-transition: height 0.4s ease;
+  transition: height 0.4s ease;
+  overflow-y: hidden; }
+.view-content.schedule-view .team-filters ul.vertical-list.team-filters-list li.team-filter div.team-label {
+  cursor: pointer; }
+.view-content.schedule-view .team-filters ul.vertical-list.team-filters-list li.team-filter div.team-label img, .view-content.schedule-view .team-filters ul.vertical-list.team-filters-list li.team-filter div.team-label span {
+  display: inline-block !important;
+  vertical-align: middle; }
+.view-content.schedule-view .team-filters ul.vertical-list.team-filters-list li.team-filter div.team-label img {
+  width: 54px;
+  height: 54px; }
+.view-content.schedule-view .team-filters ul.vertical-list.team-filters-list li.team-filter div.team-label span.team-name {
+  margin-top: 6px;
+  margin-left: 8px;
+  font-size: 16.5px;
+  font-family: "Univers LT Std Condensed", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0.045em;
+  text-transform: uppercase;
+  color: #e0e2e6; }
+.view-content.schedule-view .team-filters ul.vertical-list.team-filters-list li.team-filter div.team-roster {
+  margin-top: 8px; }
+.view-content.schedule-view .team-filters ul.vertical-list.team-filters-list li.team-filter div.team-roster ul > li a.team-member {
+  display: inline-block;
+  width: 26px;
+  height: 26px;
+  box-shadow: 2px 2px 0px 0px #4e4e4e;
+  cursor: pointer;
+  margin-right: 6px; }
+.view-content.schedule-view .team-filters ul.vertical-list.team-filters-list li.team-filter div.team-roster ul > li a.team-member img {
+  width: 100%;
+  height: 100%; }
+.view-content.schedule-view .team-filters ul.vertical-list.team-filters-list li.team-filter.primary > div.team-label > span {
+  color: #d03e30; }
+.view-content.schedule-view .team-filters ul.vertical-list.team-filters-list li.team-filter.active {
+  height: 114px;
+  border-bottom: 1px solid #929296;
+  background-color: #d4d8e0; }
+.view-content.schedule-view .team-filters ul.vertical-list.team-filters-list li.team-filter.active:not(.primary) div.team-label > span {
+  color: #343a3c; }
+.view-content.schedule-view .team-filters ul.vertical-list.team-filters-list li.team-filter:not(.active) div.team-roster {
+  display: none; }
+.view-content.schedule-view .team-filters .team-filters-count {
+  margin-top: 30px;
+  width: 100%;
+  text-align: center; }
+.view-content.schedule-view .team-filters .team-filters-count span, .view-content.schedule-view .team-filters .team-filters-count span:before, .view-content.schedule-view .team-filters .team-filters-count span:after {
+  display: inline-block !important;
+  font-size: 10.5px;
+  font-family: "Univers LT Std Regular", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  color: #b0b6be;
+  line-height: 0; }
+.view-content.schedule-view .team-filters .team-filters-count span:before {
+  content: "(Displaying matches from\2003"; }
+.view-content.schedule-view .team-filters .team-filters-count span:after {
+  content: "\2003teams)"; }
+.view-content.schedule-view .match-schedule {
+  margin-left: 280px;
+  /* Match content area */ }
+.view-content.schedule-view .match-schedule .section-titlebar {
+  background-color: #383e40; }
+.view-content.schedule-view .match-schedule .match-calendar .calendar-wrapper {
+  border-bottom: 1px solid #d4d8e0; }
+.view-content.schedule-view .match-schedule .match-calendar .calendar-wrapper ul.calendar-day-list {
+  display: table; }
+.view-content.schedule-view .match-schedule .match-calendar .calendar-wrapper ul.calendar-day-list li.calendar-day {
+  display: table-cell;
+  vertical-align: top;
+  margin-bottom: -4px;
+  padding-bottom: 14px;
+  width: 14%;
+  height: 100%;
+  /* Contents */ }
+.view-content.schedule-view .match-schedule .match-calendar .calendar-wrapper ul.calendar-day-list li.calendar-day:not(:first-child) {
+  margin-left: -4px; }
+.view-content.schedule-view .match-schedule .match-calendar .calendar-wrapper ul.calendar-day-list li.calendar-day:nth-child(odd) {
+  background-color: #e0e0e6; }
+.view-content.schedule-view .match-schedule .match-calendar .calendar-wrapper ul.calendar-day-list li.calendar-day:nth-child(odd) ul.weekday-match-list > li.weekday-match > .timestamp {
+  border-bottom: 1px dashed #b0b6be; }
+.view-content.schedule-view .match-schedule .match-calendar .calendar-wrapper ul.calendar-day-list li.calendar-day:nth-child(odd) ul.weekday-match-list > li.weekday-match > .timestamp span {
+  background-color: #e0e0e6; }
+.view-content.schedule-view .match-schedule .match-calendar .calendar-wrapper ul.calendar-day-list li.calendar-day:nth-child(even) {
+  background-color: #d4d8e0; }
+.view-content.schedule-view .match-schedule .match-calendar .calendar-wrapper ul.calendar-day-list li.calendar-day:nth-child(even) ul.weekday-match-list > li.weekday-match > .timestamp {
+  border-bottom: 1px dashed #b0b6be; }
+.view-content.schedule-view .match-schedule .match-calendar .calendar-wrapper ul.calendar-day-list li.calendar-day:nth-child(even) ul.weekday-match-list > li.weekday-match > .timestamp span {
+  background-color: #d4d8e0; }
+.view-content.schedule-view .match-schedule .match-calendar .calendar-wrapper ul.calendar-day-list li.calendar-day div {
+  width: 100%;
+  text-align: center; }
+.view-content.schedule-view .match-schedule .match-calendar .calendar-wrapper ul.calendar-day-list li.calendar-day .weekday-label {
+  height: 50px;
+  padding-top: 22px; }
+.view-content.schedule-view .match-schedule .match-calendar .calendar-wrapper ul.calendar-day-list li.calendar-day .weekday-label span {
+  color: #343a3c; }
+.view-content.schedule-view .match-schedule .match-calendar .calendar-wrapper ul.calendar-day-list li.calendar-day ul.weekday-match-list li.weekday-match {
+  display: block;
+  height: 102px;
+  -webkit-transition: height 0.35s ease;
+  -moz-transition: height 0.35s ease;
+  transition: height 0.35s ease;
+  width: 100%;
+  overflow-y: hidden; }
+.view-content.schedule-view .match-schedule .match-calendar .calendar-wrapper ul.calendar-day-list li.calendar-day ul.weekday-match-list li.weekday-match:not(:first-child) {
+  padding-top: 6px; }
+.view-content.schedule-view .match-schedule .match-calendar .calendar-wrapper ul.calendar-day-list li.calendar-day ul.weekday-match-list li.weekday-match:not(:last-child) {
+  padding-bottom: 4px; }
+.view-content.schedule-view .match-schedule .match-calendar .calendar-wrapper ul.calendar-day-list li.calendar-day ul.weekday-match-list li.weekday-match .timestamp {
+  height: 10px; }
+.view-content.schedule-view .match-schedule .match-calendar .calendar-wrapper ul.calendar-day-list li.calendar-day ul.weekday-match-list li.weekday-match .timestamp span {
+  display: inline-block !important;
+  padding: 4px 8px;
+  font-size: 11px;
+  font-family: "Univers LT Std Regular", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #929296; }
+.view-content.schedule-view .match-schedule .match-calendar .calendar-wrapper ul.calendar-day-list li.calendar-day ul.weekday-match-list li.weekday-match.weekday-match:not(.past) .past-label {
+  display: none; }
+.view-content.schedule-view .match-schedule .match-calendar .calendar-wrapper ul.calendar-day-list li.calendar-day ul.weekday-match-list li.weekday-match .opponents {
+  margin-top: 16px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 6px 0px;
+  height: 72px;
+  cursor: pointer; }
+.view-content.schedule-view .match-schedule .match-calendar .calendar-wrapper ul.calendar-day-list li.calendar-day ul.weekday-match-list li.weekday-match .opponents * {
+  margin-bottom: -4px;
+  display: inline-block; }
+.view-content.schedule-view .match-schedule .match-calendar .calendar-wrapper ul.calendar-day-list li.calendar-day ul.weekday-match-list li.weekday-match .opponents img.team-avatar {
+  height: 100%; }
+.view-content.schedule-view .match-schedule .match-calendar .calendar-wrapper ul.calendar-day-list li.calendar-day ul.weekday-match-list li.weekday-match .opponents span {
+  /* 'VS' */
+  margin: 18px 8px 0px 8px;
+  vertical-align: top;
+  letter-spacing: 0.035em;
+  color: #343a3c; }
+.view-content.schedule-view .match-schedule .match-calendar .calendar-wrapper ul.calendar-day-list li.calendar-day ul.weekday-match-list li.weekday-match.weekday-match.past {
+  pointer-events: none; }
+.view-content.schedule-view .match-schedule .match-calendar .calendar-wrapper ul.calendar-day-list li.calendar-day ul.weekday-match-list li.weekday-match.weekday-match.past .opponents {
+  opacity: 0.5;
+  -webkit-filter: grayscale(100%); }
+.view-content.schedule-view .match-schedule .match-calendar .calendar-wrapper ul.calendar-day-list li.calendar-day ul.weekday-match-list li.weekday-match.weekday-match:not(.visible) {
+  height: 0px; }
+.view-content.schedule-view .match-schedule .match-calendar .calendar-wrapper ul.calendar-day-list li.calendar-day ul.weekday-match-list li.weekday-match.weekday-match.active .opponents {
+  background-image: linear-gradient(180deg, #d25e30 50%, #d03e30 50%, #d03e30); }
+.view-content.schedule-view .match-schedule .match-calendar .calendar-wrapper ul.calendar-day-list li.calendar-day ul.weekday-match-list li.weekday-match.weekday-match.active .opponents span {
+  margin-top: 20px;
+  letter-spacing: 0.075em;
+  color: white; }
+.view-content.schedule-view .match-schedule .match-calendar .calendar-wrapper ul.calendar-day-list li.calendar-day div.no-matches > span {
+  display: inline !important;
+  font-size: 11px;
+  font-family: "Univers LT Std Regular", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  color: #848a8c; }
+.view-content.schedule-view .match-schedule .match-calendar .selected-date-status-bar {
+  padding-top: 20px;
+  height: 50px;
+  background-color: #e0e0e6;
+  border-bottom: 2px solid #aab2be;
+  text-align: center; }
+.view-content.schedule-view .match-schedule .match-calendar .selected-date-status-bar * {
+  display: inline-block; }
+.view-content.schedule-view .match-schedule .match-calendar .selected-date-status-bar span.selected-date {
+  color: #343a3c; }
+.view-content.schedule-view .match-schedule .match-calendar .selected-date-status-bar span.match-count, .view-content.schedule-view .match-schedule .match-calendar .selected-date-status-bar span.match-count:before, .view-content.schedule-view .match-schedule .match-calendar .selected-date-status-bar span.match-count:after {
+  color: #929296; }
+.view-content.schedule-view .match-schedule .match-calendar .selected-date-status-bar span.match-count:before {
+  content: " – "; }
+.view-content.schedule-view .match-schedule .match-calendar .selected-date-status-bar span.match-count:after {
+  content: " matches scheduled"; }
+.view-content.schedule-view .match-schedule .match-details {
+  width: 100%;
+  min-height: 460px;
+  background-color: #e0e0e6;
+  background-attachment: bottom center;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover; }
+.view-content.schedule-view .match-schedule .match-details .left, .view-content.schedule-view .match-schedule .match-details .right, .view-content.schedule-view .match-schedule .match-details .middle {
+  display: inline-block;
+  min-height: 100px; }
+.view-content.schedule-view .match-schedule .match-details .left, .view-content.schedule-view .match-schedule .match-details .right {
+  margin-top: 68px;
+  width: 25%; }
+.view-content.schedule-view .match-schedule .match-details .left span.team-label, .view-content.schedule-view .match-schedule .match-details .right span.team-label {
+  color: #929296; }
+.view-content.schedule-view .match-schedule .match-details .left ul.team-roster, .view-content.schedule-view .match-schedule .match-details .right ul.team-roster {
+  margin-top: 12px; }
+.view-content.schedule-view .match-schedule .match-details .left ul.team-roster li.team-member, .view-content.schedule-view .match-schedule .match-details .right ul.team-roster li.team-member {
+  display: block;
+  margin-bottom: 20px;
+  height: 30px; }
+.view-content.schedule-view .match-schedule .match-details .left ul.team-roster li.team-member a *, .view-content.schedule-view .match-schedule .match-details .right ul.team-roster li.team-member a * {
+  vertical-align: middle; }
+.view-content.schedule-view .match-schedule .match-details .left ul.team-roster li.team-member a img.avatar, .view-content.schedule-view .match-schedule .match-details .right ul.team-roster li.team-member a img.avatar {
+  height: 100%;
+  width: 30px;
+  box-shadow: 2px 2px 0px 0px #4e4e4e; }
+.view-content.schedule-view .match-schedule .match-details .left ul.team-roster li.team-member a span, .view-content.schedule-view .match-schedule .match-details .right ul.team-roster li.team-member a span {
+  margin: 5px 8px 0px 8px;
+  font-size: 16.5px;
+  font-family: "Univers LT Std Condensed", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0.035em;
+  color: #383e40; }
+.view-content.schedule-view .match-schedule .match-details .left {
+  float: left;
+  padding-left: 30px;
+  text-align: left; }
+.view-content.schedule-view .match-schedule .match-details .right {
+  float: right;
+  padding-right: 30px;
+  text-align: right; }
+.view-content.schedule-view .match-schedule .match-details .middle {
+  margin-top: 24px;
+  width: 50%;
+  text-align: center; }
+.view-content.schedule-view .match-schedule .match-details .middle .versus * {
+  display: inline-block;
+  vertical-align: middle; }
+.view-content.schedule-view .match-schedule .match-details .middle .versus .offered-by a > span, .view-content.schedule-view .match-schedule .match-details .middle .versus .offered-to a > span {
+  margin: 3px 8px 0px 8px;
+  width: 140px;
+  font-size: 28px;
+  font-family: "Akzidenz-Grotesk Condensed", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0.035em;
+  text-transform: uppercase;
+  color: #383e40; }
+.view-content.schedule-view .match-schedule .match-details .middle .versus .offered-by a > img, .view-content.schedule-view .match-schedule .match-details .middle .versus .offered-to a > img {
+  width: 60px;
+  height: 60px; }
+.view-content.schedule-view .match-schedule .match-details .middle .versus .offered-by a > span {
+  text-align: right; }
+.view-content.schedule-view .match-schedule .match-details .middle .versus .offered-to a > span {
+  text-align: left; }
+.view-content.schedule-view .match-schedule .match-details .middle .versus .bounty {
+  width: 84px;
+  height: 84px; }
+.view-content.schedule-view .match-schedule .match-details .middle .versus .bounty > span {
+  margin-left: -1px;
+  padding-top: 16px;
+  font-size: 50px; }
+.view-content.schedule-view .match-schedule .match-details .middle .match-info {
+  margin-top: 25px;
+  padding-top: 32px;
+  border-top: 2px dotted #929296; }
+.view-content.schedule-view .match-schedule .match-details .middle .match-info .match-title {
+  display: block;
+  margin-bottom: 24px;
+  font-size: 28.5px;
+  font-family: "Univers LT Std Condensed", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0.015em;
+  color: #383e40; }
+.view-content.schedule-view .match-schedule .match-details .middle .match-info .title-wrapper {
+  display: inline-block;
+  margin-bottom: 30px;
+  padding: 10px 10px;
+  height: 94px;
+  border: 1px solid #b0b6be;
+  background-color: rgba(255, 255, 255, 0.5); }
+.view-content.schedule-view .match-schedule .match-details .middle .match-info .title-wrapper * {
+  display: inline-block;
+  vertical-align: middle; }
+.view-content.schedule-view .match-schedule .match-details .middle .match-info .title-wrapper img {
+  margin-right: 8px;
+  width: 70px;
+  height: 100%; }
+.view-content.schedule-view .match-schedule .match-details .middle .match-info .title-wrapper span {
+  margin-top: 3px;
+  margin-right: 12px;
+  font-size: 18.5px;
+  font-family: "Univers LT Std Condensed", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  color: #383e40; }
+.view-content.schedule-view .match-schedule .match-details .middle .match-info button.report-results {
+  clear: both;
+  display: inline-block;
+  margin: 0px 0px;
+  margin-right: -4px;
+  padding: 12px 24px;
+  height: 36px;
+  -webkit-box-shadow: 3px 3px 0px 0px #782020;
+  -moz-box-shadow: 3px 3px 0px 0px #782020;
+  box-shadow: 3px 3px 0px 0px #782020; }
+.view-content.schedule-view .match-schedule .match-details .middle .match-info button.report-results span.label.large {
+  letter-spacing: 0.125em !important;
+  color: #ffffff; }
+.view-content.schedule-view .team-filters, .view-content.schedule-view .match-schedule {
+  height: 900px;
+  padding-bottom: 32px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none; }
+
+/*    |- */
+.view-content.player-view {
+  /* Component Imports */
+  /* Custom Component Styles */ }
+.view-content.player-view .player-masthead {
+  height: 348px;
+  background-image: url("../../common/images/player/player-masthead-background.png");
+  background-repeat: no-repeat; }
+.view-content.player-view .player-masthead .masthead-top, .view-content.player-view .player-masthead .masthead-bottom {
+  margin-left: 28px; }
+.view-content.player-view .player-masthead .masthead-top {
+  margin-top: 60px; }
+.view-content.player-view .player-masthead .masthead-top .player-avatar, .view-content.player-view .player-masthead .masthead-top .player-info, .view-content.player-view .player-masthead .masthead-top .player-bounty {
+  display: inline-block;
+  height: 140px; }
+.view-content.player-view .player-masthead .masthead-top .player-avatar:not(:first-child), .view-content.player-view .player-masthead .masthead-top .player-info:not(:first-child), .view-content.player-view .player-masthead .masthead-top .player-bounty:not(:first-child) {
+  margin-left: -4px; }
+.view-content.player-view .player-masthead .masthead-top .player-avatar, .view-content.player-view .player-masthead .masthead-top .player-info {
+  margin-right: 24px; }
+.view-content.player-view .player-masthead .masthead-top .player-avatar > img {
+  height: 100%;
+  box-shadow: 6px 6px 0px 0px rgba(52, 58, 60, 0.75); }
+.view-content.player-view .player-masthead .masthead-top .player-info {
+  margin-top: -3px; }
+.view-content.player-view .player-masthead .masthead-top .player-info * {
+  color: #ffffff; }
+.view-content.player-view .player-masthead .masthead-top .player-info .info-primary-team, .view-content.player-view .player-masthead .masthead-top .player-info .info-name {
+  display: block; }
+.view-content.player-view .player-masthead .masthead-top .player-info .info-primary-team {
+  font-size: 26.5px;
+  font-family: "Akzidenz-Grotesk Condensed", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0.035em;
+  text-transform: uppercase;
+  text-shadow: 2px 2px rgba(52, 58, 60, 0.75);
+  /* \2002 */
+  /* \2002 */ }
+.view-content.player-view .player-masthead .masthead-top .player-info .info-primary-team, .view-content.player-view .player-masthead .masthead-top .player-info .info-primary-team:before, .view-content.player-view .player-masthead .masthead-top .player-info .info-primary-team:after {
+  display: inline-block; }
+.view-content.player-view .player-masthead .masthead-top .player-info .info-primary-team:before, .view-content.player-view .player-masthead .masthead-top .player-info .info-primary-team:after {
+  letter-spacing: 0.05em;
+  color: #d25e30; }
+.view-content.player-view .player-masthead .masthead-top .player-info .info-primary-team:before {
+  margin-right: 1px;
+  content: "["; }
+.view-content.player-view .player-masthead .masthead-top .player-info .info-primary-team:after {
+  margin-left: 1px;
+  content: "]"; }
+.view-content.player-view .player-masthead .masthead-top .player-info .info-name {
+  margin-top: 3px; }
+.view-content.player-view .player-masthead .masthead-top .player-info .info-name > span {
+  margin-top: -4px;
+  margin-right: 12px;
+  font-size: 80px;
+  font-family: "Akzidenz-Grotesk Condensed", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0.015em;
+  text-shadow: 3px 3px rgba(52, 58, 60, 0.75); }
+.view-content.player-view .player-masthead .masthead-top .player-info .info-name > div.bounty {
+  margin-top: -4px;
+  width: 90px;
+  height: 90px; }
+.view-content.player-view .player-masthead .masthead-top .player-info .info-name > div.bounty > span {
+  padding-top: 22px !important;
+  font-size: 45px;
+  font-family: "Akzidenz-Grotesk Condensed", sans-serif;
+  font-style: normal;
+  font-weight: 400; }
+.view-content.player-view .player-masthead .masthead-top .player-info .info-real-name, .view-content.player-view .player-masthead .masthead-top .player-info .info-location {
+  margin-top: 8px;
+  text-shadow: 2px 2px rgba(52, 58, 60, 0.75); }
+.view-content.player-view .player-masthead .masthead-top .player-info .info-real-name:after {
+  content: "\2002|\2002"; }
+.view-content.player-view .player-masthead .masthead-top .player-info .info-location {
+  margin-left: -3px; }
+.view-content.player-view .player-masthead .masthead-bottom {
+  margin-top: 30px; }
+.view-content.player-view .player-masthead .masthead-bottom .player-titles * {
+  display: inline-block;
+  vertical-align: middle; }
+.view-content.player-view .player-masthead .masthead-bottom .player-titles span {
+  margin-top: 4px;
+  margin-right: 12px;
+  color: #ffffff; }
+.view-content.player-view .player-masthead .masthead-bottom .player-titles ul.titles-list li.title {
+  box-shadow: 2px 2px 0px 0px #353535; }
+.view-content.player-view .player-masthead .masthead-bottom .player-titles ul.titles-list li.title:not(:last-child) {
+  margin-right: 10px; }
+.view-content.player-view .player-masthead .masthead-bottom .player-titles ul.titles-list li.title > a > img {
+  height: 40px;
+  width: 40px; }
+.view-content.player-view .player-status {
+  margin-top: 28px;
+  height: 50px;
+  background-color: rgba(52, 58, 60, 0.75);
+  /* Bottom shadow */
+  -webkit-box-shadow: inset 1px -6px 18px -6px #151515;
+  -moz-box-shadow: inset 1px -6px 18px -6px #151515;
+  box-shadow: inset 1px -6px 18px -6px #151515;
+  /* Conditional styling of the Bounty label - Wins */
+  /* Conditional styling of the Bounty label - Losses */ }
+.view-content.player-view .player-status .left, .view-content.player-view .player-status .right {
+  padding-top: 10px;
+  padding-bottom: 10px; }
+.view-content.player-view .player-status .left div, .view-content.player-view .player-status .left span, .view-content.player-view .player-status .right div, .view-content.player-view .player-status .right span {
+  vertical-align: middle; }
+.view-content.player-view .player-status .left span, .view-content.player-view .player-status .right span {
+  margin-top: 1px;
+  font-size: 13.5px;
+  font-family: "Univers LT Std", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  color: #ffffff; }
+.view-content.player-view .player-status .left {
+  padding-left: 28px; }
+.view-content.player-view .player-status .left * {
+  display: inline-block; }
+.view-content.player-view .player-status .left .bounty-adjustment, .view-content.player-view .player-status .left .bounty-adjustment:before {
+  margin-top: -2px;
+  font-size: 32px;
+  font-family: "Akzidenz-Grotesk Condensed", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  display: inline-block !important; }
+.view-content.player-view .player-status .left .bounty-adjustment:before, .view-content.player-view .player-status .left .bounty-adjustment:before:before {
+  margin-right: 4px; }
+.view-content.player-view .player-status .left .bounty-adjustment {
+  margin-right: 18px; }
+.view-content.player-view .player-status.win .left > .bounty-adjustment, .view-content.player-view .player-status.win .left > .bounty-adjustment:before {
+  color: #b0b6be; }
+.view-content.player-view .player-status.win .left > .bounty-adjustment:before, .view-content.player-view .player-status.win .left > .bounty-adjustment:before:before {
+  content: "+";
+  font-size: 24px; }
+.view-content.player-view .player-status.loss .left > .bounty-adjustment, .view-content.player-view .player-status.loss .left > .bounty-adjustment:before {
+  opacity: 0.9;
+  color: #782020; }
+.view-content.player-view .player-status.loss .left > .bounty-adjustment:before, .view-content.player-view .player-status.loss .left > .bounty-adjustment:before:before {
+  content: "-"; }
+.view-content.player-view .player-status .right.status-timestamp {
+  padding-top: 19px;
+  padding-right: 36px; }
+.view-content.player-view .player-status .right.status-timestamp > span {
+  font-style: italic; }
+.view-content.player-view .match-history ul.vertical-list.match-history-list li.match {
+  /* Conditional match record styling */ }
+.view-content.player-view .match-history ul.vertical-list.match-history-list li.match .left > *, .view-content.player-view .match-history ul.vertical-list.match-history-list li.match .right > * {
+  display: inline-block;
+  vertical-align: middle; }
+.view-content.player-view .match-history ul.vertical-list.match-history-list li.match .left {
+  padding-left: 28px; }
+.view-content.player-view .match-history ul.vertical-list.match-history-list li.match .left .timeline {
+  width: 40px;
+  height: 100%;
+  text-align: right; }
+.view-content.player-view .match-history ul.vertical-list.match-history-list li.match .left .timeline span {
+  margin-top: 1px;
+  color: #929296; }
+.view-content.player-view .match-history ul.vertical-list.match-history-list li.match .left .versus {
+  position: relative;
+  margin: 0px 12px;
+  padding: 10px 0px 10px 20px;
+  border-left: 1px dashed #b0b6be; }
+.view-content.player-view .match-history ul.vertical-list.match-history-list li.match .left .versus img, .view-content.player-view .match-history ul.vertical-list.match-history-list li.match .left .versus span {
+  display: inline-block;
+  vertical-align: middle; }
+.view-content.player-view .match-history ul.vertical-list.match-history-list li.match .left .versus img {
+  height: 40px; }
+.view-content.player-view .match-history ul.vertical-list.match-history-list li.match .left .versus span {
+  width: 14px;
+  margin: 3px 6px 0px 6px;
+  color: #383e40; }
+.view-content.player-view .match-history ul.vertical-list.match-history-list li.match .left .versus:after {
+  content: " ";
+  position: absolute;
+  top: 26px;
+  left: -4px;
+  width: 8px;
+  height: 8px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px; }
+.view-content.player-view .match-history ul.vertical-list.match-history-list li.match .left .message {
+  margin-top: 6px;
+  font-size: 12.5px;
+  font-family: "Univers LT Std Regular", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  display: inline-block !important;
+  letter-spacing: -0.015em;
+  color: #383e40; }
+.view-content.player-view .match-history ul.vertical-list.match-history-list li.match .right {
+  padding-right: 36px; }
+.view-content.player-view .match-history ul.vertical-list.match-history-list li.match .right .bounty-adjustment {
+  margin-top: 13px; }
+.view-content.player-view .match-history ul.vertical-list.match-history-list li.match .right .bounty-adjustment, .view-content.player-view .match-history ul.vertical-list.match-history-list li.match .right .bounty-adjustment:before {
+  font-size: 32px;
+  font-family: "Akzidenz-Grotesk Condensed", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  display: inline-block !important; }
+.view-content.player-view .match-history ul.vertical-list.match-history-list li.match .right .bounty-adjustment:before, .view-content.player-view .match-history ul.vertical-list.match-history-list li.match .right .bounty-adjustment:before:before {
+  margin-right: 4px; }
+.view-content.player-view .match-history ul.vertical-list.match-history-list li.match.win .left > .versus a:nth-of-type(2) > img {
+  opacity: 0.5;
+  -webkit-filter: grayscale(100%); }
+.view-content.player-view .match-history ul.vertical-list.match-history-list li.match.win .left > .versus:after {
+  background-color: #1496d2; }
+.view-content.player-view .match-history ul.vertical-list.match-history-list li.match.win .right > .bounty-adjustment, .view-content.player-view .match-history ul.vertical-list.match-history-list li.match.win .right > .bounty-adjustment:before {
+  color: #b0b6be; }
+.view-content.player-view .match-history ul.vertical-list.match-history-list li.match.win .right > .bounty-adjustment:before, .view-content.player-view .match-history ul.vertical-list.match-history-list li.match.win .right > .bounty-adjustment:before:before {
+  content: "+";
+  font-size: 24px; }
+.view-content.player-view .match-history ul.vertical-list.match-history-list li.match.loss .left > .versus a:nth-of-type(1) > img {
+  opacity: 0.5;
+  -webkit-filter: grayscale(100%); }
+.view-content.player-view .match-history ul.vertical-list.match-history-list li.match.loss .left > .versus:after {
+  background-color: #782020; }
+.view-content.player-view .match-history ul.vertical-list.match-history-list li.match.loss .right > .bounty-adjustment, .view-content.player-view .match-history ul.vertical-list.match-history-list li.match.loss .right > .bounty-adjustment:before {
+  opacity: 0.9;
+  color: #782020; }
+.view-content.player-view .match-history ul.vertical-list.match-history-list li.match.loss .right > .bounty-adjustment:before, .view-content.player-view .match-history ul.vertical-list.match-history-list li.match.loss .right > .bounty-adjustment:before:before {
+  content: "-"; }
+.view-content.player-view .player-team-associations ul.vertical-list.teams-list li.team-item {
+  /* Highlight first team as primary */ }
+.view-content.player-view .player-team-associations ul.vertical-list.teams-list li.team-item .left > a > *, .view-content.player-view .player-team-associations ul.vertical-list.teams-list li.team-item .right > * {
+  display: inline-block;
+  vertical-align: middle; }
+.view-content.player-view .player-team-associations ul.vertical-list.teams-list li.team-item .left.team-avatar {
+  margin-left: 28px; }
+.view-content.player-view .player-team-associations ul.vertical-list.teams-list li.team-item .left.team-avatar img {
+  margin-right: 12px;
+  padding: 14px 0px;
+  height: 88px;
+  width: 60px; }
+.view-content.player-view .player-team-associations ul.vertical-list.teams-list li.team-item .left.team-avatar span.team-name {
+  margin-top: 8px;
+  font-size: 18px;
+  font-family: "Univers LT Std Condensed", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: -0.035em;
+  text-transform: uppercase;
+  color: #383e40; }
+.view-content.player-view .player-team-associations ul.vertical-list.teams-list li.team-item .right.team-roster {
+  margin-top: 30px;
+  margin-right: 36px; }
+.view-content.player-view .player-team-associations ul.vertical-list.teams-list li.team-item .right.team-roster span.label.small {
+  margin-top: 2px;
+  margin-right: 12px;
+  color: #929296; }
+.view-content.player-view .player-team-associations ul.vertical-list.teams-list li.team-item .right.team-roster img {
+  box-sizing: content-box;
+  margin-right: 10px;
+  width: 30px;
+  height: 30px;
+  box-shadow: 2px 2px 0px 0px #4e4e4e; }
+.view-content.player-view .player-team-associations ul.vertical-list.teams-list li.team-item.primary .left.team-avatar a span.team-name {
+  color: #d03e30; }
+.view-content.player-view .player-match-history, .view-content.player-view .player-team-associations {
+  display: block;
+  padding-bottom: 18px; }
+.view-content.player-view .player-match-history .section-titlebar .section-title, .view-content.player-view .player-team-associations .section-titlebar .section-title {
+  letter-spacing: 0.015em !important;
+  color: #383e40; }
+.view-content.player-view .player-match-history ul.vertical-list > li, .view-content.player-view .player-team-associations ul.vertical-list > li {
+  display: block;
+  overflow: auto; }
+.view-content.player-view .player-match-history ul.vertical-list > li:nth-child(odd), .view-content.player-view .player-team-associations ul.vertical-list > li:nth-child(odd) {
+  background-color: #eeeeee; }
+.view-content.player-view .player-match-history ul.vertical-list > li:nth-child(even), .view-content.player-view .player-team-associations ul.vertical-list > li:nth-child(even) {
+  background-color: #e0e0e6; }
+
+/*    |- */
+.view-content.team-view {
+  min-height: 850px;
+  /* Common Component Styles */
+  /* Component Imports */ }
+.view-content.team-view .team-roster, .view-content.team-view .team-match-history {
+  height: 1415px;
+  padding-bottom: 32px; }
+.view-content.team-view .team-roster {
+  background-color: #343a3c; }
+.view-content.team-view .team-match-history {
+  margin-left: 280px;
+  border-left: 2px solid #e0e0e6; }
+.view-content.team-view .team-match-history .section-titlebar {
+  background-color: #d4d8e0; }
+.view-content.team-view .team-match-history .section-titlebar > .section-title {
+  color: #383e40; }
+.view-content.team-view .team-match-history ul.vertical-list > li {
+  display: block;
+  overflow: auto; }
+.view-content.team-view .team-match-history ul.vertical-list > li:nth-child(odd) {
+  background-color: #eeeeee; }
+.view-content.team-view .team-match-history ul.vertical-list > li:nth-child(even) {
+  background-color: #e0e0e6; }
+.view-content.team-view .team-masthead {
+  padding: 30px 0px 14px 0px;
+  height: 320px;
+  background-image: url("../../common/images/team/team-masthead-background.png");
+  background-repeat: no-repeat;
+  /* Bottom shadow */
+  -webkit-box-shadow: inset 1px -6px 32px -6px black;
+  -moz-box-shadow: inset 1px -6px 32px -6px black;
+  box-shadow: inset 1px -6px 32px -6px black; }
+.view-content.team-view .team-masthead .team-emblem, .view-content.team-view .team-masthead .team-info {
+  display: block;
+  margin-bottom: 14px;
+  width: 100%;
+  text-align: center; }
+.view-content.team-view .team-masthead .team-emblem > img {
+  width: 160px;
+  height: 160px; }
+.view-content.team-view .team-masthead .team-info .info-name, .view-content.team-view .team-masthead .team-info .team-bounty {
+  display: inline-block; }
+.view-content.team-view .team-masthead .team-info .info-name {
+  margin-top: 2px;
+  margin-right: 14px;
+  font-size: 64px;
+  font-family: "Akzidenz-Grotesk Condensed", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0.025em;
+  text-shadow: 3px 3px #383e40;
+  color: #ffffff; }
+.view-content.team-view .team-masthead .team-info .team-bounty .bounty {
+  width: 80px;
+  height: 80px; }
+.view-content.team-view .team-masthead .team-info .team-bounty .bounty > span {
+  padding-top: 21px;
+  font-size: 38px;
+  font-family: "Akzidenz-Grotesk Condensed", sans-serif;
+  font-style: normal;
+  font-weight: 400; }
+.view-content.team-view .team-roster {
+  float: left;
+  width: 280px; }
+.view-content.team-view .team-roster .section-titlebar {
+  background-color: #383e40; }
+.view-content.team-view .team-roster ul.team-member-list > li {
+  display: block;
+  overflow: auto; }
+.view-content.team-view .team-roster ul.team-member-list > li:nth-child(odd) {
+  background-color: #343a3c; }
+.view-content.team-view .team-roster ul.team-member-list > li:nth-child(even) {
+  background-color: #383e40; }
+.view-content.team-view .team-roster ul.team-member-list li.team-member {
+  padding: 7px 0px 7px 28px; }
+.view-content.team-view .team-roster ul.team-member-list li.team-member img, .view-content.team-view .team-roster ul.team-member-list li.team-member span {
+  display: inline-block;
+  vertical-align: middle; }
+.view-content.team-view .team-roster ul.team-member-list li.team-member img.team-member-avatar {
+  margin-right: 12px;
+  width: 50px;
+  height: 50px; }
+.view-content.team-view .team-roster ul.team-member-list li.team-member span.team-member-name {
+  margin-top: 6px;
+  font-size: 18.5px;
+  font-family: "Univers LT Std Condensed", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0.065em;
+  color: #e0e2e6; }
+.view-content.team-view .team-roster ul.team-member-list li.team-member.captain:after {
+  margin-left: 6px;
+  content: "(captain)";
+  font-size: 11px;
+  font-family: "Univers LT Std Regular", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #d03e30; }
+.view-content.team-view .match-history ul.vertical-list.match-history-list li.match {
+  /* Conditional match record styling */ }
+.view-content.team-view .match-history ul.vertical-list.match-history-list li.match .left > *, .view-content.team-view .match-history ul.vertical-list.match-history-list li.match .right > * {
+  display: inline-block;
+  vertical-align: middle; }
+.view-content.team-view .match-history ul.vertical-list.match-history-list li.match .left {
+  padding-left: 28px; }
+.view-content.team-view .match-history ul.vertical-list.match-history-list li.match .left .timeline {
+  width: 40px;
+  height: 100%;
+  text-align: right; }
+.view-content.team-view .match-history ul.vertical-list.match-history-list li.match .left .timeline span {
+  margin-top: 1px;
+  color: #929296; }
+.view-content.team-view .match-history ul.vertical-list.match-history-list li.match .left .versus {
+  position: relative;
+  margin: 0px 12px;
+  padding: 10px 0px 10px 20px;
+  border-left: 1px dashed #b0b6be; }
+.view-content.team-view .match-history ul.vertical-list.match-history-list li.match .left .versus img, .view-content.team-view .match-history ul.vertical-list.match-history-list li.match .left .versus span {
+  display: inline-block;
+  vertical-align: middle; }
+.view-content.team-view .match-history ul.vertical-list.match-history-list li.match .left .versus img {
+  height: 40px; }
+.view-content.team-view .match-history ul.vertical-list.match-history-list li.match .left .versus span {
+  width: 14px;
+  margin: 3px 6px 0px 6px;
+  color: #383e40; }
+.view-content.team-view .match-history ul.vertical-list.match-history-list li.match .left .versus:after {
+  content: " ";
+  position: absolute;
+  top: 26px;
+  left: -4px;
+  width: 8px;
+  height: 8px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px; }
+.view-content.team-view .match-history ul.vertical-list.match-history-list li.match .left .message {
+  margin-top: 6px;
+  font-size: 12.5px;
+  font-family: "Univers LT Std Regular", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  display: inline-block !important;
+  letter-spacing: -0.015em;
+  color: #383e40; }
+.view-content.team-view .match-history ul.vertical-list.match-history-list li.match .right {
+  padding-right: 36px; }
+.view-content.team-view .match-history ul.vertical-list.match-history-list li.match .right .bounty-adjustment {
+  margin-top: 13px; }
+.view-content.team-view .match-history ul.vertical-list.match-history-list li.match .right .bounty-adjustment, .view-content.team-view .match-history ul.vertical-list.match-history-list li.match .right .bounty-adjustment:before {
+  font-size: 32px;
+  font-family: "Akzidenz-Grotesk Condensed", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  display: inline-block !important; }
+.view-content.team-view .match-history ul.vertical-list.match-history-list li.match .right .bounty-adjustment:before, .view-content.team-view .match-history ul.vertical-list.match-history-list li.match .right .bounty-adjustment:before:before {
+  margin-right: 4px; }
+.view-content.team-view .match-history ul.vertical-list.match-history-list li.match.win .left > .versus a:nth-of-type(2) > img {
+  opacity: 0.5;
+  -webkit-filter: grayscale(100%); }
+.view-content.team-view .match-history ul.vertical-list.match-history-list li.match.win .left > .versus:after {
+  background-color: #1496d2; }
+.view-content.team-view .match-history ul.vertical-list.match-history-list li.match.win .right > .bounty-adjustment, .view-content.team-view .match-history ul.vertical-list.match-history-list li.match.win .right > .bounty-adjustment:before {
+  color: #b0b6be; }
+.view-content.team-view .match-history ul.vertical-list.match-history-list li.match.win .right > .bounty-adjustment:before, .view-content.team-view .match-history ul.vertical-list.match-history-list li.match.win .right > .bounty-adjustment:before:before {
+  content: "+";
+  font-size: 24px; }
+.view-content.team-view .match-history ul.vertical-list.match-history-list li.match.loss .left > .versus a:nth-of-type(1) > img {
+  opacity: 0.5;
+  -webkit-filter: grayscale(100%); }
+.view-content.team-view .match-history ul.vertical-list.match-history-list li.match.loss .left > .versus:after {
+  background-color: #782020; }
+.view-content.team-view .match-history ul.vertical-list.match-history-list li.match.loss .right > .bounty-adjustment, .view-content.team-view .match-history ul.vertical-list.match-history-list li.match.loss .right > .bounty-adjustment:before {
+  opacity: 0.9;
+  color: #782020; }
+.view-content.team-view .match-history ul.vertical-list.match-history-list li.match.loss .right > .bounty-adjustment:before, .view-content.team-view .match-history ul.vertical-list.match-history-list li.match.loss .right > .bounty-adjustment:before:before {
+  content: "-"; }
+
+/* Vendor */

@@ -1,0 +1,32 @@
+#canvas {
+	
+	/* See StackOverflow (http://stackoverflow.com/questions/7615009/) */
+    image-rendering: optimizeSpeed;
+    image-rendering: -webkit-optimize-contrast; /* Webkit (Safari) */
+    image-rendering: -o-crisp-edges;            /* Opera 12.02+ */
+    image-rendering: pixelated;                 /* Webkit (Chrome) */
+    image-rendering: -moz-crisp-edges;          /* FF 6.0+ */
+
+    -ms-interpolation-mode: nearest-neighbor;   /* IE */
+
+    user-select:            none;
+    -ms-user-select:        none;
+    -webkit-user-select:    none;
+    -khtml-user-select:     none;
+    -moz-user-select:       none;
+    -webkit-touch-callout:  none;
+    -webkit-user-drag:      none;
+
+    display: block;
+    padding: 0px 0px;
+
+    background-color: #000;
+    background-image: url('../assets/backgrounds/null_64x64.png');
+    background-position-x: 0px;
+    background-position-y: 0px;
+    background-repeat: repeat;
+    background-size: 32px 32px;
+
+    /*cursor: none;*/
+    
+}

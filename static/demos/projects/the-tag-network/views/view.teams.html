@@ -1,0 +1,26 @@
+<!-- Player Team Associations -->
+<section class="player-team-associations">
+	<!-- Section Title -->
+	<div class="section-titlebar"><span class="section-title left">your teams</span></div>
+	<!-- Teams List -->
+	<ul class="vertical-list teams-list">
+		<li class="team-item" ng-class="{ 'primary': team_id == user.primary_team}" ng-repeat="team_id in user.teams">
+			<div class="left team-avatar">
+				<a href="./#/teams/{{team_id}}">
+					<img ng-src="./{{teams[team_id].avatar}}">
+					<span class="team-name">{{teams[team_id].name}}</span>
+				</a>
+			</div>
+			<div class="right team-roster">
+				<span class="label small">team roster</span>
+				<ul class="team-members-list">
+					<li ng-repeat="player_id in filter(teams, team_id).roster" class="team-member">
+						<a href="./#/players/{{player_id}}">
+							<img ng-src="./common/images/players/{{player_id}}/player-avatar.png">
+						</a>
+					</li>
+				</ul>
+			</div>
+		</li>
+	</ul>
+</section>

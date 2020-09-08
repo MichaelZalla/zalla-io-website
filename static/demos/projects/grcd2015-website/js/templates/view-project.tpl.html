@@ -1,0 +1,126 @@
+<header id="header" class="fixed hidden" ng-controller="HeaderViewController">
+	<div class="container">
+		<div class="content">
+
+			<!-- Branding -->
+			<div class="left"><a href="#" id="logo"></a></div>
+
+			<!-- Responsive navigation menu -->
+			<div class="right" ng-click="toggleNavigation()">
+				<section class="ss-header-navigation fullscreen">
+					<div class="container">
+						<div class="content">
+							<ul>
+								<li ng-click="redirectToLandingSection('about')" class="about"><span class="label">about</span></li>
+								<li ng-click="redirectToLandingSection('print')" class="print"><span class="label">print</span></li>
+								<li ng-click="redirectToLandingSection('motion')" class="motion"><span class="label">motion</span></li>
+								<li ng-click="redirectToLandingSection('interaction')" class="interaction"><span class="label">interaction</span></li>
+								<li class="filter-menu-toggle" ng-click="toggleFilterMenu()"><span class="label">filters</span></li>
+							</ul>
+						</div>
+					</div>
+				</section>
+			</div>
+
+		</div>
+	</div>
+</header>
+
+<filter-menu></filter-menu>
+
+<div class="banner" ng-style="{ 'background-image': 'url(' + getProjectBannerUrl(project) + ')' }"></div>
+
+<section id="showcase" ng-if="project !== null">
+	<div class="container">
+		<div class="content">
+			<div class="row">
+				
+				<!-- Project info -->
+
+				<div class="column small-12 medium-12 large-8 project-info">
+					
+					<span class="project-title heading">{{ project.title }}</span>
+					<span class="project-subtitle subheading">{{ project.subtitle }}</span>
+					<span class="copy project-description">{{ project.description }}</span>
+
+					<ul class="project-images">
+						<li ng-repeat="url in getProjectImageUrls(project)">
+							<img ng-src="{{ url }}" alt="{{ project.title }}" remove-on-error>
+						</li>
+					</ul>
+
+					<div class="video-wrapper" ng-if="hasVimeoEmbed(project)" ng-style="{ 'padding-bottom': getVideoPaddingPercentage(project) + '%' }">
+						<iframe class="video-embed" ng-src="{{ getSecureVimeoEmbedUrl(project) }}"
+							width="{{ project.vimeo_dimensions.width }}" height="{{ project.vimeo_dimensions.height }}"
+							frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+					</div>
+					<span class="video-links" ng-if="hasVimeoEmbed(project)"><a ng-href="http://vimeo.com/video/{{ project.vimeo_id }}">{{ project.title }}</a>
+					on <a href="https://vimeo.com">Vimeo</a>.</span>
+
+				</div>
+
+				<!-- Students info -->
+
+				<div class="column small-12 medium-12 large-3 student-info">
+					<ul class="student-profiles">
+						
+						<li class="student-profile" ng-repeat="student in project.students">
+
+							<img class="student-portrait" ng-src="{{ getStudentPortraitLocation(student) }}"
+								width="386" height="386" alt="{{ getStudentFullName(student) }}">
+							
+							<span class="student-name heading">{{ getStudentFullName(student) }}</span>
+
+							<ul class="student-focuses">
+								<li ng-repeat="track in student.focus_tracks"><span class="subheading">{{ track }}</span></li>
+							</ul>
+
+							<span class="student-website" ng-if="student.website"><a ng-href="http://{{ student.website }}">{{ student.website }}</a></span>
+
+							<span class="student-superlative copy">{{ student.superlative }}</span>
+
+							<div class="student-coops">
+								<span class="heading">co-op experiences</span>
+								<ul>
+									<li class="coop" ng-repeat="coop in student.coops">
+										<span class="coop-company">{{ coop.company }}</span>
+										<span class="coop-location">{{ coop.location }}</span>
+									</li>
+								</ul>
+							</div>
+
+						</li>
+
+					</ul>
+				</div>
+
+			</div>	
+		</div>
+	</div>
+</section>
+
+<section id="navigation" ng-if="project !== null">
+	<div class="container">
+		<div class="content">
+			<div class="row">
+				
+				<div class="column small-12 medium-12 large-8">
+					<div class="row align-bottom">
+						<div class="column small-3">
+							<span><!-- keep column --></span>
+							<a class="goto-prev" ng-click="redirectToProject(project.prev)" ng-if="project.prev">prev</a>
+						</div>
+						<div class="column small-6">
+							<a class="goto-top" ng-click="scrollToTop()">back to top</a>
+						</div>
+						<div class="column small-3">
+							<span><!-- keep column --></span>
+							<a class="goto-next" ng-click="redirectToProject(project.next)" ng-if="project.next">next</a>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+</section>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 15.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="72px" height="72px" viewBox="0 0 72 72" enable-background="new 0 0 72 72" xml:space="preserve">
+<defs>
+	<filter id="Adobe_OpacityMaskFilter" filterUnits="userSpaceOnUse" x="-18" y="0" width="108" height="72">
+		<feColorMatrix  type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 1 0"/>
+	</filter>
+</defs>
+<mask maskUnits="userSpaceOnUse" x="-18" y="0" width="108" height="72" id="SVGID_1_">
+	<g filter="url(#Adobe_OpacityMaskFilter)">
+		<circle fill="#FFFFFF" cx="36" cy="36" r="36"/>
+	</g>
+</mask>
+<g mask="url(#SVGID_1_)">
+	<rect x="-18" fill="#089E49" width="108" height="72"/>
+	<rect x="-18" fill="#EE2E2F" width="108" height="36"/>
+	<polygon fill="#FBD118" points="40.359,37.415 47.412,32.291 38.693,32.291 36,24 33.307,32.291 24.587,32.291 31.641,37.416 
+		28.948,45.709 36,40.584 43.053,45.709 	"/>
+</g>
+</svg>

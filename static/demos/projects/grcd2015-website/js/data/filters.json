@@ -1,0 +1,77 @@
+[
+	{
+		"focus": "print",
+		"type": "focus_tracks",
+		"value": "print"
+	},
+	{
+		"focus": "print",
+		"type": "categories",
+		"value": "campaign"
+	},
+	{
+		"focus": "print",
+		"type": "categories",
+		"value": "exhibition"
+	},
+	{
+		"focus": "print",
+		"type": "categories",
+		"value": "experiential"
+	},
+	{
+		"focus": "print",
+		"type": "categories",
+		"value": "packaging"
+	},
+	{
+		"focus": "print",
+		"type": "categories",
+		"value": "publication"
+	},
+	{
+		"focus": "print",
+		"type": "categories",
+		"value": "wayfinding"
+	},
+	{
+		"focus": "motion",
+		"type": "focus_tracks",
+		"value": "motion"
+	},
+	{
+		"focus": "motion",
+		"type": "categories",
+		"value": "animation"
+	},
+	{
+		"focus": "motion",
+		"type": "categories",
+		"value": "documentary/film"
+	},
+	{
+		"focus": "motion",
+		"type": "categories",
+		"value": "promotional"
+	},
+	{
+		"focus": "interaction",
+		"type": "focus_tracks",
+		"value": "interaction"
+	},
+	{
+		"focus": "interaction",
+		"type": "categories",
+		"value": "app"
+	},
+	{
+		"focus": "interaction",
+		"type": "categories",
+		"value": "website"
+	},
+	{
+		"focus": "interaction",
+		"type": "categories",
+		"value": "wearable"
+	}
+]

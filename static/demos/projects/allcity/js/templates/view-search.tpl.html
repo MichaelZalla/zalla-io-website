@@ -1,0 +1,64 @@
+<div ng-include src="'./js/templates/header.tpl.html'" include-replace></div>
+
+<section id="filters">
+	<div class="container">
+		<div class="content">
+
+			<!-- Filters toggle -->
+			<span class="filter-toggle label" ng-class="{ 'show': (filtersVisible != true) }" ng-click="toggleFilters()">
+				{{ filtersVisible ? "Hide" : "Show" }} filters
+			</span>
+
+			<!-- Filter dropdowns -->
+			<ul class="filter-items" ng-class="{ 'visible': filtersVisible }">
+				<li class="filter-item filter-districts">
+					<span class="label">districts</span>
+					<filter-preview selected="filterStates.districts"></filter-preview>
+					<filter-options selected="filterStates.districts" options="filterOptions.districts"
+						anchored-to="filter-preview" anchor-offset-x="0" anchor-offset-y="-9"></filter-options>
+				</li>
+				<li class="filter-item filter-media">
+					<span class="label">media</span>
+					<filter-preview selected="filterStates.media"></filter-preview>
+					<filter-options selected="filterStates.media" options="filterOptions.media"
+						anchored-to="filter-preview" anchor-offset-x="0"  anchor-offset-y="-9"></filter-options>
+				</li>
+				<li class="filter-item filter-years">
+					<span class="label">years</span>
+					<filter-preview selected="filterStates.years"></filter-preview>
+					<filter-options selected="filterStates.years" options="filterOptions.years"
+						anchored-to="filter-preview" anchor-offset-x="0"  anchor-offset-y="-9"></filter-options>
+				</li>
+				<li class="filter-item">
+					<span class="filter-reset label" ng-click="reset()">reset</span>
+				</li>
+			</ul>
+
+		</div>
+	</div>
+</section>
+
+<section id="results">
+	<div class="container">
+		<div class="content">
+
+			<!-- Results notice -->
+			<div class="row notice" ng-show="$routeParams['query'].length">
+				<div class="column medium-6 left">
+					<span><ng-pluralize count="results.length" when="pluralize('')"></ng-pluralize></span>
+				</div>
+				<div class="column medium-6 right">
+					<span>Want to see more? <a href="#/search">Click here</a> to browse all.</span>
+				</div>
+			</div>
+
+			<!-- Results list -->
+			<ul class="result-cards">
+				<result-card ng-repeat="result in results" result="result" ng-class="{ 'disabled': result.disabled }"></result-card>
+			</ul>
+
+		</div>
+	</div>
+</section>
+
+<div ng-include src="'./js/templates/footer.tpl.html'" include-replace></div>

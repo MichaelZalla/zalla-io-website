@@ -1,0 +1,82 @@
+<!-- <div ng-include src="'./js/templates/header.tpl.html'" include-replace></div> -->
+
+<section class="fullscreen">
+
+	<!-- Transitioning wallpaper -->
+	<div class="wallpaper" background="'./images/works/'+preview.key+'/wallpaper-1.jpg'"
+		ng-class="{ 'disabled': preview.disabled }" ng-click="redirectToExhibit(preview)"></div>
+
+	<!-- Filter drawer -->
+	<filter-drawer filter="editableFilter" visibility="filterDrawerVisible"></filter-drawer>
+
+	<!-- Sidebar -->
+	<div class="sidebar">
+
+		<div class="upper">
+
+			<a class="logo" href="#/home" alt="AllCity"></a>
+
+			<searchbar query="query" on-change="updateResults(qs)" on-submit="updateResults(qs)"></searchbar>
+
+			<div class="filter-menu">
+
+				<span class="filter-toggle label" ng-class="{ 'show': filtersVisible }"
+					ng-click="toggleFilters()">{{ filtersVisible ? "Hide" : "Show" }} filters</span>
+				<span class="filter-reset label" ng-click="reset()">reset</span>
+
+				<ul class="filter-items" ng-class="{ 'visible': filtersVisible }">
+					<li class="filter-item filter-districts" ng-click="onFilterItemClick($event)">
+						<div class="marker"></div>
+						<span class="label">districts</span>
+						<filter-preview selected="filterStates.districts"></filter-preview>
+					</li>
+					<li class="filter-item filter-media" ng-click="onFilterItemClick($event)">
+						<div class="marker"></div>
+						<span class="label">media</span>
+						<filter-preview selected="filterStates.media"></filter-preview>
+					</li>
+					<li class="filter-item filter-years" ng-click="onFilterItemClick($event)">
+						<div class="marker"></div>
+						<span class="label">years</span>
+						<filter-preview selected="filterStates.years"></filter-preview>
+					</li>
+				</ul>
+
+			</div>
+
+			<div class="spacer"></div>
+
+		</div>
+
+		<div class="lower">
+			<ul class="results">
+				<li class="result"
+					ng-repeat="result in results"
+					ng-mouseover="setPreview(result)"
+					ng-click="redirectToExhibit(result)"
+					ng-class="{
+						'active': result === preview,
+						'disabled': result.disabled
+					}">
+
+					<span class="result-district label">{{result.district}}</span>
+					<span class="result-title heading">{{result.title}}</span>
+
+					<div class="pin light"></div>
+					<div class="pin dark"></div>
+
+				</li>
+			</ul>
+		</div>
+
+	</div>
+
+	<!-- Panning minimap -->
+	<div class="interactive-map-view-wrapper">
+		<interactive-map-view map-address="{{preview.location}}"
+			map-width="180" map-height="180" map-zoom="16">
+		</interactive-map-view>
+		<div class="pin"></div>
+	</div>
+
+</section>

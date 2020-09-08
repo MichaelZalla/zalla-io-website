@@ -1,0 +1,74 @@
+{
+    "578": {
+        "name": "Norway",
+        "flag-src": "svg/flags/norway/norway-c.svg"
+    },
+    "840": {
+        "name": "United States",
+        "flag-src": "svg/flags/united-states/united-states-c.svg"
+    },
+    "554": {
+        "name": "New Zealand",
+        "flag-src": "svg/flags/new-zealand/new-zealand-c.svg"
+    },
+    "372": {
+        "name": "Ireland",
+        "flag-src": "svg/flags/ireland/ireland-c.svg"
+    },
+    "392": {
+        "name": "Japan",
+        "flag-src": "svg/flags/japan/japan-c.svg"
+    },
+    "410": {
+        "name": "South Korea",
+        "flag-src": "svg/flags/south-korea/south-korea-c.svg"
+    },
+    "192": {
+        "name": "Cuba",
+        "flag-src": "svg/flags/cuba/cuba-c.svg"
+    },
+    "170": {
+        "name": "Colombia",
+        "flag-src": "svg/flags/colombia/colombia-c.svg"
+    },
+    "682": {
+        "name": "Saudi Arabia",
+        "flag-src": "svg/flags/saudi-arabia/saudi-arabia-c.svg"
+    },
+    "788": {
+        "name": "Tunisia",
+        "flag-src": "svg/flags/tunisia/tunisia-c.svg"
+    },
+    "356": {
+        "name": "India",
+        "flag-src": "svg/flags/india/india-c.svg"
+    },
+    "418": {
+        "name": "Laos",
+        "flag-src": "svg/flags/laos/laos-c.svg"
+    },
+    "400": {
+        "name": "Jordan",
+        "flag-src": "svg/flags/jordan/jordan-c.svg"
+    },
+    "504": {
+        "name": "Morocco",
+        "flag-src": "svg/flags/morocco/morocco-c.svg"
+    },
+    "854": {
+        "name": "Burkina Faso",
+        "flag-src": "svg/flags/burkina-faso/burkina-faso-c.svg"
+    },
+    "231": {
+        "name": "Ethiopia",
+        "flag-src": "svg/flags/ethiopia/ethiopia-c.svg"
+    },
+    "450": {
+        "name": "Madagascar",
+        "flag-src": "svg/flags/madagascar/madagascar-c.svg"
+    },
+    "800": {
+        "name": "Uganda",
+        "flag-src": "svg/flags/uganda/uganda-c.svg"
+    }
+}

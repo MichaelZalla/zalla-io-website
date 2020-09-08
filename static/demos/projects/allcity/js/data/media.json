@@ -1,0 +1,12 @@
+[
+	{
+		"key": "mural",
+		"value": "Mural",
+		"thumbnail": "./images/media/mural.png"
+	},
+	{
+		"key": "sculpture",
+		"value": "Sculpture",
+		"thumbnail": "./images/media/sculpture.png"
+	}
+]

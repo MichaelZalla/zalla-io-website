@@ -1,0 +1,83 @@
+[
+	{
+		"id": 0,
+		"name": "GabeN",
+		"real_name": "Gabe Newell",
+		"location": "Seattle, WA",
+		"bounty": 325,
+		"primary_team": 0,
+		"teams": [0,1],
+		"titles": [0,1,2]
+	},
+	{
+		"id": 1,
+		"name": "Nightshade",
+		"real_name": "Michael Zalla",
+		"location": "San Francisco, CA",
+		"bounty": 125,
+		"primary_team": 1,
+		"teams": [1,2],
+		"titles": [0,1,2]
+	},
+	{
+		"id": 2,
+		"name": "GigaMonkey2",
+		"real_name": "Kyle Obrien",
+		"location": "Portland, OR",
+		"bounty": 780,
+		"primary_team": 2,
+		"teams": [2,3],
+		"titles": [0,1,2]
+	},
+	{
+		"id": 3,
+		"name": "MidwayMonster54",
+		"real_name": "Sam Schneider",
+		"location": "Cincinnati, OH",
+		"bounty": 325,
+		"primary_team": 3,
+		"teams": [3,0],
+		"titles": [0,1,2]
+	},
+	{
+		"id": 4,
+		"name": "Trollboogie",
+		"real_name": "Kevin Bacon",
+		"location": "San Antonio, TX",
+		"bounty": 515,
+		"primary_team": 0,
+		"teams": [0,1],
+		"titles": [0,1,2]
+	},	
+	{
+		"id": 5,
+		"name": "XenCityPro",
+		"real_name": "Jay Jeremy",
+		"location": "Jacksonville, FL",
+		"bounty": 965,
+		"primary_team": 1,
+		"teams": [1,2],
+		"titles": [0,1,2]
+	},	
+	{
+		"id": 6,
+		"name": "Beleester",
+		"real_name": "Josh Stone",
+		"location": "Rochester, NY",
+		"bounty": 300,
+		"primary_team": 2,
+		"teams": [2,3],
+		"titles": [0,1,2]
+	},	
+	{
+		"id": 7,
+		"name": "Spoonman",
+		"real_name": "Ben Lee",
+		"location": "Santa Ana, CA",
+		"bounty": 230,
+		"primary_team": 3,
+		"teams": [3,0],
+		"titles": [0,1,2]
+	}
+]
+

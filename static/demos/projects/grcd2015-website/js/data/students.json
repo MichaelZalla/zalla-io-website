@@ -1,0 +1,1856 @@
+{
+    "bahmrc": {
+        "coops": [
+            {
+                "company": "Zynga",
+                "location": "San Francisco, CA"
+            },
+            {
+                "company": "Sapient Nitro",
+                "location": "Boston, MA"
+            },
+            {
+                "company": "SevenDesign",
+                "location": "San Francisco, CA"
+            }
+        ],
+        "first_name": "Ryan",
+        "focus_tracks": [
+            "interaction"
+        ],
+        "last_name": "Bahm",
+        "superlative": "Most likely to grow a mustacheless beard.",
+        "website": "www.ryanbahm.com"
+    },
+    "bradfodr": {
+        "coops": [
+            {
+                "company": "Port of Greater Cincinnati Development Authority",
+                "location": "Cincinnati, OH"
+            },
+            {
+                "company": "American Girl Inc.",
+                "location": "Middleton, WI"
+            },
+            {
+                "company": "Crown Equipment",
+                "location": "New Bremen, OH"
+            },
+            {
+                "company": "American Girl Inc.",
+                "location": "Middleton, WI"
+            }
+        ],
+        "first_name": "Danielle",
+        "focus_tracks": [
+            "interaction"
+        ],
+        "last_name": "Bradford",
+        "superlative": "Most likely to have the DIY tool you need.",
+        "website": "www.daniellebradford.com"
+    },
+    "burnsbm": {
+        "coops": [
+            {
+                "company": "Barefoot Proximity",
+                "location": "Cincinnati, OH"
+            },
+            {
+                "company": "Paperplane Creative",
+                "location": "Cincinnati, OH"
+            },
+            {
+                "company": "Zynga",
+                "location": "San Francisco, CA"
+            },
+            {
+                "company": "Zynga",
+                "location": "San Francisco, CA"
+            },
+            {
+                "company": "Apple Inc.",
+                "location": "Cupertino, CA"
+            }
+        ],
+        "first_name": "Ben",
+        "focus_tracks": [
+            "motion"
+        ],
+        "last_name": "Burns",
+        "superlative": "Most likely to get struck by lightning while trying to take a photo. ",
+        "website": "www.benburnsdesign.com"
+    },
+    "carrl2": {
+        "coops": [
+            {
+                "company": "Luxurious Animals",
+                "location": "New York, NY"
+            },
+            {
+                "company": "Scenario Learning",
+                "location": "Cincinnati, OH"
+            },
+            {
+                "company": "ACG Multimedia",
+                "location": "Cincinnati, OH"
+            },
+            {
+                "company": "UC Simulation Center",
+                "location": "Cincinnati, OH"
+            }
+        ],
+        "first_name": "Logan",
+        "focus_tracks": [
+            "motion"
+        ],
+        "last_name": "Carr",
+        "superlative": "Most likely to be found DJ'ing his own rave.",
+        "website": "www.logancarrdesign.com"
+    },
+    "colvinss": {
+        "coops": [
+            {
+                "company": "Luxottica Retail",
+                "location": "Cincinnati, OH"
+            },
+            {
+                "company": "Infinite Scale",
+                "location": "Salt Lake City, UT"
+            },
+            {
+                "company": "Selbert Perkins Design",
+                "location": "Los Angeles, CA"
+            }
+        ],
+        "first_name": "Sam",
+        "focus_tracks": [
+            "print"
+        ],
+        "last_name": "Colvin",
+        "superlative": "Most street cred.",
+        "website": "www.sam-colvin.squarespace.com"
+    },
+    "coobatcm": {
+        "coops": [
+            {
+                "company": "LPK",
+                "location": "Cincinnati, OH"
+            },
+            {
+                "company": "LPK",
+                "location": "Cincinnati, OH"
+            },
+            {
+                "company": "MKG",
+                "location": "New York, NY"
+            },
+            {
+                "company": "Findlay Market",
+                "location": "Cincinnati, OH"
+            }
+        ],
+        "first_name": "Christina",
+        "focus_tracks": [
+            "interaction"
+        ],
+        "last_name": "Coobatis",
+        "superlative": "Most likely to show you a bizzare YouTube video.",
+        "website": "www.coobatis.com"
+    },
+    "dagiliay": {
+        "coops": [
+            {
+                "company": "Schawk!",
+                "location": "Chicago, IL"
+            },
+            {
+                "company": "Madison Design",
+                "location": "Covington, KY"
+            },
+            {
+                "company": "WhyDesignWorks",
+                "location": "Boston, MA"
+            }
+        ],
+        "first_name": "Amy",
+        "focus_tracks": [
+            "print"
+        ],
+        "last_name": "Dagilis",
+        "superlative": "Most enthusiastic about cheese, wine and pizza. ",
+        "website": "www.amy-dagilis.com"
+    },
+    "daniela7": {
+        "coops": [
+            {
+                "company": "Juice Pharma Advertising",
+                "location": "New York, NY"
+            },
+            {
+                "company": "NiCE Ltd.",
+                "location": "New York, NY"
+            },
+            {
+                "company": "Motorola",
+                "location": "Chicago, IL"
+            },
+            {
+                "company": "Ignition",
+                "location": "Los Angeles, CA"
+            },
+            {
+                "company": "Samsung",
+                "location": "San Jose, CA"
+            }
+        ],
+        "first_name": "Ayan",
+        "focus_tracks": [
+            "motion",
+            "interaction"
+        ],
+        "last_name": "Daniels",
+        "superlative": "Hardest werqer.",
+        "website": "www.designayan.com"
+    },
+    "davis2kh": {
+        "coops": [
+            {
+                "company": "Standard Textile",
+                "location": "Cincinnati, OH"
+            },
+            {
+                "company": "Minelli, Inc.",
+                "location": "Boston, MA"
+            },
+            {
+                "company": "Fossil Group",
+                "location": "Dallas, TX"
+            }
+        ],
+        "first_name": "Kate",
+        "focus_tracks": [
+            "print"
+        ],
+        "last_name": "Davis",
+        "superlative": "Highest waisted jeans.",
+        "website": "www.thisiskatedavis.com"
+    },
+    "derosage": {
+        "coops": [
+            {
+                "company": "Messer Construction Co.",
+                "location": "Cincinnati, OH"
+            },
+            {
+                "company": "Interbrand",
+                "location": "Cincinnati, OH"
+            },
+            {
+                "company": "Brandimage",
+                "location": "Cincinnati, OH"
+            }
+        ],
+        "first_name": "Grace",
+        "focus_tracks": [
+            "print"
+        ],
+        "last_name": "DeRosa",
+        "superlative": "Most likely to get a pony as a graduation gift (your move, mom and dad).",
+        "website": "www.derosa-designs.com"
+    },
+    "dirutime": {
+        "coops": [
+            {
+                "company": "Landor Associates",
+                "location": "Cincinnati, OH"
+            },
+            {
+                "company": "Selbert Perkins Design",
+                "location": "Chicago, IL"
+            },
+            {
+                "company": "Seven Design",
+                "location": "San Francisco, CA"
+            }
+        ],
+        "first_name": "Margaret",
+        "focus_tracks": [
+            "print"
+        ],
+        "last_name": "DiRutigliano",
+        "superlative": "Most likely to wear pattern on pattern every day of the week.",
+        "website": "www.mdiru.squarespace.com"
+    },
+    "fakesme": {
+        "coops": [
+            {
+                "company": "Stevenson Color",
+                "location": "Cincinnati, OH"
+            },
+            {
+                "company": "Apple Inc.",
+                "location": "Cupertino, CA"
+            },
+            {
+                "company": "Gallagher & Associates",
+                "location": "Washington DC"
+            }
+        ],
+        "first_name": "Megan",
+        "focus_tracks": [
+            "print"
+        ],
+        "last_name": "Fakes",
+        "superlative": "Most rad middle child.",
+        "website": "www.meganfakesdesign.com"
+    },
+    "fennesrc": {
+        "coops": [
+            {
+                "company": "MKTG",
+                "location": "New York, NY"
+            },
+            {
+                "company": "The Modal Shop",
+                "location": "Cincinnati, OH"
+            },
+            {
+                "company": "Live Well Collaborative",
+                "location": "Cincinnati, OH"
+            }
+        ],
+        "first_name": "Ryan",
+        "focus_tracks": [
+            "motion"
+        ],
+        "last_name": "Fennessey",
+        "superlative": "Best eyes.",
+        "website": "www.ryanfennessey.com"
+    },
+    "fitzgepc": {
+        "coops": [
+            {
+                "company": "THA.i",
+                "location": "New York, NY"
+            },
+            {
+                "company": "CNH",
+                "location": "Chicago, IL"
+            },
+            {
+                "company": "JRA",
+                "location": "Cincinnati, OH"
+            },
+            {
+                "company": "JCPenney",
+                "location": "Dallas, TX"
+            }
+        ],
+        "first_name": "Patrick",
+        "focus_tracks": [
+            "motion"
+        ],
+        "last_name": "Fitzgerald",
+        "superlative": "Most likely to wear a black t-shirt and blue jeans everyday of the week.",
+        "website": "www.pfitzgeralddesign.com"
+    },
+    "floreacc": {
+        "coops": [
+            {
+                "company": "Great Here ",
+                "location": "Florence, KY"
+            },
+            {
+                "company": "Luxurious Animals",
+                "location": "New York, NY"
+            },
+            {
+                "company": "Apple Inc.",
+                "location": "Cuptertino, CA"
+            }
+        ],
+        "first_name": "Catalina",
+        "focus_tracks": [
+            "interaction"
+        ],
+        "last_name": "Florea",
+        "superlative": "Most likely to start a pizza dating app or a pizza band. ",
+        "website": "www.catalinaflorea.com"
+    },
+    "foertmea": {
+        "coops": [
+            {
+                "company": "Michelman Inc.",
+                "location": "Cincinnati, OH"
+            },
+            {
+                "company": "BHDP Architecture",
+                "location": "Cincinnati, OH"
+            },
+            {
+                "company": "Studio SC",
+                "location": "Seattle, WA"
+            },
+            {
+                "company": "Selbert Perkins Design",
+                "location": "Chicago, IL"
+            }
+        ],
+        "first_name": "Annie",
+        "focus_tracks": [
+            "print"
+        ],
+        "last_name": "Foertmeyer",
+        "superlative": "Most pun-ctual.",
+        "website": "www.anniefoertmeyer.com"
+    },
+    "freemaea": {
+        "coops": [
+            {
+                "company": "Thrive",
+                "location": "Atlanta, GA"
+            },
+            {
+                "company": "Target",
+                "location": "Minneapolis, MN"
+            },
+            {
+                "company": "Apple Inc.",
+                "location": "Cuptertino, CA"
+            },
+            {
+                "company": "Gensler",
+                "location": "New York, NY"
+            }
+        ],
+        "first_name": "Elizabeth",
+        "focus_tracks": [
+            "print"
+        ],
+        "last_name": "Freeman",
+        "superlative": "Weirdest nickname.",
+        "website": "www.efreedesign.com"
+    },
+    "fresonlm": {
+        "coops": [
+            {
+                "company": "LPK",
+                "location": "Cincinnati, OH"
+            },
+            {
+                "company": "Ferno ",
+                "location": "Wilmington, OH"
+            },
+            {
+                "company": "P&G",
+                "location": "Cincinnati, OH"
+            }
+        ],
+        "first_name": "Lindsey",
+        "focus_tracks": [
+            "print"
+        ],
+        "last_name": "Freson",
+        "superlative": "Most likely to acquire dual citizenship. ",
+        "website": "www.lindseyfreson.com"
+    },
+    "galemmae": {
+        "coops": [
+            {
+                "company": "ThinkVine",
+                "location": "Cincinnati, OH"
+            },
+            {
+                "company": "Arrowstreet",
+                "location": "Boston, MA"
+            },
+            {
+                "company": "505Design",
+                "location": "Charlotte, NC"
+            },
+            {
+                "company": "Kraemer Design + Productions",
+                "location": "Cincinnati, OH"
+            }
+        ],
+        "first_name": "Anna",
+        "focus_tracks": [
+            "print"
+        ],
+        "last_name": "Galemmo",
+        "superlative": "Most likely to Instagram a picture of my family.",
+        "website": "www.annagalemmo.com"
+    },
+    "giczkoal": {
+        "coops": [
+            {
+                "company": "Great American Insurance Group",
+                "location": "Cincinnati, OH"
+            },
+            {
+                "company": "Gensler",
+                "location": "Washington DC"
+            },
+            {
+                "company": "JCPenney",
+                "location": "Plano, TX"
+            },
+            {
+                "company": "Moment",
+                "location": "New York, NY"
+            }
+        ],
+        "first_name": "Arielle",
+        "focus_tracks": [
+            "interaction"
+        ],
+        "last_name": "Giczkowski",
+        "superlative": "Least likely to be found without a cup of coffee.",
+        "website": "www.ariellegiczkowski.com"
+    },
+    "gierlmw": {
+        "coops": [
+            {
+                "company": "LPK",
+                "location": "Cincinnati, OH"
+            },
+            {
+                "company": "Trailer Park",
+                "location": "Los Angeles, CA"
+            },
+            {
+                "company": "Ignition",
+                "location": "Los Angeles, CA"
+            }
+        ],
+        "first_name": "Mark",
+        "focus_tracks": [
+            "interaction"
+        ],
+        "last_name": "Gierl",
+        "superlative": "Most likely to start a hoop league with grocery carts and mini-pumpkins Wednesday nights at Whole Foods.",
+        "website": "www.markgierl.com"
+    },
+    "gilbermg": {
+        "coops": [
+            {
+                "company": "Hampshire Group",
+                "location": "New York, NY"
+            },
+            {
+                "company": "MAKO Surgical",
+                "location": "Fort Lauderdale, FL"
+            },
+            {
+                "company": "Holografik ",
+                "location": "San Francisco, CA"
+            },
+            {
+                "company": "Holografik",
+                "location": "San Francisco, CA"
+            }
+        ],
+        "first_name": "Megan",
+        "focus_tracks": [
+            "print"
+        ],
+        "last_name": "Gilbert",
+        "superlative": "Most original Instagram photos of sunsets and clouds. ",
+        "website": "www.megangilbert.net"
+    },
+    "harri2jo": {
+        "coops": [
+            {
+                "company": "TechSolve",
+                "location": "Cincinnati, OH"
+            },
+            {
+                "company": "Scenario Learning",
+                "location": "Cincinnati, OH"
+            },
+            {
+                "company": "VEEV Interactive",
+                "location": "Singapore"
+            }
+        ],
+        "first_name": "Jenna",
+        "focus_tracks": [
+            "motion"
+        ],
+        "last_name": "Harrison",
+        "superlative": "Most likely to put a bird on it.",
+        "website": "www.jennarharrison.com"
+    },
+    "hartzlmn": {
+        "coops": [
+            {
+                "company": "Great American Insurance Group",
+                "location": "Cincinnati, OH"
+            },
+            {
+                "company": "Genentech, Inc.",
+                "location": "San Francisco, CA"
+            },
+            {
+                "company": "TiER1 Performance Solutions",
+                "location": "Covington, KY"
+            }
+        ],
+        "first_name": "Mallory",
+        "focus_tracks": [
+            "interaction"
+        ],
+        "last_name": "Hartzler",
+        "superlative": "Most likely to be caught acting like a T-Rex.",
+        "website": "www.malloryhartzlerdesign.com"
+    },
+    "heflinao": {
+        "coops": [
+            {
+                "company": "CoupSmart",
+                "location": "Cincinnati, OH"
+            },
+            {
+                "company": "CoupSmart",
+                "location": "Cincinnati, OH"
+            },
+            {
+                "company": "Gaslight ",
+                "location": "Cincinnati, OH"
+            },
+            {
+                "company": "Gaslight",
+                "location": "Cincinnati, OH"
+            },
+            {
+                "company": "Gaslight",
+                "location": "Cincinnati, OH"
+            }
+        ],
+        "first_name": "Alex",
+        "focus_tracks": [
+            "interaction"
+        ],
+        "last_name": "Heflin",
+        "superlative": "Most likely to start an all-girls Misfits cover band (with Kerri Morabito).",
+        "website": ""
+    },
+    "hopean": {
+        "coops": [
+            {
+                "company": "Design Impact",
+                "location": "Cincinnati, OH"
+            },
+            {
+                "company": "Barefoot Proximity",
+                "location": "Cincinnati, OH"
+            },
+            {
+                "company": "Findlay Market",
+                "location": "Cincinnati, OH"
+            },
+            {
+                "company": "Union Design",
+                "location": "New York, NY"
+            },
+            {
+                "company": "Gilmore Group",
+                "location": "New York, NY"
+            }
+        ],
+        "first_name": "Aryan",
+        "focus_tracks": [
+            "interaction"
+        ],
+        "last_name": "Hope",
+        "superlative": "Most Kanye West.",
+        "website": "www.ahdesigned.com"
+    },
+    "jacksl8": {
+        "coops": [
+            {
+                "company": "Cincom",
+                "location": "Cincinnati, OH"
+            },
+            {
+                "company": "zuuka",
+                "location": "Santa Barbara, CA"
+            },
+            {
+                "company": "Healthcare Information",
+                "location": "Cincinnati, OH"
+            }
+        ],
+        "first_name": "Lori",
+        "focus_tracks": [
+            "interaction"
+        ],
+        "last_name": "Jackson",
+        "superlative": "Most likely to carry on a thoughtful conversation about cartoons.",
+        "website": "www.lorelaijackson.com"
+    },
+    "kennedbm": {
+        "coops": [
+            {
+                "company": "Interbrand Design Forum",
+                "location": "Dayton, OH"
+            },
+            {
+                "company": "Two Twelve",
+                "location": "New York, NY"
+            },
+            {
+                "company": "Inkling",
+                "location": "San Francisco, CA"
+            },
+            {
+                "company": "Gretel",
+                "location": "New York, NY"
+            }
+        ],
+        "first_name": "Brandon",
+        "focus_tracks": [
+            "print",
+            "motion"
+        ],
+        "last_name": "Kennedy",
+        "superlative": "Most sickening.",
+        "website": "www.brandonkennedydesign.com"
+    },
+    "knightmy": {
+        "coops": [
+            {
+                "company": "UGIVE.ORG",
+                "location": "Cincinnati, OH"
+            },
+            {
+                "company": "Rockwell Group",
+                "location": "New York, NY"
+            },
+            {
+                "company": "Greenstart",
+                "location": "San Francisco, CA"
+            },
+            {
+                "company": "M E Clarke Consulting",
+                "location": "Cincinnati, OH"
+            },
+            {
+                "company": "Conscious Minds",
+                "location": "Los Angeles, CA"
+            }
+        ],
+        "first_name": "Mary",
+        "focus_tracks": [
+            "print",
+            "motion"
+        ],
+        "last_name": "Knight",
+        "superlative": "Most likely to be found outside on a sunny day.",
+        "website": "www.maryknightdesign.com"
+    },
+    "koopmaay": {
+        "coops": [
+            {
+                "company": "DomiRacer Distributors Inc.",
+                "location": "Cincinnati, OH"
+            },
+            {
+                "company": "VEEV Interactive",
+                "location": "Singapore"
+            },
+            {
+                "company": "UC Blue Ash College",
+                "location": "Cincinnati, OH"
+            }
+        ],
+        "first_name": "Audrey",
+        "focus_tracks": [
+            "motion"
+        ],
+        "last_name": "Koopman",
+        "superlative": "Most likely to not look at this site until 5 years from now.",
+        "website": "www.audreyjkoopman.com"
+    },
+    "kurzhasy": {
+        "coops": [
+            {
+                "company": "UGIVE.ORG",
+                "location": "Cincinnati, OH"
+            },
+            {
+                "company": "SCHAWK!",
+                "location": "Chicago, IL"
+            },
+            {
+                "company": "Jack Rouse Associates",
+                "location": "Cincinnati, OH"
+            },
+            {
+                "company": "FRCH Design Worldwide",
+                "location": "Cincinnati, OH"
+            }
+        ],
+        "first_name": "Stacey",
+        "focus_tracks": [
+            "print"
+        ],
+        "last_name": "Kurzhals",
+        "superlative": "Most likely to get engaged during hell week! <3",
+        "website": "www.staceykurzhalsdesign.com"
+    },
+    "lauschas": {
+        "coops": [
+            {
+                "company": "Sweaty Bands",
+                "location": "Cincinnati, OH"
+            },
+            {
+                "company": "Wrigley",
+                "location": "Chicago, IL"
+            },
+            {
+                "company": "LPK",
+                "location": "Cincinnati, OH"
+            }
+        ],
+        "first_name": "Ali",
+        "focus_tracks": [
+            "print"
+        ],
+        "last_name": "Lausch",
+        "superlative": "Most likely to be found with hair in a messy bun.",
+        "website": "www.alilausch.com"
+    },
+    "lee2re": {
+        "coops": [
+            {
+                "company": "Live Well Collaborative",
+                "location": "Cincinnati, OH"
+            },
+            {
+                "company": "Thrive",
+                "location": "Atlanta, GA"
+            },
+            {
+                "company": "Doblin",
+                "location": "Chicago, IL"
+            }
+        ],
+        "first_name": "Rachel",
+        "focus_tracks": [
+            "print"
+        ],
+        "last_name": "Lee",
+        "superlative": "Most likely to get carded at Applebee's. ",
+        "website": "www.rachelleedesign.com"
+    },
+    "lillyar": {
+        "coops": [
+            {
+                "company": "TechSolve",
+                "location": "Cincinnati, OH"
+            },
+            {
+                "company": "TechSolve",
+                "location": "Cincinnati, OH"
+            },
+            {
+                "company": "The Party Source",
+                "location": "Covington, KY"
+            },
+            {
+                "company": "Zuuka",
+                "location": "Santa Barbara, CA"
+            },
+            {
+                "company": "Apex",
+                "location": "Cincinnati, OH"
+            }
+        ],
+        "first_name": "Alex",
+        "focus_tracks": [
+            "motion"
+        ],
+        "last_name": "Lilly",
+        "superlative": "Most likely to overdose on pizza.",
+        "website": "www.alexmlilly.com"
+    },
+    "loguemv": {
+        "coops": [
+            {
+                "company": "Cincinnati Children's Hospital",
+                "location": "Cincinnati, OH"
+            },
+            {
+                "company": "Seek Company",
+                "location": "Cincinnati, OH"
+            },
+            {
+                "company": "The First Years ",
+                "location": "Boston, MA"
+            },
+            {
+                "company": "Southwest Airlines ",
+                "location": "Dallas, TX"
+            }
+        ],
+        "first_name": "Meghan",
+        "focus_tracks": [
+            "print"
+        ],
+        "last_name": "Logue",
+        "superlative": "Most likely to know more about the Bearcats than you. ",
+        "website": "www.meghanlogue.com"
+    },
+    "lymance": {
+        "coops": [
+            {
+                "company": "Aramark",
+                "location": "Cincinnati, OH"
+            },
+            {
+                "company": "Juice Pharma",
+                "location": "New York, NY"
+            },
+            {
+                "company": "Downtown Cleveland Alliance",
+                "location": "Cleveland, OH"
+            },
+            {
+                "company": "Nestle R&D Beverages",
+                "location": "Marysville, OH"
+            }
+        ],
+        "first_name": "Carolyn",
+        "focus_tracks": [
+            "print"
+        ],
+        "last_name": "Lyman",
+        "superlative": "Most likely to live tweet your party.",
+        "website": "www.carolynlyman.com"
+    },
+    "migakitr": {
+        "coops": [
+            {
+                "company": "Standard Textile",
+                "location": "Cincinnati, OH"
+            },
+            {
+                "company": "Madeleine Corson Design",
+                "location": "San Francisco, CA"
+            },
+            {
+                "company": "SEEK",
+                "location": "Cincinnati, OH"
+            },
+            {
+                "company": "Bright Light",
+                "location": "Cincinnati, OH"
+            }
+        ],
+        "first_name": "Tommy",
+        "focus_tracks": [
+            "motion"
+        ],
+        "last_name": "Migaki",
+        "superlative": "Most likely to be overly sarcastic during a critique.",
+        "website": "www.tmigakidesign.com"
+    },
+    "mooreod": {
+        "coops": [
+            {
+                "company": "Hill's Pet Nutrition",
+                "location": "Topeka, KS"
+            },
+            {
+                "company": "JUICE Pharma",
+                "location": "New York, NY"
+            },
+            {
+                "company": "Brandimage",
+                "location": "Cincinnati, OH"
+            },
+            {
+                "company": "Study Abroad",
+                "location": "Thailand"
+            }
+        ],
+        "first_name": "Owen",
+        "focus_tracks": [
+            "motion"
+        ],
+        "last_name": "Moore",
+        "superlative": "Most likely to move to Thailand.",
+        "website": "www.omooredesign.com"
+    },
+    "morabika": {
+        "coops": [
+            {
+                "company": "Holografik",
+                "location": "San Francisco, CA"
+            },
+            {
+                "company": "Interbrand",
+                "location": "Cincinnati, OH"
+            },
+            {
+                "company": "Holografik",
+                "location": "San Francisco, CA"
+            },
+            {
+                "company": "Opower",
+                "location": "San Francisco, CA"
+            },
+            {
+                "company": "Opower",
+                "location": "San Francisco, CA"
+            }
+        ],
+        "first_name": "Kerri",
+        "focus_tracks": [
+            "interaction"
+        ],
+        "last_name": "Morabito",
+        "superlative": "Mostly likely to start and all girl Misfits cover band with Alex.",
+        "website": "www.kerrimorabito.com"
+    },
+    "mudmanme": {
+        "coops": [
+            {
+                "company": "LPK",
+                "location": "Cincinnati, OH"
+            },
+            {
+                "company": "Kate Keating & Associates",
+                "location": "San Francisco, CA"
+            },
+            {
+                "company": "Gallagher & Associates",
+                "location": "Washington DC"
+            },
+            {
+                "company": "FRCH Design Worldwide",
+                "location": "Cincinnati, OH"
+            }
+        ],
+        "first_name": "Megan",
+        "focus_tracks": [
+            "print"
+        ],
+        "last_name": "Mudman",
+        "superlative": "Most likely to work hard then play hard. ",
+        "website": "www.meganelisemudman.com"
+    },
+    "murphys8": {
+        "coops": [
+            {
+                "company": "LPK",
+                "location": "Cincinnati, OH"
+            },
+            {
+                "company": "LPK",
+                "location": "Cincinnati, OH"
+            },
+            {
+                "company": "LPK",
+                "location": "Singapore"
+            },
+            {
+                "company": "Apple Inc.",
+                "location": "Cupertino, CA"
+            },
+            {
+                "company": "Sarofsky",
+                "location": "Chicago, IL"
+            }
+        ],
+        "first_name": "Shelby",
+        "focus_tracks": [
+            "print",
+            "motion"
+        ],
+        "last_name": "Murphy",
+        "superlative": "Most likely to hop on a plane to Australia to film for capstone.",
+        "website": "www.shelbymurphy.net"
+    },
+    "musgroie": {
+        "coops": [
+            {
+                "company": "Frontgate",
+                "location": "Cincinnati, OH"
+            },
+            {
+                "company": "Gilmore Group",
+                "location": "New York, NY"
+            },
+            {
+                "company": "Kate Keating Associates",
+                "location": "San Francisco, CA"
+            },
+            {
+                "company": "Jack Rouse Associates",
+                "location": "Cincinnati, OH"
+            }
+        ],
+        "first_name": "Irene",
+        "focus_tracks": [
+            "print"
+        ],
+        "last_name": "Musgrove",
+        "superlative": "Most enthusiastic about running.",
+        "website": "www.irenemusgrove.com"
+    },
+    "newellbn": {
+        "coops": [
+            {
+                "company": "JUICE Pharma",
+                "location": "New York, NY"
+            },
+            {
+                "company": "Union Design",
+                "location": "New York, NY"
+            },
+            {
+                "company": "Orgnix Creatives",
+                "location": "Singapore"
+            },
+            {
+                "company": "Apple Inc.",
+                "location": "Cupertino, CA"
+            }
+        ],
+        "first_name": "Brittany",
+        "focus_tracks": [
+            "interaction"
+        ],
+        "last_name": "Newell",
+        "superlative": "Most likely to be arrested for stealing puppies.",
+        "website": "www.brittany-newell.com"
+    },
+    "obringhm": {
+        "coops": [
+            {
+                "company": "Cincom Systems Inc.",
+                "location": "Cincinnati, OH"
+            },
+            {
+                "company": "Kraemer Design + Production, Inc.",
+                "location": "Cincinnati, OH"
+            },
+            {
+                "company": "JCPenney",
+                "location": "Plano, TX"
+            }
+        ],
+        "first_name": "Heather",
+        "focus_tracks": [
+            "print"
+        ],
+        "last_name": "Obringer",
+        "superlative": "Most likely to be doing yoga.",
+        "website": ""
+    },
+    "pingml": {
+        "coops": [
+            {
+                "company": "Empower Media Marketing",
+                "location": "Cincinnati, OH"
+            },
+            {
+                "company": "Empower Media Marketing",
+                "location": "Cincinnati, OH"
+            },
+            {
+                "company": "Deskey",
+                "location": "Cincinnati, OH"
+            },
+            {
+                "company": "CBX",
+                "location": "New York, NY"
+            }
+        ],
+        "first_name": "Mason",
+        "focus_tracks": [
+            "print"
+        ],
+        "last_name": "Ping",
+        "superlative": "Most likely to be confused with Dane Mason.",
+        "website": "www.masonping.com"
+    },
+    "reynoj2": {
+        "coops": [
+            {
+                "company": "Interbrand Design Forum",
+                "location": "Dayton, OH"
+            },
+            {
+                "company": "Landor Associates",
+                "location": "Chicago, IL"
+            },
+            {
+                "company": "Apple",
+                "location": "Cuptertino, CA"
+            },
+            {
+                "company": "Epipheo",
+                "location": "Cincinnati, OH"
+            }
+        ],
+        "first_name": "Jonathan",
+        "focus_tracks": [
+            "print",
+            "motion"
+        ],
+        "last_name": "Reynolds",
+        "superlative": "Most likely to have tinier handwriting than you.",
+        "website": "www.jonathan-reynolds.com"
+    },
+    "riegerec": {
+        "coops": [
+            {
+                "company": "Fifth Third Bank",
+                "location": "Cincinnati, OH"
+            },
+            {
+                "company": "FanMail Marketing",
+                "location": "Cincinnati, OH"
+            },
+            {
+                "company": "Fifth Third Bank",
+                "location": "Cincinnati, OH"
+            },
+            {
+                "company": "UC Simulation Center",
+                "location": "Cincinnati, OH"
+            }
+        ],
+        "first_name": "Emily",
+        "focus_tracks": [
+            "interaction"
+        ],
+        "last_name": "Rieger",
+        "superlative": "Most likely to respond in the form of a song.",
+        "website": "www.riegerdesigns.com"
+    },
+    "rooneyla": {
+        "coops": [
+            {
+                "company": "Eyethink",
+                "location": "Columbus, OH"
+            },
+            {
+                "company": "The First Years",
+                "location": "Boston, MA"
+            },
+            {
+                "company": "Chute Gerdeman",
+                "location": "Columbus, OH"
+            }
+        ],
+        "first_name": "Laura",
+        "focus_tracks": [
+            "print"
+        ],
+        "last_name": "Rooney",
+        "superlative": "Most likely to be mistaken for an industrial design major.",
+        "website": "www.rooneyladesign.com"
+    },
+    "rosmardj": {
+        "coops": [
+            {
+                "company": "UC College of Nursing",
+                "location": "Cincinnati, OH"
+            },
+            {
+                "company": "JUICE Pharma",
+                "location": "New York, NY"
+            },
+            {
+                "company": "Givaudan",
+                "location": "Cincinnati, OH"
+            },
+            {
+                "company": "GSW Worldwide",
+                "location": "Columbus, OH"
+            }
+        ],
+        "first_name": "David",
+        "focus_tracks": [
+            "motion"
+        ],
+        "last_name": "Rosmarin",
+        "superlative": "Most likely to carry on a conversation as Lumpy Space Princess.",
+        "website": "www.davidrosmarin.com"
+    },
+    "searskn": {
+        "coops": [
+            {
+                "company": "Digital Marketing & Media",
+                "location": "Atlanta, GA"
+            },
+            {
+                "company": "Kao Brands",
+                "location": "Cincinnati, OH"
+            },
+            {
+                "company": "Landor Associates",
+                "location": "Cincinnati, OH"
+            }
+        ],
+        "first_name": "Kelsey",
+        "focus_tracks": [
+            "interaction"
+        ],
+        "last_name": "Sears",
+        "superlative": "Most likely to be found in bed with Jimmy John's.",
+        "website": "www.kelseysears.com"
+    },
+    "sekelams": {
+        "coops": [
+            {
+                "company": "Christie's Auction House",
+                "location": "New York, NY"
+            },
+            {
+                "company": "Rockwell Group",
+                "location": "New York, NY"
+            },
+            {
+                "company": "C&G Partners",
+                "location": "New York, NY"
+            }
+        ],
+        "first_name": "Melinda",
+        "focus_tracks": [
+            "print"
+        ],
+        "last_name": "Sekela",
+        "superlative": "Most likely to morph into Martha Stewart.",
+        "website": "www.melindasekela.com"
+    },
+    "simpsma": {
+        "coops": [
+            {
+                "company": "BLT Communications",
+                "location": "Los Angeles, CA"
+            },
+            {
+                "company": "University of Cincinnati",
+                "location": "Independent Study"
+            },
+            {
+                "company": "87 AM",
+                "location": "New York, NY"
+            },
+            {
+                "company": "VSN Mobil",
+                "location": "Fort Lauderdale, FL"
+            }
+        ],
+        "first_name": "Mike",
+        "focus_tracks": [
+            "interaction"
+        ],
+        "last_name": "Simpson",
+        "superlative": "Most likely to ask about your thoughts on Steinbeck.",
+        "website": "www.michaelsimpsondesign.com"
+    },
+    "smith5an": {
+        "coops": [
+            {
+                "company": "Christie's",
+                "location": "New York, NY"
+            },
+            {
+                "company": "FRCH",
+                "location": "Cincinnati, OH"
+            },
+            {
+                "company": "FRCH",
+                "location": "Cincinnati, OH"
+            },
+            {
+                "company": "Sasaki",
+                "location": "Boston, MA"
+            }
+        ],
+        "first_name": "Mandy",
+        "focus_tracks": [
+            "print"
+        ],
+        "last_name": "Smith",
+        "superlative": "Most karaoke.",
+        "website": "www.myohmandy.com"
+    },
+    "smith7jb": {
+        "coops": [
+            {
+                "company": "F+W Media",
+                "location": "Cincinnati, OH"
+            },
+            {
+                "company": "University of Cincinnati",
+                "location": "Cincinnati, OH"
+            },
+            {
+                "company": "FRCH Design Worldwide",
+                "location": "Cincinnati, OH"
+            }
+        ],
+        "first_name": "Jake",
+        "focus_tracks": [
+            "print"
+        ],
+        "last_name": "Smith",
+        "superlative": "Most likely to get engaged during hell week! <3",
+        "website": "www.jacobsmithdesign.com"
+    },
+    "spencekn": {
+        "coops": [
+            {
+                "company": "THAi",
+                "location": "New York, NY"
+            },
+            {
+                "company": "Union Design",
+                "location": "New York, NY"
+            },
+            {
+                "company": "Interbrand",
+                "location": "Cincinnati, OH"
+            },
+            {
+                "company": "Kate Keating Associates",
+                "location": "San Francisco, CA"
+            }
+        ],
+        "first_name": "Kevin",
+        "focus_tracks": [
+            "print"
+        ],
+        "last_name": "Spencer",
+        "superlative": "Most likely to quote a Britney Spears song...Oops I did it again.",
+        "website": "www.kevinspencerdesign.com"
+    },
+    "steigepr": {
+        "coops": [
+            {
+                "company": "ST Media Group",
+                "location": "Cincinnati, OH"
+            },
+            {
+                "company": "Interbrand Design Forum",
+                "location": "Dayton, OH"
+            },
+            {
+                "company": "Kolar Design",
+                "location": "Cincinnati, OH"
+            }
+        ],
+        "first_name": "Patrick",
+        "focus_tracks": [
+            "print"
+        ],
+        "last_name": "Steiger",
+        "superlative": "Smoothest kneecaps.",
+        "website": "www.patrick-steiger.com"
+    },
+    "stuhlmmc": {
+        "coops": [
+            {
+                "company": "F+W Media",
+                "location": "Cincinnati, OH"
+            },
+            {
+                "company": "JUICE Pharma Worldwide",
+                "location": "New York, NY"
+            },
+            {
+                "company": "Shutterstock",
+                "location": "New York, NY"
+            },
+            {
+                "company": "University of Cincinnati",
+                "location": "Independent Study"
+            },
+            {
+                "company": "AVEC",
+                "location": "New York, NY"
+            }
+        ],
+        "first_name": "Cori",
+        "focus_tracks": [
+            "print"
+        ],
+        "last_name": "Stuhlmiller",
+        "superlative": "Most likely to have the biggest sweet tooth. ",
+        "website": "www.coricorinne.com"
+    },
+    "sunderks": {
+        "coops": [
+            {
+                "company": "Simply She",
+                "location": "San Francisco, CA"
+            },
+            {
+                "company": "LPK",
+                "location": "Cincinnati, OH"
+            },
+            {
+                "company": "Gensler",
+                "location": "New York, NY"
+            }
+        ],
+        "first_name": "Kerra",
+        "focus_tracks": [
+            "print"
+        ],
+        "last_name": "Sunderlin",
+        "superlative": "Most extensive collection of man flannel.",
+        "website": "www.kerrasunderlin.com"
+    },
+    "thaipm": {
+        "coops": [
+            {
+                "company": "University of Cincinnati (CECH)",
+                "location": "Cincinnati, OH"
+            },
+            {
+                "company": "Aeropostale",
+                "location": "New York, NY"
+            },
+            {
+                "company": "American Eagle Outfitters",
+                "location": "New York, NY"
+            },
+            {
+                "company": "Shutterstock",
+                "location": "New York, NY"
+            }
+        ],
+        "first_name": "Paulina",
+        "focus_tracks": [
+            "print"
+        ],
+        "last_name": "Thai",
+        "superlative": "The illest.",
+        "website": "www.paulinathai-design.com"
+    },
+    "thiemarl": {
+        "coops": [
+            {
+                "company": "NIOSH",
+                "location": "Cincinnati, OH"
+            },
+            {
+                "company": "Zuuka",
+                "location": "Santa Barbara, CA"
+            },
+            {
+                "company": "Luxurious Animals",
+                "location": "New York, NY"
+            },
+            {
+                "company": "Apex",
+                "location": "Cincinnati, OH"
+            }
+        ],
+        "first_name": "Rachel",
+        "focus_tracks": [
+            "interaction"
+        ],
+        "last_name": "Thieman",
+        "superlative": "Most likely to start a kitten zoo.",
+        "website": "www.rachelthieman.com"
+    },
+    "turnbutn": {
+        "coops": [
+            {
+                "company": "JUICE Pharma Worldwide",
+                "location": "New York, NY"
+            },
+            {
+                "company": "Greenstart ",
+                "location": "San Francisco, CA"
+            },
+            {
+                "company": "Wrigley ",
+                "location": "Chicago, IL"
+            },
+            {
+                "company": "Burren College of Art",
+                "location": "Ireland"
+            }
+        ],
+        "first_name": "Taylor",
+        "focus_tracks": [
+            "interaction"
+        ],
+        "last_name": "Turnbull",
+        "superlative": "Most likely to start a cult. ",
+        "website": "www.taylorturnbull.com "
+    },
+    "turnerm7": {
+        "coops": [
+            {
+                "company": "City Beat",
+                "location": "Cincinnati, OH"
+            },
+            {
+                "company": "Pep",
+                "location": "Cincinnati, OH"
+            },
+            {
+                "company": "Reversed Out",
+                "location": "Cincinnati, OH"
+            }
+        ],
+        "first_name": "Megan",
+        "focus_tracks": [
+            "print"
+        ],
+        "last_name": "Turner",
+        "superlative": "Most likely to bring her dog to class.",
+        "website": "www.meganturnerdesign.com"
+    },
+    "untchac": {
+        "coops": [
+            {
+                "company": "CoupSmart",
+                "location": "Cincinnati, OH"
+            },
+            {
+                "company": "WD Partners",
+                "location": "Columbus, OH"
+            },
+            {
+                "company": "WD Partners",
+                "location": "Columbus, OH"
+            },
+            {
+                "company": "Procter & Gamble",
+                "location": "Singapore"
+            },
+            {
+                "company": "Swift",
+                "location": "Portland, OR"
+            }
+        ],
+        "first_name": "Amy",
+        "focus_tracks": [
+            "motion"
+        ],
+        "last_name": "Untch",
+        "superlative": "Most rad \"The Price is Right\" contestant.",
+        "website": "www.amy-untch.com"
+    },
+    "walshj7": {
+        "coops": [
+            {
+                "company": "FRCH",
+                "location": "Cincinnati, OH"
+            },
+            {
+                "company": "Greenstart",
+                "location": "San Francisco, CA"
+            },
+            {
+                "company": "Lightborne",
+                "location": "Cincinnati, OH"
+            }
+        ],
+        "first_name": "Joe",
+        "focus_tracks": [
+            "motion"
+        ],
+        "last_name": "Walsh",
+        "superlative": "Smallest teeth.",
+        "website": "www.joewalshdesign.com"
+    },
+    "weingaee": {
+        "coops": [
+            {
+                "company": "Interbrand Design Forum",
+                "location": "Cincinnati, OH"
+            },
+            {
+                "company": "Aeropostale",
+                "location": "New York, NY"
+            },
+            {
+                "company": "WD Partners",
+                "location": "Columbus, OH"
+            },
+            {
+                "company": "Apple Inc.",
+                "location": "Cupertino, CA"
+            }
+        ],
+        "first_name": "Erica",
+        "focus_tracks": [
+            "print"
+        ],
+        "last_name": "Weingartner",
+        "superlative": "Most likely to work out, then leave the gym and smash a Baconator.",
+        "website": "www.ericawdesign.com"
+    },
+    "wellsc4": {
+        "coops": [
+            {
+                "company": "Moment",
+                "location": "New York, NY"
+            },
+            {
+                "company": "Greenstart",
+                "location": "San Francisco, CA"
+            },
+            {
+                "company": "Possible Worldwide",
+                "location": "Singapore"
+            },
+            {
+                "company": "Apple Inc.",
+                "location": "Cupertino, CA"
+            },
+            {
+                "company": "Wondersauce",
+                "location": "New York, NY"
+            }
+        ],
+        "first_name": "Christopher",
+        "focus_tracks": [
+            "interaction"
+        ],
+        "last_name": "Wells",
+        "superlative": "Most likely to be caught eating ice cream for breakfast.",
+        "website": "www.cbwells.com"
+    },
+    "wheeleaj": {
+        "coops": [
+            {
+                "company": "The Stargroup",
+                "location": "Philadelphia, PA "
+            },
+            {
+                "company": "Kinetic Vision",
+                "location": "Cincinnati, OH"
+            },
+            {
+                "company": "AvatarLabs",
+                "location": "Los Angeles, CA"
+            },
+            {
+                "company": "ACG Multimedia",
+                "location": "Cincinnati, OH"
+            },
+            {
+                "company": "Kinetic Vision",
+                "location": "Cincinnati, OH"
+            }
+        ],
+        "first_name": "Alex",
+        "focus_tracks": [
+            "interaction"
+        ],
+        "last_name": "Wheeler",
+        "superlative": "Most likely to be gaming.",
+        "website": "www.alexanderwheeler.com"
+    },
+    "wicktoam": {
+        "coops": [
+            {
+                "company": "Kroger",
+                "location": "Cincinnati, OH"
+            },
+            {
+                "company": "Barefoot Proximity",
+                "location": "Cincinnati, OH"
+            },
+            {
+                "company": "ACG Multimedia",
+                "location": "Cincinnati, OH"
+            }
+        ],
+        "first_name": "Adam",
+        "focus_tracks": [
+            "motion"
+        ],
+        "last_name": "Wicktora",
+        "superlative": "Most most likely.",
+        "website": "www.adamwicktora.com"
+    },
+    "williap7": {
+        "coops": [
+            {
+                "company": "JUICE Pharma Worldwide",
+                "location": "New York, NY"
+            },
+            {
+                "company": "Shutterstock",
+                "location": "New York, NY"
+            },
+            {
+                "company": "C.P.R. Multimedia",
+                "location": "San Francisco, CA"
+            }
+        ],
+        "first_name": "Patrick",
+        "focus_tracks": [
+            "motion"
+        ],
+        "last_name": "Williams",
+        "superlative": "Best space cat sweatshirt.",
+        "website": "www.pwill.net"
+    },
+    "yoderlr": {
+        "coops": [
+            {
+                "company": "Michelman Inc.",
+                "location": "Cincinnati, OH"
+            },
+            {
+                "company": "F+W Media",
+                "location": "Cincinnati, OH"
+            },
+            {
+                "company": "Hasbro Inc.",
+                "location": "Pawtucket, RI"
+            }
+        ],
+        "first_name": "Laura",
+        "focus_tracks": [
+            "interaction"
+        ],
+        "last_name": "Yoder",
+        "superlative": "Most likely to abuse wheely chair privileges.",
+        "website": "www.laurayoder.com"
+    },
+    "zallajm": {
+        "coops": [
+            {
+                "company": "The Cimarron Group",
+                "location": "Los Angeles, CA"
+            },
+            {
+                "company": "Trailer Park",
+                "location": "Los Angeles, CA"
+            },
+            {
+                "company": "Apple Inc.",
+                "location": "Cuptertino, CA"
+            },
+            {
+                "company": "The Brandery",
+                "location": "Cincinnati, OH"
+            }
+        ],
+        "first_name": "Michael",
+        "focus_tracks": [
+            "interaction"
+        ],
+        "last_name": "Zalla",
+        "superlative": "Most likely to not be 21 yet.",
+        "website": "www.zalla.io"
+    }
+}
