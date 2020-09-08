@@ -1,0 +1,37 @@
+{{ define "title" }}{{.Title}} - {{ end }}
+{{ define "ogTitle" }}{{.Title}} - {{ end }}
+{{ define "twitterTitle" }}{{.Title}} - {{ end }}
+
+{{ define "meta" }}
+<script src="/scripts/lib/fizz/fizz.min.js"></script>
+<script src="/scripts/home.js"></script>
+{{ end }}
+
+{{ define "layout" }}home{{ end }}
+
+{{ define "pageType" }}single{{ end }}
+
+{{ define "article" }}
+<div class="row">
+	<div class="column large-6 small-12">
+		<h1 class="type-quote">…because we are never going to find the new unless we get a little crazy.</h1>
+		<span class="type-attribution">Ancient proverb</span>
+	</div>
+	<div class="column large-6 small-12 large-text-right small-text-left">
+		<ul>
+			<!--
+			<li>
+				<a class="type-cta icon-before icon-coffee" href="/articles/">articles</a>
+			</li>
+			-->
+			<li>
+				<a class="type-cta icon-after icon-right-hand" href="/projects/">browse projects</a>
+			</li>
+		</ul>
+	</div>
+</div>
+{{ end }}
+
+{{ define "pre-main" }}
+<canvas id="canvas" width="192" height="192"></canvas>
+{{ end }}
