@@ -1,0 +1,104 @@
+@use '../baseline-grid' as bg;
+@use '../palettes' as pal;
+
+@function swatch(
+	$palette, $swatch-name)
+{
+	@return map-get($palette, $swatch-name);
+}
+
+@mixin theme(
+	$theme-name)
+{
+
+	$palette: map-get(pal.$palettes, $theme-name);
+
+	color: swatch($palette, text-color);
+
+	@if(bg.$show-baseline-grid)
+	{
+		background-color: rgba(swatch($palette, 'base-background-color'), 0.2);
+	}
+	@else
+	{
+		background-color: swatch($palette, 'base-background-color');
+	}
+
+	// Anchor
+
+	a {
+		color: swatch($palette, text-color-lighter);
+	}
+
+	a.type-cta,
+	a.type-label {
+
+		color: swatch($palette, cta-text-color);
+
+		&:hover {
+			color: swatch($palette, cta-hover-text-color);
+		}
+
+	}
+
+	a .type-heading {
+		color: swatch($palette, cta-text-color);
+	}
+
+	&.header.stuck {
+		border-bottom-color: swatch($palette, 'keyline');
+	}
+
+	&.sitenav {
+
+		// border-bottom-color: swatch($palette, 'keyline');
+
+		.brandmark {
+			background-image: url('/images/svg/zalla-io-#{$theme-name}.svg');
+		}
+
+		.hamburger-menu:before,
+		.hamburger-menu:after {
+			background-color: swatch($palette, cta-text-color);
+		}
+
+	}
+
+
+	// em,
+	.lighter,
+	a.lighter,
+	.breadcrumb,
+	.breadcrumb:before,
+	.breadcrumb a,
+	.type-attribution {
+		color: swatch($palette, text-color-lighter);
+	}
+
+	strong {
+		color: swatch($palette, text-color-strong);
+	}
+
+	.type-legal {
+		color: swatch($palette, text-color-lightest);
+	}
+
+	.badge {
+		// background-color: swatch($palette, badge-background-color);
+		// border-color: swatch($palette, keyline);
+	}
+
+	// .badge * {
+	// 	color: swatch($palette, text-color-badge);
+	// }
+
+	[class*='device-'] {
+		background-color: swatch($palette, device-background-color);
+	}
+
+	[class*='device-']:before,
+	[class*='device-']:after {
+		background-color: swatch($palette, base-background-color);
+	}
+
+}

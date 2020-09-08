@@ -1,0 +1,30 @@
+<nav class="sitenav theme-light">
+
+	<div class="grid">
+
+		<div class="row">
+
+			<a class="brandmark" href="/">{{ .Site.BaseURL }}</a>
+
+			<div class="menu-toggle hamburger-menu"
+				onmousedown="event.currentTarget.classList.toggle('expanded')">
+			</div>
+
+			<div class="navigation-items-wrapper">
+
+				<ul class="navigation-items">
+					{{ range .Site.Menus.sitenav }}
+					<li class="navigation-item">
+						<a class="type-cta" href="{{ .URL }}">{{ .Name }}</a>
+						<!-- <a class="type-label" href="{{ .URL }}">{{ .Name }}</a> -->
+					</li>
+					{{ end }}
+				</ul>
+
+			</div>
+
+		</div>
+
+	</div>
+
+</nav>

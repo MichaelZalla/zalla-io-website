@@ -1,0 +1,9 @@
+@use '../modules/mixins' as mix;
+
+[class*="flex-container"] {
+	@include mix.flex-container;
+}
+
+[class*="flex-container-col"] {
+	@include mix.flex-container(column);
+}

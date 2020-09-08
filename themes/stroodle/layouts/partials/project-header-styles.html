@@ -1,0 +1,52 @@
+<style>
+
+	@media (min-width: 1px) {
+		header {
+			background-image: url("/{{ .File.Dir }}images/hero-background-small.jpg")
+		}
+	}
+
+	@media
+		(min-width: 1px) and (-webkit-min-device-pixel-ratio: 2),
+		(min-width: 1px) and (min-resolution: 192dpi)
+	{
+		header {
+			background-image: url("/{{ .File.Dir }}images/hero-background-small@2x.jpg")
+		}
+	}
+
+	@media
+		(min-width: {{ .Site.Params.viewports.medium }}px)
+	{
+		header {
+			background-image: url("/{{ .File.Dir }}images/hero-background-medium.jpg")
+		}
+	}
+
+	@media
+		(min-width: {{ .Site.Params.viewports.medium }}px) and (-webkit-min-device-pixel-ratio: 2),
+		(min-width: {{ .Site.Params.viewports.medium }}px) and (min-resolution: 192dpi)
+	{
+		header {
+			background-image: url("/{{ .File.Dir }}images/hero-background-medium@2x.jpg")
+		}
+	}
+
+	@media
+		(min-width: {{ .Site.Params.viewports.large }}px)
+	{
+		header {
+			background-image: url("/{{ .File.Dir }}images/hero-background-large.jpg")
+		}
+	}
+
+	@media
+		(min-width: {{ .Site.Params.viewports.large }}px) and (-webkit-min-device-pixel-ratio: 2),
+		(min-width: {{ .Site.Params.viewports.large }}px) and (min-resolution: 192dpi)
+	{
+		header {
+			background-image: url("/{{ .File.Dir }}images/hero-background-large@2x.jpg")
+		}
+	}
+
+</style>

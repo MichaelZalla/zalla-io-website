@@ -1,0 +1,15 @@
+$brandmark-size: 36px;
+
+.brandmark {
+
+	display: inline-block;
+	padding: 0;
+
+	width: $brandmark-size;
+	height: $brandmark-size;
+
+	text-indent: -9999px;
+	background-size: auto 100%;
+	background-repeat: no-repeat;
+
+}

@@ -3,16 +3,17 @@
 
 name = "Stroodle"
 license = "MIT"
-licenselink = "https://github.com/MichaelZalla/stroodle/blob/master/LICENSE.md"
+licenselink = "https://github.com/MichaelZalla/zalla-io-website/blob/master/themes/stroodle/LICENSE.md"
 description = ""
-homepage = "https://github.com/MichaelZalla/stroodle/"
+homepage = "https://github.com/MichaelZalla/zalla-io-website/"
 tags = []
 features = []
 min_version = "0.38.2"
 
 [author]
   name = "Michael Zalla"
-  homepage = "http://zalla.io"
+  homepage = "https://zalla.io"
 
 [taxonomies]
+  tag = "tags"
   project = "projects"

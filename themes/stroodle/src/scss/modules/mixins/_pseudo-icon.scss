@@ -1,0 +1,38 @@
+@use './baselines' as bl;
+
+@mixin pseudo-icon(
+    $ordering: 'before')
+{
+
+    // position: relative;
+    // top: 1px;
+
+    display: inline-block;
+
+    transform: scale(0.9);
+
+    @if($ordering == 'before')
+    {
+        @include bl.baselines(margin-right, 0.15);
+    }
+    @else
+    {
+        @include bl.baselines(margin-left, 0.15);
+    }
+
+	// width: 1em;
+
+	font-family: 'zalla-io-font';
+	font-variant: normal;
+    font-style: normal;
+    font-weight: normal;
+
+	// line-height: 1em;
+
+	speak: none;
+
+	text-align: center;
+    text-decoration: inherit;
+    text-transform: none;
+
+}

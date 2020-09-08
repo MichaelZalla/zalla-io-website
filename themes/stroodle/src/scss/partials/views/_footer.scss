@@ -1,0 +1,72 @@
+@use 'sass-breakpoints-mixins/breakpoints' as bp;
+
+@use '../../modules/baseline-grid' as bg;
+@use '../../modules/grid' as grid;
+@use '../../modules/mixins' as mix;
+@use '../../modules/palettes' as pal;
+
+footer {
+
+	display: block;
+	overflow: auto;
+
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+
+	min-height: 24rem;
+
+	.grid,
+	.grid > div {
+		overflow: visible;
+	}
+
+	.grid > div {
+
+		@include mix.flex-container;
+
+		justify-content: space-between;
+
+		.social-links {
+			flex-shrink: 0;
+		}
+
+	}
+
+	.grid > div:nth-child(1) {
+		@include bp.media-breakpoint-down(small) {
+			flex-direction: column;
+		}
+	}
+
+	.grid > div:nth-child(2) {
+		@include bp.media-breakpoint-down(small) {
+			flex-direction: column-reverse;
+		}
+	}
+
+	// .site-credits li {
+	// 	@include bp.media-breakpoint-down(medium) {
+	// 		margin-left: -0.3rem;
+	// 	}
+	// }
+
+	.social-links {
+		@include bp.media-breakpoint-up(medium) {
+			margin-left: 1rem;
+		}
+	}
+
+	// .icon-before.icon-heart:before {
+	// 	margin-right: 0;
+	// }
+
+	.icon-after.icon-paper-plane {
+		@include bp.media-breakpoint-down(small)
+		{
+			&:after {
+				display: none;
+			}
+		}
+	}
+
+}

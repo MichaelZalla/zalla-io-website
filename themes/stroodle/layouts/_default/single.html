@@ -1,0 +1,13 @@
+{{ define "title" }}{{.Title}} - {{ end }}
+{{ define "ogTitle" }}{{.Title}} - {{ end }}
+{{ define "twitterTitle" }}{{.Title}} - {{ end }}
+
+{{ define "header-title" }}
+<h1 class="type-heading">{{ .Title | htmlUnescape }}</h1>
+{{ end }}
+
+{{ define "article" }}
+
+	{{ .Content }}
+
+{{ end }}
