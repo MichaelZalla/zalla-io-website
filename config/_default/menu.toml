@@ -1,0 +1,47 @@
+#################
+# Site Nav Menu #
+#################
+
+[[sitenav]]
+	name = "projects"
+	URL = "/projects/"
+	weight = 1
+
+[[sitenav]]
+	name = "about"
+	URL = "/about/"
+	weight = 2
+
+#####################
+# Social Media Menu #
+#####################
+
+[[social]]
+	weight = 1
+	identifier = 'linkedin'
+	name = 'LinkedIn'
+	URL = 'https://linkedin.com/in/michaelzalla'
+
+[[social]]
+	weight = 2
+	identifier = 'github'
+	name = 'GitHub'
+	URL = 'https://github.com/MichaelZalla'
+
+[[social]]
+	weight = 3
+	identifier = 'stackoverflow'
+	name = 'StackOverflow'
+	URL = 'https://stackoverflow.com/users/1623811/michael-zalla?tab=answers&sort=newest'
+
+[[social]]
+	weight = 4
+	identifier = 'pinterest'
+	name = 'Pinterest'
+	URL = 'http://www.pinterest.com/michaelzalla/'
+
+[[social]]
+	weight = 5
+	identifier = 'instagram'
+	name = 'Instagram'
+	URL = 'https://www.instagram.com/playforsweeps/'

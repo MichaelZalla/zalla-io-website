@@ -1,0 +1,95 @@
+@use '../modules/mixins' as mix;
+
+ul.project-gallery-items {
+
+	@include mix.flex-container;
+
+	justify-content: space-between;
+
+	flex-wrap: wrap;
+
+	padding-top: 4rem;
+
+	li.gallery-item {
+
+		display: flex;
+
+		flex: 0;
+
+		// margin-right: 2rem;
+
+		padding-bottom: 2em;
+
+		a {
+
+			position: relative;
+			overflow: auto;
+
+			display: block;
+
+			width: 100%;
+
+			padding-top: 1.25rem;
+			padding-left: 6.25rem;
+
+			min-height: 15rem;
+
+			text-decoration: none;
+
+			filter: grayscale(1);
+
+			transition: filter 0.18s ease-in-out;
+
+			&:hover,
+			&:focus {
+				filter: grayscale(0);
+			}
+
+			.year-swatch,
+			.type-heading {
+
+				position: absolute;
+				top: 0;
+				left: 0;
+
+				padding-left: 0.875rem;
+
+				color: white;
+
+				font-weight: 700;
+
+			}
+
+			.type-heading {
+				z-index: 1;
+				display: block;
+				padding-top: 2.25rem;
+				max-width: 18.5rem;
+				font-size: 2rem;
+			}
+
+			.year-swatch {
+
+				z-index: -1;
+
+				display: inline-block;
+				padding-top: 0.875rem;
+				width: 8.75rem;
+				height: 8.75rem;
+
+				font-size: 0.875rem;
+				line-height: 0.875rem;
+
+			}
+
+			img {
+				width: 13rem;
+				height: 13rem;
+				border-radius: 50%;
+			}
+
+		}
+
+	}
+
+}

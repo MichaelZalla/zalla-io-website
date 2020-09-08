@@ -1,0 +1,34 @@
+@use 'sass-breakpoints-mixins/breakpoints' as bp;
+
+@use '../../modules/mixins' as mix;
+
+body[data-layout="page-not-found"][data-page-type="single"] {
+
+	.top,
+	.middle,
+	header {
+		display: none;
+	}
+
+	article {
+		margin-top: 4rem;
+		margin-bottom: 6rem;
+	}
+
+	article > .grid > .row:first-child {
+		padding-bottom: 0;
+	}
+
+	article p:first-of-type {
+		margin-top: 1.5rem;
+	}
+
+	// p + .type-attribution {
+	// 	margin-top: 1.5rem;
+	// }
+
+	// .type-caption {
+	// 	margin-top: 5rem;
+	// }
+
+}

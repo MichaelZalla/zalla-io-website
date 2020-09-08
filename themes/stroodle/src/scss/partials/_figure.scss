@@ -1,0 +1,31 @@
+@use '../modules/mixins' as mix;
+
+figure {
+	display: block;
+	// margin-left: auto;
+}
+
+figure > figure {
+	margin-top: 2rem;
+}
+
+// figure > figure > picture {
+// 	padding: 0 1em;
+// }
+
+figure > figure > picture,
+figure > figure > picture > img {
+	width: 100%;
+}
+
+figure > figure > picture > img {
+	height: auto;
+}
+
+figure img {
+	vertical-align: top;
+}
+
+figcaption {
+	text-align: center;
+}

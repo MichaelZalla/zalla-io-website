@@ -1,0 +1,9 @@
+@use 'sass-breakpoints-mixins/breakpoints' as bp;
+
+@use '../modules/grid' as grid;
+@use '../modules/mixins' as mix;
+
+ul.bullet {
+	padding-left: grid.$grid-side-padding-small * 1.2;
+	list-style-type: circle;
+}

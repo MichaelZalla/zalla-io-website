@@ -1,47 +1,101 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	{{ partial "meta" . }}
-	<title>{{ .Title }} - Projects - {{ $.Site.Title }}</title>
-</head>
-<body>
+{{ define "title" }}{{.Title | htmlUnescape}} - {{.Section | title}} - {{ end }}
+{{ define "ogTitle" }}{{.Title | htmlUnescape}} - {{.Section | title}} - {{ end }}
+{{ define "twitterTitle" }}{{.Title | htmlUnescape}} - {{.Section | title}} - {{ end }}
 
-	{{ partial "header" . }}
+{{ define "layout" }}project{{ end }}
 
-	<header>
+{{ define "header-title" }}
+	<a href="#">
+		<h1 class="type-heading">{{ .Title | htmlUnescape }}</h1>
+	</a>
+{{ end }}
 
-		<h2>{{ .Title }}</h2>
-		<span>{{ .Params.season | title }} {{ .Params.year }}</span>
-		<p class="intro">{{ .Params.byline }}</p>
+{{ define "header-navigation-items" }}
 
-		{{ with .Resources.GetMatch "hero-image" }}
-		<img class="" src="{{ .Permalink }}" alt="{{ .Title }}">
+	{{ if .Params.hasDemo }}
+	<li class="header-navigation-item">
+		<a class="type-label icon-before icon-arrows-cw" href="/demos/{{ .File.Dir }}" target="_blank"><!--  icon-spin -->
+			run the demo
+		</a>
+	</li>
+	{{ end }}
+
+	{{ with .Params.repository }}
+	<li class="header-navigation-item">
+		<a class="type-label icon-before icon-bug" href="{{ . }}" target="_blank"><!--  icon-spin -->
+			explore the code
+		</a>
+	</li>
+	{{ end }}
+
+{{ end }}
+
+{{ define "article" }}
+
+	<div class="row">
+		<div class="column large-7 medium-9 small-12">
+
+			<section>
+
+				<time class="type-label lighter" datetime="{{ .Params.year }}">
+					{{ .Params.season | title }} {{ .Params.year }}
+				</time>
+
+			</section>
+
+			<section class="collapsed">
+
+				{{ partial "drop-cap-content" . }}
+
+				{{ with .Params.technologies }}
+				<h4 class="type-label lighter">Tools</h4>
+
+				<ul class="technology-items bullet">
+					{{ range . }}
+					<li class="technology-item"><p>{{ . }}</p></li>
+					{{ end }}
+				</ul>
+				{{ end }}
+
+			</section>
+
+		</div>
+	</div>
+
+{{ end }}
+{{ define "gallery" }}
+
+	<section>
+
+		{{ with (.Resources.GetMatch "gallery.md") }}
+			{{ .Content }}
 		{{ end }}
 
-		{{ with .Resources.GetMatch "hero-background" }}
-		<img class="" src="{{ .Permalink }}" alt="{{ .Title }}">
-		{{ end }}
+	</section>
 
-	</header>
+{{ end }}
 
-	<nav>
-		<a href="/projects/">Back to Projects</a>
-	</nav>
+{{ define "aside" }}
 
-	<aside>
-		<h4>Technologies</h4>
-		<ul class="technology-items">
-			{{ range .Params.technologies }}
-			<li class="technology-item"><span>{{ . }}</span></li>
-			{{ end }}
-		</ul>
-	</aside>
+	<div class="disqus"></div>
 
-	<main>
-		{{ .Content }}
-	</main>
+{{ end }}
 
-	{{ partial "footer" . }}
+{{ define "body-trailer" }}
+<script src="/scripts/sticky-nav.js"></script>
+<script src="/scripts/vendor/lazyload.min.js"></script>
+<script src="/scripts/vendor/disqusloader.js"></script>
+<script>
 
-</body>
-</html>
+	// Initializes lazy-loading behavior
+
+	const lazyLoadInstance = new LazyLoad({});
+
+	// Initializes disqus asynchronously
+
+	disqusLoader( '.disqus', {
+		scriptUrl: '//zalla-io.disqus.com/embed.js',
+	});
+
+</script>
+{{ end }}

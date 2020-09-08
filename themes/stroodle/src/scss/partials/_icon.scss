@@ -1,0 +1,61 @@
+@use '../modules/mixins' as mix;
+
+@include mix.keyframes(spin)
+{
+    0% {
+        @include mix.vendorize(transform, rotate(0deg));
+    }
+    100% {
+        @include mix.vendorize(transform, rotate(359deg));
+    }
+}
+
+// Left-hand icon positioning
+
+.icon-before:before {
+    @include mix.pseudo-icon('before');
+}
+
+// Right-hand icon positioning
+
+.icon-after:after
+{
+    @include mix.pseudo-icon('after');
+}
+
+// Animation
+
+.icon-before.icon-spin:hover:before,
+.icon-after.icon-spin:hover:after {
+    @include mix.vendorize(animation, spin 1s infinite linear);
+}
+
+// Icon content
+
+$icons: (
+    icon-right-open: '\e800',
+    icon-arrows-cw: '\e801',
+    icon-right-dir: '\e802',
+    icon-right-hand: '\e803',
+    icon-down-hand: '\e804',
+    icon-wrench: '\e805',
+    icon-cog: '\e806',
+    icon-megaphone: '\e807',
+    icon-link: '\e808',
+    icon-heart: '\e809',
+    icon-link-ext: '\f08e',
+    icon-github-circled: '\f09b',
+    icon-coffee: '\f0f4',
+    icon-github: '\f113',
+    icon-bug: '\f188',
+    icon-paper-plane: '\f1d8',
+);
+
+@each $name, $code in $icons {
+
+    .#{$name}.icon-before:before,
+    .#{$name}.icon-after:after {
+        content: $code;
+    }
+
+}

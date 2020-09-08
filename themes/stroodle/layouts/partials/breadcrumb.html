@@ -1,0 +1,16 @@
+<nav class="breadcrumb-nav">
+	<ul class="breadcrumbs">
+		{{ template "breadcrumbnav" (dict "p1" . "p2" .) }}
+	</ul>
+</nav>
+
+{{ define "breadcrumbnav" }}
+{{ if .p1.Parent }}
+{{ template "breadcrumbnav" (dict "p1" .p1.Parent "p2" .p2 )  }}
+{{ else if not .p1.IsHome }}
+{{ template "breadcrumbnav" (dict "p1" .p1.Site.Home "p2" .p2 )  }}
+{{ end }}
+<li class="breadcrumb{{ if eq .p1 .p2 }} active{{ end }}{{ if not .p1.IsHome }} icon-right-open{{ end }}">
+	<a class="type-label" href="{{ .p1.RelPermalink }}">{{ .p1.Title }}</a>
+</li>
+{{ end }}

@@ -1,5 +1,43 @@
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
-<link rel="stylesheet" href="/css/vendor/normalize-css/normalize.css">
-<link rel="stylesheet" href="/css/main.bundle.css">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="keywords" content="">
+
+	<title>{{ if not .IsHome }}{{ block "title" . }}{{ .Page.Title | htmlUnescape }} - {{ end }}{{ end }}{{ .Site.Title }}</title>
+	<meta property="og:title" content='{{ if not .IsHome }}{{ block "ogTitle" . }}{{ .Page.Title | htmlUnescape }} - {{ end }}{{ end }}{{ .Site.Title }}' />
+	<meta name="twitter:title" content='{{ if not .IsHome }}{{ block "twitterTitle" . }}{{ .Page.Title | htmlUnescape }} - {{ end }}{{ end }}{{ .Site.Title }}'/>
+
+	<meta name="description" content='{{ with .Page.Description }}{{ . }}{{ else }}{{ if not .IsHome }}{{ .Page.Title | htmlUnescape }} - {{ end }}{{ .Site.Title }}{{ end }}'>
+	<meta property="og:description" content='{{ with .Page.Description }}{{ . }}{{ else }}{{ if not .IsHome }}{{ .Page.Title | htmlUnescape }} - {{ end }}{{ .Site.Title }}{{ end }}' />
+	<meta name="twitter:description" content='{{ with .Page.Description }}{{ . }}{{ else }}{{ if not .IsHome }}{{ .Page.Title | htmlUnescape }} - {{ end }}{{ .Site.Title }}{{ end }}'/>
+
+	<meta name="author" content="{{ .Site.Params.author.name }}">
+	<meta name="twitter:site" content="@CryptoColonist" />
+	<meta name="twitter:creator" content="@CryptoColonist" />
+
+	{{ range .Page.Resources.Match "*/feature*" }}
+	<meta property="og:image" content="{{ .RelPermalink | absURL }}" />
+	<meta name="twitter:image" content="{{ .RelPermalink | absURL }}"/>
+	{{ end }}
+
+	{{ if .IsHome }}
+	<meta property="og:image" content="https://zalla.io/images/opengraph.png" />
+	<meta name="twitter:image" content="https://zalla.io/images/opengraph.png"/>
+	{{ end }}
+
+	<meta property="og:type" content="article" />
+	<meta property="og:url" content="{{ .Page.RelPermalink | absURL }}" />
+	<meta property="og:site_name" content="{{ .Site.Title }}" />
+
+	<meta property='article:author' content='https://www.facebook.com/MichaelZalla' />
+	<meta property="article:modified_time" content='{{ .Page.Lastmod.Format "20060102-15:04:05.000" }}' />
+
+	<meta name="twitter:card" content="summary_large_image"/>
+
+	{{ partial "favicon" . }}
+
+	<link rel="stylesheet" href="/css/vendor/normalize-css/normalize.css">
+	<link rel="stylesheet" href="/css/main.css">
+
+	{{ template "_internal/google_analytics.html" . }}

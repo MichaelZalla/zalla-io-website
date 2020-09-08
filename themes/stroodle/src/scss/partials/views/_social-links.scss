@@ -1,0 +1,70 @@
+@use 'sass-breakpoints-mixins/breakpoints' as bp;
+
+@use '../../modules/mixins' as mix;
+
+ul.social-links {
+
+	position: relative;
+
+	list-style-type: none;
+
+	li.social-link {
+
+		position: relative;
+
+		display: inline-block;
+
+		@include bp.media-breakpoint-up(medium)
+		{
+			top: -4px;
+		}
+
+	}
+
+	li.social-link a {
+
+		display: inline-block;
+
+		width: mix.$baseline-height-small * 1.0;
+		height: mix.$baseline-height-small * 1.0;
+
+		@include bp.media-breakpoint-up(medium)
+		{
+			width: mix.$baseline-height-medium * 1.0;
+			height: mix.$baseline-height-medium * 1.0;
+		}
+
+		@include bp.media-breakpoint-up(large)
+		{
+			width: mix.$baseline-height-large * 1.2;
+			height: mix.$baseline-height-large * 1.2;
+		}
+
+		text-indent: -9999px;
+
+		background-size: 100% auto;
+		background-repeat: no-repeat;
+
+		transition: opacity 0.18s ease-in-out;
+
+	}
+
+	li.social-link:not(:last-child) {
+		margin-right: 0.5rem;
+	}
+
+}
+
+.theme-dark .social-link {
+
+	$social-platforms: (linkedin, github, stackoverflow, pinterest, instagram, twitter);
+
+	@each $name in $social-platforms
+	{
+		&.#{$name} a {
+			background-image: url('/images/svg/icon-#{$name}-dark.svg');
+		}
+	}
+
+}
+

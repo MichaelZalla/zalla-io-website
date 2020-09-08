@@ -1,28 +1,46 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	{{ partial "meta" . }}
-	<title>Projects - {{ $.Site.Title }}</title>
-</head>
-<body>
+{{ define "title" }}{{.Section | title}} - {{ end }}
+{{ define "ogTitle" }}{{.Section | title}} - {{ end }}
+{{ define "twitterTitle" }}{{.Section | title}} - {{ end }}
 
-	{{ partial "header" . }}
+{{ define "pageType" }}list{{ end }}
 
-	<main>
+{{ define "header-title" }}
+<h1 class="type-heading">Handcrafted Projects</h1>
+{{ end }}
 
-		<h1>Projects:</h1>
+{{ define "article" }}
+<ul class="gallery-items project-gallery-items">
 
-		<ul>
-			{{ range sort .Pages "Params.year" "desc" }}
-			<li>
-				<h4><a href="{{ .URL }}">{{ .Params.year }} - {{ .Title }}</a></h4>
-			</li>
+	{{ range sort .Pages "Params.year" "desc" }}
+	<li class="gallery-item project-gallery-item" data-project-id='{{ .File.Dir }}'>
+
+		<a href="{{ .RelPermalink }}"
+			data-swatch="{{ .Params.swatch }}">
+
+			<div class="year-swatch type-label" style='background-color: {{ cond (isset .Params "swatch") .Params.swatch "#999999" }};'>{{ .Params.year }}</div>
+
+			{{ with .Resources.GetMatch "images/project-gallery-thumbnail*" }}
+			<img class="lazy" data-src="{{ .RelPermalink }}" alt="">
 			{{ end }}
-		</ul>
 
-	</main>
+			<h2 class="type-heading">{{ .Title | htmlUnescape }}</h2>
 
-	{{ partial "footer" . }}
+		</a>
 
-</body>
-</html>
+	</li>
+	{{ end }}
+
+</ul>
+{{ end }}
+
+{{ define "body-trailer" }}
+<script src="/scripts/sticky-nav.js"></script>
+<script src="/scripts/vendor/lazyload.min.js"></script>
+<script>
+
+	// Initializes lazy-loading behavior
+
+	const lazyLoadInstance = new LazyLoad({});
+
+</script>
+{{ end }}

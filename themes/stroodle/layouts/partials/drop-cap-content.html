@@ -1,0 +1,1 @@
+{{ .Content | replaceRE "^<p>([A-Z])" "<p class=\"drop-cap\" data-drop-cap-letter=\"$1\">$1" | replaceRE "data-drop-cap-letter=\"([A-Z])\">((([a-zA-Z]+)[^.,;'’]){1,2})" "data-drop-cap-letter=\"$1\"><span class=\"small-caps\">$2</span>" | safeHTML }}

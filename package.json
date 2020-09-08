@@ -1,17 +1,24 @@
 {
   "name": "zalla-io-website",
-  "version": "0.1.0",
-  "description": "Source repository for my personal website - zalla.io.",
+  "version": "1.0.0",
+  "description": "The personal website of Michael Zalla.",
   "main": "package.json",
   "scripts": {
-    "postinstall": "cp ./node_modules/normalize-css/normalize.css ./static/css/vendor/normalize-css/",
-    "sass": "sass --sourcemap=inline --style=compressed ./themes/stroodle/src/scss/main.scss ./themes/stroodle/dist/css/main.bundle.css && cp ./themes/stroodle/dist/css/main.bundle.css* ./static/css",
-    "build": "npm run sass && hugo",
-    "serve": "hugo server",
-    "serve:draft": "hugo server -D",
-    "deploy": "aws s3 sync --delete ./public s3://zalla.io",
-    "deploy:dry": "aws s3 sync --delete --dryrun ./public s3://zalla.io",
-    "clean": "rm -rf ./public"
+    "postinstall": "brew install hugo && cp ./node_modules/normalize-css/normalize.css ./static/css/vendor/normalize-css/",
+    "sass": "sass --load-path=node_modules --source-map --style=compressed ./themes/stroodle/src/scss/main.scss ./static/css/main.css",
+    "sass:watch": "sass --load-path=node_modules --source-map --style=compressed --watch ./themes/stroodle/src/scss/main.scss ./static/css/main.css",
+    "build": "npm run sass && hugo --verbose --minify",
+    "serve": "npm run sass:watch & hugo server --minify --noHTTPCache -p 1313 && fg",
+    "serve:draft": "npm run sass:watch & hugo server --noHTTPCache -p 1313 -D && fg",
+    "deploy": "aws s3 sync --delete ./public s3://zalla.io --profile zalla-io-s3-manager",
+    "deploy-vendor-scripts": "aws s3 sync ./public s3://zalla.io --exclude \"*\" --include \"scripts/vendor/*.js\" --profile zalla-io-s3-manager",
+    "deploy-html": "aws s3 sync ./public s3://zalla.io --exclude \"*\" --include \"*.html\" --profile zalla-io-s3-manager",
+    "deploy-css": "aws s3 sync ./public s3://zalla.io --exclude \"*\" --include \"*.css\" --profile zalla-io-s3-manager",
+    "deploy-google": "aws s3 sync ./public s3://zalla.io/ --exclude \"*\" --include \"googlece1068047507cc18.html\" --profile zalla-io-s3-manager",
+    "deploy:qa": "rm -rf ./public/demos && aws s3 sync --delete ./public s3://zalla.io-qa --profile zalla-io-s3-manager",
+    "deploy:qa-html": "rm -rf ./public/demos && aws s3 sync ./public s3://zalla.io-qa --exclude=\"*\" --include \"*.html\" --profile zalla-io-s3-manager",
+    "deploy:dry": "aws s3 sync --delete --dryrun ./public s3://zalla.io --profile zalla-io-s3-manager",
+    "clean": "rm -rf ./public ./public_min"
   },
   "repository": {
     "type": "git",
@@ -24,6 +31,13 @@
   },
   "homepage": "https://github.com/MichaelZalla/zalla-io-website#readme",
   "devDependencies": {
-    "normalize-css": "^2.3.1"
+    "normalize-css": "^2.3.1",
+    "sass": "^1.26.8",
+    "sass-breakpoints-mixins": "^1.0.0"
+  },
+  "dependencies": {
+    "disqusLoader.js": "git+https://github.com/osvaldasvalutis/disqusLoader.js.git",
+    "jquery": "^3.5.1",
+    "vanilla-lazyload": "^17.1.0"
   }
 }

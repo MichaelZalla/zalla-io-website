@@ -1,0 +1,14 @@
+@use 'sass-breakpoints-mixins/breakpoints' as bp;
+
+@mixin baseline-height(
+	$lines: 1,
+	$offset: 0.0rem,
+	$property: 'padding')
+{
+
+	$height: $lines * 1rem;
+
+	#{$property}-top: $offset;
+	#{$property}-bottom: $height - $offset;
+
+}

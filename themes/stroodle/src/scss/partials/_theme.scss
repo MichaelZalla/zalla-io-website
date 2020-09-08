@@ -1,0 +1,12 @@
+@use '../modules/baseline-grid' as bg;
+@use '../modules/mixins' as mix;
+
+.theme-dark,
+.theme-light .theme-dark {
+	@include mix.theme('dark');
+}
+
+.theme-light,
+.theme-dark .theme-light {
+	@include mix.theme('light');
+}

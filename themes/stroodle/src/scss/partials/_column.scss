@@ -1,0 +1,107 @@
+@use 'sass-breakpoints-mixins/breakpoints' as bp;
+
+@use '../modules/mixins' as mix;
+
+.row:after, .row:before {
+    content: ' ';
+    display: table;
+}
+
+.row:after {
+    clear: both;
+}
+
+.column {
+
+	float: left;
+
+	margin-right: 16px;
+
+}
+
+$num-columns: 12;
+
+@for $index from 1 to $num-columns + 1
+{
+	.column.large-#{$index} {
+
+		width: calc( (100% - (#{$num-columns}/#{$index} - 1) * 16px) / #{$num-columns} * #{$index} );
+
+		$nt-child-index: ceil($num-columns/$index);
+
+		&:nth-child(#{$nt-child-index}n) {
+			margin-right: 0;
+		}
+
+	}
+	.column.large-order-#{$index} {
+		@include mix.order($index);
+	}
+}
+
+@for $index from 1 to $num-columns + 1
+{
+	@include bp.media-breakpoint-down(medium)
+	{
+		.column.medium-#{$index} {
+
+			width: calc( (100% - (#{$num-columns}/#{$index} - 1) * 16px) / #{$num-columns} * #{$index} );
+
+			$nt-child-index: ceil($num-columns/$index);
+
+			&:nth-child(#{$nt-child-index}n) {
+				margin-right: 0;
+			}
+
+		}
+		.column.medium-order-#{$index} {
+			@include mix.order($index);
+		}
+	}
+}
+
+@for $index from 1 to $num-columns + 1
+{
+	@include bp.media-breakpoint-down(small)
+	{
+		.column.small-#{$index} {
+
+			width: calc( (100% - (#{$num-columns}/#{$index} - 1) * 16px) / #{$num-columns} * #{$index} );
+
+			$nt-child-index: ceil($num-columns/$index);
+
+			&:nth-child(#{$nt-child-index}n) {
+				margin-right: 0;
+			}
+
+		}
+		.column.small-order-#{$index} {
+			@include mix.order($index);
+		}
+	}
+}
+
+.column.one-thirds,
+.column.two-thirds {
+	@extend .small-12;
+}
+
+.column.one-thirds:nth-child(1),
+.column.two-thirds:nth-child(2) {
+	@extend .large-4;
+	@extend .medium-4;
+}
+
+.column.one-thirds:nth-child(2),
+.column.two-thirds:nth-child(1) {
+	@extend .large-8;
+	@extend .medium-8;
+}
+
+.column[class*='-thirds']:nth-child(2n) {
+	margin-right: 0;
+}
+
+// .column.large-7 + .column.large-5:last-child {
+// 	margin-right: 0;
+// }

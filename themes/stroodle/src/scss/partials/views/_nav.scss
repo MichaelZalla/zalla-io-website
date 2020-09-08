@@ -1,0 +1,127 @@
+@use 'sass-breakpoints-mixins/breakpoints' as bp;
+
+@use '../../modules/baseline-grid' as bg;
+@use '../../modules/grid' as grid;
+@use '../../modules/mixins' as mix;
+
+@use '../typography';
+@use '../brandmark' as brandmark;
+@use '../hamburger-menu' as hamburger;
+
+$sitenav-height: 52px;
+
+$sitenav-vertical-padding: ($sitenav-height - brandmark.$brandmark-size) / 2;
+
+nav.sitenav {
+
+	position: sticky;
+	top: 0;
+
+	// border-bottom-width: 1px;
+	// border-bottom-style: solid;
+
+	z-index: 3;
+
+	padding-top: $sitenav-vertical-padding;
+	padding-bottom: $sitenav-vertical-padding;
+
+	@if(bg.$show-baseline-grid)
+	{
+		background-position-y: 9px;
+	}
+
+	.brandmark,
+	.menu-toggle {
+		position: relative;
+		z-index: 2;
+	}
+
+	.menu-toggle {
+
+		float: right;
+
+		$vertical-padding: brandmark.$brandmark-size - hamburger.$hamburger-menu-height;
+
+		margin-top: $vertical-padding / 2;
+		margin-bottom: $vertical-padding / 2;
+
+		@include bp.media-breakpoint-up(medium)
+		{
+			display: none;
+		}
+
+	}
+
+	.navigation-items-wrapper {
+
+		z-index: 1;
+
+		li.navigation-item a {
+			text-decoration: none;
+		}
+
+		@include bp.media-breakpoint-down(small)
+		{
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			height: 100vh;
+			display: block;
+			transition: transform 0.18s ease-in-out;
+			transform: translateY(-100vh);
+
+			display: flex;
+
+			flex-direction: column-reverse;
+			justify-content: center;
+
+			padding-left: grid.$grid-side-padding-medium;
+			padding-right: grid.$grid-side-padding-medium;
+
+			// padding-bottom: 4rem;
+
+			backdrop-filter: blur(3px);
+			background-color: rgba(255,255,255,0.9);
+
+			li.navigation-item a {
+				padding-bottom: 0;
+			}
+
+		}
+
+		@include bp.media-breakpoint-up(medium)
+		{
+
+			float: right;
+
+			margin-top: 0px;
+
+			li.navigation-item {
+				display: inline-block;
+				padding: 0;
+			}
+
+			li.navigation-item:not(:first-child) {
+				margin-left: 1.25rem;
+			}
+
+			li.navigation-item:not(:last-child) {
+				margin-right: 1.25rem;
+			}
+
+		}
+
+	}
+
+	.menu-toggle.expanded + .navigation-items-wrapper {
+
+		transform: translateY(0vh);
+
+		li.navigation-item a.type-cta {
+			@extend .type-heading;
+		}
+
+	}
+
+}
