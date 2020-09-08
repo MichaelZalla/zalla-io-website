@@ -1,0 +1,11 @@
+[author]
+	name = "Michael Zalla"
+	email = "michael@zalla.io"
+
+# Match viewports as defined in our theme's Sass definitions;
+
+[viewports]
+	small = 1
+	medium = 768
+	large = 992
+	xlarge = 1200
