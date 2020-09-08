@@ -1,7 +1,32 @@
-{{ $images := $.Page.Resources.Match (.Get 0) }}
-{{ range $images }}
-<figure>
-    <img src="{{ .RelPermalink }}" alt="{{ .Title }}" />
-    <figcaption>{{ .Title }}</figcaption>
-</figure>
-{{ end }}
+{{ $resources := (cond (ge (len $.Page.Resources) 1) $.Page.Resources $.Page.Parent.Resources) }}
+{{ $imageMatch := (printf "*/%s*" (.Get 0)) }}
+{{ $figureCssClasses := (.Get 2) }}
+{{ $pictureCssClasses := (.Get 3) }}
+<div class="imgset" id="{{ .Get 0 }}">
+
+    <figure class="row">
+
+        {{ range $resources.Match $imageMatch }}
+        {{ if not (in .RelPermalink "@2x") }}
+        <figure class="column {{ $figureCssClasses }}">
+            <picture class="{{ $pictureCssClasses }}">
+
+                <source media="(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)"
+                    data-srcset='{{ replace .RelPermalink ".png" "@2x.png" }}'>
+
+                <img class="lazy" data-src="{{ .RelPermalink }}" alt="{{ .Title }}" />
+
+            </picture>
+        </figure>
+        {{ end }}
+        {{ end }}
+
+    </figure>
+
+    {{ with (.Get 1) }}
+    <figcaption class="row">
+        <span class="type-caption large-text-center small-text-left">{{ . }}</span>
+    </figcaption>
+    {{ end }}
+
+</div>

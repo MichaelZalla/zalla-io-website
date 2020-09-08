@@ -1,0 +1,67 @@
+@use 'sass-breakpoints-mixins/breakpoints' as bp;
+
+@use '../modules/mixins' as mix;
+@use '../modules/palettes' as pal;
+
+$badge-icon-size: 1.25em;
+
+.badge {
+
+	display: inline-block;
+
+	@include mix.offset-top(mix.$baseline-height-small / 2, 0px, 'margin');
+
+	@include bp.media-breakpoint-up(medium) {
+		@include mix.offset-top(mix.$baseline-height-medium / 2, 0px, 'margin');
+	}
+
+	@include bp.media-breakpoint-up(large) {
+		@include mix.offset-top(mix.$baseline-height-large / 2, 0px, 'margin');
+	}
+
+	padding-top: 0.25;
+	padding-bottom: 0.25;
+	padding-left: 1em;
+	padding-right: 1em;
+
+	border-radius: 9px;
+
+	text-decoration: none;
+
+}
+
+.badge.badge-icon {
+
+	$icon-padding-side: $badge-icon-size / 2;
+
+	padding-left: $badge-icon-size + $icon-padding-side * 2;
+
+	background-repeat: no-repeat;
+	background-size: $badge-icon-size $badge-icon-size;
+	background-position: left ($icon-padding-side * 1.1) center;
+
+}
+
+.theme-light {
+
+	.badge-icon-link {
+		background-image: url('/images/svg/icon-link-light.svg');
+	}
+
+	.badge-icon-github {
+		background-image: url('/images/svg/icon-github-light.svg');
+	}
+
+}
+
+.theme-dark.badge {
+
+	.badge-icon-link {
+		background-image: url('/images/svg/icon-link-dark.svg');
+	}
+
+	.badge-icon-github {
+		background-image: url('/images/svg/icon-github-dark.svg');
+	}
+
+}

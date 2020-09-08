@@ -1,0 +1,18 @@
+@use '../../modules/grid' as grid;
+
+body[data-section="projects"][data-page-type="list"] {
+
+}
+
+body[data-section="projects"][data-page-type="single"] {
+
+	article > .grid > .row:first-child {
+		padding-bottom: 3rem;
+	}
+
+	article ul {
+		padding-left: grid.$grid-side-padding-small * 1.2;
+		list-style-type: circle;
+	}
+
+}

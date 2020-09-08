@@ -1,0 +1,15 @@
+@mixin offset-top(
+	$baseline,
+	$offset,
+	$property: 'padding')
+{
+	$baseline-unit: $baseline;
+
+	@while $baseline < $offset
+	{
+		$baseline: $baseline + $baseline-unit;
+	}
+
+	#{$property}-top: $offset;
+	#{$property}-bottom: $baseline - $offset;
+}

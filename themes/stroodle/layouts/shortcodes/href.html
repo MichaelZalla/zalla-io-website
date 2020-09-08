@@ -1,0 +1,2 @@
+{{ $res := $.Page.Resources.GetMatch (.Get 0) }}
+<a class="href" href="{{ $res.RelPermalink }}" target="_blank">{{ (.Get 1) }}</a>

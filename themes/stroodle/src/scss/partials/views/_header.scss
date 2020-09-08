@@ -1,0 +1,92 @@
+@use 'sass-breakpoints-mixins/breakpoints' as bp;
+
+@use '../../modules/mixins' as mix;
+
+@use '../typography';
+
+@use './nav' as nav;
+
+.top {
+	padding-top: 1.4rem;
+}
+
+.middle {
+	padding-top: 2.6rem;
+}
+
+header {
+
+	position: sticky;
+
+	top: nav.$sitenav-height;
+
+	z-index: 1;
+
+	padding-top: 3rem;
+
+	border-bottom: 1px solid transparent;
+
+	transition: padding-top 0.18s ease-in-out, border-color 0.18s ease-in-out;
+
+	& > .grid > .row {
+
+		@include bp.media-breakpoint-up(medium) {
+
+			@include mix.flex-container;
+
+			align-items: flex-end;
+
+		}
+
+	}
+
+	.type-heading,
+	.type-label {
+		padding-bottom: 0;
+		transition: all 0.18s ease-in-out;
+	}
+
+	.type-label {
+		padding-bottom: 0.15rem;
+	}
+
+	ul.header-navigation-items {
+
+		li {
+			display: inline-block;
+		}
+
+		li:not(:last-child) {
+			margin-right: 1.5rem;
+		}
+
+	}
+
+	.row {
+		overflow: hidden;
+	}
+
+}
+
+header.stuck {
+
+	padding-top: 0.4rem;
+
+	.type-heading {
+		@extend .type-subheading;
+		padding-bottom: 0.1rem;
+	}
+
+	@include bp.media-breakpoint-only(small) {
+
+		.type-heading {
+			padding-bottom: 0;
+		}
+
+		.type-label {
+			padding-top: 3px;
+		}
+
+	}
+
+}

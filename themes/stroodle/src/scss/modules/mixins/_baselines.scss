@@ -1,0 +1,23 @@
+@use 'sass-breakpoints-mixins/breakpoints' as bp;
+
+$baseline-height-small: 32px;
+$baseline-height-medium: 32px;
+$baseline-height-large: 24px;
+
+@mixin baselines(
+	$property,
+	$num)
+{
+	#{$property}: $num * $baseline-height-small;
+
+	@include bp.media-breakpoint-up(medium)
+	{
+		#{$property}: $num * $baseline-height-medium;
+	}
+
+	@include bp.media-breakpoint-up(large)
+	{
+		#{$property}: $num * $baseline-height-large;
+	}
+
+}

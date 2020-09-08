@@ -1,0 +1,27 @@
+@use 'sass-breakpoints-mixins/breakpoints' as bp;
+
+$alignments: left, center, right;
+
+@each $alignment in $alignments {
+	.large-text-#{$alignment} {
+		text-align: $alignment;
+	}
+}
+
+@include bp.media-breakpoint-down(medium)
+{
+	@each $alignment in $alignments {
+		.medium-text-#{$alignment} {
+			text-align: $alignment;
+		}
+	}
+}
+
+@include bp.media-breakpoint-down(small)
+{
+	@each $alignment in $alignments {
+		.small-text-#{$alignment} {
+			text-align: $alignment;
+		}
+	}
+}

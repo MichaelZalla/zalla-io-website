@@ -1,0 +1,31 @@
+@use 'sass-breakpoints-mixins/breakpoints' as bp;
+
+ul.site-credits {
+
+	li {
+
+		display: inline-block;
+
+		@include bp.media-breakpoint-down(small) {
+			display: block;
+		}
+
+	}
+
+	li:not(:first-child):before {
+		content: "•";
+		display: inline-block;
+		margin: 0 4px;
+	}
+
+	li:first-child:before {
+
+		@include bp.media-breakpoint-down(medium) {
+			content: "•";
+			display: inline-block;
+			margin: 0 4px;
+		}
+
+	}
+
+}

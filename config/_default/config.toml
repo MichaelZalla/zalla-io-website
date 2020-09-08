@@ -1,0 +1,78 @@
+title = "zalla.io"
+author = "Michael Zalla"
+description = "The personal website of Michael Zalla."
+images = [
+	"/images/cover.png",
+]
+copyright = "Copyright © 2020 Michael Zalla"
+
+baseURL = "https://zalla.io"
+
+####################
+# Directory config #
+####################
+
+# archetypeDir = "archetypes"
+# assetDir = "assets"
+# contentDir = "content"
+# dataDir = "data"
+# layoutDir = "layouts"
+# publishDir = "public"
+# staticDir = "static"
+# themesDir = "themes"
+
+##############
+# Taxonomies #
+##############
+
+# [taxonomies]
+# 	project = "projects"
+# 	article = "articles"
+
+###################
+# Language config #
+###################
+
+isMultiLingual = false
+# defaultContentLanguage = "en"
+# defaultContentLanguageInSubdir = false
+# hasCJKLanguage = false
+# languageCode = "en-us"
+# languagePrefix = ""
+# pluralizeListTitles = true
+
+# See: ./language.toml
+
+####################
+# Generator Output #
+####################
+
+enableEmoji = true
+# disableHugoGeneratorInject = true
+# disableLiveReload = true
+# enableInlineShortcodes = false
+# paginate = 10
+# relativeURLs = true
+# summaryLength = 70
+
+#####################
+# Content footnotes #
+#####################
+
+footnoteAnchorPrefix = "footnote-"
+footnoteReturnLinkContents = "↩"
+
+#################
+# Themes config #
+#################
+
+theme="stroodle"
+
+############################
+# Third-party integrations #
+############################
+
+enableGitInfo = true
+enableRobotsTXT = true
+googleAnalytics = "UA-51749284-1"
+# disqusShortname = "zalla-io"

@@ -1,0 +1,27 @@
+@use 'sass-breakpoints-mixins/breakpoints' as bp;
+
+@use '../modules/grid' as grid;
+@use '../modules/viewport' as vp;
+
+.grid {
+
+	display: block;
+	margin: 0 auto;
+	padding: 0 grid.$grid-side-padding-small;
+
+	width: 100%;
+
+	max-width: 100%;
+
+	@include bp.media-breakpoint-up(medium)
+	{
+		padding: 0 grid.$grid-side-padding-medium;
+		max-width: 100%;
+	}
+
+	@include bp.media-breakpoint-up(large)
+	{
+		max-width: map-get(vp.$min-width, 'large');
+	}
+
+}

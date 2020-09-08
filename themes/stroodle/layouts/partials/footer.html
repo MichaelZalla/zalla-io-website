@@ -1,37 +1,35 @@
-<footer class="footer" id="contact">
+<footer>
 
-	<ul class="contact-info">
+	<div class="grid">
 
-		<li class="email">
-			<a href="mailto:michael@zalla.io">
-				michael <span>at</span> zalla.io
-			</a>
-		</li>
+		<div class="">
 
-		<li class="mobile">859.982.4404</li>
+			<p class="type-footer">
+				<span class="lighter"><span class="icon-before icon-cog small-hide"></span>engineered with <span class="icon-before icon-heart"></span> by </span><a class="icon-after icon-paper-plane" href="mailto:{{ .Site.Params.author.email }}"><span class="nowrap"><strong>michael</strong><span class="lighter"> at </span><strong>zalla.io</strong></span></a>
+			</p>
 
-	</ul>
+			<p class="type-footer">
+				<a href="/pdf/ZallaMichael_Resume_2020-06-05.pdf" target="_blank"><span class="lighter icon-before icon-coffee nowrap">check the <strong>résumé</strong></span></a>
+			</p>
 
-	<a class="resume" href="http://www.zalla.io/attachments/pdf/Michael_Zalla_Resume_10-19-2014.pdf" target="_blank">
-		<span class="arrow-down red"></span>
-		<span>résumé</span>
-	</a>
+		</div>
 
-	<span class="footer-message">coded with <span>♥</span> by ©&thinsp;michael zalla</span>
+		<div class="">
 
-	<ul class="social-links">
-		<li class="social-link linkedin">
-			<a href="https://www.linkedin.com/in/michaelzalla" target="_blank">LinkedIn</a>
-		</li>
-		<li class="social-link github">
-			<a href="https://github.com/MichaelZalla" target="_blank">GitHub</a>
-		</li>
-		<li class="social-link stackoverflow">
-			<a href="http://stackoverflow.com/users/1623811/michael-zalla?tab=answers" target="_blank">StackOverflow</a>
-		</li>
-		<li class="social-link pinterest">
-			<a href="http://www.pinterest.com/michaelzalla/" target="_blank">Pinterest</a>
-		</li>
-	</ul>
+			{{ partial "site-credits" . }}
+
+			{{ partial "social-links" . }}
+
+		</div>
+
+		<div class="">
+
+			<p class="type-legal lighter">
+				copyright © 2020 Michael Zalla
+			</p>
+
+		</div>
+
+	</div>
 
 </footer>

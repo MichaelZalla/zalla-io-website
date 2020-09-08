@@ -5,8 +5,14 @@
 	"tasks": [
 		{
 			"type": "npm",
-			"script": "serve:draft",
-			"problemMatcher": []
+			"script": "serve",
+			"problemMatcher": [],
+			"label": "npm: serve",
+			"detail": "npm run sass:watch & hugo server --noHTTPCache -p 1313 -D && fg",
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			}
 		}
 	]
 }
