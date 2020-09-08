@@ -1,6 +1,8 @@
 **/node_modules
 **/resources
-**/static
+**/vendor
+**/static/css
+**/static/images/baseline*
 **/public
 **/dist
 **/.sass-cache
