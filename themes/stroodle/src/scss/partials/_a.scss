@@ -1,0 +1,13 @@
+a {
+
+	display: inline-block;
+
+	text-decoration: none;
+
+	transition: color 0.18s ease-in-out, filter 0.18s ease-in-out;
+
+	&:focus {
+		outline: none;
+	}
+
+}

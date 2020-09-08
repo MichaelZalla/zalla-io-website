@@ -1,0 +1,7 @@
+@mixin order(
+	$order)
+{
+	-webkit-box-ordinal-group: $order + 1;
+	-ms-flex-order: $order;
+	order: $order;
+}

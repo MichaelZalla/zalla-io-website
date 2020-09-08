@@ -1,0 +1,98 @@
+@use '../modules/device' as device;
+
+[class*="device-"] {
+	position: relative;
+	overflow: auto;
+	display: block;
+}
+
+[class*="device-phone"],
+[class*="device-tablet"] {
+
+	&,
+	&:before,
+	&:after {
+		border-width: 1px;
+		border-style: solid;
+		border-color: transparent;
+	}
+
+	// Device details
+
+	&:before,
+	&:after {
+		content: " ";
+		position: absolute;
+		display: block;
+		border-radius: 50%;
+	}
+
+	&.landscape {
+		&:before,
+		&:after {
+			top: 50%;
+		}
+	}
+
+}
+
+.device-phone.portrait {
+
+	// Device hardware shell
+
+	// padding: 5.5% 1.75%;
+	padding: 16% 5%;
+
+	border-radius: 32px;
+
+	// Device details
+
+	$before-size: 10px;
+	$after-size: 38px;
+
+	&:before {
+		top: 28px;
+		left: 50%;
+		margin-left: -0.5 * $before-size;
+		width: $before-size;
+		height: $before-size;
+	}
+
+	&:after {
+		bottom: 8px;
+		left: 50%;
+		margin-left: -0.5 * $after-size;
+		width: $after-size;
+		height: $after-size;
+	}
+
+}
+
+.device-tablet.landscape {
+
+	// Device hardware shell
+
+	padding: 3.15% 7%;
+
+	border-radius: 6%;
+
+	// Device details
+
+	$before-size: 2%;
+	$after-size: 5.75%;
+
+	&:before {
+		left: 2.75%;
+		margin-top: -0.5 * $before-size * device.$tablet-landscape-aspect-ratio;
+		width: $before-size * device.$tablet-landscape-aspect-ratio;
+		height: $before-size;
+	}
+
+	&:after {
+		right: 1.5%;
+		margin-top: -0.5 * $after-size * device.$tablet-landscape-aspect-ratio;
+		width: $after-size * device.$tablet-landscape-aspect-ratio;
+		height: $after-size;
+	}
+
+}

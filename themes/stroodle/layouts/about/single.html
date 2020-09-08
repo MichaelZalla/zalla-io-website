@@ -1,0 +1,75 @@
+{{ define "title" }}{{ .Title }} - {{ end }}
+{{ define "ogTitle" }}{{ .Title }} - {{ end }}
+{{ define "twitterTitle" }}{{ .Title }} - {{ end }}
+
+{{ define "meta" }}
+<style>
+	header {
+		position: static;
+	}
+</style>
+{{ end }}
+
+{{ define "layout" }}about{{ end }}
+
+{{ define "header-title" }}
+	<!-- <h1 class="type-heading">{{ .Description }}</h1> -->
+{{ end }}
+
+{{ define "article" }}
+
+	<div class="row">
+
+		<div class="column large-8 medium-10 small-12">
+
+			<section>
+
+				<h1 class="type-quote">&hellip;for what you learn today, for no reason at all, will help you discover all the wonderful secrets of tomorrow.</h1>
+				<span class="type-attribution">The Phantom Tollbooth</span>
+
+				{{ partial "drop-cap-content" . }}
+
+				<span class="type-attribution">Michael</span>
+
+				<p class="type-caption lighter">
+					*Since then, I have cleaned up my diet considerably.
+				</p>
+
+			</section>
+
+		</div>
+		<!--
+		<div class="column large-4 medium-4 small-12">
+
+			<img class="lazy" data-src="#" alt="" width="100%" height="auto">
+			<img class="lazy" data-src="#" alt="" width="100%" height="auto">
+			<img class="lazy" data-src="#" alt="" width="100%" height="auto">
+
+		</div>
+		-->
+
+	</div>
+
+	<!--
+	<div class="row">
+
+		<div class="column large-4 small-12"><img class="lazy" data-src="#" alt="" width="100%" height="auto"></div>
+		<div class="column large-4 small-12"><img class="lazy" data-src="#" alt="" width="100%" height="auto"></div>
+		<div class="column large-4 small-12"><img class="lazy" data-src="#" alt="" width="100%" height="auto"></div>
+
+	</div>
+	-->
+
+{{ end }}
+
+{{ define "aside" }}
+
+	<ul class="row">
+		{{ range .Page.Resources.Match "images/*asfasd_2x.png" }}
+		<li class="column large-12 medium-4 small-12">
+			<img class="lazy" data-src="{{ .RelPermalink }}" alt="{{ .Title }}" />
+		</li>
+		{{ end }}
+	</ul>
+
+{{ end }}

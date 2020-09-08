@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" xml:lang="en">
+<head>
+
+	{{ partial "meta" . }}
+
+	{{ block "meta" . }}{{ end }}
+
+</head>
+<body class="theme-dark"
+	data-layout='{{ block "layout" . }}default{{ end }}'
+	data-page-type='{{ block "pageType" . }}single{{ end }}'
+	data-section="{{ .Section }}">
+
+	{{ partial "nav" . }}
+
+	<div class="top theme-light"></div>
+
+	<div class="middle theme-light"></div>
+
+	<header class="header theme-light">
+		<div class="grid">
+			<div class="row">
+
+				<div class="column large-6 medium-6 small-12">
+
+					{{ block "header-title" . }}
+					{{ end }}
+
+				</div>
+
+				<div class="column large-6 medium-6 small-12 large-text-right small-text-left">
+
+					<ul class="header-navigation-items">
+
+						{{ block "header-navigation-items" . }}
+						{{ end }}
+
+					</ul>
+
+				</div>
+
+			</div>
+		</div>
+	</header>
+
+	<main class="main theme-light">
+
+		<article>
+
+			<div class="grid">
+
+				{{ block "article" . }}
+				{{ end }}
+
+				{{ block "gallery" . }}
+				{{ end }}
+
+			</div>
+
+		</article>
+
+		<aside>
+			<div class="grid">
+				<div class="row">
+					<div class="column large-12 medium-12 small-12">
+						{{ block "aside" . }}
+						{{ end }}
+					</div>
+				</div>
+			</div>
+		</aside>
+
+		{{ block "pre-main" . }}
+		{{ end }}
+
+	</main>
+
+	{{ partial "footer" . }}
+
+	{{ block "body-trailer" . }}
+	{{ end }}
+
+</body>
+</html>
