@@ -1,0 +1,30 @@
+article {
+
+	section.collapsed {
+
+		h4,
+		p,
+		ul {
+
+			&:first-child {
+				padding-bottom: 0px;
+			}
+
+			&:not(:first-child)
+			{
+				display: none;
+			}
+
+		}
+
+		button {
+			display: inline;
+			margin: 0;
+			padding: 0;
+			background: none;
+			border: none;
+		}
+
+	}
+
+}
