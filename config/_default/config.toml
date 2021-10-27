@@ -4,7 +4,7 @@ description = "The personal website of Michael Zalla."
 images = [
 	"/images/cover.png",
 ]
-copyright = "Copyright © 2020 Michael Zalla"
+copyright = "copyright © 2021 Michael Zalla"
 
 baseURL = "https://zalla.io"
 
