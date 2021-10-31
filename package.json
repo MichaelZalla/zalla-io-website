@@ -37,6 +37,7 @@
   },
   "dependencies": {
     "disqusLoader.js": "git+https://github.com/osvaldasvalutis/disqusLoader.js.git",
+    "insert-css": "^0.0.0",
     "jquery": "^3.5.1",
     "vanilla-lazyload": "^17.1.0"
   }
