@@ -1,7 +1,7 @@
 **/node_modules
 **/resources
-**/vendor
-**/static/css
+**/static/css/vendor
+**/static/demos
 **/static/images/baseline*
 **/public
 **/dist
