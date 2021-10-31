@@ -62,7 +62,7 @@ ul.social-links {
 	@each $name in $social-platforms
 	{
 		&.#{$name} a {
-			background-image: url('/images/svg/icon-#{$name}-dark.svg');
+			background-image: url('../images/svg/icon-#{$name}-dark.svg');
 		}
 	}
 

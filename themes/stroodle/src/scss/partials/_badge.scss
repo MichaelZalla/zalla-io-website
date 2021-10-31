@@ -45,11 +45,11 @@ $badge-icon-size: 1.25em;
 .theme-light {
 
 	.badge-icon-link {
-		background-image: url('/images/svg/icon-link-light.svg');
+		background-image: url('../images/svg/icon-link-light.svg');
 	}
 
 	.badge-icon-github {
-		background-image: url('/images/svg/icon-github-light.svg');
+		background-image: url('../images/svg/icon-github-light.svg');
 	}
 
 }
@@ -57,11 +57,11 @@ $badge-icon-size: 1.25em;
 .theme-dark.badge {
 
 	.badge-icon-link {
-		background-image: url('/images/svg/icon-link-dark.svg');
+		background-image: url('../images/svg/icon-link-dark.svg');
 	}
 
 	.badge-icon-github {
-		background-image: url('/images/svg/icon-github-dark.svg');
+		background-image: url('../images/svg/icon-github-dark.svg');
 	}
 
 }
