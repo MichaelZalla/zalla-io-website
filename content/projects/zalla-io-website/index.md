@@ -44,7 +44,7 @@ To address these issues, among others, I set out to define some success criteria
 
 With these new directives, I got to work in Sketch.
 
-I quickly realized that mobile portfolio design can pose a particular challenge: designers and developers often need to present highly visual (i.e., image-heavy) content in order to exhibit the final product and to illustrate their original directions and process; at the same time, design systems and digital products require creators to make a considerable number of choices—choices that are worth some thoughtful, written context. The limited screen-space inherent to mobile means that only so much visual and written content can occpy the screen at any given time—so how do you balance this?
+I quickly realized that mobile portfolio design can pose a particular challenge: designers and developers often need to present highly visual (i.e., image-heavy) content in order to exhibit the final product and to illustrate their original directions and process; at the same time, design systems and digital products require creators to make a considerable number of choices—choices that are worth some thoughtful, written context. The limited screen-space inherent to mobile means that only so much visual and written content can occupy the screen at any given time—so how do you balance this?
 
 This was the primary question driving my explorations in Sketch. For users mainly interested in enjoying the visuals, how do you prevent written content from pushing your visuals so far down the page that they're no longer apparent? For users who seek to gain concrete context through the creator's written remarks, how do you prevent the opposite?
 
