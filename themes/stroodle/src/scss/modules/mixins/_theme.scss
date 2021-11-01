@@ -27,7 +27,13 @@
 	// Anchor
 
 	a {
-		color: swatch($palette, text-color-lighter);
+
+		color: swatch($palette, anchor-text-color);
+
+		&:hover {
+			color: swatch($palette, anchor-hover-text-color);
+		}
+
 	}
 
 	a.type-cta,

@@ -27,4 +27,8 @@ article {
 
 	}
 
+	a:not(.type-cta):not(.type-label) {
+		text-decoration: underline;
+	}
+
 }
