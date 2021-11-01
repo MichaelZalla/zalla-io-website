@@ -83,15 +83,6 @@
 		color: swatch($palette, text-color-lightest);
 	}
 
-	.badge {
-		// background-color: swatch($palette, badge-background-color);
-		// border-color: swatch($palette, keyline);
-	}
-
-	// .badge * {
-	// 	color: swatch($palette, text-color-badge);
-	// }
-
 	[class*='device-'] {
 		background-color: swatch($palette, device-background-color);
 	}
