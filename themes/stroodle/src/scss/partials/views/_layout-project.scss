@@ -6,6 +6,14 @@ body[data-section="projects"][data-page-type="list"] {
 
 body[data-section="projects"][data-page-type="single"] {
 
+	header.stuck {
+
+		.type-heading {
+			padding-bottom: 0;
+		}
+
+	}
+
 	article > .grid > .row:first-child {
 		padding-bottom: 3rem;
 	}

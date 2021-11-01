@@ -1,0 +1,186 @@
+{{ define "title " }}{{ .Title | htmlUnescape }} - {{ .Section }} - {{ end }}
+{{ define "ogTitle " }}{{ .Title | htmlUnescape }} - {{ .Section }} - {{ end }}
+{{ define "twitterTitle " }}{{ .Title | htmlUnescape }} - {{ .Section }} - {{ end }}
+
+{{ define "pageType" }}single{{ end }}
+
+{{ define "header-title" }}
+
+<div class="column large-2 medium-1 small-hide">&nbsp;</div>
+<div class="column large-8 medium-10 small-12">
+
+	<div class="article-social-share-links-container type-heading">
+		{{ partial "article-social-share-links" . }}
+	</div>
+	<a href="#">
+		<h1 class="type-heading">{{ .Title | htmlUnescape }}</h1>
+	</a>
+
+</div>
+<div class="column large-2 medium-1 small-hide">&nbsp;</div>
+
+{{ end }}
+
+{{ define "main" }}
+
+	<article>
+
+		<div class="grid">
+			<div class="row">
+
+				<div class="column large-2 medium-1 small-hide">&nbsp;</div>
+
+				<div class="column large-8 medium-10 small-12">
+					{{ partial "article-attributes" . }}
+				</div>
+
+				<div class="column large-2 medium-1 small-hide">&nbsp;</div>
+
+			</div>
+		</div>
+
+		<div class="grid hero-grid">
+			<div class="row">
+
+				<div class="column large-2 medium-1 medium-hide small-hide">&nbsp;</div>
+
+				<div class="column large-8 medium-12 small-12">
+
+					{{ with .Page.Resources.GetMatch "images/feature.png" }}
+					<figure class="article-hero-figure">
+
+						<picture>
+
+							<source media="(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)"
+								data-srcset='{{ replace .RelPermalink ".png" "@2x.png" }}'>
+
+							<img class="lazy" data-src="{{ .RelPermalink }}" alt="{{ .Title }}" />
+
+						</picture>
+
+					</figure>
+					{{ end }}
+
+				</div>
+
+				<div class="column large-2 medium-1 medium-hide small-hide">&nbsp;</div>
+
+			</div>
+		</div>
+
+		<div class="grid">
+
+			<div class="row">
+
+				<div class="column large-2 medium-1 small-hide">
+
+					&nbsp;
+					<!--
+					<div class="medium-hide small-hide">
+						<span class="type-label lighter">blog series</span>
+						<h3 class="type-subheading">On Loving and Bombs</h3>
+					</div>
+
+					<div class="medium-hide small-hide">
+						<span class="type-label lighter">outline</span>
+						<ul>
+							<li>Part 1: Who should read this article?</li>
+							<li>Part 2: Who should read this article?</li>
+							<li>Part 3: Who should read this article?</li>
+							<li>Part 4: Who should read this article?</li>
+						</ul>
+					</div>
+					-->
+
+				</div>
+
+				<div class="column large-8 medium-10 small-12">
+
+					<div class="contents-inner">
+						{{ partial "drop-cap-content" . }}
+					</div>
+
+					{{ partial "tag-list" . }}
+
+					{{ partial "article-social-share-links" . }}
+
+				</div>
+
+				<div class="column large-2 medium-1 small-hide">
+
+					&nbsp;
+
+				</div>
+
+			</div>
+
+		</div>
+
+	</article>
+
+	<aside class="article-author-drawer">
+
+		<div class="grid">
+			<div class="row">
+
+				<div class="column large-2 medium-1 small-hide">&nbsp;</div>
+
+				<div class="column large-8 medium-10 small-12">
+					{{ .Scratch.Set "includeBio" "true" }}
+					{{ partial "author-drawer" . }}
+				</div>
+
+				<div class="column large-2 medium-1 small-hide">&nbsp;</div>
+
+			</div>
+		</div>
+
+	</aside>
+
+	<aside class="article-navigation-drawer">
+
+		<div class="grid">
+			<div class="row">
+
+				<div class="column large-2 medium-1 small-hide">&nbsp;</div>
+
+				<div class="column large-8 medium-10 small-12">
+
+					{{ partial "navigation-drawer" . }}
+
+				</div>
+
+				<div class="column large-2 medium-1 small-hide">&nbsp;</div>
+
+			</div>
+		</div>
+
+	</aside>
+
+{{ end }}
+
+{{ define "aside" }}
+
+	<div class="disqus"></div>
+
+{{ end }}
+
+{{ define "body-trailer" }}
+<script async src="/scripts/sticky-nav.js"></script>
+<script async src="/scripts/social-share-links.js"></script>
+<script src="/scripts/vendor/lazyload.min.js"></script>
+<script src="/scripts/vendor/disqusloader.js"></script>
+<script>
+
+	// Initializes lazy-loading behavior
+
+	const lazyLoadInstance = new LazyLoad({});
+
+	// Initializes disqus asynchronously
+
+	disqusLoader( '.disqus', {
+		scriptUrl: '//zalla-io.disqus.com/embed.js',
+	});
+
+</script>
+{{ end }}

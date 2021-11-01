@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" xml:lang="en">
+<head>
+
+	{{ partial "meta" . }}
+
+	{{ block "meta" . }}{{ end }}
+
+</head>
+<body class="theme-light fade-in"
+	data-layout='{{ block "layout" . }}default{{ end }}'
+	data-page-type='{{ block "pageType" . }}single{{ end }}'
+	data-section="{{ .Section }}">
+
+	{{ partial "nav" . }}
+
+	<div class="top"></div>
+
+	<div class="middle"></div>
+
+	<header class="header theme-light">
+		<div class="grid">
+			<div class="row">
+
+				<div class="column large-12">
+
+					{{ block "header-title" . }}
+					{{ end }}
+
+				</div>
+
+			</div>
+		</div>
+	</header>
+
+	<main class="main">
+
+		{{ block "main" . }}
+		{{ end }}
+
+	</main>
+
+	<aside class="">
+		<div class="grid">
+			<div class="row">
+				<div class="column large-12 medium-12 small-12">
+					{{ block "aside" . }}
+					{{ end }}
+				</div>
+			</div>
+		</div>
+	</aside>
+
+	{{ partial "footer" . }}
+
+	<script src="/scripts/color-theme.js"></script>
+	{{ block "body-trailer" . }}
+	{{ end }}
+
+</body>
+</html>

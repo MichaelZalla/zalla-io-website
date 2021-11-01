@@ -83,7 +83,22 @@
 	}
 
 	.type-legal {
-		color: swatch($palette, text-color-lightest);
+		color: swatch($palette, text-color-lighter);
+	}
+
+	// Chiclet (tag)
+
+	.chiclet.type-label {
+
+		color: swatch($palette, chiclet-text-color);
+
+		background-color: swatch($palette, chiclet-background-color);
+
+		&:hover {
+			color: white;
+			background-color: swatch($palette, chiclet-hover-background-color);
+		}
+
 	}
 
 	[class*='device-'] {

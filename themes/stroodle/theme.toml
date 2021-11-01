@@ -17,3 +17,4 @@ min_version = "0.38.2"
 [taxonomies]
   tag = "tags"
   project = "projects"
+  article = "articles"

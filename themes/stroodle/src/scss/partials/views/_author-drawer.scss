@@ -1,0 +1,49 @@
+@use 'sass-breakpoints-mixins/breakpoints' as bp;
+
+@use '../../modules/mixins/flex-container' as fc;
+
+.author-drawer {
+
+	display: inline-block;
+
+	.flex-container {
+
+		@include fc.flex-container(
+			column,
+			flex-start
+		);
+
+		@include bp.media-breakpoint-up(medium) {
+			@include fc.flex-container(
+				row,
+				center
+			);
+		}
+
+	}
+
+	img {
+		border-radius: 50%;
+	}
+
+	img + div {
+
+		@include bp.media-breakpoint-down(small) {
+			padding-top: 0.5rem;
+		}
+
+		@include bp.media-breakpoint-up(medium) {
+			padding-left: 1.5rem;
+		}
+
+		*:first-child {
+			padding-top: 0;
+		}
+
+		* + * {
+			padding-top: 0;
+		}
+
+	}
+
+}

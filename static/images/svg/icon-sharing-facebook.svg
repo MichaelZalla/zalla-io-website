@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="64px" height="64px" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icon-sharing-facebook</title>
+    <g id="sharing-facebook" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M33.7545041,7 C47.9798347,7 59.5106198,18.4160312 59.5106198,32.5 C59.5106198,46.5839687 47.9798347,58 33.7545041,58 C19.5291736,58 8,46.5839687 8,32.5 C8,18.4160312 19.5291736,7 33.7545041,7 Z M41,17 L35.9226667,17 C31.128,17 29,19.0447083 29,22.9610417 L29,27.3333333 L25,27.3333333 L25,32.5 L29,32.5 L29,48 L35.6666667,48 L35.6666667,32.5 L40.5226667,32.5 L41,27.3333333 L35.6666667,27.3333333 L35.6666667,25.180125 C35.6666667,23.9465833 35.9226667,23.4583333 37.1533333,23.4583333 L41,23.4583333 L41,17 Z" id="Combined-Shape" fill="#000000" fill-rule="nonzero"></path>
+    </g>
+</svg>

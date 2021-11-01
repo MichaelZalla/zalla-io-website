@@ -32,6 +32,6 @@ Today, I’m still learning. While living and working in the Bay, I continue to 
 
 In addition to continued self-education, I’ve also found new ways to pay it forward. As they say, you don’t really know something until you can teach it. Since 2020, I’ve served as a (virtual) mentor to new programmers—of all ages, backgrounds, and locations—looking to gain a foothold in the ever-changing industry. I contribute my knowledge and experience through online Zoom meetups and conduct code reviews through GitHub. To watch someone else grow in their knowledge and awareness of what is possible with technology is something I find enormously fulfilling.
 
-When I’m not being a programmer, or a mentor, you can usually find me training with barbells, listening to podcasts on cryptocurrency, walking around the nearest downtown district with my digital camera, and generally discovering the secrets of tomorrow.
+When I’m not being a programmer or mentor, you can find me training with barbells, listening to podcasts on cryptocurrency, walking around my downtown district with my digital camera, and generally discovering the secrets of tomorrow.
 
 <!-- _*Since then, I have cleaned up my diet considerably._ -->

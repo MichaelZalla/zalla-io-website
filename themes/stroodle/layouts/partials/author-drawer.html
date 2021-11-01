@@ -1,0 +1,27 @@
+<div class="author-drawer" id="author-drawer">
+
+	<div class="flex-container">
+
+		{{ with $.Site.GetPage "taxonomyTerm" (printf "authors/%s" (urlize .Params.author)) }}
+
+			{{ with .Resources.GetMatch "avatar.png" }}
+			<img class="lazy" data-src="{{ .RelPermalink }}" alt=""/>
+			{{ end }}
+
+			<div>
+
+				<a class="type-label" href="/about/">{{ .Params.name }}</a>
+
+				{{ if eq ($.Scratch.Get "includeBio") "true" }}
+					<div class="type-credits lighter">
+						{{ .Content }}
+					</div>
+				{{ end }}
+
+			</div>
+
+		{{ end }}
+
+	</div>
+
+</div>
