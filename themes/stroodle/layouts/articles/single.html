@@ -45,22 +45,7 @@
 				<div class="column large-2 medium-1 medium-hide small-hide">&nbsp;</div>
 
 				<div class="column large-8 medium-12 small-12">
-
-					{{ with .Page.Resources.GetMatch "images/feature.png" }}
-					<figure class="article-hero-figure">
-
-						<picture>
-
-							<source media="(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)"
-								data-srcset='{{ replace .RelPermalink ".png" "@2x.png" }}'>
-
-							<img class="lazy" data-src="{{ .RelPermalink }}" alt="{{ .Title }}" />
-
-						</picture>
-
-					</figure>
-					{{ end }}
-
+					{{ partial "article-hero" . }}
 				</div>
 
 				<div class="column large-2 medium-1 medium-hide small-hide">&nbsp;</div>
