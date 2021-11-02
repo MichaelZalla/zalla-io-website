@@ -1,3 +1,5 @@
+@use 'sass:math';
+
 @use 'sass-breakpoints-mixins/breakpoints' as bp;
 
 @use '../modules/mixins' as mix;
@@ -27,7 +29,7 @@ $num-columns: 12;
 
 		width: calc( (100% - (#{$num-columns}/#{$index} - 1) * 16px) / #{$num-columns} * #{$index} );
 
-		$nt-child-index: ceil($num-columns/$index);
+		$nt-child-index: ceil(math.div($num-columns, $index));
 
 		&:nth-child(#{$nt-child-index}n) {
 			margin-right: 0;
@@ -47,7 +49,7 @@ $num-columns: 12;
 
 			width: calc( (100% - (#{$num-columns}/#{$index} - 1) * 16px) / #{$num-columns} * #{$index} );
 
-			$nt-child-index: ceil($num-columns/$index);
+			$nt-child-index: ceil(math.div($num-columns, $index));
 
 			&:nth-child(#{$nt-child-index}n) {
 				margin-right: 0;
@@ -68,7 +70,7 @@ $num-columns: 12;
 
 			width: calc( (100% - (#{$num-columns}/#{$index} - 1) * 16px) / #{$num-columns} * #{$index} );
 
-			$nt-child-index: ceil($num-columns/$index);
+			$nt-child-index: ceil(math.div($num-columns, $index));
 
 			&:nth-child(#{$nt-child-index}n) {
 				margin-right: 0;

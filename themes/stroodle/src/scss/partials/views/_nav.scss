@@ -1,3 +1,5 @@
+@use 'sass:math';
+
 @use 'sass-breakpoints-mixins/breakpoints' as bp;
 
 @use '../../modules/baseline-grid' as bg;
@@ -10,7 +12,7 @@
 
 $sitenav-height: 52px;
 
-$sitenav-vertical-padding: ($sitenav-height - brandmark.$brandmark-size) / 2;
+$sitenav-vertical-padding: math.div(($sitenav-height - brandmark.$brandmark-size), 2);
 
 nav.sitenav {
 
@@ -42,8 +44,8 @@ nav.sitenav {
 
 		$vertical-padding: brandmark.$brandmark-size - hamburger.$hamburger-menu-height;
 
-		margin-top: $vertical-padding / 2;
-		margin-bottom: $vertical-padding / 2;
+		margin-top: math.div($vertical-padding, 2);
+		margin-bottom: math.div($vertical-padding, 2);
 
 		@include bp.media-breakpoint-up(medium)
 		{

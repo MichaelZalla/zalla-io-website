@@ -1,4 +1,11 @@
+@use 'sass:math';
+
+$phone-height: 812;
+$phone-width: 375;
+$phone-portrait-aspect-ratio: math.div($phone-height, $phone-width);
+$phone-landscape-aspect-ratio: math.div($phone-width, $phone-height);
+
 $tablet-height: 240;
 $tablet-width: 169.5;
-$tablet-portrait-aspect-ratio: $tablet-height / $tablet-width;
-$tablet-landscape-aspect-ratio: $tablet-width / $tablet-height;
+$tablet-portrait-aspect-ratio: math.div($tablet-height, $tablet-width);
+$tablet-landscape-aspect-ratio: math.div($tablet-width, $tablet-height);

@@ -1,3 +1,5 @@
+@use 'sass:math';
+
 $hamburger-menu-height: 14px;
 $hamburger-menu-bar-height: 3px;
 
@@ -39,12 +41,12 @@ $hamburger-menu-bar-height: 3px;
 .hamburger-menu.expanded {
 
 	&:before {
-		top: ($hamburger-menu-height / 2) - ($hamburger-menu-bar-height / 2);
+		top: (math.div($hamburger-menu-height, 2)) - (math.div($hamburger-menu-bar-height, 2));
 		transform: rotate(45deg);
 	}
 
 	&:after {
-		bottom: ($hamburger-menu-height / 2) - ($hamburger-menu-bar-height / 2);
+		bottom: (math.div($hamburger-menu-height, 2)) - (math.div($hamburger-menu-bar-height, 2));
 		transform: rotate(-45deg);
 	}
 
