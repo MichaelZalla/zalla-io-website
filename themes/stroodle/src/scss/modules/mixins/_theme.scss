@@ -17,11 +17,11 @@
 
 	@if(bg.$show-baseline-grid)
 	{
-		background-color: rgba(swatch($palette, 'base-background-color'), 0.2);
+		background-color: rgba(swatch($palette, base-background-color), 0.2);
 	}
 	@else
 	{
-		background-color: swatch($palette, 'base-background-color');
+		background-color: swatch($palette, base-background-color);
 	}
 
 	// Anchor
@@ -52,12 +52,12 @@
 	}
 
 	&.header.stuck {
-		border-bottom-color: swatch($palette, 'keyline');
+		border-bottom-color: swatch($palette, keyline);
 	}
 
 	&.sitenav {
 
-		// border-bottom-color: swatch($palette, 'keyline');
+		// border-bottom-color: swatch($palette, keyline);
 
 		.brandmark {
 			background-image: url('../images/svg/zalla-io-#{$theme-name}.svg');
