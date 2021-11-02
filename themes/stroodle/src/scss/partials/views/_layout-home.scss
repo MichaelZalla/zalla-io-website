@@ -45,7 +45,6 @@ body[data-layout="home"][data-page-type="single"] {
 		// 	margin-bottom: 3rem;
 		// }
 
-		background-color: rgba(255,255,255,1.00);
 		// backdrop-filter: blur(4px);
 
 		// background-image: url(/images/svg/zalla-io-light.svg);
@@ -142,8 +141,18 @@ body[data-layout="home"][data-page-type="single"] {
 		background-repeat: repeat;
 		background-size: 32px 32px;
 
-		opacity: 0.14;
+		filter: invert(0%);
+		opacity: 0.085;
 
+		transition: filter 0.18s ease-in-out, opacity 0.18s ease-in-out;
+
+	}
+
+	@include mix.theme-dark {
+		canvas {
+			filter: invert(100%);
+			opacity: 0.14;
+		}
 	}
 
 }

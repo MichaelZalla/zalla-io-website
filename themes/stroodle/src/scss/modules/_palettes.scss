@@ -1,30 +1,32 @@
-$palettes: (
-	'light': (
-		'base-background-color': white,
-		'keyline': darken(white, 10%),
-		'text-color': #222222,
-		'text-color-strong': black,
-		'anchor-text-color': black,
-		'anchor-hover-text-color': lighten(black, 50%),
-		'text-color-lighter': lighten(black, 75%),
-		'text-color-lightest': lighten(black, 90%),
-		'cta-text-color': black,
-		'cta-hover-text-color': lighten(black, 50%),
-		'badge-background-color': black,
-		'device-background-color': darken(white, 10%),
-	),
-	'dark': (
-		'base-background-color': black,
-		'keyline': lighten(black, 10%),
-		'text-color': #dddddd,
-		'text-color-strong': white,
-		'anchor-text-color': white,
-		'anchor-hover-text-color': darken(white, 15%),
-		'text-color-lighter': darken(white, 50%),
-		'text-color-lightest': darken(white, 75%),
-		'cta-text-color': white,
-		'cta-hover-text-color': darken(white, 50%),
-		'badge-background-color': white,
-		'device-background-color': lighten(black, 10%),
-	),
-) !default;
+@use './mixins' as mix;
+
+$black: 0, 0, 0;
+$white: 255, 255, 255;
+
+@include mix.theme-light {
+	--color-base-background-color: white;
+	--color-keyline: #{darken(white, 10%)};
+	--color-text-color: #222222;
+	--color-text-color-strong: black;
+	--color-anchor-text-color: black;
+	--color-anchor-hover-text-color: #{lighten(black, 50%)};
+	--color-text-color-lighter: #{lighten(black, 50%)};
+	--color-text-color-lightest: #{lighten(black, 90%)};
+	--color-cta-text-color: black;
+	--color-cta-hover-text-color: #{lighten(black, 50%)};
+	--color-device-background-color: #{darken(white, 10%)};
+}
+
+@include mix.theme-dark {
+	--color-base-background-color: black;
+	--color-keyline: #{lighten(black, 10%)};
+	--color-text-color: #dddddd;
+	--color-text-color-strong: white;
+	--color-anchor-text-color: white;
+	--color-anchor-hover-text-color: #{darken(white, 15%)};
+	--color-text-color-lighter: #{darken(white, 50%)};
+	--color-text-color-lightest: #{darken(white, 75%)};
+	--color-cta-text-color: white;
+	--color-cta-hover-text-color: #{darken(white, 50%)};
+	--color-device-background-color: #{lighten(black, 10%)};
+}

@@ -1,12 +1,146 @@
-@use '../modules/baseline-grid' as bg;
-@use '../modules/mixins' as mix;
+@use 'sass-breakpoints-mixins/breakpoints' as bp;
 
-.theme-dark,
-.theme-light .theme-dark {
-	@include mix.theme('dark');
+@use '../modules/mixins' as mix;
+@use '../modules/baseline-grid' as bg;
+
+[class*="theme-"] {
+
+	color: var(--color-text-color);
+
+	@if(bg.$show-baseline-grid)
+	{
+		background-color: rgba(--color-base-background-color, 0.2);
+	}
+	@else
+	{
+		background-color: var(--color-base-background-color);
+	}
+
+	transition: color 0.18s ease-in-out, background-color 0.18s ease-in-out;
+
 }
 
-.theme-light,
-.theme-dark .theme-light {
-	@include mix.theme('light');
+// Anchor
+
+a {
+
+	color: var(--color-anchor-text-color);
+
+	&:hover {
+		color: var(--color-anchor-hover-text-color);
+	}
+
+}
+
+a.type-cta,
+a.type-label {
+
+	color: var(--color-cta-text-color);
+
+	&:hover {
+		color: var(--color-cta-hover-text-color);
+	}
+
+}
+
+a .type-heading {
+	color: var(--color-cta-text-color);
+}
+
+// Header
+
+.header.stuck {
+	border-bottom-color: var(--color-keyline);
+}
+
+// Brandmark
+
+@include mix.theme-light {
+	.brandmark {
+		background-image: url('../images/svg/zalla-io-light.svg');
+	}
+}
+
+@include mix.theme-dark {
+	.brandmark {
+		background-image: url('../images/svg/zalla-io-dark.svg');
+	}
+}
+
+// Hamburger (mobile)
+
+.hamburger-menu:before,
+.hamburger-menu:after {
+	background-color: var(--color-cta-text-color);
+}
+
+// Typography
+
+.lighter,
+a.lighter,
+.type-attribution {
+	color: var(--color-text-color-lighter);
+}
+
+strong {
+	color: var(--color-text-color-strong);
+}
+
+.type-legal {
+	color: var(--color-text-color-lighter);
+}
+
+p.drop-cap::first-letter {
+	color: var(--color-text-color);
+}
+
+// Chiclet (tag)
+
+.chiclet.type-label {
+
+	color: var(--color-chiclet-text-color);
+
+	background-color: var(--color-chiclet-background-color);
+
+	&:hover {
+		color: var(--color-chiclet-hover-text-color);
+		background-color: var(--color-chiclet-hover-background-color);
+	}
+
+}
+
+// Devices
+
+[class*='device-'] {
+	background-color: var(--color-device-background-color);
+}
+
+[class*='device-']:before,
+[class*='device-']:after {
+	background-color: var(--color-base-background-color);
+}
+
+// Sitenav
+
+nav.sitenav {
+
+	.navigation-items-wrapper {
+
+		@include bp.media-breakpoint-down(small) {
+			background-color: var(--color-base-background-color);
+		}
+
+	}
+
+}
+
+// Galleries
+
+ul.project-gallery-items > li.gallery-item {
+
+	.year-swatch,
+	.type-heading {
+		color: white;
+	}
+
 }
