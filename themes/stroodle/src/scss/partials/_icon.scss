@@ -33,22 +33,17 @@
 // Icon content
 
 $icons: (
-    icon-right-open: '\e800',
-    icon-arrows-cw: '\e801',
-    icon-right-dir: '\e802',
-    icon-right-hand: '\e803',
-    icon-down-hand: '\e804',
-    icon-wrench: '\e805',
-    icon-cog: '\e806',
-    icon-megaphone: '\e807',
-    icon-link: '\e808',
-    icon-heart: '\e809',
-    icon-link-ext: '\f08e',
-    icon-github-circled: '\f09b',
-    icon-coffee: '\f0f4',
-    icon-github: '\f113',
-    icon-bug: '\f188',
-    icon-paper-plane: '\f1d8',
+    icon-right-open: '',
+    icon-left-open: '',
+    icon-arrows-cw: '',
+    icon-right-hand: '',
+    icon-heart: '',
+    icon-coffee: '',
+    icon-bug: '',
+    icon-paper-plane: '',
+    icon-calendar: '',
+    icon-speechbubble: '',
+    icon-clock: '',
 );
 
 @each $name, $code in $icons {
