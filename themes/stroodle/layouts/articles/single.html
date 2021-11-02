@@ -53,7 +53,29 @@
 			</div>
 		</div>
 
-		<div class="grid">
+		{{ if .Params.ImageCreditUrl }}
+		<div class="grid image-credit-grid">
+			<div class="row">
+
+				<div class="column large-2 medium-1 small-hide">&nbsp;</div>
+
+				<div class="column large-8 medium-10 small-12">
+
+					<a class="type-credits lighter"
+						href="{{ .Params.ImageCreditUrl }}"
+						target="_blank">
+						Image credit{{ if .Params.ImageCreditHandle }}: {{ .Params.ImageCreditHandle }}{{ end }}
+					</a>
+
+				</div>
+
+				<div class="column large-2 medium-1 small-hide">&nbsp;</div>
+
+			</div>
+		</div>
+		{{ end }}
+
+		<div class="grid content-grid">
 
 			<div class="row">
 
