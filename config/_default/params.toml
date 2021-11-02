@@ -1,3 +1,5 @@
+description = "The personal website of Michael Zalla."
+
 [author]
 	name = "Michael Zalla"
 	email = "michael@zalla.io"

@@ -4,13 +4,13 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<meta name="keywords" content="">
 
-	<title>{{ if not .IsHome }}{{ block "title" . }}{{ .Page.Title | htmlUnescape }} - {{ end }}{{ end }}{{ .Site.Title }}</title>
-	<meta property="og:title" content='{{ if not .IsHome }}{{ block "ogTitle" . }}{{ .Page.Title | htmlUnescape }} - {{ end }}{{ end }}{{ .Site.Title }}' />
-	<meta name="twitter:title" content='{{ if not .IsHome }}{{ block "twitterTitle" . }}{{ .Page.Title | htmlUnescape }} - {{ end }}{{ end }}{{ .Site.Title }}'/>
+	<title>{{ if not .IsHome }}{{ block "title" . }}{{ .Page.Title | htmlUnescape }} - {{ end }}{{ end }}{{ .Site.Title }} - {{ .Site.Params.Description }}</title>
+	<meta property="og:title" content='{{ if not .IsHome }}{{ block "ogTitle" . }}{{ .Page.Title | htmlUnescape }} - {{ end }}{{ end }}{{ .Site.Title }} - {{ .Site.Params.Description }}' />
+	<meta name="twitter:title" content='{{ if not .IsHome }}{{ block "twitterTitle" . }}{{ .Page.Title | htmlUnescape }} - {{ end }}{{ end }}{{ .Site.Title }} - {{ .Site.Params.Description }}'/>
 
-	<meta name="description" content='{{ with .Page.Description }}{{ . }}{{ else }}{{ if not .IsHome }}{{ .Page.Title | htmlUnescape }} - {{ end }}{{ .Site.Title }}{{ end }}'>
-	<meta property="og:description" content='{{ with .Page.Description }}{{ . }}{{ else }}{{ if not .IsHome }}{{ .Page.Title | htmlUnescape }} - {{ end }}{{ .Site.Title }}{{ end }}' />
-	<meta name="twitter:description" content='{{ with .Page.Description }}{{ . }}{{ else }}{{ if not .IsHome }}{{ .Page.Title | htmlUnescape }} - {{ end }}{{ .Site.Title }}{{ end }}'/>
+	<meta name="description" content='{{ with .Page.Description }}{{ . }}{{ else }}{{ if not .IsHome }}{{ .Page.Title | htmlUnescape }} - {{ end }}{{ .Site.Title }} - {{ .Site.Params.Description }}{{ end }}'>
+	<meta property="og:description" content='{{ with .Page.Description }}{{ . }}{{ else }}{{ if not .IsHome }}{{ .Page.Title | htmlUnescape }} - {{ end }}{{ .Site.Title }} - {{ .Site.Params.Description }}{{ end }}' />
+	<meta name="twitter:description" content='{{ with .Page.Description }}{{ . }}{{ else }}{{ if not .IsHome }}{{ .Page.Title | htmlUnescape }} - {{ end }}{{ .Site.Title }} - {{ .Site.Params.Description }}{{ end }}'/>
 
 	<meta name="author" content="{{ .Site.Params.author.name }}">
 	<meta name="twitter:site" content="{{ .Site.Params.author.twitter }}" />
@@ -41,7 +41,7 @@
 	<link rel="preload" href="/fonts/zalla-io-font/zalla-io-font.woff2" as="font" type="font/woff2">
 	<link rel="preload" href="/fonts/zalla-io-font/zalla-io-font.woff" as="font" type="font/woff">
 	<link rel="preload" href="/fonts/zalla-io-font/zalla-io-font.ttf" as="font" type="font/ttf">
-	<link rel="preload" href="/fonts/zalla-io-font/zalla-io-font.svg" as="font" type="image/svg+xml">
+	<!-- <link rel="preload" href="/fonts/zalla-io-font/zalla-io-font.svg" as="font" type="image/svg+xml"> -->
 
 	<link rel="stylesheet" href="/css/vendor/normalize-css/normalize.css">
 	<link rel="stylesheet" href="/css/main.css">
