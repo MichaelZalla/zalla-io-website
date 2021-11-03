@@ -1,4 +1,7 @@
-<ul class="article-social-share-links">
+<ul class="article-social-share-links"
+	data-article-title="{{ .Title | htmlUnescape }}"
+	data-article-tags="{{ .Params.Tags }}">
+
 	<li>
 		<a class="social-share-link" data-share-method="twitter" href="#">
 			<img src="/images/svg/icon-sharing-twitter.svg" width="42" height="42" alt="Share via Twitter">
@@ -21,4 +24,5 @@
 		</a>
 	</li>
 	-->
+
 </ul>

@@ -15,25 +15,39 @@ function openUrlInWindow(
 function onDidClickSocialShareLink(e)
 {
 
+	const articleMetadata = e.currentTarget.parentElement.parentElement.dataset;
+
 	const shareMethod = e.currentTarget.dataset.shareMethod;
+
+	const url = encodeURIComponent(window.location.href.replace(/#$/g, ''));
+
+	const title = articleMetadata.articleTitle;
+
+	const tags = articleMetadata.articleTags
+		.replace(/[\[\]]/g, '')
+		.split(' ')
+		.map((tag) => `#${tag}`)
+		.join(' ');
+
+	const text = encodeURIComponent(`${title} ${tags}`);
 
 	switch(shareMethod)
 	{
 		case 'facebook':
 
-			openUrlInWindow(`https://www.facebook.com/sharer.php?u=${encodeURIComponent(window.location)}`);
+			openUrlInWindow(`https://www.facebook.com/sharer.php?u=${url}`);
 
 			break;
 
 		case 'linkedin':
 
-			openUrlInWindow(`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(window.location)}`);
+			openUrlInWindow(`https://www.linkedin.com/sharing/share-offsite/?url=${url}`);
 
 			break;
 
 		case 'twitter':
 
-			openUrlInWindow(`https://twitter.com/intent/tweet?url=${encodeURIComponent(window.location)}`);
+			openUrlInWindow(`https://twitter.com/intent/tweet?url=${url}&text=${text}`);
 
 			break;
 
