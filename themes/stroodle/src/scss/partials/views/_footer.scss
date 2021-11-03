@@ -60,13 +60,4 @@ footer {
 	// 	margin-right: 0;
 	// }
 
-	.icon-after.icon-paper-plane {
-		@include bp.media-breakpoint-down(small)
-		{
-			&:after {
-				display: none;
-			}
-		}
-	}
-
 }
