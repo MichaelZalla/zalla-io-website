@@ -57,7 +57,7 @@ ul.social-links {
 
 .theme-dark .social-link {
 
-	$social-platforms: (linkedin, github, stackoverflow, pinterest, instagram, twitter);
+	$social-platforms: (twitter, github, linkedin, stackoverflow, pinterest, instagram);
 
 	@each $name in $social-platforms
 	{

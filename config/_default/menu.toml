@@ -18,9 +18,9 @@
 
 [[social]]
 	weight = 1
-	identifier = 'linkedin'
-	name = 'LinkedIn'
-	URL = 'https://linkedin.com/in/michaelzalla'
+	identifier = 'twitter'
+	name = 'Twitter'
+	URL = 'https://twitter.com/MichaelZalla/likes'
 
 [[social]]
 	weight = 2
@@ -30,18 +30,24 @@
 
 [[social]]
 	weight = 3
+	identifier = 'linkedin'
+	name = 'LinkedIn'
+	URL = 'https://linkedin.com/in/michaelzalla'
+
+[[social]]
+	weight = 4
 	identifier = 'stackoverflow'
 	name = 'StackOverflow'
 	URL = 'https://stackoverflow.com/users/1623811/michael-zalla?tab=answers&sort=newest'
 
-[[social]]
-	weight = 4
-	identifier = 'pinterest'
-	name = 'Pinterest'
-	URL = 'http://www.pinterest.com/michaelzalla/'
+# [[social]]
+# 	weight = 5
+# 	identifier = 'pinterest'
+# 	name = 'Pinterest'
+# 	URL = 'http://www.pinterest.com/michaelzalla/'
 
 [[social]]
-	weight = 5
+	weight = 6
 	identifier = 'instagram'
 	name = 'Instagram'
 	URL = 'https://www.instagram.com/playforsweeps/'
