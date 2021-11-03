@@ -1,0 +1,10 @@
+{{ with .TableOfContents }}
+<div class="table-of-contents">
+	{{ if ne . "<nav id=\"TableOfContents\"></nav>" }}
+		<div class="table-of-contents-inner">
+			<span class="type-label lighter">contents</span>
+			{{ . }}
+		</div>
+	{{ end }}
+</div>
+{{ end }}

@@ -1,3 +1,6 @@
 [goldmark]
 	[renderer]
 		unsafe = true
+
+[tableOfContents]
+	ordered = true

@@ -41,6 +41,7 @@
 @forward './partials/views/nav';
 @forward './partials/views/header';
 @forward './partials/views/footer';
+@forward './partials/views/table-of-contents';
 @forward './partials/views/author-drawer';
 @forward './partials/views/article';
 @forward './partials/views/color-theme-picker';
@@ -67,8 +68,6 @@ body {
 	scroll-snap-type: y mandatory;
 
 	scroll-padding-top: 188px;
-
-	background: black;
 
 	@include bp.media-breakpoint-up(medium) {
 		scroll-padding-top: 108px;

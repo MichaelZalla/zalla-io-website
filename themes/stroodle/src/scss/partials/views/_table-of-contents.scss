@@ -1,0 +1,109 @@
+@use 'sass-breakpoints-mixins/breakpoints' as bp;
+
+.table-of-contents {
+
+	position: relative;
+	margin-bottom: 2rem;
+
+	@include bp.media-breakpoint-up(large) {
+		font-size: 0.85rem;
+	}
+
+	.table-of-contents-inner {
+
+		@include bp.media-breakpoint-up(large) {
+			position: relative;
+			margin-left: -15px;
+			max-width: 175px;
+		}
+
+		@include bp.media-breakpoint-up(xlarge) {
+			margin-left: -50px;
+		}
+
+	}
+
+	ol {
+		list-style: none;
+		margin-block-start: 0;
+		margin-block-end: 0;
+		padding-inline-start: 0rem;
+	}
+
+	ol li {
+
+		margin-bottom: 1rem;
+
+		ol {
+			@include bp.media-breakpoint-down(medium) {
+				padding-inline-start: 1rem;
+			}
+		}
+
+		opacity: 0.5;
+		transition: opacity 0.18s ease-in-out;
+
+		&:hover {
+			opacity: 1.0;
+		}
+
+		a {
+
+			position: relative;
+
+			text-decoration: none !important;
+
+			&:before {
+
+				width: 2rem;
+
+				@include bp.media-breakpoint-up(large) {
+					position: absolute;
+					left: -2.5rem;
+					text-align: right;
+				}
+
+			}
+
+		}
+
+	}
+
+	#TableOfContents > ol {
+
+		counter-reset: tocLevelZero;
+
+		& > li {
+
+			counter-increment: tocLevelZero;
+
+			& > a:before {
+				content: counter(tocLevelZero, decimal) ". ";
+			}
+
+			& > a + ol {
+				margin-top: 1rem;
+			}
+
+		}
+
+	}
+
+	#TableOfContents > ol > li > ol {
+		counter-reset: tocLevelOne;
+		& > li {
+			counter-increment: tocLevelOne;
+		}
+	}
+
+}
+
+header.stuck + main {
+
+	#TableOfContents:not(:hover) > ol > li:not(:hover) {
+		@include bp.media-breakpoint-up(large) {
+			opacity: 0.35;
+		}
+	}
+
+}

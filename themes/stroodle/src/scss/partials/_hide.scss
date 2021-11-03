@@ -11,7 +11,7 @@ $sizes: map-keys(vp.$min-width);
 @each $size in $sizes {
 	.#{$size}-hide {
 		@include bp.media-breakpoint-only($size) {
-			display: none;
+			display: none !important;
 		}
 	}
 }
