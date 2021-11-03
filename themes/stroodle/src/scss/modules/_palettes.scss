@@ -19,7 +19,7 @@ $white: 255, 255, 255;
 
 @include mix.theme-dark {
 	--color-base-background-color: black;
-	--color-keyline: #{lighten(black, 10%)};
+	--color-keyline: #{lighten(black, 15%)};
 	--color-text-color: #dddddd;
 	--color-text-color-strong: white;
 	--color-anchor-text-color: white;

@@ -7,7 +7,7 @@
 	{{ block "meta" . }}{{ end }}
 
 </head>
-<body class="theme-dark"
+<body class="theme-dark fade-in"
 	data-layout='{{ block "layout" . }}default{{ end }}'
 	data-page-type='{{ block "pageType" . }}single{{ end }}'
 	data-section="{{ .Section }}">
@@ -78,6 +78,7 @@
 
 	{{ partial "footer" . }}
 
+	<script src="/scripts/color-theme.js"></script>
 	{{ block "body-trailer" . }}
 	{{ end }}
 

@@ -25,6 +25,7 @@
 @forward './partials/text-align';
 
 @forward './partials/theme';
+@forward './partials/animation';
 
 @forward './partials/a';
 @forward './partials/ul';
@@ -41,6 +42,7 @@
 @forward './partials/views/header';
 @forward './partials/views/footer';
 @forward './partials/views/article';
+@forward './partials/views/color-theme-picker';
 @forward './partials/views/social-links';
 @forward './partials/views/site-credits';
 @forward './partials/views/disqus';

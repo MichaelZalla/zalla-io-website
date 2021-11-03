@@ -44,6 +44,8 @@ $icons: (
     icon-calendar: '',
     icon-speechbubble: '',
     icon-clock: '',
+    icon-sun: '',
+    icon-moon: '',
 );
 
 @each $name, $code in $icons {
