@@ -54,3 +54,28 @@
 @forward './partials/views/layout-project';
 @forward './partials/views/layout-about';
 @forward './partials/views/layout-page-not-found';
+
+html,
+body {
+
+	scroll-snap-type: y mandatory;
+
+	scroll-padding-top: 188px;
+
+	background: black;
+
+	@include bp.media-breakpoint-up(medium) {
+		scroll-padding-top: 108px;
+	}
+
+	&.is-safari:not(.stuck) {
+
+		scroll-padding-top: 278px;
+
+		@include bp.media-breakpoint-up(medium) {
+			scroll-padding-top: 228px;
+		}
+
+	}
+
+}

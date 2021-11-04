@@ -1,10 +1,10 @@
 @keyframes opacity-in {
 	100% {
-		opacity: 1.0
+		opacity: 1.0;
 	}
 }
 
 .fade-in {
-	animation: 0.5s forwards opacity-in;
-	opacity: 0.0
+	animation: 1.0s forwards opacity-in;
+	opacity: 0;
 }

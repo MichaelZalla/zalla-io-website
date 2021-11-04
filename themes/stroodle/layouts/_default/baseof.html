@@ -7,16 +7,16 @@
 	{{ block "meta" . }}{{ end }}
 
 </head>
-<body class="theme-dark fade-in"
+<body class="theme-light fade-in"
 	data-layout='{{ block "layout" . }}default{{ end }}'
 	data-page-type='{{ block "pageType" . }}single{{ end }}'
 	data-section="{{ .Section }}">
 
 	{{ partial "nav" . }}
 
-	<div class="top theme-light"></div>
+	<div class="top"></div>
 
-	<div class="middle theme-light"></div>
+	<div class="middle"></div>
 
 	<header class="header theme-light">
 		<div class="grid">
@@ -44,7 +44,7 @@
 		</div>
 	</header>
 
-	<main class="main theme-light">
+	<main class="main">
 
 		<article>
 

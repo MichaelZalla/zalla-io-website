@@ -148,11 +148,9 @@ body[data-layout="home"][data-page-type="single"] {
 
 	}
 
-	@include mix.theme-dark {
-		canvas {
-			filter: invert(100%);
-			opacity: 0.14;
-		}
-	}
+}
 
+body[data-layout=home][data-page-type=single].theme-dark canvas {
+	filter: invert(100%);
+	opacity: 0.14;
 }

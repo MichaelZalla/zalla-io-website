@@ -59,9 +59,14 @@
 
 		}
 
-		const themedContainers = Array.from(
-			document.body.querySelectorAll('[class*=\'theme-\']')
-		);
+		const themedContainers = Array
+			.from(
+				document.body.querySelectorAll('[class*=\'theme-\']')
+			)
+			.concat([
+				document.body
+			])
+			.filter((c) => !c.classList.contains('theme-fixed'));
 
 		const themeTriggers = Array.from(
 			document.body.querySelectorAll('[data-theme]')
