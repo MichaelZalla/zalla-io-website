@@ -4,7 +4,7 @@
   "description": "The personal website of Michael Zalla.",
   "main": "package.json",
   "scripts": {
-    "postinstall": "mkdir -p ./static/css/vendor/normalize-css && cp ./node_modules/normalize-css/normalize.css ./static/css/vendor/normalize-css/",
+    "postinstall": "./postinstall.sh",
     "sass": "sass --load-path=node_modules --source-map --style=compressed ./themes/stroodle/src/scss/main.scss ./static/css/main.css",
     "sass:watch": "sass --load-path=node_modules --source-map --style=compressed --watch ./themes/stroodle/src/scss/main.scss ./static/css/main.css",
     "build": "npm run sass && hugo --verbose --minify",

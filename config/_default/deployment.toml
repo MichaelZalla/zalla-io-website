@@ -1,0 +1,63 @@
+# By default, files are uploaded in an arbitrary order.
+# Files that match the regular expressions in the "Order" list
+# will be uploaded first, in the listed order.
+# order = [".jpg$", ".gif$"]
+
+[[targets]]
+
+	# An arbitrary name for this target.
+	name = "aws-s3-qa"
+
+	# S3; see https://gocloud.dev/howto/blob/#s3
+	# For S3-compatible endpoints, see https://gocloud.dev/howto/blob/#s3-compatible
+	URL = "s3://zalla.io-qa?region=us-west-1"
+
+	# If you are using a CloudFront CDN, deploy will invalidate the cache as needed.
+	# cloudFrontDistributionID = "EVMDF7NDNL559"
+
+	# Optionally, you can include or exclude specific files.
+	include = "**.{html,xml,css,js,svg,eot,ttf,woff,woff2}"
+	exclude = "**.{txt,jpg,png,pdf,zip}"
+
+[[targets]]
+
+	# An arbitrary name for this target.
+	name = "aws-s3-prod"
+
+	# S3; see https://gocloud.dev/howto/blob/#s3
+	# For S3-compatible endpoints, see https://gocloud.dev/howto/blob/#s3-compatible
+	URL = "s3://zalla.io?region=us-west-1"
+
+	# If you are using a CloudFront CDN, deploy will invalidate the cache as needed.
+	cloudFrontDistributionID = "EVMDF7NDNL559"
+
+	# Optionally, you can include or exclude specific files.
+	include = "**.{html,xml,css,js,svg,eot,ttf,woff,woff2}"
+	exclude = "**.{txt,jpg,png,pdf,zip}"
+
+	# [[matchers]] configure behavior for files that match the Pattern.
+	# See https://golang.org/pkg/regexp/syntax/ for pattern syntax.
+	# Pattern searching is stopped on first match.
+
+	# Samples:
+
+	# [[matchers]]
+	# # Cache static assets for 1 year.
+	# pattern = "^.+\\.(js|css|svg|ttf)$"
+	# cacheControl = "max-age=31536000, no-transform, public"
+	# gzip = true
+
+	# [[matchers]]
+	# pattern = "^.+\\.(png|jpg)$"
+	# cacheControl = "max-age=31536000, no-transform, public"
+	# gzip = false
+
+	# [[matchers]]
+	# # Set custom content type for /sitemap.xml
+	# pattern = "^sitemap\\.xml$"
+	# contentType = "application/xml"
+	# gzip = true
+
+	# [[matchers]]
+	# pattern = "^.+\\.(html|xml|json)$"
+	# gzip = true

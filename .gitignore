@@ -7,3 +7,4 @@
 **/dist
 **/.sass-cache
 fontello-*
+.hugo_build.lock
