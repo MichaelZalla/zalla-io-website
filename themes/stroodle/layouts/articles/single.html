@@ -155,10 +155,15 @@
 {{ end }}
 
 {{ define "body-trailer" }}
+
+<link rel="stylesheet" href="/css/monokai-light.css">
+
 <script async src="/scripts/sticky-nav.js"></script>
 <script async src="/scripts/social-share-links.js"></script>
+
 <script src="/scripts/vendor/lazyload.min.js"></script>
 <script src="/scripts/vendor/disqusloader.js"></script>
+
 <script>
 
 	// Initializes lazy-loading behavior
@@ -172,4 +177,5 @@
 	});
 
 </script>
+
 {{ end }}

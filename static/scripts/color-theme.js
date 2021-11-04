@@ -57,6 +57,16 @@
 
 			window.localStorage.setItem(LocalStorageKey, currentTheme);
 
+			const stylesheet = document.body.querySelector('link[rel="stylesheet"][href*="monokai"]');
+
+			if(stylesheet)
+			{
+				stylesheet.attributes.href.value = stylesheet.attributes.href.value.replace(
+					/(light|dark)/g,
+					currentTheme
+				);
+			}
+
 		}
 
 		const themedContainers = Array

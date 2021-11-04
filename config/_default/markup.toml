@@ -4,3 +4,6 @@
 
 [tableOfContents]
 	ordered = true
+
+[highlight]
+	noClasses = false

@@ -1,0 +1,32 @@
+@use 'sass-breakpoints-mixins/breakpoints' as bp;
+
+@use '../modules/mixins' as mix;
+
+.highlight {
+
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+
+	@include bp.media-breakpoint-down(small) {
+		font-size: 12.5px;
+	}
+
+	& > div {
+		padding-right: 2rem;
+	}
+
+	pre {
+		white-space: pre;
+		word-break: keep-all;
+	}
+
+}
+
+// @NOTE(mzalla) Fixes highlight value on Monokai (dark);
+@include mix.theme-dark {
+
+	.highlight .chroma .hl {
+		background-color: #606040;
+	}
+
+}
