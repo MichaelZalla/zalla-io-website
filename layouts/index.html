@@ -3,8 +3,15 @@
 {{ define "twitterTitle" }}{{.Title}} - {{ end }}
 
 {{ define "meta" }}
-<script src="/scripts/lib/fizz/fizz.min.js"></script>
-<script src="/scripts/home.js"></script>
+
+	{{ $options := (dict "targetPath" "css/layout-home.css" "transpiler" "dartsass" "outputStyle" "compressed" "enableSourceMap" true "includePaths" (slice "node_modules" "themes/stroodle/src/scss") "use" "autoprefixer") }}
+	{{ with resources.Get "layout-home.scss" | resources.ToCSS $options | resources.PostCSS $options | resources.Minify }}
+		<style>{{ .Content | safeCSS }}</style>
+	{{ end }}
+
+	<script src="/scripts/lib/fizz/fizz.min.js"></script>
+	<script src="/scripts/home.js"></script>
+
 {{ end }}
 
 {{ define "layout" }}home{{ end }}

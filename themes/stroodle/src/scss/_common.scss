@@ -32,12 +32,8 @@
 @forward './partials/figure';
 @forward './partials/img';
 @forward './partials/imgset';
-@forward './partials/chiclet';
-@forward './partials/highlight';
-@forward './partials/device';
-@forward './partials/scrollable';
+
 @forward './partials/gallery';
-@forward './partials/vimeo-wrapper';
 
 @forward './partials/views/nav';
 @forward './partials/views/header';
@@ -52,16 +48,7 @@
 @forward './partials/views/tag-list';
 @forward './partials/views/social-links';
 @forward './partials/views/site-credits';
-@forward './partials/views/disqus';
-
-@forward './partials/project-gallery';
-
 @forward './partials/views/baseof';
-@forward './partials/views/layout-home';
-@forward './partials/views/layout-project';
-@forward './partials/views/layout-article';
-@forward './partials/views/layout-about';
-@forward './partials/views/layout-page-not-found';
 
 html,
 body {

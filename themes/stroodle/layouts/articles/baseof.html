@@ -6,6 +6,11 @@
 
 	{{ block "meta" . }}{{ end }}
 
+	{{ $options := (dict "targetPath" "css/layout-article.css" "transpiler" "dartsass" "outputStyle" "compressed" "enableSourceMap" true "includePaths" (slice "node_modules" "themes/stroodle/src/scss")) }}
+	{{ with resources.Get "layout-article.scss" | resources.ToCSS $options | resources.Minify }}
+		<style>{{ .Content | safeCSS }}</style>
+	{{ end }}
+
 </head>
 <body class="theme-light fade-in"
 	data-layout='{{ block "layout" . }}default{{ end }}'
