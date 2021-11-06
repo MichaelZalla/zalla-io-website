@@ -3,8 +3,8 @@
 {{ define "twitterTitle" }}Page Not Found - {{ end }}
 
 {{ define "meta" }}
-	{{ $options := (dict "targetPath" "css/layout-page-not-found.css" "transpiler" "dartsass" "outputStyle" "compressed" "enableSourceMap" true "includePaths" (slice "node_modules" "themes/stroodle/src/scss")) }}
-	{{ with resources.Get "layout-page-not-found.scss" | resources.ToCSS $options | resources.Minify }}
+	{{ $options := (dict "targetPath" "css/layout-page-not-found.css" "transpiler" "dartsass" "outputStyle" "compressed" "enableSourceMap" true "includePaths" (slice "node_modules" "themes/stroodle/src/scss") "use" "autoprefixer") }}
+	{{ with resources.Get "layout-page-not-found.scss" | resources.ToCSS $options | resources.PostCSS $options | resources.Minify }}
 		<style>{{ .Content | safeCSS }}</style>
 	{{ end }}
 {{ end }}
