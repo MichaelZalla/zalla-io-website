@@ -9,8 +9,9 @@
 		<style>{{ .Content | safeCSS }}</style>
 	{{ end }}
 
-	<script src="/scripts/lib/fizz/fizz.min.js"></script>
-	<script src="/scripts/home.js"></script>
+	{{ with resources.Get "scripts/home.js" | js.Build (dict "minify" true) | fingerprint }}
+	<script type="text/javascript" src="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}"></script>
+	{{ end }}
 
 {{ end }}
 

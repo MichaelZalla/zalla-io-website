@@ -1,102 +1,98 @@
-(() => {
+if(/complete|interactive|loaded/.test(document.readyState))
+{
+	init();
+}
+else
+{
+	window.addEventListener('DOMContentLoaded', init);
+}
 
-	if(/complete|interactive|loaded/.test(document.readyState))
+function init()
+{
+
+	const DefaultThemeOnLoad = 'light';
+
+	const LocalStorageKey = 'preferences.theme.preferred';
+
+	let currentTheme = DefaultThemeOnLoad;
+
+	function setTheme(
+		theme)
 	{
-		init();
-	}
-	else
-	{
-		window.addEventListener('DOMContentLoaded', init);
-	}
 
-	function init()
-	{
-
-		const DefaultThemeOnLoad = 'light';
-
-		const LocalStorageKey = 'preferences.theme.preferred';
-
-		let currentTheme = DefaultThemeOnLoad;
-
-		function setTheme(
-			theme)
+		if(theme !== currentTheme)
 		{
 
-			if(theme !== currentTheme)
-			{
+			themedContainers.map((elem) => {
 
-				themedContainers.map((elem) => {
-
-					if(elem.classList.contains('theme-light'))
-					{
-						elem.classList.replace('theme-light', 'theme-dark');
-					}
-					else
-					{
-						elem.classList.replace('theme-dark', 'theme-light');
-					}
-
-				});
-
-			}
-
-			currentTheme = theme;
-
-			themeTriggers.map((trigger) => {
-
-				if(trigger.dataset.theme === currentTheme)
+				if(elem.classList.contains('theme-light'))
 				{
-					trigger.setAttribute('disabled', 'disabled');
+					elem.classList.replace('theme-light', 'theme-dark');
 				}
 				else
 				{
-					trigger.removeAttribute('disabled');
+					elem.classList.replace('theme-dark', 'theme-light');
 				}
 
 			});
 
-			window.localStorage.setItem(LocalStorageKey, currentTheme);
+		}
 
-			const stylesheet = document.body.querySelector('link[rel="stylesheet"][href*="monokai"]');
+		currentTheme = theme;
 
-			if(stylesheet)
+		themeTriggers.map((trigger) => {
+
+			if(trigger.dataset.theme === currentTheme)
 			{
-				stylesheet.attributes.href.value = stylesheet.attributes.href.value.replace(
-					/(light|dark)/g,
-					currentTheme
-				);
+				trigger.setAttribute('disabled', 'disabled');
+			}
+			else
+			{
+				trigger.removeAttribute('disabled');
 			}
 
-		}
+		});
 
-		const themedContainers = Array
-			.from(
-				document.body.querySelectorAll('[class*=\'theme-\']')
-			)
-			.concat([
-				document.body
-			])
-			.filter((c) => !c.classList.contains('theme-fixed'));
+		window.localStorage.setItem(LocalStorageKey, currentTheme);
 
-		const themeTriggers = Array.from(
-			document.body.querySelectorAll('[data-theme]')
-		);
+		const stylesheet = document.body.querySelector('link[rel="stylesheet"][href*="monokai"]');
 
-		let preferredTheme = window.localStorage.getItem(LocalStorageKey);
-
-		if(preferredTheme && preferredTheme !== DefaultThemeOnLoad)
+		if(stylesheet)
 		{
-			setTheme(preferredTheme);
+			stylesheet.attributes.href.value = stylesheet.attributes.href.value.replace(
+				/(light|dark)/g,
+				currentTheme
+			);
 		}
-		else
-		{
-			setTheme(DefaultThemeOnLoad);
-		}
-
-		themeTriggers.map((trigger) => trigger.addEventListener('click', (e) => {
-			setTheme(trigger.dataset.theme);
-		}));
 
 	}
 
-})();
+	const themedContainers = Array
+		.from(
+			document.body.querySelectorAll('[class*=\'theme-\']')
+		)
+		.concat([
+			document.body
+		])
+		.filter((c) => !c.classList.contains('theme-fixed'));
+
+	const themeTriggers = Array.from(
+		document.body.querySelectorAll('[data-theme]')
+	);
+
+	let preferredTheme = window.localStorage.getItem(LocalStorageKey);
+
+	if(preferredTheme && preferredTheme !== DefaultThemeOnLoad)
+	{
+		setTheme(preferredTheme);
+	}
+	else
+	{
+		setTheme(DefaultThemeOnLoad);
+	}
+
+	themeTriggers.map((trigger) => trigger.addEventListener('click', (e) => {
+		setTheme(trigger.dataset.theme);
+	}));
+
+}

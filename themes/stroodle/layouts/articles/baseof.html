@@ -58,7 +58,10 @@
 
 	{{ partial "footer" . }}
 
-	<script src="/scripts/color-theme.js"></script>
+	{{ with resources.Get "scripts/color-theme.js" | js.Build (dict "minify" true) | fingerprint }}
+	<script>{{ .Content | safeJS }}</script>
+	{{ end }}
+
 	{{ block "body-trailer" . }}
 	{{ end }}
 
