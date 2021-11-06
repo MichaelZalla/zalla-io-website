@@ -39,7 +39,7 @@
 	<meta name="twitter:site" content="{{ .Site.Params.author.twitter }}" />
 	<meta name="twitter:creator" content="{{ .Site.Params.author.twitter }}" />
 
-	{{ range .Page.Resources.Match "*/feature*" }}
+	{{ range .Page.Resources.Match "*/feature@2x.png" }}
 	<meta property="og:image" content="{{ .RelPermalink | absURL }}" />
 	<meta name="twitter:image" content="{{ .RelPermalink | absURL }}"/>
 	{{ end }}
