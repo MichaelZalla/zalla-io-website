@@ -20,7 +20,8 @@ p:empty {
 }
 
 html,
-body {
+body,
+button {
 
 	font-family: 'Noto Serif', serif;
 
@@ -40,6 +41,10 @@ body {
 
 	line-height: 1.5rem;
 
+}
+
+button:hover {
+	cursor: pointer;
 }
 
 p,
