@@ -1,14 +1,11 @@
-{{ with .Page.Resources.GetMatch "images/feature.png" }}
-<figure class="article-hero-figure">
+<figure class="article-hero-figure fade-in">
 
 	<picture>
 
-		<source media="(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)"
-			data-srcset='{{ replace .RelPermalink ".png" "@2x.png" }}'>
-
-		<img class="lazy" data-src="{{ .RelPermalink }}" alt="{{ .Title }}" />
+		{{ with .Page.Resources.GetMatch "images/feature.png" }}
+			{{ partial "responsive-image-source" . }}
+		{{ end }}
 
 	</picture>
 
 </figure>
-{{ end }}

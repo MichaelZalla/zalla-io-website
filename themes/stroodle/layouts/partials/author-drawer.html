@@ -5,7 +5,9 @@
 		{{ with $.Site.GetPage "taxonomyTerm" (printf "authors/%s" (urlize .Params.author)) }}
 
 			{{ with .Resources.GetMatch "avatar.png" }}
-			<img class="lazy" data-src="{{ .RelPermalink }}" alt=""/>
+				<picture>
+					{{ partial "responsive-image-source" . }}
+				</picture>
 			{{ end }}
 
 			<div>

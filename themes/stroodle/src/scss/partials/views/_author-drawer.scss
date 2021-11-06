@@ -26,7 +26,7 @@
 		border-radius: 50%;
 	}
 
-	img + div {
+	picture + div {
 
 		@include bp.media-breakpoint-down(small) {
 			padding-top: 0.5rem;

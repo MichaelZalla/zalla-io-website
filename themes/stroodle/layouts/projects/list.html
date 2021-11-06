@@ -27,7 +27,9 @@
 			<div class="year-swatch type-label" style='background-color: {{ cond (isset .Params "swatch") .Params.swatch "#999999" }};'>{{ .Params.year }}</div>
 
 			{{ with .Resources.GetMatch "images/project-gallery-thumbnail*" }}
-			<img class="lazy" data-src="{{ .RelPermalink }}" alt="">
+				<picture>
+					{{ partial "responsive-image-source" . }}
+				</picture>
 			{{ end }}
 
 			<h2 class="type-heading">{{ .Title | htmlUnescape }}</h2>

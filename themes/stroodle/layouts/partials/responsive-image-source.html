@@ -1,0 +1,12 @@
+<source type="image/webp"
+	media="(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)"
+	data-srcset='{{ replace .RelPermalink ".png" "@2x.webp" }}'>
+
+<source type="image/png"
+	media="(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)"
+	data-srcset='{{ replace .RelPermalink ".png" "@2x.png" }}'>
+
+<img class="lazy"
+	data-src="{{ .RelPermalink }}"
+	data-srcset='{{ replace .RelPermalink ".png" ".webp" }}'
+	alt="{{ .Title }}" />

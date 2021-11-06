@@ -176,7 +176,21 @@
 
 	// Initializes lazy-loading behavior
 
-	const lazyLoadInstance = new LazyLoad({});
+	const lazyLoadInstance = new LazyLoad({
+		callback_error: (img) => {
+
+			img.parentElement.querySelector('source[srcset*=".webp"]')
+				.remove()
+
+			img.dataset.srcset = img.dataset.srcset
+				.replace('.webp', '.png')
+
+			img.setAttribute('srcset',
+				img.getAttribute('srcset').replace('.webp', '.png')
+			)
+
+		},
+	});
 
 	// Initializes disqus asynchronously
 
@@ -185,5 +199,4 @@
 	});
 
 </script>
-
 {{ end }}
