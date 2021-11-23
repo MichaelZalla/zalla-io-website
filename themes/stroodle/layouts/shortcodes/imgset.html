@@ -1,5 +1,6 @@
 {{ $resources := (cond (ge (len $.Page.Resources) 1) $.Page.Resources $.Page.Parent.Resources) }}
 {{ $imageMatch := (printf "*/%s*" (.Get 0)) }}
+{{ $caption := (.Get 1) }}
 {{ $figureCssClasses := (.Get 2) }}
 {{ $pictureCssClasses := (.Get 3) }}
 <div class="imgset" id="{{ .Get 0 }}">
@@ -21,12 +22,10 @@
         {{ end }}
         {{ end }}
 
-    </figure>
+        <figcaption class="column large-12 large-text-center small-text-left">
+            <p class="type-caption">{{$caption}}</p>
+        </figcaption>
 
-    {{ with (.Get 1) }}
-    <figcaption class="row">
-        <span class="type-caption large-text-center small-text-left">{{ . }}</span>
-    </figcaption>
-    {{ end }}
+    </figure>
 
 </div>
