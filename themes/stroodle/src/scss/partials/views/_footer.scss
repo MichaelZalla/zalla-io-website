@@ -32,13 +32,13 @@ footer {
 
 	}
 
-	.grid > div:nth-child(1) {
+	.grid > div.footer-first {
 		@include bp.media-breakpoint-down(small) {
 			flex-direction: column;
 		}
 	}
 
-	.grid > div:nth-child(2) {
+	.grid > div.footer-second {
 		@include bp.media-breakpoint-down(small) {
 			flex-direction: column-reverse;
 		}
