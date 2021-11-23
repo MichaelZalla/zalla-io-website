@@ -7,8 +7,8 @@
 			"type": "npm",
 			"script": "serve",
 			"problemMatcher": [],
-			"label": "npm: serve",
-			"detail": "npm run sass:watch & hugo server --noHTTPCache -p 1313 -D && fg",
+			"label": "npm: serve:draft",
+			"detail": "hugo server -w --noHTTPCache --disableFastRender -v -p 1313 -D",
 			"group": {
 				"kind": "build",
 				"isDefault": true
