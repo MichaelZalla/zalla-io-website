@@ -7,5 +7,12 @@
 **/dist
 **/.sass-cache
 **/vendor
+.DS_Store
+_archive/
+_Sketch/
+aws/
 fontello-*
 .hugo_build.lock
+google**.html
+*mailchimp*
+jsconfig.json
