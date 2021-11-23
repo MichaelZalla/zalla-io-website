@@ -26,7 +26,9 @@ header {
 
 	border-bottom: 1px solid transparent;
 
-	transition: padding-top 0.18s ease-in-out, border-color 0.18s ease-in-out;
+	transition: margin-top 0.18s ease-in-out,
+				padding-top 0.18s ease-in-out,
+				border-color 0.18s ease-in-out;
 
 	& > .grid > .row {
 
@@ -42,8 +44,15 @@ header {
 
 	.type-heading,
 	.type-label {
+
 		padding-bottom: 0;
-		transition: all 0.18s ease-in-out;
+
+		transition: padding-top 0.18s ease-in-out,
+					padding-bottom 0.18s ease-in-out,
+					font-size 0.18s ease-in-out,
+					font-weight 0.18s ease-in-out,
+					line-height 0.18s ease-in-out;
+
 	}
 
 	.type-label {

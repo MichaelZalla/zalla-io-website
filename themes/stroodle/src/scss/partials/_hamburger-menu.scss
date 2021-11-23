@@ -27,7 +27,8 @@ $hamburger-menu-bar-height: 3px;
 	display: block;
 	height: $hamburger-menu-bar-height;
 
-	transition: all 0.18s ease-in-out;
+	transition: top 0.18s ease-in-out,
+				transform 0.18s ease-in-out;
 
 }
 .hamburger-menu:before {
