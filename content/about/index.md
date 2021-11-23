@@ -1,6 +1,6 @@
 +++
 title = "About"
-description = ""
+description = "About this website"
 type = "about"
 +++
 
