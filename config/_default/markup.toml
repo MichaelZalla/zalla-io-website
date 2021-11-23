@@ -1,6 +1,14 @@
 [goldmark]
 	[renderer]
 		unsafe = true
+	[extensions]
+		# definitionList = true
+		# footnote = true
+		# linkify = true
+		# strikethrough = true
+		# table = true
+		# taskList = true
+		typographer = true
 
 [tableOfContents]
 	ordered = true
