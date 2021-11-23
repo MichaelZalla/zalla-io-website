@@ -3,11 +3,10 @@
 {{ define "twitterTitle" }}Page Not Found - {{ end }}
 
 {{ define "meta" }}
-<style>
-	header {
-		position: static;
-	}
-</style>
+	{{ $options := (dict "targetPath" "css/layout-page-not-found.css" "transpiler" "dartsass" "outputStyle" "compressed" "enableSourceMap" true "includePaths" (slice "node_modules" "themes/stroodle/src/scss") "use" "autoprefixer") }}
+	{{ with resources.Get "layout-page-not-found.scss" | resources.ToCSS $options | resources.PostCSS $options | resources.Minify }}
+		<style>{{ .Content | safeCSS }}</style>
+	{{ end }}
 {{ end }}
 
 {{ define "layout" }}page-not-found{{ end }}
@@ -18,7 +17,7 @@
 
 	<div class="row">
 
-		<div class="column large-12">
+		<div class="column large-9 medium-9 small-12">
 
 			<section>
 
@@ -29,7 +28,7 @@
 
 		</div>
 
-		<div class="column large-8 medium-10 small-12">
+		<div class="column large-8 medium-8 small-12">
 
 			<section>
 

@@ -1,0 +1,29 @@
+body[data-layout="about"][data-page-type="single"] {
+
+	.top,
+	.middle,
+	header {
+		display: none;
+	}
+
+	header {
+		position: static;
+	}
+
+	article {
+		margin-top: 4rem;
+	}
+
+	article > .grid > .row:first-child {
+		padding-bottom: 0;
+	}
+
+	p + .type-attribution {
+		margin-top: 1.5rem;
+	}
+
+	.type-caption {
+		margin-top: 5rem;
+	}
+
+}

@@ -3,10 +3,10 @@
 @include mix.keyframes(spin)
 {
     0% {
-        @include mix.vendorize(transform, rotate(0deg));
+        transform: rotate(0deg);
     }
     100% {
-        @include mix.vendorize(transform, rotate(359deg));
+        transform: rotate(359deg);
     }
 }
 
@@ -27,25 +27,26 @@
 
 .icon-before.icon-spin:hover:before,
 .icon-after.icon-spin:hover:after {
-    @include mix.vendorize(animation, spin 1s infinite linear);
+    animation: spin 1s infinite linear;
 }
 
 // Icon content
 
 $icons: (
-    icon-right-open: '',
-    icon-left-open: '',
-    icon-arrows-cw: '',
-    icon-right-hand: '',
-    icon-heart: '',
-    icon-coffee: '',
-    icon-bug: '',
-    icon-paper-plane: '',
-    icon-calendar: '',
-    icon-speechbubble: '',
-    icon-clock: '',
-    icon-sun: '',
-    icon-moon: '',
+    icon-arrows-cw: '\e801',
+    icon-bug: '\f188',
+    icon-calendar: '\e804',
+    icon-clock: '\e806',
+    icon-coffee: '\f0f4',
+    icon-comment: '\e808',
+    icon-heart: '\e803',
+    icon-left-open: '\e807',
+    icon-link: '\e805',
+    icon-moon: '\f186',
+    icon-paper-plane: '\f1d8',
+    icon-right-hand: '\e802',
+    icon-right-open: '\e800',
+    icon-sun: '\f185',
 );
 
 @each $name, $code in $icons {

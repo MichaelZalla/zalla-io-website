@@ -1,0 +1,11 @@
+<figure class="article-hero-figure fade-in">
+
+	<picture>
+
+		{{ with .Page.Resources.GetMatch "images/feature.png" }}
+			{{ partial "responsive-image-source" . }}
+		{{ end }}
+
+	</picture>
+
+</figure>

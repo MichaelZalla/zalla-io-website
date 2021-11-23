@@ -1,92 +1,98 @@
-(() => {
+if(/complete|interactive|loaded/.test(document.readyState))
+{
+	init();
+}
+else
+{
+	window.addEventListener('DOMContentLoaded', init);
+}
 
-	if(/complete|interactive|loaded/.test(document.readyState))
+function init()
+{
+
+	const DefaultThemeOnLoad = 'light';
+
+	const LocalStorageKey = 'preferences.theme.preferred';
+
+	let currentTheme = DefaultThemeOnLoad;
+
+	function setTheme(
+		theme)
 	{
-		init();
-	}
-	else
-	{
-		window.addEventListener('DOMContentLoaded', init);
-	}
 
-	function init()
-	{
-
-		const DefaultThemeOnLoad = 'light';
-
-		const LocalStorageKey = 'preferences.theme.preferred';
-
-		let currentTheme = DefaultThemeOnLoad;
-
-		function setTheme(
-			theme)
+		if(theme !== currentTheme)
 		{
 
-			if(theme !== currentTheme)
-			{
+			themedContainers.map((elem) => {
 
-				themedContainers.map((elem) => {
-
-					if(elem.classList.contains('theme-light'))
-					{
-						elem.classList.replace('theme-light', 'theme-dark');
-					}
-					else
-					{
-						elem.classList.replace('theme-dark', 'theme-light');
-					}
-
-				});
-
-			}
-
-			currentTheme = theme;
-
-			themeTriggers.map((trigger) => {
-
-				if(trigger.dataset.theme === currentTheme)
+				if(elem.classList.contains('theme-light'))
 				{
-					trigger.setAttribute('disabled', 'disabled');
+					elem.classList.replace('theme-light', 'theme-dark');
 				}
 				else
 				{
-					trigger.removeAttribute('disabled');
+					elem.classList.replace('theme-dark', 'theme-light');
 				}
 
 			});
 
-			window.localStorage.setItem(LocalStorageKey, currentTheme);
-
 		}
 
-		const themedContainers = Array
-			.from(
-				document.body.querySelectorAll('[class*=\'theme-\']')
-			)
-			.concat([
-				document.body
-			])
-			.filter((c) => !c.classList.contains('theme-fixed'));
+		currentTheme = theme;
 
-		const themeTriggers = Array.from(
-			document.body.querySelectorAll('[data-theme]')
-		);
+		themeTriggers.map((trigger) => {
 
-		let preferredTheme = window.localStorage.getItem(LocalStorageKey);
+			if(trigger.dataset.theme === currentTheme)
+			{
+				trigger.setAttribute('disabled', 'disabled');
+			}
+			else
+			{
+				trigger.removeAttribute('disabled');
+			}
 
-		if(preferredTheme && preferredTheme !== DefaultThemeOnLoad)
+		});
+
+		window.localStorage.setItem(LocalStorageKey, currentTheme);
+
+		const stylesheet = document.body.querySelector('link[rel="stylesheet"][href*="monokai"]');
+
+		if(stylesheet)
 		{
-			setTheme(preferredTheme);
+			stylesheet.attributes.href.value = stylesheet.attributes.href.value.replace(
+				/(light|dark)/g,
+				currentTheme
+			);
 		}
-		else
-		{
-			setTheme(DefaultThemeOnLoad);
-		}
-
-		themeTriggers.map((trigger) => trigger.addEventListener('click', (e) => {
-			setTheme(trigger.dataset.theme);
-		}));
 
 	}
 
-})();
+	const themedContainers = Array
+		.from(
+			document.body.querySelectorAll('[class*=\'theme-\']')
+		)
+		.concat([
+			document.body
+		])
+		.filter((c) => !c.classList.contains('theme-fixed'));
+
+	const themeTriggers = Array.from(
+		document.body.querySelectorAll('[data-theme]')
+	);
+
+	let preferredTheme = window.localStorage.getItem(LocalStorageKey);
+
+	if(preferredTheme && preferredTheme !== DefaultThemeOnLoad)
+	{
+		setTheme(preferredTheme);
+	}
+	else
+	{
+		setTheme(DefaultThemeOnLoad);
+	}
+
+	themeTriggers.map((trigger) => trigger.addEventListener('click', (e) => {
+		setTheme(trigger.dataset.theme);
+	}));
+
+}

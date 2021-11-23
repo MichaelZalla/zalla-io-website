@@ -1,0 +1,5 @@
+<ul class="article-attributes">
+	<li class="lighter icon-before icon-comment"><a href="/about/">{{.Params.Author}}</a></li>
+	<li class="lighter icon-before icon-calendar">{{time.Format ":date_medium" .Params.publishdate}}</li>
+	<li class="lighter icon-before icon-clock">{{.ReadingTime}} minute{{ if ne .ReadingTime 1 }}s{{end}}</li>
+</ul>

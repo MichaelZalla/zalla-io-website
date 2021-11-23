@@ -1,10 +1,11 @@
 **/node_modules
 **/resources
-**/static/css/vendor
+**/static/css
 **/static/demos
 **/static/images/baseline*
 **/public
 **/dist
 **/.sass-cache
+**/vendor
 fontello-*
 .hugo_build.lock

@@ -54,6 +54,10 @@ p,
 
 }
 
+h1,
+h2,
+h3,
+h4,
 .type-heading,
 .type-subheading,
 .type-label,
@@ -64,23 +68,35 @@ p,
 	font-family: 'PT Sans', sans-serif;
 }
 
+h1,
 .type-heading {
 
 	font-size: 2.625rem;
 	font-weight: 700;
 	line-height: 3rem;
 
-	@include mix.baseline-height(1);
+	@include mix.baseline-height(1, 2.625rem);
 
 }
 
+h2,
 .type-subheading {
 
 	font-size: 1.5rem;
 	font-weight: 700;
 	line-height: 2rem;
 
-	@include mix.baseline-height(1, 0.55rem);
+	@include mix.baseline-height(1, 1.5rem);
+
+}
+
+h3 {
+
+	font-size: 1.25rem;
+	font-weight: 700;
+	line-height: 2rem;
+
+	@include mix.baseline-height(1, 1.25rem);
 
 }
 

@@ -1,0 +1,25 @@
+ul.article-social-share-links {
+
+	li {
+
+		display: inline-block;
+
+		img {
+
+			width: 42px;
+			height: auto;
+
+			transition: opacity 0.18s ease-in-out,
+				filter 0.18s ease-in-out,
+				width 0.18s ease-in-out,
+				height 0.18s ease-in-out;
+
+			&:hover {
+				opacity: 1.0;
+			}
+
+		}
+
+	}
+
+}

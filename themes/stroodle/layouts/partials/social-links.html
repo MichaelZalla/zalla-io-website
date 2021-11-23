@@ -1,7 +1,7 @@
 <ul class="social-links type-credits">
 	{{ range .Site.Menus.social }}
 	<li class="social-link {{ .Identifier }}">
-		<a href="{{ .URL }}" target="_blank">{{ .Name }}</a>
+		<a href="{{ .URL }}" rel="noopener noreferrer" target="_blank">{{ .Name }}</a>
 	</li>
 	{{ end }}
 </ul>

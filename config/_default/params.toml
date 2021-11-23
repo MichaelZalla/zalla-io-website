@@ -10,5 +10,5 @@ description = "The personal website of Michael Zalla."
 [viewports]
 	small = 1
 	medium = 768
-	large = 992
+	large = 1080
 	xlarge = 1200

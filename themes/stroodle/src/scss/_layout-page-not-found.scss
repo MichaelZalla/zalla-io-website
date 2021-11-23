@@ -1,0 +1,26 @@
+body[data-layout="page-not-found"][data-page-type="single"] {
+
+	.top,
+	.middle,
+	header {
+		display: none;
+	}
+
+	header {
+		position: static;
+	}
+
+	article {
+		margin-top: 4rem;
+		margin-bottom: 6rem;
+	}
+
+	article > .grid > .row:first-child {
+		padding-bottom: 0;
+	}
+
+	article p:first-of-type {
+		margin-top: 1.5rem;
+	}
+
+}

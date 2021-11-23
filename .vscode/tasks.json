@@ -1,11 +1,9 @@
 {
-	// See https://go.microsoft.com/fwlink/?LinkId=733558
-	// for the documentation about the tasks.json format
 	"version": "2.0.0",
 	"tasks": [
 		{
 			"type": "npm",
-			"script": "serve",
+			"script": "serve:draft",
 			"problemMatcher": [],
 			"label": "npm: serve:draft",
 			"detail": "hugo server -w --noHTTPCache --disableFastRender -v -p 1313 -D",

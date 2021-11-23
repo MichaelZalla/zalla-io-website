@@ -39,7 +39,7 @@
 	<meta name="twitter:site" content="{{ .Site.Params.author.twitter }}" />
 	<meta name="twitter:creator" content="{{ .Site.Params.author.twitter }}" />
 
-	{{ range .Page.Resources.Match "*/feature*" }}
+	{{ range .Page.Resources.Match "*/feature@2x.png" }}
 	<meta property="og:image" content="{{ .RelPermalink | absURL }}" />
 	<meta name="twitter:image" content="{{ .RelPermalink | absURL }}"/>
 	{{ end }}
@@ -66,6 +66,8 @@
 	<link rel="preload" href="/fonts/zalla-io-font/zalla-io-font.ttf" as="font" type="font/ttf">
 	<!-- <link rel="preload" href="/fonts/zalla-io-font/zalla-io-font.svg" as="font" type="image/svg+xml"> -->
 
-	<link rel="stylesheet" href="/css/main.css">
+	{{ $options := (dict "targetPath" "css/common.css" "transpiler" "dartsass" "outputStyle" "compressed" "enableSourceMap" true "includePaths" (slice "node_modules" "themes/stroodle/src/scss") "use" "autoprefixer") }}
+	{{ $css := resources.Get "common.scss" | resources.ToCSS $options | resources.PostCSS $options | resources.Minify }}
+	<link rel="stylesheet" href="{{ $css.RelPermalink }}">
 
 	{{ template "_internal/google_analytics.html" . }}

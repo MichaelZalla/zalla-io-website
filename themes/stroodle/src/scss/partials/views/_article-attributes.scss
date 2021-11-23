@@ -1,0 +1,30 @@
+@use 'sass-breakpoints-mixins/breakpoints' as bp;
+
+@use '../../modules/mixins/flex-container' as fc;
+
+ul.article-attributes {
+
+	padding-bottom: 0.5rem;
+
+	@include fc.flex-container(row, center, flex-start);
+	flex-wrap: wrap;
+
+	@include bp.media-breakpoint-down(small) {
+		justify-content: space-between;
+	}
+
+	li {
+
+		margin-right: 1rem;
+
+		@include bp.media-breakpoint-down(small) {
+			margin-right: 0.3rem;
+		}
+
+		a {
+			text-decoration: none;
+		}
+
+	}
+
+}

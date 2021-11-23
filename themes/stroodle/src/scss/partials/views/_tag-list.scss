@@ -1,0 +1,24 @@
+@use '../../modules/mixins/flex-container' as fc;
+
+nav.tag-list {
+
+	margin-top: 2rem;
+
+	ul {
+		@include fc.flex-container(row, center, flex-start);
+		flex-wrap: wrap;
+	}
+
+	ul li {
+
+		display: inline-block;
+		margin-bottom: 0.5rem;
+		margin-right: 0.5rem;
+
+		a.chiclet.type-label {
+			text-decoration: none;
+		}
+
+	}
+
+}

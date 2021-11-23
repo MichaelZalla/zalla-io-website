@@ -1,0 +1,21 @@
+<ul class="navigation-drawer {{ with .PrevInSection }}has-previous{{ end }} {{ with .NextInSection }}has-next{{ end }}">
+
+	{{ with .PrevInSection }}
+	<li>
+		<a href="{{ .RelPermalink }}">
+			<span class="type-label icon icon-before icon-left-open">previous post</span>
+			{{ .Title | htmlUnescape }}
+		</a>
+	</li>
+	{{ end }}
+
+	{{ with .NextInSection }}
+	<li>
+		<a href="{{ .RelPermalink }}">
+			<span class="type-label icon icon-after icon-right-open">next post</span>
+			{{ .Title | htmlUnescape }}
+		</a>
+	</li>
+	{{ end }}
+
+</ul>

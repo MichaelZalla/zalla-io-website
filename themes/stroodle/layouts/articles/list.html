@@ -1,0 +1,53 @@
+{{ define "title" }}{{.Section | title}} - {{ end }}
+{{ define "ogTitle" }}{{.Section | title}} - {{ end }}
+{{ define "twitterTitle" }}{{.Section | title}} - {{ end }}
+
+{{ define "pageType" }}list{{ end }}
+
+{{ define "header-title" }}
+<h1 class="type-heading">Bespoke Articles</h1>
+{{ end }}
+
+{{ define "main" }}
+<div class="grid">
+	<div class="row">
+		<div class="column large-8 medium-10 small-12">
+
+			<ul class="gallery-items article-gallery-items">
+
+				{{ range sort .Pages "PublishDate" "desc" }}
+				<li class="gallery-item article-gallery-item">
+
+					{{ partial "article-attributes" . }}
+
+					<a href="{{ .RelPermalink }}" style="overflow: auto;">
+						{{ partial "article-hero" . }}
+					</a>
+
+					<a href="{{ .RelPermalink }}">
+						<h1 class="type-subheading">{{ .Title | htmlUnescape }}</h1>
+					</a>
+
+					<p class="type-credits">{{ (replace .Summary "Introduction " "") | safeHTML }}</p>
+
+				</li>
+				{{ end }}
+
+			</ul>
+
+		</div>
+	</div>
+</div>
+{{ end }}
+
+{{ define "body-trailer" }}
+<script async src="/scripts/sticky-nav.js"></script>
+<script src="/scripts/vendor/lazyload.min.js"></script>
+<script>
+
+	// Initializes lazy-loading behavior
+
+	const lazyLoadInstance = new LazyLoad({});
+
+</script>
+{{ end }}

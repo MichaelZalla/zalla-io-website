@@ -2,6 +2,13 @@
 {{ define "ogTitle" }}{{.Title | htmlUnescape}} - {{.Section | title}} - {{ end }}
 {{ define "twitterTitle" }}{{.Title | htmlUnescape}} - {{.Section | title}} - {{ end }}
 
+{{ define "meta" }}
+	{{ $options := (dict "targetPath" "css/layout-project.css" "transpiler" "dartsass" "outputStyle" "compressed" "enableSourceMap" true "includePaths" (slice "node_modules" "themes/stroodle/src/scss") "use" "autoprefixer") }}
+	{{ with resources.Get "layout-project.scss" | resources.ToCSS $options | resources.PostCSS $options | resources.Minify }}
+		<style>{{ .Content | safeCSS }}</style>
+	{{ end }}
+{{ end }}
+
 {{ define "layout" }}project{{ end }}
 
 {{ define "header-title" }}
@@ -22,7 +29,7 @@
 
 	{{ with .Params.repository }}
 	<li class="header-navigation-item">
-		<a class="type-label icon-before icon-bug" href="{{ . }}" target="_blank"><!--  icon-spin -->
+		<a class="type-label icon-before icon-bug" rel="noopener noreferrer" href="{{ . }}" target="_blank"><!--  icon-spin -->
 			explore the code
 		</a>
 	</li>
@@ -33,7 +40,7 @@
 {{ define "article" }}
 
 	<div class="row">
-		<div class="column large-7 medium-9 small-12">
+		<div class="column large-8 medium-9 small-12">
 
 			<section>
 

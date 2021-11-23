@@ -14,11 +14,8 @@
 }
 
 .column {
-
 	float: left;
-
 	margin-right: 16px;
-
 }
 
 $num-columns: 12;
@@ -107,3 +104,27 @@ $num-columns: 12;
 // .column.large-7 + .column.large-5:last-child {
 // 	margin-right: 0;
 // }
+
+@mixin column-centered {
+	float: none;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.large-centered {
+	@include column-centered;
+}
+
+@include bp.media-breakpoint-down(medium)
+{
+	.medium-centered {
+		@include column-centered;
+	}
+}
+
+@include bp.media-breakpoint-down(small)
+{
+	.small-centered {
+		@include column-centered;
+	}
+}

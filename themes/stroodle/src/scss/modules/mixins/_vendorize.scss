@@ -1,9 +1,0 @@
-@mixin vendorize(
-	$property-name,
-	$property-value)
-{
-	-moz-#{$property-name}: $property-value;
-    -o-#{$property-name}: $property-value;
-    -webkit-#{$property-name}: $property-value;
-    #{$property-name}: $property-value;
-}

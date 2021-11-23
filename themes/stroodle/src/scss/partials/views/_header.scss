@@ -88,10 +88,6 @@ header.stuck {
 
 	@include bp.media-breakpoint-only(small) {
 
-		.type-heading {
-			padding-bottom: 0;
-		}
-
 		.type-label {
 			padding-top: 3px;
 		}

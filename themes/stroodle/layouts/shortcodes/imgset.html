@@ -8,18 +8,13 @@
     <figure class="row">
 
         {{ range $resources.Match $imageMatch }}
-        {{ if not (in .RelPermalink "@2x") }}
-        <figure class="column {{ $figureCssClasses }}">
-            <picture class="{{ $pictureCssClasses }}">
-
-                <source media="(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)"
-                    data-srcset='{{ replace .RelPermalink ".png" "@2x.png" }}'>
-
-                <img class="lazy" data-src="{{ .RelPermalink }}" alt="{{ .Title }}" />
-
-            </picture>
-        </figure>
-        {{ end }}
+            {{ if and (not (in .RelPermalink "@2x")) (not (in .RelPermalink ".webp")) }}
+                <figure class="column {{ $figureCssClasses }}">
+                    <picture class="{{ $pictureCssClasses }}">
+                        {{ partial "responsive-image-source" . }}
+                    </picture>
+                </figure>
+            {{ end }}
         {{ end }}
 
         <figcaption class="column large-12 large-text-center small-text-left">

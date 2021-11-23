@@ -8,9 +8,14 @@
 	weight = 1
 
 [[sitenav]]
+	name = "articles"
+	URL = "/articles/"
+	weight = 2
+
+[[sitenav]]
 	name = "about"
 	URL = "/about/"
-	weight = 2
+	weight = 3
 
 #####################
 # Social Media Menu #

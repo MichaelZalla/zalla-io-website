@@ -12,21 +12,13 @@ baseURL = "https://zalla.io"
 ####################
 
 # archetypeDir = "archetypes"
-# assetDir = "assets"
+assetDir = "static"
 # contentDir = "content"
 # dataDir = "data"
 # layoutDir = "layouts"
 # publishDir = "public"
 # staticDir = "static"
 # themesDir = "themes"
-
-##############
-# Taxonomies #
-##############
-
-# [taxonomies]
-# 	project = "projects"
-# 	article = "articles"
 
 ###################
 # Language config #
@@ -52,7 +44,7 @@ enableEmoji = true
 # enableInlineShortcodes = false
 # paginate = 10
 # relativeURLs = true
-# summaryLength = 70
+summaryLength = 50
 
 #####################
 # Content footnotes #

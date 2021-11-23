@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" xml:lang="en">
+<head>
+
+	{{ partial "meta" . }}
+
+	{{ block "meta" . }}{{ end }}
+
+	{{ $options := (dict "targetPath" "css/layout-article.css" "transpiler" "dartsass" "outputStyle" "compressed" "enableSourceMap" true "includePaths" (slice "node_modules" "themes/stroodle/src/scss") "use" "autoprefixer") }}
+	{{ with resources.Get "layout-article.scss" | resources.ToCSS $options | resources.PostCSS $options | resources.Minify }}
+		<style>{{ .Content | safeCSS }}</style>
+	{{ end }}
+
+</head>
+<body class="theme-light fade-in"
+	data-layout='{{ block "layout" . }}default{{ end }}'
+	data-page-type='{{ block "pageType" . }}single{{ end }}'
+	data-section="{{ .Section }}">
+
+	{{ partial "nav" . }}
+
+	<div class="top"></div>
+
+	<div class="middle"></div>
+
+	<header class="header theme-light">
+		<div class="grid">
+			<div class="row">
+
+				<div class="column large-12">
+
+					{{ block "header-title" . }}
+					{{ end }}
+
+				</div>
+
+			</div>
+		</div>
+	</header>
+
+	<main class="main">
+
+		{{ block "main" . }}
+		{{ end }}
+
+	</main>
+
+	<aside class="">
+		<div class="grid">
+			<div class="row">
+				<div class="column large-12 medium-12 small-12">
+					{{ block "aside" . }}
+					{{ end }}
+				</div>
+			</div>
+		</div>
+	</aside>
+
+	{{ partial "footer" . }}
+
+	{{ with resources.Get "scripts/color-theme.js" | js.Build (dict "minify" true) | fingerprint }}
+	<script>{{ .Content | safeJS }}</script>
+	{{ end }}
+
+	{{ block "body-trailer" . }}
+	{{ end }}
+
+</body>
+</html>

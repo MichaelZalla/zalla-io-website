@@ -3,11 +3,10 @@
 {{ define "twitterTitle" }}{{ .Title }} - {{ end }}
 
 {{ define "meta" }}
-<style>
-	header {
-		position: static;
-	}
-</style>
+	{{ $options := (dict "targetPath" "css/layout-about.css" "transpiler" "dartsass" "outputStyle" "compressed" "enableSourceMap" true "includePaths" (slice "node_modules" "themes/stroodle/src/scss") "use" "autoprefixer") }}
+	{{ with resources.Get "layout-about.scss" | resources.ToCSS $options | resources.PostCSS $options | resources.Minify }}
+		<style>{{ .Content | safeCSS }}</style>
+	{{ end }}
 {{ end }}
 
 {{ define "layout" }}about{{ end }}
@@ -20,7 +19,7 @@
 
 	<div class="row">
 
-		<div class="column large-8 medium-10 small-12">
+		<div class="column large-7 medium-8 small-12">
 
 			<section>
 

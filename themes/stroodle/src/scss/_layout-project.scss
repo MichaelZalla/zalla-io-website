@@ -1,0 +1,33 @@
+@use './modules/grid' as grid;
+
+@forward './partials/project-gallery';
+
+@forward './partials/device';
+@forward './partials/vimeo-wrapper';
+
+@forward './partials/views/disqus';
+
+// body[data-section="projects"][data-page-type="list"] {
+
+// }
+
+body[data-section="projects"][data-page-type="single"] {
+
+	header.stuck {
+
+		.type-heading {
+			padding-bottom: 0;
+		}
+
+	}
+
+	article > .grid > .row:first-child {
+		padding-bottom: 3rem;
+	}
+
+	article ul {
+		padding-left: grid.$grid-side-padding-small * 1.2;
+		list-style-type: circle;
+	}
+
+}
