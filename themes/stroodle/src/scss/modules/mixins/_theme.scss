@@ -1,113 +1,13 @@
-@use '../baseline-grid' as bg;
-@use '../palettes' as pal;
-
-@function swatch(
-	$palette, $swatch-name)
-{
-	@return map-get($palette, $swatch-name);
+@mixin theme-light {
+	.theme-light,
+	.theme-dark .theme-light {
+		@content;
+	}
 }
 
-@mixin theme(
-	$theme-name)
-{
-
-	$palette: map-get(pal.$palettes, $theme-name);
-
-	color: swatch($palette, text-color);
-
-	@if(bg.$show-baseline-grid)
-	{
-		background-color: rgba(swatch($palette, base-background-color), 0.2);
+@mixin theme-dark {
+	.theme-dark,
+	.theme-light .theme-dark {
+		@content;
 	}
-	@else
-	{
-		background-color: swatch($palette, base-background-color);
-	}
-
-	// Anchor
-
-	a {
-
-		color: swatch($palette, anchor-text-color);
-
-		&:hover {
-			color: swatch($palette, anchor-hover-text-color);
-		}
-
-	}
-
-	a.type-cta,
-	a.type-label {
-
-		color: swatch($palette, cta-text-color);
-
-		&:hover {
-			color: swatch($palette, cta-hover-text-color);
-		}
-
-	}
-
-	a .type-heading {
-		color: swatch($palette, cta-text-color);
-	}
-
-	&.header.stuck {
-		border-bottom-color: swatch($palette, keyline);
-	}
-
-	&.sitenav {
-
-		// border-bottom-color: swatch($palette, keyline);
-
-		.brandmark {
-			background-image: url('../images/svg/zalla-io-#{$theme-name}.svg');
-		}
-
-		.hamburger-menu:before,
-		.hamburger-menu:after {
-			background-color: swatch($palette, cta-text-color);
-		}
-
-	}
-
-
-	// em,
-	.lighter,
-	a.lighter,
-	.type-attribution {
-		color: swatch($palette, text-color-lighter);
-	}
-
-	strong {
-		color: swatch($palette, text-color-strong);
-	}
-
-	.type-legal {
-		color: swatch($palette, text-color-lighter);
-	}
-
-	// Chiclet (tag)
-
-	.chiclet.type-label {
-
-		color: swatch($palette, chiclet-text-color);
-
-		background-color: swatch($palette, chiclet-background-color);
-
-		&:hover {
-			color: white;
-			background-color: swatch($palette, chiclet-hover-background-color);
-		}
-
-	}
-
-	[class*='device-'] {
-		background-color: swatch($palette, device-background-color);
-	}
-
-	[class*='device-']:before,
-	[class*='device-']:after {
-		background-color: swatch($palette, base-background-color);
-	}
-
 }
