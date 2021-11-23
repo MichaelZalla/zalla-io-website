@@ -8,7 +8,7 @@
     "build": "hugo --verbose --minify",
     "serve": "hugo server -w --noHTTPCache --disableFastRender -v -p 1313",
     "serve:draft": "hugo server -w --noHTTPCache --disableFastRender -v -p 1313 -D",
-    "deploy": "aws s3 sync --delete ./public s3://zalla.io --exclude=\"./demos/*\" --profile zalla-io-s3-manager",
+    "deploy": "aws s3 sync --delete ./public s3://zalla.io --exclude=\"projects/*/images/*\" --exclude=\"projects/*/attachments/*\" --exclude=\"./demos/*\" --profile zalla-io-s3-manager",
     "deploy-html": "aws s3 sync ./public s3://zalla.io --exclude \"*\" --include \"*.html\" --profile zalla-io-s3-manager",
     "deploy-css": "aws s3 sync ./public s3://zalla.io --exclude \"*\" --include \"*.css\" --profile zalla-io-s3-manager",
     "deploy-js": "aws s3 sync ./public s3://zalla.io --exclude \"*\" --include \"*.js\" --profile zalla-io-s3-manager",
@@ -21,6 +21,7 @@
     "deploy:qa-js": "aws s3 sync ./public s3://zalla.io-qa --exclude=\"*\" --include \"*.js\" --exclude=\"/demos/\" --profile zalla-io-s3-manager",
     "deploy:qa-fonts": "aws s3 sync ./public s3://zalla.io-qa --exclude=\"*\" --include \"*fonts*\" --exclude=\"/demos/\" --profile zalla-io-s3-manager",
     "deploy:dry": "aws s3 sync --delete --dryrun ./public s3://zalla.io --exclude=\"/demos/\" --profile zalla-io-s3-manager",
+    "monitor:delete-logs": "mkdir -p empty aws s3 sync --delete ./empty s3://zalla.io-log --profile zalla-io-s3-manager",
     "open:analytics": "open https://analytics.google.com/analytics/web/#/report-home/a51749284w84070439p87107294",
     "open:crawler": "open https://search.google.com/search-console/inspect?resource_id=https%3A%2F%2Fzalla.io%2F&id=dQtNmtMOdzPOELz0whUioA",
     "open:s3": "open https://s3.console.aws.amazon.com/s3/buckets/zalla.io-qa?region=us-west-1&tab=objects",
@@ -46,7 +47,7 @@
   "dependencies": {
     "disqusLoader.js": "git+https://github.com/osvaldasvalutis/disqusLoader.js.git",
     "insert-css": "^0.0.0",
-    "jquery": "^3.5.1",
-    "vanilla-lazyload": "^17.1.0"
+    "vanilla-lazyload": "^17.1.0",
+    "vanilla-tilt": "^1.7.2"
   }
 }
