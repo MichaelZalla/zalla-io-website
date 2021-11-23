@@ -21,6 +21,10 @@
     "deploy:qa-js": "aws s3 sync ./public s3://zalla.io-qa --exclude=\"*\" --include \"*.js\" --exclude=\"/demos/\" --profile zalla-io-s3-manager",
     "deploy:qa-fonts": "aws s3 sync ./public s3://zalla.io-qa --exclude=\"*\" --include \"*fonts*\" --exclude=\"/demos/\" --profile zalla-io-s3-manager",
     "deploy:dry": "aws s3 sync --delete --dryrun ./public s3://zalla.io --exclude=\"/demos/\" --profile zalla-io-s3-manager",
+    "open:analytics": "open https://analytics.google.com/analytics/web/#/report-home/a51749284w84070439p87107294",
+    "open:crawler": "open https://search.google.com/search-console/inspect?resource_id=https%3A%2F%2Fzalla.io%2F&id=dQtNmtMOdzPOELz0whUioA",
+    "open:s3": "open https://s3.console.aws.amazon.com/s3/buckets/zalla.io-qa?region=us-west-1&tab=objects",
+    "open:cloudfront": "open https://console.aws.amazon.com/cloudfront/v3/home?region=us-west-1#/distributions/E8D1TC5IEFS1D",
     "clean": "rm -rf ./public ./public_min"
   },
   "repository": {
