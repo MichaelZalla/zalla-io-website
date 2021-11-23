@@ -21,7 +21,7 @@
 	<meta name="twitter:image" content="{{ .RelPermalink | absURL }}"/>
 	{{ end }}
 
-	{{ if .IsHome }}
+	{{ if or .IsHome .IsSection }}
 	<meta property="og:image" content="/images/opengraph.png" />
 	<meta name="twitter:image" content="/images/opengraph.png"/>
 	{{ end }}
