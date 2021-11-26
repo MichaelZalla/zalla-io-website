@@ -16,3 +16,5 @@ fontello-*
 google**.html
 *mailchimp*
 jsconfig.json
+.vercel
+.output
