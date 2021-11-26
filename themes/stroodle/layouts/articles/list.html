@@ -28,7 +28,7 @@
 						<h1 class="type-subheading">{{ .Title | htmlUnescape }}</h1>
 					</a>
 
-					<p class="type-credits">{{ (replace .Summary "Introduction " "") | safeHTML }}</p>
+					<p class="lighter">{{ (replace .Summary "Introduction " "") | safeHTML }}</p>
 
 				</li>
 				{{ end }}
