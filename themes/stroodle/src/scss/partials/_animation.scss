@@ -8,3 +8,7 @@
 	animation: 1.0s forwards opacity-in;
 	opacity: 0;
 }
+
+.fade-in .fade-in {
+	animation-duration: 2.0s;
+}
