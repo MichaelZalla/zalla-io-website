@@ -18,10 +18,17 @@ ul.project-gallery-items {
 
 		padding-bottom: 2em;
 
+		filter: grayscale(1);
+
+		&:hover,
+		&:focus {
+			filter: grayscale(0);
+		}
+
 		a {
 
 			position: relative;
-			overflow: auto;
+			overflow: visible;
 
 			display: block;
 
@@ -33,15 +40,6 @@ ul.project-gallery-items {
 			min-height: 15rem;
 
 			text-decoration: none;
-
-			filter: grayscale(1);
-
-			transition: filter 0.18s ease-in-out;
-
-			&:hover,
-			&:focus {
-				filter: grayscale(0);
-			}
 
 			.year-swatch,
 			.type-heading {
@@ -78,10 +76,14 @@ ul.project-gallery-items {
 
 			}
 
-			img {
-				width: 13rem;
-				height: 13rem;
-				border-radius: 50%;
+			picture {
+
+				img {
+					width: 13rem;
+					height: 13rem;
+					border-radius: 50%;
+				}
+
 			}
 
 		}
