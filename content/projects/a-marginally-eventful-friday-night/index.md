@@ -1,5 +1,5 @@
 +++
-title = "A Mildly Eventful Friday Night"
+title = "A Marginally Eventful Friday Night"
 description = "Python, with an old-school twist…"
 year = "2013"
 season = "Spring"
@@ -8,12 +8,12 @@ technologies = [
   "Eclipse",
   "PyDev"
 ]
-repository = "https://github.com/MichaelZalla/A-Mildly-Eventful-Friday-Night"
-hasDemo = true
+repository = ""
+hasDemo = false
 swatch = "#00406A"
 +++
 
-A Marginally Eventful Friday Night is a text adventure that I wrote as the final project for Computer Science I (2013). In A Mildly Eventful Friday Night, you play as Nick, a fifth-grader who comes home to find a surprising birthday gift from his absent parents. {{< read-more-button >}}
+A Marginally Eventful Friday Night is a text adventure that I wrote as the final project for Computer Science I (2013). In A Marginally Eventful Friday Night, you play as Nick, a fifth-grader who comes home to find a surprising birthday gift from his absent parents. {{< read-more-button >}}
 
 Taking design cues from old-school text adventures, the game allows the player to progress through the story by entering commands to explore new areas, add items to their inventory, and solve the game as a stateful puzzle.
 
