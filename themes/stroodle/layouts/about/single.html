@@ -60,15 +60,3 @@
 	-->
 
 {{ end }}
-
-{{ define "aside" }}
-
-	<ul class="row">
-		{{ range .Page.Resources.Match "images/*asfasd_2x.png" }}
-		<li class="column large-12 medium-4 small-12">
-			<img class="lazy" data-src="{{ .RelPermalink }}" alt="{{ .Title }}" />
-		</li>
-		{{ end }}
-	</ul>
-
-{{ end }}
