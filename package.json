@@ -22,6 +22,7 @@
     "deploy:qa-fonts": "aws s3 sync ./public s3://zalla.io-qa --exclude=\"*\" --include \"*fonts*\" --exclude=\"/demos/\" --profile $AWS_PROFILE",
     "deploy:dry": "aws s3 sync --delete --dryrun ./public s3://zalla.io --exclude=\"/demos/\" --profile $AWS_PROFILE",
     "monitor:delete-logs": "mkdir -p empty aws s3 sync --delete ./empty s3://zalla.io-log --profile $AWS_PROFILE",
+    "open:qa": "open http://zalla.io-qa.s3-website-us-west-1.amazonaws.com",
     "open:analytics": "open https://analytics.google.com/analytics/web/#/report-home/a51749284w84070439p87107294",
     "open:crawler": "open https://search.google.com/search-console/inspect?resource_id=https%3A%2F%2Fzalla.io%2F&id=dQtNmtMOdzPOELz0whUioA",
     "open:s3": "open https://s3.console.aws.amazon.com/s3/buckets/zalla.io-qa?region=us-west-1&tab=objects",
