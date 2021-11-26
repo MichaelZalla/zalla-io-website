@@ -19,7 +19,7 @@ technologies = [
 ]
 repository = "https://github.com/MichaelZalla/zalla-io-website"
 hasDemo = false
-swatch = "#9B231C"
+swatch = "#232323"
 draft = false
 +++
 
