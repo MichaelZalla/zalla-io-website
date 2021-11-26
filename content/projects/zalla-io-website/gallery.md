@@ -1,6 +1,6 @@
 +++
 +++
-{{< imgset "final-website-mobile" "final website (mobile)" "large-3 medium-4 small-12" "" >}}
+{{< imgset "final-website-mobile" "final website (mobile)" "large-3 medium-4 small-6" "" >}}
 <!-- device-phone portrait -->
 
 {{< imgset "final-website-tablet" "final website (tablet)" "large-4 medium-6 small-12" "" >}}
