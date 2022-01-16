@@ -24,7 +24,10 @@
 		<a href="{{ .RelPermalink }}"
 			data-swatch="{{ .Params.swatch }}">
 
-			<div class="year-swatch type-label" style='background-color: {{ cond (isset .Params "swatch") .Params.swatch "#999999" }};'>{{ .Params.year }}</div>
+			<div class="year-swatch type-label"
+				style='background-color: {{ cond (isset .Params "swatch") .Params.swatch "#999999" }};'>
+				{{ .Params.year }}
+			</div>
 
 			{{ with .Resources.GetMatch "images/project-gallery-thumbnail*" }}
 				<picture>
