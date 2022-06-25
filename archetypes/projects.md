@@ -8,6 +8,7 @@ season = ""
 swatch = "#999999"
 repository = ""
 hasDemo = true
+demo_url = ""
 disqus_identifier = "{{ .Site.DisqusShortname }}-{{ .Name }}"
 disqus_title = "{{ replace .Name '-' ' ' | title }}"
 draft = true

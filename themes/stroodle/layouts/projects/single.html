@@ -21,7 +21,8 @@
 
 	{{ if .Params.hasDemo }}
 	<li class="header-navigation-item">
-		<a class="type-label icon-before icon-arrows-cw" href="/demos/{{ .File.Dir }}" target="_blank"><!--  icon-spin -->
+		{{ $demoUrl := cond (isset .Params "demo_url") .Params.demo_url (printf "%s%s" "/demos/" .File.Dir) }}
+		<a class="type-label icon-before icon-arrows-cw" href="{{ $demoUrl }}" target="_blank"><!--  icon-spin -->
 			run the demo
 		</a>
 	</li>
