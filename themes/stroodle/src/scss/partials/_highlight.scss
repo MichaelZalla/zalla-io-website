@@ -26,6 +26,10 @@ code:not([class*='language']) {
 
 }
 
+.highlight > .chroma[tabindex="0"] {
+	padding: 1em 29px;
+}
+
 // @NOTE(mzalla) Fixes highlight value on Monokai (dark);
 @include mix.theme-dark {
 
