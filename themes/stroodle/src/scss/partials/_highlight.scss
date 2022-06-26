@@ -2,6 +2,10 @@
 
 @use '../modules/mixins' as mix;
 
+code:not([class*='language']) {
+	color: #a6e22e;
+}
+
 .highlight {
 
 	margin-top: 1rem;
