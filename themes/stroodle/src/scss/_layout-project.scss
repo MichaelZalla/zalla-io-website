@@ -1,8 +1,20 @@
+@use './modules/viewport' as vp;
+
+@use 'sass-breakpoints-mixins/breakpoints' as bp with (
+	$grid-breakpoints: (
+		small: map-get(vp.$min-width, 'small'),
+		medium: map-get(vp.$min-width, 'medium'),
+		large: map-get(vp.$min-width, 'large'),
+		xlarge: map-get(vp.$min-width, 'xlarge'),
+	)
+);
+
 @use './modules/grid' as grid;
 
 @forward './partials/project-gallery';
 
 @forward './partials/device';
+@forward './partials/highlight';
 @forward './partials/vimeo-wrapper';
 
 @forward './partials/views/disqus';
