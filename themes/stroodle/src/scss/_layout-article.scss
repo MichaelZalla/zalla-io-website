@@ -181,6 +181,10 @@ body[data-section="articles"][data-page-type="single"] {
 
 				}
 
+				p + h4 {
+					margin-top: 1rem;
+				}
+
 				ul {
 					padding-inline-start: 40px;
 					list-style-type: disc;

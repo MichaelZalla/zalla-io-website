@@ -19,6 +19,8 @@ $white: 255, 255, 255;
 	--color-cta-text-color: black;
 	--color-cta-hover-text-color: #{lighten(black, 50%)};
 	--color-device-background-color: #{darken(white, 10%)};
+	--color-callout-background: #{darken(white, 3%)};
+	--color-callout-border: #{darken(white, 8%)};
 }
 
 @include mix.theme-dark {
@@ -37,4 +39,6 @@ $white: 255, 255, 255;
 	--color-cta-text-color: white;
 	--color-cta-hover-text-color: #{darken(white, 50%)};
 	--color-device-background-color: #{lighten(black, 10%)};
+	--color-callout-background: #{lighten(rgb(20,20,20), 8%)};
+	--color-callout-border: #{lighten(rgb(20,20,20), 20%)};
 }
