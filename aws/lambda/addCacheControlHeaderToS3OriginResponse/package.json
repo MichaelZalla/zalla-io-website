@@ -1,0 +1,14 @@
+{
+  "name": "add-cache-control-and-mimetype-headers",
+  "version": "0.0.1",
+  "description": "Lambda@Edge function for CloudFront Origin Request phase (S3).",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Michael Zalla (michael@zalla.io)",
+  "license": "ISC",
+  "dependencies": {
+    "mime-types": "^2.1.33"
+  }
+}
