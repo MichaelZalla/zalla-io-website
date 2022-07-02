@@ -20,6 +20,7 @@ code:not([class*='language']) {
 	}
 
 	pre {
+		overflow-y: auto;
 		white-space: pre;
 		word-break: keep-all;
 	}
