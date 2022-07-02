@@ -1,3 +1,4 @@
+<!-- raw html -->
 <div class="callout" role="alert">
-	{{ .Inner }}
+	{{ partial "render-markup" (dict "page" .Page "inner" .Inner) }}
 </div>
