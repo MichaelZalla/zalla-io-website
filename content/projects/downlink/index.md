@@ -15,9 +15,9 @@ demo_url = "https://runkit.com/michaelzalla/62b7a291aab9f800087d4fa8"
 swatch = "#247469"
 +++
 
-Downlink is a JavaScript module that converts complex JSON payloads into usable TypeScript interfaces. Inspired by VS Code extensions that were useful to me in the past, I wrote my own recursive interface generator as a programming exercise {{< read-more-button >}}
+Downlink is a JavaScript module that converts complex JSON payloads into usable TypeScript interfaces. Inspired by VS&nbsp;Code extensions that were useful to me in the past, I wrote my own recursive interface generator as a programming exercise. {{< read-more-button >}}
 
-For a more in-depth discussion of Downlink and its implementation, check out my article, [Generating Typescript for Fun and Profit, Part 1](/articles/generating-typescript-for-fun-and-profit-part-1/).
+For a more in-depth discussion of Downlink and its implementation, check out, [Generating Typescript for Fun and Profit, Part 1](/articles/generating-typescript-for-fun-and-profit-part-1/).
 
 <!--
 {{< callout >}}
@@ -31,7 +31,7 @@ npm i downlink
 
 Downlink takes the same general approach as code compilers (or transpilers), using depth-first search to generate an intermediate representation of the given data. This intermediate representation holds all of the information needed to accurately represent a complex object interface, and render (or emit) it as a valid string of TypeScript. The total set of nested objects, together with the root object (or array), are mapped to a flattened list of TypeScript interfaces. Downlink ultimately renders this list as a multi-line string of output.
 
-Downlink supports all JSON primitive types, together with nested objects and arrays. Nested objects are identified by the sequence of keys used to access them from the root object; interface names are generated using these key sequences, known as "keychains".
+Downlink supports all JSON primitive types, together with nested objects and arrays. Nested objects are identified by the _sequence_ of keys used to access them from the root object; interface names are generated using these key sequences, or "keychains".
 
 <!--
 Because all valid JSON records consist of at least 1 object—the root object—Downlink will always emit an `IRoot` interface (with a default export included):
@@ -134,9 +134,9 @@ Unit testing was instrumental in organizing my thoughts and intentions while cod
 
 ## Automation
 
-Downlink's GitHub repository leverages GitHub Actions to provide continuous integration. The `.github/workflows/main.yml` file configures a workflow named "CI", which performs a fresh repository checkout, installs dependencies with `npm`, and runs tests with Jest.
+Downlink's GitHub repository leverages GitHub Actions to provide continuous integration. A `main.yml` file in the `.github/workflows` folder configures a workflow named "CI", which performs a fresh repository checkout, installs dependencies with `npm`, and runs tests with Jest.
 
-Actions are triggered whenever a contributor pushes new commits to the `main` branch, and results are reported on GitHub's [Actions panel](https://github.com/MichaelZalla/downlink/actions). The result of the most recent action ('pass' or 'fail') is displayed on the main repository page, next to its associated commit.
+Actions are triggered whenever a contributor pushes new commits to `main`, and results are reported on GitHub's [Actions panel](https://github.com/MichaelZalla/downlink/actions). The result of the most recent action ('pass' or 'fail') is displayed on the main repository page, next to its associated commit.
 
 ## Distribution
 
