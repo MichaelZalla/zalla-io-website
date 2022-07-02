@@ -1,9 +1,11 @@
 <nav class="tag-list">
 	<ul class="tag-items">
 		{{ range .Params.Tags }}
-		<li class="tag-item">
-			<a class="chiclet type-label" href="/tags/{{ urlize . }}">{{ . }}</a>
-		</li>
+			{{ if . }}
+				<li class="tag-item">
+					<a class="chiclet type-label" href="/tags/{{ urlize . }}">{{ . }}</a>
+				</li>
+			{{ end }}
 		{{ end }}
 	</ul>
 </nav>
