@@ -2,10 +2,14 @@ article {
 
 	section.collapsed {
 
+		h2,
+		h3,
 		h4,
 		p,
 		.callout,
-		.highlight {
+		.highlight,
+		ul,
+		ol {
 
 			&:first-child {
 				padding-bottom: 0px;
