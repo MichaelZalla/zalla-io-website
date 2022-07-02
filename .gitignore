@@ -1,20 +1,42 @@
-**/node_modules
-**/resources
-**/static/css
-**/static/demos
-**/static/images/baseline*
-**/public
-**/dist
-**/.sass-cache
-**/vendor
-.DS_Store
-_archive/
-_Sketch/
-aws/
-fontello-*
+# npm
+node_modules
+
+# hugo
+resources
 .hugo_build.lock
-google**.html
-*mailchimp*
-jsconfig.json
+
+# sass
+.sass-cache
+
+# stroodle
+themes/stroodle/dist
+themes/stroodle/assets/vendor
+
+# output
+public
+
+# aws
+*credentials*
+# aws
+
+# vercel
 .vercel
-.output
+
+# analytics
+static/google*.html
+
+# demos
+static/demos
+
+# static
+static/css
+
+# design resources
+_Sketch
+static/images/baseline*
+
+# notes
+_scratch
+
+# macos
+.DS_Store
