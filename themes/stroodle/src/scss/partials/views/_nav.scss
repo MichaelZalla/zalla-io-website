@@ -32,6 +32,17 @@ nav.sitenav {
 		background-position-y: 9px;
 	}
 
+	& > .grid > .row {
+
+		&:before,
+		&:after {
+			content: none;
+		}
+
+		@include mix.flex-container(row, center, space-between);
+
+	}
+
 	.brandmark,
 	.menu-toggle {
 		position: relative;

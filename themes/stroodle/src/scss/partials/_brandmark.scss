@@ -1,18 +1,69 @@
+@use 'sass:string';
+
 @use '../modules/mixins' as mix;
 
 $brandmark-size: 36px;
 
+$brandname-letter-count: string.length("michael zalla");
+$brandname-letter-width: 14px;
+$brandmark-padding-right: 12px;
+
 .brandmark {
 
-	display: inline-block;
-	padding: 0;
+	@include mix.flex-container(row, center);
 
-	width: $brandmark-size;
+	padding: 0;
+	padding-left: $brandmark-size + $brandmark-padding-right;
+
+	width: $brandmark-size + $brandname-letter-count * $brandname-letter-width;
 	height: $brandmark-size;
 
 	background-size: auto 100%;
 	background-repeat: no-repeat;
 
-	@include mix.hide-text;
+	.hide-text {
+		display: inline-block;
+		@include mix.hide-text;
+	}
 
+	.sitename {
+
+		display: inline-block;
+		padding: 0;
+		overflow: hidden;
+
+		&.type-cta {
+			font-size: 1rem;
+			font-weight: 700;
+			text-transform: uppercase;
+		}
+
+		span {
+
+			display: inline-block;
+
+			opacity: 1.0;
+			transform: translateX(0px);
+
+			transition:
+				transform 0.25s ease-in-out,
+				opacity 0.75s ease-in-out;
+
+		}
+
+	}
+
+}
+
+a.brandmark:hover {
+	color: var(--color-text-color);
+}
+
+a.brandmark:not(:hover) .sitename span {
+	@for $index from 1 through $brandname-letter-count {
+		&:nth-child(#{$index}) {
+			opacity: 1.0 - ($index * 0.125);
+			transform: translateX(calc(0px - $brandname-letter-width * $index - $brandmark-padding-right));
+		}
+	}
 }
