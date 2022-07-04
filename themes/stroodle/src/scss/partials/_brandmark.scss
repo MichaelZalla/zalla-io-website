@@ -1,3 +1,5 @@
+@use '../modules/mixins' as mix;
+
 $brandmark-size: 36px;
 
 .brandmark {
@@ -8,8 +10,9 @@ $brandmark-size: 36px;
 	width: $brandmark-size;
 	height: $brandmark-size;
 
-	text-indent: -9999px;
 	background-size: auto 100%;
 	background-repeat: no-repeat;
+
+	@include mix.hide-text;
 
 }
