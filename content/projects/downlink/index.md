@@ -1,5 +1,5 @@
 +++
-title = "Downlink"
+title = "downlink"
 description = "Instantly convert JSON to TypeScript interfaces."
 year = "2022"
 season = "spring"
