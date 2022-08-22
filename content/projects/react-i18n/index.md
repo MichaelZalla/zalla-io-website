@@ -14,7 +14,6 @@ hasDemo = true
 demo_url = "https://codesandbox.io/s/yvsm2m?file=/src/App.js"
 disqus_identifier = "react-i18n"
 disqus_title = "react-i18n"
-draft = true
 +++
 
 The `react-i18n` library offers a simple set of React hooks to help you localize your web app quickly and easily. The package is mainly suited for client-side-rendered apps that can be localized at runtime rather than at build time—but it can also be used to localize a server-side-renderer (SSR) app. {{< read-more-button >}}
