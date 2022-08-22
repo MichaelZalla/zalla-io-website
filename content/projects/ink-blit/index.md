@@ -23,9 +23,9 @@ Ink-blit is a tiny game development library designed for making native command-l
 
 ## Motivation
 
-When I first heard about Ink, I was intruiged by the idea of using a React component model to write command-line tools. This project was motivated in part by my wanting to play with Ink and learn its core API. Developers have used Ink to create new [automated test-runners](https://github.com/oblador/loki), [project generators](https://github.com/segmentio/typewriter), and tools for [third-party cloud services](https://github.com/cloudflare/wrangler2)—proving Ink's value in the process.
+When I first heard about Ink, I was intrigued by the idea of using a React component model to write command-line tools. This project was motivated in part by my wanting to play with Ink and learn its core API. Developers have used Ink to create new [automated test-runners](https://github.com/oblador/loki), [project generators](https://github.com/segmentio/typewriter), and tools for [third-party cloud services](https://github.com/cloudflare/wrangler2)—proving Ink's value in the process.
 
-In the realm of graphics and games, Ink's [README](https://github.com/vadimdemedes/ink#whos-using-ink) does feature a [Minesweeper game](https://github.com/mordv/mnswpr), and even a [Worldle clone](https://github.com/jrr/inkle). Despite these contributions, Ink still presents plenty of opportunity to bring more classic games to the command line. The simplicity of text-based games, and text-based graphics, lends itself well to the novice game programmer who wants a quick path to writing game logic and drawing something 2-dimensional to the screen.
+In the realm of graphics and games, Ink's [README](https://github.com/vadimdemedes/ink#whos-using-ink) does feature a [Minesweeper game](https://github.com/mordv/mnswpr), and even a [Wordle clone](https://github.com/jrr/inkle). Despite these contributions, Ink still presents plenty of opportunity to bring more classic games to the command line. The simplicity of text-based games, and text-based graphics, lends itself well to the novice game programmer who wants a quick path to writing game logic and drawing something 2-dimensional to the screen.
 
 The simple input and output models inherent to these games also make them excellent candidates for research in artificial intelligence, machine learning, and genetic algorithms. Engineers can apply reinforcement learning techniques to train models to [consistently win at 2D games](https://www.nature.com/articles/nature14236)—even when those models are given nothing but [raw pixel representations](https://karpathy.github.io/2016/05/31/rl/). The [OpenAI Gym](https://github.com/openai/gym) project is developing a standard interface between learning models and the environments (or games) in which they operate. [Lunar Lander](https://www.gymlibrary.ml/environments/box2d/lunar_lander/) is one such environment that could easily be represented in a terminal. Newer training platforms like [TensorFlow.js](https://www.tensorflow.org/js) allow training programs to run on top of Node (and thus interface with Ink-based games).
 
@@ -151,7 +151,7 @@ const useGame = (...) =>
 ``` -->
 ### 4. Semantic types
 
-Games that take keyboard input and render text-based (or ASCII) graphics commonly deal with similar data types; `ink-blit` offers some pre-defined types for convenience, including:
+Games that take keyboard input and render text-based (or ASCII) graphics commonly deal with similar data types; `ink-blit` offers some predefined types for convenience, including:
 
 - `Buffer`
 - `Dimensions`
@@ -220,7 +220,7 @@ type GameSettings = {
 }
 ```
 
-Some pieces of game state may be found commonly across different games. For example, the games *Pong*, *Snake*, and *Tetris* might each maintain a `score`, as well as the current `dimensions`. Despite these shared examples, `ink-blit` makes no assumptions about the specific pieces of that a game may track.
+Some pieces of game state may be found commonly across different games. For example, the games *Pong*, *Snake*, and *Tetris* might each maintain a `score`, as well as the current `dimensions`. Despite these shared examples, `ink-blit` makes no assumptions about the specific pieces that a game may track.
 
 Conventionally, the current game state is defined with `React.useState()`:
 
@@ -367,7 +367,7 @@ The player uses the *Up* and *Down* arrow keys to control the position of their 
 
 ### [examples/snake](https://github.com/MichaelZalla/ink-blit/tree/main/examples/snake)
 
-The player controls a 2D snake, avoiding both itself and walls while collecting as much food as it can to acheive a higher score.
+The player controls a 2D snake, avoiding both itself and walls while collecting as much food as it can to achieve a higher score.
 
 ### [examples/_template](https://github.com/MichaelZalla/ink-blit/tree/main/examples/_template)
 
