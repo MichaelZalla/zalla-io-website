@@ -41,7 +41,7 @@
   "homepage": "https://github.com/MichaelZalla/zalla-io-website#readme",
   "devDependencies": {
     "autoprefixer": "^10.4.0",
-    "postcss": "^8.3.11",
+    "postcss": "^8.4.31",
     "postcss-cli": "^9.0.2",
     "sass": "^1.26.8",
     "sass-breakpoints-mixins": "github:MichaelZalla/sass-breakpoints-mixins"
